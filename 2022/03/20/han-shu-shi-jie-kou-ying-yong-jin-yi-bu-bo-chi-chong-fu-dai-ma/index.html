@@ -696,20 +696,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/nei-bu-lei/">
+                <a href="/2022/03/20/zai-tan-comparator-bi-jiao-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="再谈-Comparator比较器.md">
                         
-                        <span class="card-title">内部类.md</span>
+                        <span class="card-title">再谈-Comparator比较器.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
-public vo
+                            ###结合lambda使用Arrays.sort(people, Comparator.comparing(Person::getName));
+###设置次级排序
+Collections.sort(list,Comparator.comp
                         
                     </div>
                     <div class="publish-info">
@@ -746,21 +747,24 @@ public vo
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/zai-tan-comparator-bi-jiao-qi/">
+                <a href="/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="再谈-Comparator比较器.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="受查视图、不可修改视图、子范围.md">
                         
-                        <span class="card-title">再谈-Comparator比较器.md</span>
+                        <span class="card-title">受查视图、不可修改视图、子范围.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###结合lambda使用Arrays.sort(people, Comparator.comparing(Person::getName));
-###设置次级排序
-Collections.sort(list,Comparator.comp
+                            ###受查视图
+这样的泛型约束是失效的   
+ List&lt;String&gt; list = new ArrayList&lt;&gt;();
+ List stList = list;
+ //添加成功
+ stList.add(new 
                         
                     </div>
                     <div class="publish-info">

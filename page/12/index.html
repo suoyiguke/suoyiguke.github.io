@@ -341,20 +341,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/" target="_blank">
+                    <a href="/2022/03/20/keng-list-de-remove-object-o-zhi-shi-shan-chu-di-yi-ge-pi-pei-de-yuan-su/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
+                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md">
                             
-                            <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
+                            <span class="card-title">坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
+                            不是我们想象的那样删除所有的指定元素。如果想删除所有指定元素。请使用removeAll
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add(
                             
                         </div>
                         <div class="publish-info">
@@ -406,6 +408,53 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
 
 比如我们如果自定义了一个Stude
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
+                            
+                            <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
                             
                         </div>
                         <div class="publish-info">
@@ -585,21 +634,25 @@ package org.szwj.ca.identityauthsrv.util.comm
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/liao-xue-feng-de-guan-fang-wang-zhan/" target="_blank">
+                    <a href="/2022/03/20/chou-xiang-lei-ke-yi-shi-xian-jie-kou-chou-xiang-lei-ke-yi-ji-cheng-shi-ti-lei/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="廖雪峰的官方网站.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="抽象类可以实现接口，抽象类可以继承实体类.md">
                             
-                            <span class="card-title">廖雪峰的官方网站.md</span>
+                            <span class="card-title">抽象类可以实现接口，抽象类可以继承实体类.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            https://www.liaoxuefeng.com
+                            抽象类可以实现接口：抽象类实现接口，可以不实现接口的方法。
+interface  Inter &#123;
+    void print();
+&#125;
 
+abstract class GG implements  Inter&#123
                             
                         </div>
                         <div class="publish-info">
@@ -680,24 +733,21 @@ package org.szwj.ca.identityauthsrv.util.comm
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/" target="_blank">
+                    <a href="/2022/03/20/liao-xue-feng-de-guan-fang-wang-zhan/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="探究下集合类指定初始容量的必要性.md">
+                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="廖雪峰的官方网站.md">
                             
-                            <span class="card-title">探究下集合类指定初始容量的必要性.md</span>
+                            <span class="card-title">廖雪峰的官方网站.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            以ArrayList为例，对比下指定初始容量和不指定两种情况对List.add性能的影响
-        /**
-         * 指定初始容量后：耗时 1030
-         */
-        ArrayList&lt;Obj
+                            https://www.liaoxuefeng.com
+
                             
                         </div>
                         <div class="publish-info">
@@ -731,25 +781,24 @@ package org.szwj.ca.identityauthsrv.util.comm
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/chou-xiang-lei-ke-yi-shi-xian-jie-kou-chou-xiang-lei-ke-yi-ji-cheng-shi-ti-lei/" target="_blank">
+                    <a href="/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="抽象类可以实现接口，抽象类可以继承实体类.md">
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="探究下集合类指定初始容量的必要性.md">
                             
-                            <span class="card-title">抽象类可以实现接口，抽象类可以继承实体类.md</span>
+                            <span class="card-title">探究下集合类指定初始容量的必要性.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            抽象类可以实现接口：抽象类实现接口，可以不实现接口的方法。
-interface  Inter &#123;
-    void print();
-&#125;
-
-abstract class GG implements  Inter&#123
+                            以ArrayList为例，对比下指定初始容量和不指定两种情况对List.add性能的影响
+        /**
+         * 指定初始容量后：耗时 1030
+         */
+        ArrayList&lt;Obj
                             
                         </div>
                         <div class="publish-info">
@@ -846,54 +895,6 @@ abstract class GG implements  Inter&#123
                             特点：
 名字与类名相同。没有返回值，但不能用 void 声明构造函数。生成类的对象时自动执行，无需调用。构造方法不能被 override（重写）,但是可以 overload（重载）,所以你可以看到一个类中有多个构造函数的情况。
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/zheng-que-shi-yong-equals-fang-fa/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="正确使用-equals-方法.md">
-                            
-                            <span class="card-title">正确使用-equals-方法.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            正确使用 equals 方法 Object的equals方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。  举个例子：
-  // 不能使用一个值为null的引用类型变量来调用非静态方法，否则会抛出异常String st
                             
                         </div>
                         <div class="publish-info">

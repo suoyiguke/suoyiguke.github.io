@@ -341,11 +341,11 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 
                 
-                <a href="/categories/java/" title="java: 157">
+                <a href="/categories/java/" title="java: 158">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">java
-                        <span class="tag-length">157</span>
+                        <span class="tag-length">158</span>
                     </span>
                 </a>
                 
@@ -362,20 +362,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/dai-ma-you-ya/">
+                    <a href="/2022/03/20/jing-tai-fang-fa-he-shi-li-fang-fa-you-he-bu-tong/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="代码优雅.md">
+                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="静态方法和实例方法有何不同？.md">
                             
-                            <span class="card-title">代码优雅.md</span>
+                            <span class="card-title">静态方法和实例方法有何不同？.md</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                ###注释篇好的注释一定是宁缺毋滥的
-1、对于注释的要求：第一、能够准确反映设计思想和代码逻辑；第二、能够描述业务含义，使别的程序员能够迅速了解到代码背后的信息。完全没有注释的大段代码对于阅读者形同天书，注释是给自己看的，即使隔很长时间，也
+                                在外部调用静态方法时，可以使用”类名.方法名”的方式，也可以使用”对象名.方法名”的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。
+静态方法在访问本类的成员时，只允许访问静态成员（即静态成员变量和静态方法），而不
                             
                         </div>
                         <div class="publish-info">
@@ -455,20 +455,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jing-tai-fang-fa-he-shi-li-fang-fa-you-he-bu-tong/">
+                    <a href="/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="静态方法和实例方法有何不同？.md">
+                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="问题：流一条路走到黑，怎么去拿开始的数据？.md">
                             
-                            <span class="card-title">静态方法和实例方法有何不同？.md</span>
+                            <span class="card-title">问题：流一条路走到黑，怎么去拿开始的数据？.md</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                在外部调用静态方法时，可以使用”类名.方法名”的方式，也可以使用”对象名.方法名”的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。
-静态方法在访问本类的成员时，只允许访问静态成员（即静态成员变量和静态方法），而不
+                                把下面的代码转成stream形式
+        Set&lt;String&gt; keySet = map.keySet();
+        for (String s : keySet) &#123;
+            Str
                             
                         </div>
                         <div class="publish-info">
@@ -552,22 +554,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/">
+                    <a href="/2022/03/20/yu-fa-tang/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="问题：流一条路走到黑，怎么去拿开始的数据？.md">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="语法糖.md">
                             
-                            <span class="card-title">问题：流一条路走到黑，怎么去拿开始的数据？.md</span>
+                            <span class="card-title">语法糖.md</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                把下面的代码转成stream形式
-        Set&lt;String&gt; keySet = map.keySet();
-        for (String s : keySet) &#123;
-            Str
+                                1、JSONObject 的fluentPut 链式put
+JSONObject res = new JSONObject()
+            .fluentPut(&quot;mode&quot;, ClusterStateMan
                             
                         </div>
                         <div class="publish-info">
@@ -615,54 +616,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                             
                                 使用输出流 FileOutputStream 写入文件
       File file = new File(System.getProperty(&quot;user.dir&quot;).concat(&quot;/config/org
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/yu-fa-tang/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="语法糖.md">
-                            
-                            <span class="card-title">语法糖.md</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、JSONObject 的fluentPut 链式put
-JSONObject res = new JSONObject()
-            .fluentPut(&quot;mode&quot;, ClusterStateMan
                             
                         </div>
                         <div class="publish-info">
@@ -841,6 +794,52 @@ pub
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/fu-dian-shu-zhi-jian-de-deng-zhi-pan-duan-ji-ben-shu-ju-lei-xing-bu-neng-yong-lai-bi-jiao-bao-zhuang-shu-ju-lei-xing-bu-neng-yong-equals-lai-pan-duan/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用-equals-来判断！！.md">
+                            
+                            <span class="card-title">浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用-equals-来判断！！.md</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                BigDecimalBigDecimal 的用处《阿里巴巴Java开发手册》中提到：浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用 equals 来判断。 具体原理和浮点数的编码方式有关，这里就不多提了，我们下面直接
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/bi-jiao-de-keng-suo-you-hui-cui/">
                         <div class="card-image tag-image">
                             
@@ -890,19 +889,20 @@ pub
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/fu-dian-shu-zhi-jian-de-deng-zhi-pan-duan-ji-ben-shu-ju-lei-xing-bu-neng-yong-lai-bi-jiao-bao-zhuang-shu-ju-lei-xing-bu-neng-yong-equals-lai-pan-duan/">
+                    <a href="/2022/03/20/fan-xing-bian-jie/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用-equals-来判断！！.md">
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="泛型边界.md">
                             
-                            <span class="card-title">浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用-equals-来判断！！.md</span>
+                            <span class="card-title">泛型边界.md</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                BigDecimalBigDecimal 的用处《阿里巴巴Java开发手册》中提到：浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用 equals 来判断。 具体原理和浮点数的编码方式有关，这里就不多提了，我们下面直接
+                                ###List list = new ArrayList(); 能添加各种类型的数据吗？
+可以的，JDK1.5后随着泛型的加入，默认这也是一种泛型，叫raw type，由于它不限制存入的类型，所以能存任何类型的元素。大家其实可以把它当做JD
                             
                         </div>
                         <div class="publish-info">

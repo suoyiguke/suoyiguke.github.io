@@ -571,19 +571,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/">
+                <a href="/2022/03/20/keng-list-de-remove-object-o-zhi-shi-shan-chu-di-yi-ge-pi-pei-de-yuan-su/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md">
                         
-                        <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
+                        <span class="card-title">坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
+                            不是我们想象的那样删除所有的指定元素。如果想删除所有指定元素。请使用removeAll
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add(
                         
                     </div>
                     <div class="publish-info">
@@ -620,21 +622,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/an-quan-you-ya-de-shi-yong-simpledateformat-lei-chu-li-shi-jian/">
+                <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="安全优雅的使用SimpleDateFormat类处理时间.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
                         
-                        <span class="card-title">安全优雅的使用SimpleDateFormat类处理时间.md</span>
+                        <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SimpleDateFormat是线程不安全的！所以不能因为想要公用一个实例而选择使用单例。
-我们可以配合使用ThreadLocal来达到这个效果。
-package org.szwj.ca.identityauthsrv.util.comm
+                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
                         
                     </div>
                     <div class="publish-info">

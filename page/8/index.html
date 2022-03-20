@@ -388,21 +388,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-map/" target="_blank">
+                    <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-set/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-集合问题基础之Map.md">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java-集合问题基础之Set.md">
                             
-                            <span class="card-title">java-集合问题基础之Map.md</span>
+                            <span class="card-title">java-集合问题基础之Set.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###HashMap 和 Hashtable 的区别
-1、线程是否安全： HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过synchronized 修饰。（如果你要保证线程安全
+                            比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同HashSet 是 Set 接口的主要实现类 ，HashSet 的底层是 HashMap，线程不安全的，可以存储 null 值；
+LinkedHashSet 是
                             
                         </div>
                         <div class="publish-info">
@@ -436,21 +436,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-set/" target="_blank">
+                    <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-map/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java-集合问题基础之Set.md">
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-集合问题基础之Map.md">
                             
-                            <span class="card-title">java-集合问题基础之Set.md</span>
+                            <span class="card-title">java-集合问题基础之Map.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同HashSet 是 Set 接口的主要实现类 ，HashSet 的底层是 HashMap，线程不安全的，可以存储 null 值；
-LinkedHashSet 是
+                            ###HashMap 和 Hashtable 的区别
+1、线程是否安全： HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过synchronized 修饰。（如果你要保证线程安全
                             
                         </div>
                         <div class="publish-info">
@@ -686,40 +686,6 @@ ja
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="javax-validation和hibernate-validator参数校验.md">
-                            
-                            <span class="card-title">javax-validation和hibernate-validator参数校验.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            javax.validation和hibernate-validator参数校验如何使用这两个包要同时导入！
-   &lt;dependency&gt;
-        &lt;groupId&gt;javax.validation&lt;
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/java8-jian-tou-han-shu-he-fang-fa-yin-yong-lambda-biao-da-shi/" target="_blank">
                         <div class="card-image">
                             
@@ -771,24 +737,55 @@ p方法参数 -&gt; p.getAge()&gt;18 方法内容
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-zhong-long-ke-yi-zi-dong-zhuan-xing-wei-float-ji-shi-float4-zi-jie-long8-zi-jie/" target="_blank">
+                    <a href="/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java中-long可以自动转型为float。即使float4字节，long8字节.md">
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="javax-validation和hibernate-validator参数校验.md">
                             
-                            <span class="card-title">java中-long可以自动转型为float。即使float4字节，long8字节.md</span>
+                            <span class="card-title">javax-validation和hibernate-validator参数校验.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                    long zz = 1111111111111111111L;
-        double d = zz;
-        float f = zz;
-        //false
-        System.out.
+                            javax.validation和hibernate-validator参数校验如何使用这两个包要同时导入！
+   &lt;dependency&gt;
+        &lt;groupId&gt;javax.validation&lt;
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-zhong-continue-wai-ceng-xun-huan/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java中continue-外层循环.md">
+                            
+                            <span class="card-title">java中continue-外层循环.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                 List&lt;Product&gt; allProducts = new ArrayList&lt;&gt;(treeSet);
+        List&lt;Product&gt; addProducts = new Arr
                             
                         </div>
                         <div class="publish-info">
@@ -822,21 +819,24 @@ p方法参数 -&gt; p.getAge()&gt;18 方法内容
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-zhong-continue-wai-ceng-xun-huan/" target="_blank">
+                    <a href="/2022/03/20/java-zhong-long-ke-yi-zi-dong-zhuan-xing-wei-float-ji-shi-float4-zi-jie-long8-zi-jie/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java中continue-外层循环.md">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java中-long可以自动转型为float。即使float4字节，long8字节.md">
                             
-                            <span class="card-title">java中continue-外层循环.md</span>
+                            <span class="card-title">java中-long可以自动转型为float。即使float4字节，long8字节.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                 List&lt;Product&gt; allProducts = new ArrayList&lt;&gt;(treeSet);
-        List&lt;Product&gt; addProducts = new Arr
+                                    long zz = 1111111111111111111L;
+        double d = zz;
+        float f = zz;
+        //false
+        System.out.
                             
                         </div>
                         <div class="publish-info">

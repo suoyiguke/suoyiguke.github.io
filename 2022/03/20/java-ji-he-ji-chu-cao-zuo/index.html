@@ -571,19 +571,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-zhi-ru-he-jue-ding-shi-yong-hashmap-huan-shi-treemap/">
+                <a href="/2022/03/20/java-ji-he-zhi-da-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="java-集合之如何决定使用HashMap还是TreeMap？.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-集合之大总结.md">
                         
-                        <span class="card-title">java-集合之如何决定使用HashMap还是TreeMap？.md</span>
+                        <span class="card-title">java-集合之大总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            HashMap基于散列桶（数组和链表）实现；TreeMap基于红黑树实现。HashMap不支持排序；TreeMap默认是按照Key值升序排序的，可指定排序的比较器，主要用于存入元素时对元素进行自动排序。HashMap大多数情况下有更好的性能
+                            Collection
+|　　├AbstractCollection  对Collection接口的最小化抽象实现
+|　　│ 
+|　　├List  有序集合
+|　　│-├AbstractList  有序集合的最小化抽象实现 
+|　　│-├Ar
                         
                     </div>
                     <div class="publish-info">
@@ -620,23 +625,25 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-rong-qi-chang-yong-cao-zuo/">
+                <a href="/2022/03/20/java-ji-he-ce-shi-yan-zheng-bian-li-xing-neng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-集合容器常用操作.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java-集合测试验证遍历性能.md">
                         
-                        <span class="card-title">java-集合容器常用操作.md</span>
+                        <span class="card-title">java-集合测试验证遍历性能.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、快速构建集合容器
+                            ###foreach的编译后实现
+对比源码和反编译后的代码
+####使用foreach遍历List
 
-ListList&lt;Integer&gt; sList = Arrays.asList(1, 2, 3);
-
-这样构建出来的不是真正的List，不可以add；或者可以这样ArrayList&lt;String&g
+  // 源码
+   public static void main(String[] args) &#123;
+        Arra
                         
                     </div>
                     <div class="publish-info">
