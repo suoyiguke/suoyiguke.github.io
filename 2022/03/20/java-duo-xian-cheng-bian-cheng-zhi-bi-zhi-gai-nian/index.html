@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java-多线程编程之必知概念.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java-多线程编程之必知概念.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###线程和进程进程：进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。它是操作系统动态执行的基本单元，在传统的操作系统中，进程既是基本的分配单元，也是基本的执行单元。
-线程：通常在一个进程中可以包含若干个线程，当然一个进程中">
+    <meta name="description" content="
+title: java-多线程编程之必知概念.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: ju">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###线程和进程<br>进程：进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。<code>它是操作系统动态执行的基本单元</code>，在传统的操作系统中，<code>进程既是基本的分配单元，也是基本的执行单元</code>。</p>
+                <hr>
+<p>title: java-多线程编程之必知概念.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>###线程和进程<br>进程：进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。<code>它是操作系统动态执行的基本单元</code>，在传统的操作系统中，<code>进程既是基本的分配单元，也是基本的执行单元</code>。</p>
 <p>线程：通常在<code>一个进程中可以包含若干个线程</code>，当然一个进程中至少有一个线程，不然没有存在的意义。线程可以利用进程所拥有的资源，在引入线程的操作系统中，通常都是把进程作为分配资源的基本单位，而把线程作为独立运行和独立调度的基本单位，由于线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更高效的提高系统多个程序间并发执行的程度</p>
 <p>###并发<br>程序同时拥有两个或多个线程，如果程序在单核处理器上运行，<code>（单核处理器无法真正的并发执行）</code>;多个线程将交替地换入或者换出内存，这些线程是同时“存在”的，每个线程都处于执行过程中的某个状态，如果运行在多核处理器上，此时，程序中的每个线程都将分配到一个处理器上，因此可以同时运行。</p>
 <p>###高并发<br>高并发（High Concurrency）是互联网分布式系统架构设计中必须考虑的因素之一，它通常是指，通过保证系统能够并行处理很多请求。</p>
@@ -604,14 +607,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            生产者消费者模式可以让生产者线程和消费者线程之间并发执行互不干扰。核心就是：
-
-数据没了停止消费
-数据满了停止生产
-数据有了激活消费
-数据没了激活生产，数据没了才激活生产？那不晚了吗
-
-######使用synchronized和wait/n
+                            
+title: java-多线程之生产者消费者模式.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
@@ -648,20 +645,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-zi-fu-chuan-cao-zuo/">
+                <a href="/2022/03/20/java-bu-huo-xian-cheng-yi-chang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-字符串操作.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="java-捕获线程异常.md">
                         
-                        <span class="card-title">java-字符串操作.md</span>
+                        <span class="card-title">java-捕获线程异常.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###基础使用1、java字符串占位符替换
-java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&#125; 次.&quot;, domain , iVisit)
+                            
+title: java-捕获线程异常.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: juccat
                         
                     </div>
                     <div class="publish-info">
@@ -672,8 +669,8 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -683,8 +680,8 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -870,7 +867,7 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

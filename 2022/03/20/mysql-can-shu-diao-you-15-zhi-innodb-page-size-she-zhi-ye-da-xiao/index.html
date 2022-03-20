@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql--参数调优（15）之-innodb_page_size设置页大小.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql--参数调优（15）之-innodb_page_size设置页大小.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="推荐设置：8192
-作用：
-这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。in">
+    <meta name="description" content="
+title: mysql–参数调优（15）之-innodb_page_size设置页大小.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pas">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    540
+                    577
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>推荐设置：8192</p>
+                <hr>
+<p>title: mysql–参数调优（15）之-innodb_page_size设置页大小.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>推荐设置：8192</p>
 <p>作用：</p>
 <p>这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。innodb引擎读取内存还有更新都是一页一页更新的，这个innodb_page_size决定了，一个基本页的大小。常用B+Tree索引，B+树是为磁盘及其他存储辅助设备而设计一种平衡查找树（不是二叉树）。B+树中，所有记录的节点按大小顺序存放在同一层的叶子节点中，各叶子节点用指针进行连接。MySQL将每个叶子节点的大小设置为一个页的整数倍，利用磁盘的预读机制，能有效减少磁盘I/O次数，提高查询效率。如果一个行数据，超过了一页的一半，那么一个页只能容纳一条记录，这样B+Tree在不理想的情况下就变成了双向链表。我们拿白话来说就是：你越大，空间利用率更高，但是越小呢越有助于性能但是这边一定一定有一个“但是”，但是小到一定的量反而性能不好，为什么呢？太大上面我已经举例了，太小。。。mysql的页间的check point太频繁。怎么样做才能达到一个合理值呢？</p>
 <p><strong>还是请自己手动在生产物理环境中测试</strong><br>这个我们是在全真生产环境、全数据量下用测试工具去对4k,8k,16k三种场景压测得到的吞吐量即tps来做观察的，我这边可以给出一个推荐值，以单表超1000w条数据基于中台1.1的数据库结果（每个表都超1000w），我们在设置该值为：8K时，它的吞吐达到最优。</p>
@@ -569,19 +571,20 @@ innodb_page_size = 8192
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-yu-chu-li-prepared-statements/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-lru-scan-depth/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql--sql预处理-Prepared-Statements.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql--参数调优（16）之innodb_lru_scan_depth.md">
                         
-                        <span class="card-title">mysql--sql预处理-Prepared-Statements.md</span>
+                        <span class="card-title">mysql--参数调优（16）之innodb_lru_scan_depth.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###使用sql预编译的优势1、使用PAREPARE STATEMENT可以减少每次执行SQL的语法分析，比如用于执行带有WHERE条件的SELECT和DELETE，或者UPDATE，或者INSERT，只需要每次修改变量值即可。这样有些性能
+                            
+title: mysql–参数调优（16）之innodb_lru_scan_depth.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass
                         
                     </div>
                     <div class="publish-info">
@@ -592,8 +595,8 @@ innodb_page_size = 8192
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -603,8 +606,8 @@ innodb_page_size = 8192
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -618,20 +621,20 @@ innodb_page_size = 8192
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-10-zhi-tmp-table-size-you-hua-lin-shi-biao/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-17-zhi-undo-log-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql--参数调优（10）之-tmp_table_size-优化临时表.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--参数调优（17）之undo-log-配置.md">
                         
-                        <span class="card-title">mysql--参数调优（10）之-tmp_table_size-优化临时表.md</span>
+                        <span class="card-title">mysql--参数调优（17）之undo-log-配置.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html
-###实践tmp_table_size默认16M。tmp_table_size如果过小，存不下了就
+                            
+title: mysql–参数调优（17）之undo-log-配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -840,7 +843,7 @@ innodb_page_size = 8192
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

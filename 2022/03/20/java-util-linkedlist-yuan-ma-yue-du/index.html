@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java-util-LinkedList源码阅读.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java-util-LinkedList源码阅读.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="java.util.LinkedList#node 方法就是LinkedList遍历寻址的核心方法。add、remove、set、get 都有用到这个方法
-public void add(int index, E element) &amp;#12">
+    <meta name="description" content="
+title: java-util-LinkedList源码阅读.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@ public void add(int index, E element) &amp;#12">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    485
+                    516
                 </div>
                 
 
@@ -480,7 +480,10 @@ public void add(int index, E element) &amp;#12">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>java.util.LinkedList#node 方法就是LinkedList遍历寻址的核心方法。<br>add、remove、set、get 都有用到这个方法</p>
+                <hr>
+<p>title: java-util-LinkedList源码阅读.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: java源码分析<br>categories: java源码分析</p>
+<hr>
+<p>java.util.LinkedList#node 方法就是LinkedList遍历寻址的核心方法。<br>add、remove、set、get 都有用到这个方法</p>
 <pre><code>public void add(int index, E element) &#123;
        //判断索引是否越界
         checkPositionIndex(index);
@@ -612,19 +615,20 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-lang-system-arraycopy-fang-fa-shi-yong-shuo-ming/">
+                <a href="/2022/03/20/java-springboot-xue-xi-zhi-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-lang-System-arraycopy()方法使用说明.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="java-springboot学习之（二）.md">
                         
-                        <span class="card-title">java-lang-System-arraycopy()方法使用说明.md</span>
+                        <span class="card-title">java-springboot学习之（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java.lang.System为标准的输入输出，加载文件和类库，访问外部定于属性提供了一些十分有用的方法。 java.lang.System.arraycopy()方法是从一个源数组的指定开始位置拷贝元素到目标数组提到的位置。被拷贝的参数
+                            
+title: java-springboot学习之（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:ta
                         
                     </div>
                     <div class="publish-info">
@@ -635,8 +639,8 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%A7%82%E6%BA%90%E7%A0%81%E5%BF%83%E5%BE%97/" class="post-category" target="_blank">
-                                    观源码心得
+                            <a href="/categories/springboot/" class="post-category" target="_blank">
+                                    springboot
                                 </a>
                             
                             
@@ -646,8 +650,8 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%A7%82%E6%BA%90%E7%A0%81%E5%BF%83%E5%BE%97/" target="_blank">
-                        <span class="chip bg-color">观源码心得</span>
+                    <a href="/tags/springboot/" target="_blank">
+                        <span class="chip bg-color">springboot</span>
                     </a>
                     
                 </div>
@@ -661,22 +665,20 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-util-optional-ifpresent/">
+                <a href="/2022/03/20/java-util-concurrent-exchanger-jiao-huan-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-util-Optional#ifPresent.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="java-util-concurrent-Exchanger-交换数据.md">
                         
-                        <span class="card-title">java-util-Optional#ifPresent.md</span>
+                        <span class="card-title">java-util-concurrent-Exchanger-交换数据.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ifPresent 用于对过滤出的数据如果存在。如果经过过滤条件后，有数据的话就可以进行修改。
-
- Optional&lt;A&gt; firstA= AList.stream() 
-                          .f
+                            
+title: java-util-concurrent-Exchanger-交换数据.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passw
                         
                     </div>
                     <div class="publish-info">
@@ -687,8 +689,8 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -698,8 +700,8 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -885,7 +887,7 @@ void linkBefore(E e, Node&lt;E&gt; succ) &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

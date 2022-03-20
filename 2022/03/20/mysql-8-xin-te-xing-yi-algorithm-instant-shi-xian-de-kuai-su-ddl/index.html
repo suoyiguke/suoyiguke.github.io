@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是">
+    <meta name="description" content="
+title: mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49p">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    938
+                    972
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>参考 <a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html">https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html</a><br>在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是由腾讯游戏DBA团队贡献，我国程序员还是挺厉害的嘛。注意一下，此功能只适用于 InnoDB 表。实际上MySQL 5.7就已支持 Online DDL，虽说大部分 DDL 不影响对表DML操作，但是依然会消耗非常多的时间，且占用额外的磁盘空间，并会造成主从延迟，或者影响表的查询速度。有了这个ALGORITHM=INSTANT 就可应对瞬息万变的需求了。。</p>
+                <hr>
+<p>title: mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>参考 <a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html">https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html</a><br>在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是由腾讯游戏DBA团队贡献，我国程序员还是挺厉害的嘛。注意一下，此功能只适用于 InnoDB 表。实际上MySQL 5.7就已支持 Online DDL，虽说大部分 DDL 不影响对表DML操作，但是依然会消耗非常多的时间，且占用额外的磁盘空间，并会造成主从延迟，或者影响表的查询速度。有了这个ALGORITHM=INSTANT 就可应对瞬息万变的需求了。。</p>
 <p><strong>ALGORITHM=INSTANT 目前对6种ddl有效：</strong> </p>
 <ul>
 <li>  Adding a column. This feature is referred to as Instant Add Column . 添加列</li>
@@ -662,7 +666,8 @@ ADD COLUMN `ggg` varchar(255) NULL,algorithm=instant;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、务的特性：原子性、一致性、隔离性、持久性2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读3、事务隔离级别：读未提交、读提交、可重复读、串行化4、不同事务隔离级别的区别：读未提交：一个事务还未提交，它所做的变更就可以被别
+                            
+title: mysql-45讲笔记-第三课.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                         
                     </div>
                     <div class="publish-info">
@@ -699,20 +704,20 @@ ADD COLUMN `ggg` varchar(255) NULL,algorithm=instant;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xin-te-xing-er-ddl-cao-zuo-de-yuan-zi-hua/">
+                <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-8-新特性二DDL操作的原子化.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
                         
-                        <span class="card-title">mysql-8-新特性二DDL操作的原子化.md</span>
+                        <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html
-MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与D
+                            
+title: mysql-5-7-新特性之-虚拟列-Generated-columns.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass
                         
                     </div>
                     <div class="publish-info">
@@ -921,7 +926,7 @@ MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

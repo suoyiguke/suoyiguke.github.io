@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jvm-《深入理解Java虚拟机》学习笔记之方法区.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="jvm-《深入理解Java虚拟机》学习笔记之方法区.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="方法区（Method Area） 与Java堆一样， 是各个线程共享的内存区域， 它用于存储已被虚拟机加载的类型信息、 常量、 静态变量、 即时编译器编译后的代码缓存等数据。 虽然《Java虚拟机规范》 中把方法区描述为堆的一个逻辑部分， ">
+    <meta name="description" content="
+title: jvm-《深入理解Java虚拟机》学习笔记之方法区.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summar">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>方法区（Method Area） 与Java堆一样， 是各个线程共享的内存区域， 它用于存储已被虚拟机加载的类型信息、 常量、 静态变量、 即时编译器编译后的代码缓存等数据。 虽然《Java虚拟机规范》 中把方法区描述为堆的一个逻辑部分， 但是它却有一个别名叫作“非堆”（Non-Heap） ， 目的是与Java堆区分开来。</p>
+                <hr>
+<p>title: jvm-《深入理解Java虚拟机》学习笔记之方法区.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: jvm<br>categories: jvm</p>
+<hr>
+<p>方法区（Method Area） 与Java堆一样， 是各个线程共享的内存区域， 它用于存储已被虚拟机加载的类型信息、 常量、 静态变量、 即时编译器编译后的代码缓存等数据。 虽然《Java虚拟机规范》 中把方法区描述为堆的一个逻辑部分， 但是它却有一个别名叫作“非堆”（Non-Heap） ， 目的是与Java堆区分开来。</p>
 <p>《Java虚拟机规范》 对方法区的约束是非常宽松的， 除了和Java堆一样不需要连续的内存和可以选择固定大小或者可扩展外， 甚至还可以选择不实现垃圾收集。 相对而言， 垃圾收集行为在这个区域的确是比较少出现的， 但并非数据进入了方法区就如永久代的名字一样“永久”存在了。 这区域的内存回收目标主要是针对常量池的回收和对类型的卸载， 一般来说这个区域的回收效果比较难令人满意， 尤其是类型的卸载， 条件相当苛刻， 但是这部分区域的回收有时又确实是必要的。</p>
 <p> 以前Sun公司的Bug列表中， 曾出现过的若干个严重的Bug就是由于低版本的HotSpot虚拟机对此区域未完全回收而导致内存泄漏。根据《Java虚拟机规范》 的规定， 如果方法区无法满足新的内存分配需求时， 将抛出OutOfMemoryError异常。</p>
 <h6 id="运行时常量池"><a href="#运行时常量池" class="headerlink" title="运行时常量池"></a>运行时常量池</h6><blockquote>
@@ -577,19 +581,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-jvm-g1-gc-xue-xi-bi-ji-zhi-finalize-fang-fa-he-finalization-ji-zhi/">
+                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ben-di-fang-fa-zhan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md">
                         
-                        <span class="card-title">jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md</span>
+                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java 语言提供了对象终止（ finalization ） 机制来允许开发人员提供对象被销毁之前的自定义处理逻辑。 Object 类提供了 finalize 方法来添加自定义的销毁逻辑。如果一个类有特殊的销毁逻辑，可以覆写 finaliz
+                            
+title: jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -600,8 +605,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -611,8 +616,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>
@@ -638,8 +643,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###PermGen 永久代
-说到方法区， 不得不提一下“永久代”这个概念， 尤其是在JDK 8以前， 许多Java程序员都习惯在HotSpot虚拟机上开发、 部署程序， 很多人都更愿意把方法区称呼为“永久代”（PermanentGener
+                            
+title: jvm-《深入理解Java虚拟机》学习笔记之永久代和元空间.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:su
                         
                     </div>
                     <div class="publish-info">
@@ -848,7 +853,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="juc-线程池疑问？.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="juc-线程池疑问？.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-这种初始化的线程池，我一开始认为根本不会有线程在工作。实际运行起来真的是有的。不知道为什么！！！    ThreadPoolExecutor cancellator = new ThreadPoolExecutor(0, 1, 1000,">
+title: juc-线程池疑问？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: juccate">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    191
+                    213
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: juc-线程池疑问？.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<blockquote>
 <p>这种初始化的线程池，我一开始认为根本不会有线程在工作。实际运行起来真的是有的。不知道为什么！！！<br>    ThreadPoolExecutor cancellator = new ThreadPoolExecutor(0, 1, 1000, TimeUnit.MILLISECONDS,<br>            linkedBlockingQueue);</p>
 </blockquote>
 <pre><code>     LinkedBlockingQueue&lt;Runnable&gt; runnables = new LinkedBlockingQueue&lt;&gt;();
@@ -604,24 +607,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/junit5-duan-yan/">
+                <a href="/2022/03/20/juc-scheduledfuturetask-he-scheduledexecutorservice-scheduledthreadpoolex/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="junit5-断言.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md">
                         
-                        <span class="card-title">junit5-断言.md</span>
+                        <span class="card-title">juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package com.gbm.cloud;
-
-
-import com.taobao.api.ApiException;
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+                            
+title: juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.mdtop: falsecover: falsetoc: truemathjax:
                         
                     </div>
                     <div class="publish-info">
@@ -632,8 +631,8 @@ import org.junit.jupiter.api.Test;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" class="post-category" target="_blank">
-                                    java-三方库学习
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -643,8 +642,8 @@ import org.junit.jupiter.api.Test;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
-                        <span class="chip bg-color">java-三方库学习</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -658,22 +657,20 @@ import org.junit.jupiter.api.Test;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-gc-zhi-xu-yin-yong-si/">
+                <a href="/2022/03/20/juc-bing-fa-bian-cheng-zhu-yi-shi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="jvm-GC-之-虚引用（四）.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="juc-并发编程注意事项.md">
                         
-                        <span class="card-title">jvm-GC-之-虚引用（四）.md</span>
+                        <span class="card-title">juc-并发编程注意事项.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-一辈子要跟自己的无知做斗争 
-
-弱引用也称为“幽灵引用”或者“幻影引用”， 它是最弱的一种引用关系。 一个对象是否有虚引用的存在， 完全不会对其生存时间构成影响， 也无法通过虚引用来取得一个对象实例。 为一个对象设置虚引用关联的唯一目的只
+title: juc-并发编程注意事项.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: jucca
                         
                     </div>
                     <div class="publish-info">
@@ -684,8 +681,8 @@ import org.junit.jupiter.api.Test;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -695,8 +692,8 @@ import org.junit.jupiter.api.Test;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -882,7 +879,7 @@ import org.junit.jupiter.api.Test;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

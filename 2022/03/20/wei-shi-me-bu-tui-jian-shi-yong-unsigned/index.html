@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="为什么不推荐使用unsigned.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="为什么不推荐使用unsigned.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="在整型类型中，有 signed 和 unsigned 属性，其表示的是整型的取值范围，默认为 signed。在设计时，我不建议你刻意去用 unsigned 属性，因为在做一些数据分析时，SQL 可能返回的结果并不是想要得到的结果。
-来看一个">
+    <meta name="description" content="
+title: 为什么不推荐使用unsigned.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    515
+                    544
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在整型类型中，有 signed 和 unsigned 属性，其表示的是整型的取值范围，默认为 signed。在设计时，我不建议你刻意去用 unsigned 属性，因为在做一些数据分析时，SQL 可能返回的结果并不是想要得到的结果。</p>
+                <hr>
+<p>title: 为什么不推荐使用unsigned.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>在整型类型中，有 signed 和 unsigned 属性，其表示的是整型的取值范围，默认为 signed。在设计时，我不建议你刻意去用 unsigned 属性，因为在做一些数据分析时，SQL 可能返回的结果并不是想要得到的结果。</p>
 <p>来看一个“销售表 sale”的例子，其表结构和数据如下。这里要特别注意，列 sale_count 用到的是 unsigned 属性（即设计时希望列存储的数值大于等于 0）：</p>
 <pre><code>mysql&gt; SHOW CREATE TABLE sale\G
 *************************** 1. row ***************************
@@ -621,21 +624,20 @@ ORDER BY sale_date;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/liang-ge-jar-bao-han-xiang-tong-lei-zen-me-jie-jue/">
+                <a href="/2022/03/20/shang-chuan-xin-ban-jar-dao-cang-ku-yi-zhi-la-bu-dao-de-wen-ti-jie-jue-huan-cun-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="两个jar包含相同类怎么解决？.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="上传新版jar到仓库一直拉不到的问题解决（缓存问题）.md">
                         
-                        <span class="card-title">两个jar包含相同类怎么解决？.md</span>
+                        <span class="card-title">上传新版jar到仓库一直拉不到的问题解决（缓存问题）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            问题背景：我在工程中引入了smiley-http-proxy-servletjar包
-    &lt;dependency&gt;
-      &lt;groupId&gt;org.mitre.dsmiley.httpproxy&lt;/g
+                            
+title: 上传新版jar到仓库一直拉不到的问题解决（缓存问题）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -672,20 +674,20 @@ ORDER BY sale_date;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/wei-shi-me-java-zhong-zhi-you-zhi-chuan-di/">
+                <a href="/2022/03/20/yan-ge-ba-guan-jiao-fu-zhi-liang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="为什么-Java-中只有值传递？.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="严格把关交付质量.md">
                         
-                        <span class="card-title">为什么-Java-中只有值传递？.md</span>
+                        <span class="card-title">严格把关交付质量.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            首先，我们回顾一下在程序设计语言中有关将参数传递给方法（或函数）的一些专业术语。
-按值调用(call by value) 表示方法接收的是调用者提供的值，按引用调用（call by reference) 表示方法接收的是调用者提供的变量地址
+                            
+title: 严格把关交付质量.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 软件工程和项目管理
                         
                     </div>
                     <div class="publish-info">
@@ -696,8 +698,8 @@ ORDER BY sale_date;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
+                                    软件工程和项目管理
                                 </a>
                             
                             
@@ -707,8 +709,8 @@ ORDER BY sale_date;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" target="_blank">
+                        <span class="chip bg-color">软件工程和项目管理</span>
                     </a>
                     
                 </div>
@@ -894,7 +896,7 @@ ORDER BY sale_date;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

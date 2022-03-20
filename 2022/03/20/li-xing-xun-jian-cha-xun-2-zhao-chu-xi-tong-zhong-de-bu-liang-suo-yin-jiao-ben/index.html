@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="例行巡检查询2-找出系统中的不良索引脚本.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="例行巡检查询2-找出系统中的不良索引脚本.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###包含主键的索引
-innodb 本身是聚簇表，每个二级索引本身就包含主键，类似 f1, id 的索引实际虽然没有害处，但反映了使用者对 mysql 索引不了解。而类似 id, f1 的是多余索引，会浪费存储空间，并影响数据更新性能。包含">
+    <meta name="description" content="
+title: 例行巡检查询2-找出系统中的不良索引脚本.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@ innodb 本身是聚簇表，每个二级索引本身就包含主键，类似 f1,
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    678
+                    721
                 </div>
                 
 
@@ -480,7 +480,10 @@ innodb 本身是聚簇表，每个二级索引本身就包含主键，类似 f1,
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###包含主键的索引</p>
+                <hr>
+<p>title: 例行巡检查询2-找出系统中的不良索引脚本.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###包含主键的索引</p>
 <p>innodb 本身是聚簇表，每个二级索引本身就包含主键，类似 f1, id 的索引实际虽然没有害处，但反映了使用者对 mysql 索引不了解。而类似 id, f1 的是多余索引，会浪费存储空间，并影响数据更新性能。包含主键的索引用这样一句 sql 就能全部找出来。</p>
 <pre><code>SELECT
     c.*,
@@ -740,27 +743,76 @@ HAVING
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/shi-yong-jmap-dao-chu-dump-wen-jian/">
+                <a href="/2022/03/20/li-xing-xun-jian-cha-xun-1-mysql-ji-ben-qing-kuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="使用jmap导出dump文件.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="例行巡检查询1---mysql基本情况.md">
                         
-                        <span class="card-title">使用jmap导出dump文件.md</span>
+                        <span class="card-title">例行巡检查询1---mysql基本情况.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            jmap -dump:file=zz.dump 16636   ((pid)
-
-
+                            
+title: 例行巡检查询1—mysql基本情况.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/guan-yu-java-lei-dao-di-shi-me-shi-hou-bei-chu-shi-hua/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="关于java类到底什么时候被初始化？.md">
+                        
+                        <span class="card-title">关于java类到底什么时候被初始化？.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+title: 关于java类到底什么时候被初始化？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags:
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -778,57 +830,6 @@ HAVING
                     
                     <a href="/tags/jvm/" target="_blank">
                         <span class="chip bg-color">jvm</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/guan-yu-explain-de-fitered-lie-cai-ce/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="关于EXPLAIN-的fitered列-猜测.md">
-                        
-                        <span class="card-title">关于EXPLAIN-的fitered列-猜测.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            1、where走索引，fitered总是等于100，显示Using where; Using index，type显示range
-2、错误 没有走索引就会出现小于100的数值，且显示Using where，type显示All
-3、错误 fi
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -1014,7 +1015,7 @@ HAVING
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

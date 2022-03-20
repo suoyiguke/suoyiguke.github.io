@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java-源码研究之HashMap.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java-源码研究之HashMap.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###1、jdk1.8对HashMap主要做了哪些优化呢？为什么？
-jdk1.8 的HashMap主要有五点优化：1、数据结构：数组 + 链表改成了数组 + 链表或红黑树。原因：发生 hash 冲突，元素会存入链表，链表过长转为红黑树，将时">
+    <meta name="description" content="
+title: java-源码研究之HashMap.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -480,7 +480,10 @@ jdk1.8 的HashMap主要有五点优化：1、数据结构：数组 + 链表改�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###1、jdk1.8对HashMap主要做了哪些优化呢？为什么？</p>
+                <hr>
+<p>title: java-源码研究之HashMap.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: java源码分析<br>categories: java源码分析</p>
+<hr>
+<p>###1、jdk1.8对HashMap主要做了哪些优化呢？为什么？</p>
 <p>jdk1.8 的HashMap主要有五点优化：<br>1、数据结构：数组 + 链表改成了数组 + 链表或红黑树。原因：发生 hash 冲突，元素会存入链表，链表过长转为红黑树，将时间复杂度由O(n)降为O(logn)</p>
 <p>2、链表插入方式：链表的插入方式从<code>头插法</code>改成了<code>尾插法</code>。简单说就是插入时，如果数组位置上已经有元素，1.7 将新元素放到数组中，原始节点作为新节点的后继节点，1.8 遍历链表，将元素放置到链表的最后。原因：因为 1.7 头插法扩容时，头插法会使链表发生反转，多线程环境下会产生<code>环</code>。</p>
 <p>3、扩容rehash：扩容的时候 1.7 需要对原数组中的元素进行重新 hash 定位在新数组的位置，<strong>1.8 采用更简单的判断逻辑，不需要重新通过哈希函数计算位置</strong>，新的位置不变或索引 + 新增容量大小。原因：提高扩容的效率，更快地扩容。</p>
@@ -662,23 +665,20 @@ static int indexFor(int h, int length) &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashset/">
+                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-arrays-copyof/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-源码研究之HashSet.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java-源码研究之Arrays-copyOf().md">
                         
-                        <span class="card-title">java-源码研究之HashSet.md</span>
+                        <span class="card-title">java-源码研究之Arrays-copyOf().md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、HashSet的底层实现是HashMap
-2、为什么HashSet中add进去的元素是一个，而HashMap确需要key、value两个数据
-
-HashSet中add进去的数据充当HashMap的key
-HashMap的value是一个
+                            
+title: java-源码研究之Arrays-copyOf().mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summar
                         
                     </div>
                     <div class="publish-info">
@@ -715,21 +715,20 @@ HashMap的value是一个
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ban-ben/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-thread-isalive-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-版本.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="java-线程基础之Thread-isAlive()方法.md">
                         
-                        <span class="card-title">java-版本.md</span>
+                        <span class="card-title">java-线程基础之Thread-isAlive()方法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-java8、java11、java17
-现在使用最多的版本还是java 8（或者1.8）。因为java 8版本，具备了java开发者足够的功能，生态也比较完善，不用担心使用的包，没有足够的支持，而且不用担心会被Oracle罚款。下面是来自
+title: java-线程基础之Thread-isAlive()方法.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:sum
                         
                     </div>
                     <div class="publish-info">
@@ -740,8 +739,8 @@ java8、java11、java17
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -751,8 +750,8 @@ java8、java11、java17
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -938,7 +937,7 @@ java8、java11、java17
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

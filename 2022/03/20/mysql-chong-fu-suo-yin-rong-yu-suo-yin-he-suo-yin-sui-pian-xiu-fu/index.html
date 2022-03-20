@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-重复索引、冗余索引和索引碎片修复.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-重复索引、冗余索引和索引碎片修复.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###重复索引和冗余索引重复索引：在同一个列建立的多个单值索引，或者在顺序相同的多个列上建立了多个复合索引。这种重复索引没有任何帮助只会增大索引文件，拖慢更新速度，需要去掉！
-冗余索引：2个索引说覆盖的列有重叠。比如 index x(x)和">
+    <meta name="description" content="
+title: mysql-重复索引、冗余索引和索引碎片修复.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:t">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    353
+                    393
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###重复索引和冗余索引<br>重复索引：在同一个列建立的多个单值索引，或者在顺序相同的多个列上建立了多个复合索引。这种重复索引没有任何帮助只会增大索引文件，拖慢更新速度，需要去掉！</p>
+                <hr>
+<p>title: mysql-重复索引、冗余索引和索引碎片修复.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###重复索引和冗余索引<br>重复索引：在同一个列建立的多个单值索引，或者在顺序相同的多个列上建立了多个复合索引。这种重复索引没有任何帮助只会增大索引文件，拖慢更新速度，需要去掉！</p>
 <p>冗余索引：<br>2个索引说覆盖的列有重叠。<br>比如 index x(x)和index xm(x,m)。这连两个索引的x列重叠了，这种情况称为冗余索引。<br>甚至有 xm(x,m) 和 mx(m,x) ，这两和复合索引的索引顺序不同，也是看做冗余索引的。像在这种情况在特定业务下也有它的用处！</p>
 <p>###索引碎片修复<br>在长期的数据更改过程中，索引文件和数据文件，都将产生空洞，形成碎片（页分裂页移动）。时间一久时间会查询效率会变慢。</p>
 <p>若表的引擎是innodb，可以使用</p>
@@ -571,19 +574,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-luo-ji-ri-zhi-zhi-undo-log-hui-fu-ri-zhi-yuan-li-he-jie-shao/">
+                <a href="/2022/03/20/mysql-lian-jie-guan-li-sql/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-逻辑日志之undo-log（恢复日志）原理和介绍.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-连接管理sql.md">
                         
-                        <span class="card-title">mysql-逻辑日志之undo-log（恢复日志）原理和介绍.md</span>
+                        <span class="card-title">mysql-连接管理sql.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            重做日志记录了事务的行为,可以很好地通过其对页进行“重做”操作。但是事务 有时还需要进行回滚操作,这时就需要undo。因此在对数据库进行修改时, InnoDB存 储引擎不但会产生redo,还会产生一定量的undo这样如果用户执行的事务或语句
+                            
+title: mysql-连接管理sql.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysq
                         
                     </div>
                     <div class="publish-info">
@@ -594,8 +598,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                    mysql底层
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -605,8 +609,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
-                        <span class="chip bg-color">mysql底层</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -632,8 +636,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MHA是 Perl编写的一套MySQL故障切换工具，支持通过修改全局配置和漂移虚拟IP两种方式处理单点故障，已经在许多生产环境中得到了验证，是值得考虑的方案。
-
+                            
+title: mysql-高可用方案之-MHA.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                         
                     </div>
                     <div class="publish-info">
@@ -842,7 +846,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

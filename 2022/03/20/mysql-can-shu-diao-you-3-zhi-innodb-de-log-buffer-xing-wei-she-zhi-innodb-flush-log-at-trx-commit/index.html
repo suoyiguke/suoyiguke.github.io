@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-这个参数直接影响到redo log 数据刷新到磁盘的性能，直接影响到插入、修改和删除的性能
-
-innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但稳定性更差）
-文件操作三个步骤： ope">
+title: mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.mdtop: falsecover: falsetoc: truemathjax: true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -460,14 +457,14 @@ innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但�
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
                 
@@ -483,7 +480,10 @@ innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<blockquote>
 <p>这个参数直接影响到redo log 数据刷新到磁盘的性能，直接影响到插入、修改和删除的性能</p>
 </blockquote>
 <p>innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但稳定性更差）</p>
@@ -600,22 +600,20 @@ END;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-7-binlog-de-xie-ru-you-hua-sync-binlog/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-2-zhi-she-zhi-chong-zuo-ri-zhi-wen-jian-de-da-xiao-innodb-log-file-size/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-参数调优(7)-binlog的写入优化-sync_binlog.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-参数调优(2)之设置重做日志文件的大小-innodb_log_file_size.md">
                         
-                        <span class="card-title">mysql-参数调优(7)-binlog的写入优化-sync_binlog.md</span>
+                        <span class="card-title">mysql-参数调优(2)之设置重做日志文件的大小-innodb_log_file_size.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-sync_binlog 决定什么时候写入binlog，影响到了mysql吞吐量和主从同步延迟
-
-sync_binlog ：这个参数是对于MySQL系统来说是至关重要的，他不仅影响到Binlog对MySQL所带来的性能损耗，而且还影响到My
+title: mysql-参数调优(2)之设置重做日志文件的大小-innodb_log_file_size.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18
                         
                     </div>
                     <div class="publish-info">
@@ -652,23 +650,20 @@ sync_binlog ：这个参数是对于MySQL系统来说是至关重要的，他不
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-5-zhi-auto-increment-zhu-jian-zi-zeng-you-hua-can-shu-zhi-innodb-autoinc-lock-mode/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-4-zhi-innodb-de-shu-ju-wen-jian-ji-redo-log-de-da-kai-shua-xie-mo-shi-she-zhi-innodb-flush-method/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md">
                         
-                        <span class="card-title">mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md</span>
+                        <span class="card-title">mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###AUTO_INCREMENT初始值和步长相关操作查看mysql的递增初始值和步长
-SHOW VARIABLES LIKE &#39;auto_inc%&#39;; 
-
-查看表的当前递增值和步长
- SELECT auto_increme
+                            
+title: mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.mdtop: falsecover: falsetoc: truemathjax: trueda
                         
                     </div>
                     <div class="publish-info">
@@ -877,7 +872,7 @@ SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

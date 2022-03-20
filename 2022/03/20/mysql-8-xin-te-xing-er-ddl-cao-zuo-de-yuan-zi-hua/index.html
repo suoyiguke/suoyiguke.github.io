@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-8-新特性二DDL操作的原子化.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-8-新特性二DDL操作的原子化.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html
-MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与D">
+    <meta name="description" content="
+title: mysql-8-新特性二DDL操作的原子化.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:ta">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@ MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    980
+                    1k
                 </div>
                 
 
@@ -480,7 +480,10 @@ MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html">https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html</a></p>
+                <hr>
+<p>title: mysql-8-新特性二DDL操作的原子化.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html">https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html</a></p>
 <p>MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与DDL操作相关联的二进制日志写入组合成单个原子操作。即使服务器在操作过程中停止运行，操作也可以提交，将适用的更改保存到数据字典、存储引擎和二进制日志中，或者回滚。</p>
 <blockquote>
 <p>注意，原子DDL不是事务性DDL。DDL语句，无论是原子的还是其他的，都会隐式地结束当前会话中任何活动的事务，就好像在执行语句之前您已经完成了一个COMMIT一样。这意味着DDL语句不能在另一个事务中执行，不能在事务控制语句(如开始事务)中执行…提交，或者与同一事务中的其他语句结合使用。</p>
@@ -597,19 +600,20 @@ SET GLOBAL log_error_verbosity=3
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xin-te-xing-yi-algorithm-instant-shi-xian-de-kuai-su-ddl/">
+                <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
                         
-                        <span class="card-title">mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md</span>
+                        <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是
+                            
+title: mysql-5-7-新特性之-虚拟列-Generated-columns.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass
                         
                     </div>
                     <div class="publish-info">
@@ -646,19 +650,20 @@ SET GLOBAL log_error_verbosity=3
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/">
+                <a href="/2022/03/20/mysql-8-xiao-shi-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-8小时问题.md">
                         
-                        <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
+                        <span class="card-title">mysql-8小时问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            有时候需要对字段上加函数然后进行GROUP BY。使用执行分析，发现出现  Using temporary， 分组条件并没有走索引。因为mysql 5.7 的函数会导致索引失效。我们可以通过添加一个冗余字段来保存函数的计算结果，然后添加索引
+                            
+title: mysql-8小时问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql基
                         
                     </div>
                     <div class="publish-info">
@@ -867,7 +872,7 @@ SET GLOBAL log_error_verbosity=3
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

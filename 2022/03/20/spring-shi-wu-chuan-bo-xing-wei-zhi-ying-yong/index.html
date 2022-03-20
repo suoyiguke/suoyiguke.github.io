@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="spring事务传播行为之应用.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="spring事务传播行为之应用.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="业务操作中记录日志。如果业务异常失败，将回滚，但日志继续记录异常(不回滚)
-1、使用事务的传播行为来实现业务上加 requetd ， 日志上加 no_suupurs业务上加 requetd , 日志上加reuerds_new
-但是这种方法有">
+    <meta name="description" content="
+title: spring事务传播行为之应用.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: sp">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    201
+                    227
                 </div>
                 
 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>业务操作中记录日志。如果业务异常失败，将回滚，但日志继续记录异常(不回滚)</p>
+                <hr>
+<p>title: spring事务传播行为之应用.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: spring<br>categories: spring</p>
+<hr>
+<p>业务操作中记录日志。如果业务异常失败，将回滚，但日志继续记录异常(不回滚)</p>
 <p>1、使用事务的传播行为来实现<br>业务上加 requetd ， 日志上加 no_suupurs<br>业务上加 requetd , 日志上加reuerds_new</p>
 <p>但是这种方法有问题： 业务方法在调用日志记录方法之前出现异常，那么日志方法根本得不到执行！</p>
 <p>2、建议用一个全局拦截器，在其中 try catch 所有异常，然后做下日志即可，业务层事务有异常回滚事务以后，仍然会向外抛出异常</p>
@@ -567,24 +569,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/springmvc-qian-duan-zhi-jie-chuan-mei-ju-yong-fa/">
+                <a href="/2022/03/20/springboot-ji-cheng-nacos-pei-zhi-zhong-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="springmvc-前端直接传枚举用法.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="springboot集成nacos配置中心.md">
                         
-                        <span class="card-title">springmvc-前端直接传枚举用法.md</span>
+                        <span class="card-title">springboot集成nacos配置中心.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package com.sfpay.axg.enums;
-
-import org.apache.commons.lang3.StringUtils;
-
-public enum OrderPage &#123;
-    WAITPRINT(&
+                            
+title: springboot集成nacos配置中心.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:ta
                         
                     </div>
                     <div class="publish-info">
@@ -595,8 +593,8 @@ public enum OrderPage &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/spring/" class="post-category" target="_blank">
-                                    spring
+                            <a href="/categories/springboot/" class="post-category" target="_blank">
+                                    springboot
                                 </a>
                             
                             
@@ -606,8 +604,8 @@ public enum OrderPage &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/spring/" target="_blank">
-                        <span class="chip bg-color">spring</span>
+                    <a href="/tags/springboot/" target="_blank">
+                        <span class="chip bg-color">springboot</span>
                     </a>
                     
                 </div>
@@ -633,7 +631,8 @@ public enum OrderPage &#123;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            事务不生效1.方法访问权限问题，只支持public2.方法用final修饰，动态代理不能代理final方法3.方法内部调用，同一对象内调用没有使用代理，未被aop事务管理器控制4.未被spring管理5.多线程调用，事务管理内部使用thre
+                            
+title: spring事务失效的12种场景-总结.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                         
                     </div>
                     <div class="publish-info">
@@ -842,7 +841,7 @@ public enum OrderPage &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

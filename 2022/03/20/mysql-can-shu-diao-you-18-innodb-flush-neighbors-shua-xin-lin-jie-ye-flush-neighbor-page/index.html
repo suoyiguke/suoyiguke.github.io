@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。
-取值范围：0，1，2 ； ">
+    <meta name="description" content="
+title: mysql–参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.mdtop: falsecover: falsetoc: truemathjax: trueda">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    522
+                    561
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。</p>
+                <hr>
+<p>title: mysql–参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。</p>
 <p>取值范围：0，1，2 ； 默认值：5.7版本为1， 8.0版本为0</p>
 <p>含义：<br>设置为0时，表示刷脏页时不刷其附近的脏页。<br>设置为1时，表示刷脏页时连带其附近毗连的脏页一起刷掉。<br>设置为2时，表示刷脏页时连带其附近区域的脏页一起刷掉。1与2的区别是2刷的区域更大一些。</p>
 <p>推荐设置：</p>
@@ -579,24 +582,20 @@ innodb_flush_neighbors = 0
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-lru-scan-depth/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-17-zhi-undo-log-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql--参数调优（16）之innodb_lru_scan_depth.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--参数调优（17）之undo-log-配置.md">
                         
-                        <span class="card-title">mysql--参数调优（16）之innodb_lru_scan_depth.md</span>
+                        <span class="card-title">mysql--参数调优（17）之undo-log-配置.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            27)innodb_lru_scan_depth
-推荐设置：2000
-作用：
-innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配置2000以上。
-可使用默认配置。即不设。如果不配的后果：
-默认
+                            
+title: mysql–参数调优（17）之undo-log-配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -646,8 +645,7 @@ innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配�
                     <div class="summary block-with-text">
                         
                             
-###MySQL的框架有几个组件, 各是什么作用?连接器–&gt;查询缓存—&gt;分析器–&gt;优化器–&gt;执行器—&gt;存储引擎
-连接器： 登录权限验证查询缓存： 命中则直接返回结果分析器：词法分析、语法分析优化器：生成执行计
+title: mysql-45讲笔记-第一课.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                         
                     </div>
                     <div class="publish-info">
@@ -856,7 +854,7 @@ innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

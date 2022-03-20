@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="######SHOW STATUS LIKE ‘%Com_%’Com_admin_commands    0Com_assign_to_keycache    0Com_alter_db    1Com_alter_db_upgrade  ">
+    <meta name="description" content="
+title: mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    225
+                    268
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>######SHOW STATUS LIKE ‘%Com_%’<br>Com_admin_commands    0<br>Com_assign_to_keycache    0<br>Com_alter_db    1<br>Com_alter_db_upgrade    0<br>Com_alter_event    0<br>Com_alter_function    0<br>Com_alter_instance    0<br>Com_alter_procedure    0<br>Com_alter_server    0<br>Com_alter_table    1<br>Com_alter_tablespace    0<br>Com_alter_user    0<br>Com_analyze    0<br>Com_begin    0<br>Com_binlog    0<br>Com_call_procedure    0<br>Com_change_db    71<br>Com_change_master    0<br>Com_change_repl_filter    0<br>Com_check    0<br>Com_checksum    0<br><code>Com_commit    0</code><br>Com_create_db    0<br>Com_create_event    0<br>Com_create_function    0<br>Com_create_index    0<br>Com_create_procedure    0<br>Com_create_server    0<br>Com_create_table    60<br>Com_create_trigger    0<br>Com_create_udf    0<br>Com_create_user    0<br>Com_create_view    0<br>Com_dealloc_sql    0<br><code>Com_delete    0</code><br>Com_delete_multi    0<br>Com_do    0<br>Com_drop_db    0<br>Com_drop_event    0<br>Com_drop_function    0<br>Com_drop_index    0<br>Com_drop_procedure    0<br>Com_drop_server    0<br>Com_drop_table    60<br>Com_drop_trigger    0<br>Com_drop_user    0<br>Com_drop_view    0<br>Com_empty_query    0<br>Com_execute_sql    0<br>Com_explain_other    0<br>Com_flush    0<br>Com_get_diagnostics    0<br>Com_grant    0<br>Com_ha_close    0<br>Com_ha_open    0<br>Com_ha_read    0<br>Com_help    0<br><code>Com_insert    14490</code><br>Com_insert_select    0<br>Com_install_plugin    0<br>Com_kill    1<br>Com_load    0<br>Com_lock_tables    0<br>Com_optimize    0<br>Com_preload_keys    0<br>Com_prepare_sql    0<br>Com_purge    0<br>Com_purge_before_date    0<br>Com_release_savepoint    0<br>Com_rename_table    0<br>Com_rename_user    0<br>Com_repair    0<br>Com_replace    0<br>Com_replace_select    0<br>Com_reset    0<br>Com_resignal    0<br>Com_revoke    0<br>Com_revoke_all    0<br><code>Com_rollback    0</code><br>Com_rollback_to_savepoint    0<br>Com_savepoint    0<br><code>Com_select    56</code><br>Com_set_option    21<br>Com_signal    0<br>Com_show_binlog_events    0<br>Com_show_binlogs    0<br>Com_show_charsets    1<br>Com_show_collations    0<br>Com_show_create_db    0<br>Com_show_create_event    0<br>Com_show_create_func    0<br>Com_show_create_proc    0<br>Com_show_create_table    7<br>Com_show_create_trigger    0<br>Com_show_databases    9<br>Com_show_engine_logs    0<br>Com_show_engine_mutex    0<br>Com_show_engine_status    0<br>Com_show_events    0<br>Com_show_errors    0<br>Com_show_fields    13<br>Com_show_function_code    0<br>Com_show_function_status    0<br>Com_show_grants    0<br>Com_show_keys    7<br>Com_show_master_status    0<br>Com_show_open_tables    0<br>Com_show_plugins    0<br>Com_show_privileges    0<br>Com_show_procedure_code    0<br>Com_show_procedure_status    0<br>Com_show_processlist    0<br>Com_show_profile    0<br>Com_show_profiles    0<br>Com_show_relaylog_events    0<br>Com_show_slave_hosts    0<br>Com_show_slave_status    0<br>Com_show_status    44<br>Com_show_storage_engines    1<br>Com_show_table_status    12<br>Com_show_tables    1<br>Com_show_triggers    0<br>Com_show_variables    0<br>Com_show_warnings    0<br>Com_show_create_user    0<br>Com_shutdown    0<br>Com_slave_start    0<br>Com_slave_stop    0<br>Com_group_replication_start    0<br>Com_group_replication_stop    0<br>Com_stmt_execute    0<br>Com_stmt_close    0<br>Com_stmt_fetch    0<br>Com_stmt_prepare    0<br>Com_stmt_reset    0<br>Com_stmt_send_long_data    0<br>Com_truncate    0<br>Com_uninstall_plugin    0<br>Com_unlock_tables    0<br><code>Com_update    0</code><br>Com_update_multi    0<br>Com_xa_commit    0<br>Com_xa_end    0<br>Com_xa_prepare    0<br>Com_xa_recover    0<br>Com_xa_rollback    0<br>Com_xa_start    0<br>Com_stmt_reprepare    0<br>Compression    OFF<br>Flush_commands    1<br>Handler_commit    17456</p>
+                <hr>
+<p>title: mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>######SHOW STATUS LIKE ‘%Com_%’<br>Com_admin_commands    0<br>Com_assign_to_keycache    0<br>Com_alter_db    1<br>Com_alter_db_upgrade    0<br>Com_alter_event    0<br>Com_alter_function    0<br>Com_alter_instance    0<br>Com_alter_procedure    0<br>Com_alter_server    0<br>Com_alter_table    1<br>Com_alter_tablespace    0<br>Com_alter_user    0<br>Com_analyze    0<br>Com_begin    0<br>Com_binlog    0<br>Com_call_procedure    0<br>Com_change_db    71<br>Com_change_master    0<br>Com_change_repl_filter    0<br>Com_check    0<br>Com_checksum    0<br><code>Com_commit    0</code><br>Com_create_db    0<br>Com_create_event    0<br>Com_create_function    0<br>Com_create_index    0<br>Com_create_procedure    0<br>Com_create_server    0<br>Com_create_table    60<br>Com_create_trigger    0<br>Com_create_udf    0<br>Com_create_user    0<br>Com_create_view    0<br>Com_dealloc_sql    0<br><code>Com_delete    0</code><br>Com_delete_multi    0<br>Com_do    0<br>Com_drop_db    0<br>Com_drop_event    0<br>Com_drop_function    0<br>Com_drop_index    0<br>Com_drop_procedure    0<br>Com_drop_server    0<br>Com_drop_table    60<br>Com_drop_trigger    0<br>Com_drop_user    0<br>Com_drop_view    0<br>Com_empty_query    0<br>Com_execute_sql    0<br>Com_explain_other    0<br>Com_flush    0<br>Com_get_diagnostics    0<br>Com_grant    0<br>Com_ha_close    0<br>Com_ha_open    0<br>Com_ha_read    0<br>Com_help    0<br><code>Com_insert    14490</code><br>Com_insert_select    0<br>Com_install_plugin    0<br>Com_kill    1<br>Com_load    0<br>Com_lock_tables    0<br>Com_optimize    0<br>Com_preload_keys    0<br>Com_prepare_sql    0<br>Com_purge    0<br>Com_purge_before_date    0<br>Com_release_savepoint    0<br>Com_rename_table    0<br>Com_rename_user    0<br>Com_repair    0<br>Com_replace    0<br>Com_replace_select    0<br>Com_reset    0<br>Com_resignal    0<br>Com_revoke    0<br>Com_revoke_all    0<br><code>Com_rollback    0</code><br>Com_rollback_to_savepoint    0<br>Com_savepoint    0<br><code>Com_select    56</code><br>Com_set_option    21<br>Com_signal    0<br>Com_show_binlog_events    0<br>Com_show_binlogs    0<br>Com_show_charsets    1<br>Com_show_collations    0<br>Com_show_create_db    0<br>Com_show_create_event    0<br>Com_show_create_func    0<br>Com_show_create_proc    0<br>Com_show_create_table    7<br>Com_show_create_trigger    0<br>Com_show_databases    9<br>Com_show_engine_logs    0<br>Com_show_engine_mutex    0<br>Com_show_engine_status    0<br>Com_show_events    0<br>Com_show_errors    0<br>Com_show_fields    13<br>Com_show_function_code    0<br>Com_show_function_status    0<br>Com_show_grants    0<br>Com_show_keys    7<br>Com_show_master_status    0<br>Com_show_open_tables    0<br>Com_show_plugins    0<br>Com_show_privileges    0<br>Com_show_procedure_code    0<br>Com_show_procedure_status    0<br>Com_show_processlist    0<br>Com_show_profile    0<br>Com_show_profiles    0<br>Com_show_relaylog_events    0<br>Com_show_slave_hosts    0<br>Com_show_slave_status    0<br>Com_show_status    44<br>Com_show_storage_engines    1<br>Com_show_table_status    12<br>Com_show_tables    1<br>Com_show_triggers    0<br>Com_show_variables    0<br>Com_show_warnings    0<br>Com_show_create_user    0<br>Com_shutdown    0<br>Com_slave_start    0<br>Com_slave_stop    0<br>Com_group_replication_start    0<br>Com_group_replication_stop    0<br>Com_stmt_execute    0<br>Com_stmt_close    0<br>Com_stmt_fetch    0<br>Com_stmt_prepare    0<br>Com_stmt_reset    0<br>Com_stmt_send_long_data    0<br>Com_truncate    0<br>Com_uninstall_plugin    0<br>Com_unlock_tables    0<br><code>Com_update    0</code><br>Com_update_multi    0<br>Com_xa_commit    0<br>Com_xa_end    0<br>Com_xa_prepare    0<br>Com_xa_recover    0<br>Com_xa_rollback    0<br>Com_xa_start    0<br>Com_stmt_reprepare    0<br>Compression    OFF<br>Flush_commands    1<br>Handler_commit    17456</p>
 <p>######show STATUS like ‘%Innodb_%’</p>
 <p>Innodb_buffer_pool_dump_status    Dumping of buffer pool not started<br>Innodb_buffer_pool_load_status    Buffer pool(s) load completed at 200418  8:26:17<br>Innodb_buffer_pool_resize_status<br>Innodb_buffer_pool_pages_data    1408<br>Innodb_buffer_pool_bytes_data    23068672<br>Innodb_buffer_pool_pages_dirty    0<br>Innodb_buffer_pool_bytes_dirty    0<br>Innodb_buffer_pool_pages_flushed    1722<br>Innodb_buffer_pool_pages_free    6775<br>Innodb_buffer_pool_pages_misc    9<br>Innodb_buffer_pool_pages_total    8192<br>Innodb_buffer_pool_read_ahead_rnd    0<br>Innodb_buffer_pool_read_ahead    0<br>Innodb_buffer_pool_read_ahead_evicted    0<br>Innodb_buffer_pool_read_requests    75307<br>Innodb_buffer_pool_reads    779<br>Innodb_buffer_pool_wait_free    0<br>Innodb_buffer_pool_write_requests    44460<br>Innodb_data_fsyncs    3932<br>Innodb_data_pending_fsyncs    0<br>Innodb_data_pending_reads    0<br>Innodb_data_pending_writes    0<br>Innodb_data_read    12833280<br>Innodb_data_reads    815<br>Innodb_data_writes    5372<br>Innodb_data_written    60397056<br>Innodb_dblwr_pages_written    1567<br>Innodb_dblwr_writes    174<br>Innodb_log_waits    0<br>Innodb_log_write_requests    6679<br>Innodb_log_writes    2963<br>Innodb_os_log_fsyncs    3021<br>Innodb_os_log_pending_fsyncs    0<br>Innodb_os_log_pending_writes    0<br>Innodb_os_log_written    6480384<br>Innodb_page_size    16384<br>Innodb_pages_created    630<br>Innodb_pages_read    778<br>Innodb_pages_written    1722<br>Innodb_row_lock_current_waits    0<br>Innodb_row_lock_time    0<br>Innodb_row_lock_time_avg    0<br>Innodb_row_lock_time_max    0<br>Innodb_row_lock_waits    0<br><code>Innodb_rows_deleted    0</code><br><code>Innodb_rows_inserted    5796</code><br><code>Innodb_rows_read    1291</code><br><code>Innodb_rows_updated    0</code><br>Innodb_num_open_files    86<br>Innodb_truncated_status_writes    0<br>Innodb_available_undo_logs    128</p>
 
@@ -562,26 +566,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-sql-tong-ji/">
+                <a href="/2022/03/20/mysql-ji-shu-qi-shi-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-运维操作之sql统计.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-计数器实现.md">
                         
-                        <span class="card-title">mysql-运维操作之sql统计.md</span>
+                        <span class="card-title">mysql-计数器实现.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###统计信息(SQL维度)1、执行次数最多的SQL
-SELECT
- DIGEST_TEXT,
- COUNT_STAR,
- FIRST_SEEN,
- LAST_SEEN 
-FROM
- `performance_schema`.events_
+                            
+title: mysql-计数器实现.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql基
                         
                     </div>
                     <div class="publish-info">
@@ -592,8 +590,8 @@ FROM
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -603,8 +601,8 @@ FROM
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -618,20 +616,20 @@ FROM
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yun-xing-dao-ip-v6-fu-wu-qi-zhong-zhi-ding-ivp4-di-zhi/">
+                <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-运行到-ip-v6服务器中指定ivp4地址.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
                         
-                        <span class="card-title">mysql-运行到-ip-v6服务器中指定ivp4地址.md</span>
+                        <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###因为默认走ipv6所以只能这样
-/bin/sh /mysql/bin/mysqld_safe –datadir=/mysql/data –pid-file=/mysql/data/localhost.localdomain.pid –
+                            
+title: mysql-记录下工作中自己写的存储过程.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                         
                     </div>
                     <div class="publish-info">
@@ -642,8 +640,8 @@ FROM
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -653,8 +651,8 @@ FROM
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -840,7 +838,7 @@ FROM
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

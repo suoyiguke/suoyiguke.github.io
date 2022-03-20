@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql--参数调优（10）之-tmp_table_size-优化临时表.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql--参数调优（10）之-tmp_table_size-优化临时表.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html
-###实践tmp_table_size默认16M。tmp_table_size如果过小，存不下了就">
+    <meta name="description" content="
+title: mysql–参数调优（10）之-tmp_table_size-优化临时表.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    819
+                    856
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html">https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html</a></p>
+                <hr>
+<p>title: mysql–参数调优（10）之-tmp_table_size-优化临时表.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html">https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html</a></p>
 <p>###实践<br>tmp_table_size默认16M。tmp_table_size如果过小，存不下了就会存到磁盘上。对于group by会有性能影响。</p>
 <p>下面的sql EXPLAIN 如下，出现了Using temporary。表示查询会利用临时表。</p>
 <pre><code>(root@localhost) [dbt3]&gt;EXPLAIN select date_format(o_orderDATE,&#39;%Y-%m&#39;),o_clerk,count(1),sum(o_totalprice),avg(o_totalprice) from orders group by date_format(o_orderDATE,&#39;%Y-%m&#39;),o_clerk
@@ -659,21 +662,20 @@ Created_tmp_disk_tables=32M
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-15-zhi-innodb-page-size-she-zhi-ye-da-xiao/">
+                <a href="/2022/03/20/mysql-sql-yu-chu-li-prepared-statements/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--参数调优（15）之-innodb_page_size设置页大小.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql--sql预处理-Prepared-Statements.md">
                         
-                        <span class="card-title">mysql--参数调优（15）之-innodb_page_size设置页大小.md</span>
+                        <span class="card-title">mysql--sql预处理-Prepared-Statements.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            推荐设置：8192
-作用：
-这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。in
+                            
+title: mysql–sql预处理-Prepared-Statements.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password
                         
                     </div>
                     <div class="publish-info">
@@ -684,8 +686,8 @@ Created_tmp_disk_tables=32M
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -695,8 +697,8 @@ Created_tmp_disk_tables=32M
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -710,19 +712,20 @@ Created_tmp_disk_tables=32M
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zabbix-jian-kong/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-buffer-pool-load-at-startup-innodb-buffer-pool/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--zabbix监控.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md">
                         
-                        <span class="card-title">mysql--zabbix监控.md</span>
+                        <span class="card-title">mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+title: mysql–参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.mdtop: falsecover: falsetoc: truemathjax: 
                         
                     </div>
                     <div class="publish-info">
@@ -931,7 +934,7 @@ Created_tmp_disk_tables=32M
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

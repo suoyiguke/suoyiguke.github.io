@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CompletableFuture--方法分类.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="CompletableFuture--方法分类.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="CompletableFuture 大约有50种不同处理串行，并行，组合以及处理错误的方法。小弟屏幕不争气，方法之多，一个屏幕装不下，看到这么多方法，是不是瞬间要直接 收藏——&amp;gt;吃灰 2连走人？别担心，我们按照相应的命名和作用进行分类">
+    <meta name="description" content="
+title: CompletableFuture–方法分类.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:t">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>CompletableFuture 大约有50种不同处理串行，并行，组合以及处理错误的方法。小弟屏幕不争气，方法之多，一个屏幕装不下，看到这么多方法，是不是瞬间要直接 收藏——&gt;吃灰 2连走人？别担心，我们按照相应的命名和作用进行分类，分分钟搞定50多种方法</p>
+                <hr>
+<p>title: CompletableFuture–方法分类.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>CompletableFuture 大约有50种不同处理串行，并行，组合以及处理错误的方法。小弟屏幕不争气，方法之多，一个屏幕装不下，看到这么多方法，是不是瞬间要直接 收藏——&gt;吃灰 2连走人？别担心，我们按照相应的命名和作用进行分类，分分钟搞定50多种方法</p>
 <p>##CompletableFuture静态方法</p>
 <p> //返回一个新的CompletableFuture，该Future在所有给定CompletableFutures完成时完成。如果任何给定的CompletableFutures异常完成，那么返回的CompletableFutures也会这样做，CompletionException将此异常作为其原因。否则，给定的可完成期货的结果（如果有的话）不会反映在返回的可完成期货中，而是可以通过单独检查它们来获得。如果未提供CompletableFutures，则返回值为null的CompletableFutures。<br>这种方法的应用之一是在继续一个程序之前等待一组独立的CompletableFuture的完成，如：CompletableFuture。allOf（c1，c2，c3）。join（）；。<br>CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf();</p>
 <p>//返回一个新的CompletableFuture，该Future在任何给定CompletableFutures完成时完成，结果相同。否则，如果异常完成，则返回的CompletableFuture也会这样做，CompletionException将此异常作为其原因。如果未提供CompletableFutures，则返回一个不完整的CompletableFutures。<br>CompletableFuture<Object> objectCompletableFuture =CompletableFuture.anyOf(voidCompletableFuture);</p>
@@ -657,21 +661,20 @@ c. 使用 Executor 提供者异步执行。这些方法同样也是 someActionAs
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/completablefuture-shi-yong-ju-li/">
+                <a href="/2022/03/20/chrome-inspect/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="CompletableFuture--使用举例.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Chrome---inspect.md">
                         
-                        <span class="card-title">CompletableFuture--使用举例.md</span>
+                        <span class="card-title">Chrome---inspect.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 exceptionally 相当于 catch
-   public CompletableFuture&lt;T&gt; exceptionally(
-        Function&lt;Throwable, ? extends 
+                            
+title: Chrome—inspect.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: and
                         
                     </div>
                     <div class="publish-info">
@@ -682,8 +685,8 @@ c. 使用 Executor 提供者异步执行。这些方法同样也是 someActionAs
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/andriod/" class="post-category" target="_blank">
+                                    andriod
                                 </a>
                             
                             
@@ -693,8 +696,8 @@ c. 使用 Executor 提供者异步执行。这些方法同样也是 someActionAs
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/andriod/" target="_blank">
+                        <span class="chip bg-color">andriod</span>
                     </a>
                     
                 </div>
@@ -720,10 +723,8 @@ c. 使用 Executor 提供者异步执行。这些方法同样也是 someActionAs
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、泡茶任务step1、烧水2、洗杯子-&gt;拿茶叶3、泡茶
-package com.company;
-import java.util.concurrent.CompletableFuture;
-import java.util.
+                            
+title: CompletableFuture-实践—泡茶任务.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summar
                         
                     </div>
                     <div class="publish-info">
@@ -932,7 +933,7 @@ import java.util.
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

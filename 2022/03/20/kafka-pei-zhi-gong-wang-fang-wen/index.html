@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kafka配置公网访问.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="kafka配置公网访问.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###通过内网穿透，这种情况比较特殊现在有一台公网ip为14.127.73.253的服务器，通过内网穿透可以提供公网访问。将kafka端口9092映射到了43398。zookeeper 部署在2181端口，zookeeper没有进行端口映射">
+    <meta name="description" content="
+title: kafka配置公网访问.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kaf">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    142
+                    167
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###通过内网穿透，这种情况比较特殊<br>现在有一台公网ip为14.127.73.253的服务器，通过内网穿透可以提供公网访问。<br>将kafka端口9092映射到了43398。<br>zookeeper 部署在2181端口，zookeeper没有进行端口映射，因为zookeeper不需要共公网访问。</p>
+                <hr>
+<p>title: kafka配置公网访问.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mq-kafka<br>categories: mq-kafka</p>
+<hr>
+<p>###通过内网穿透，这种情况比较特殊<br>现在有一台公网ip为14.127.73.253的服务器，通过内网穿透可以提供公网访问。<br>将kafka端口9092映射到了43398。<br>zookeeper 部署在2181端口，zookeeper没有进行端口映射，因为zookeeper不需要共公网访问。</p>
 <p>那么需要如下配置即可在公网访问kafka。<br>1、listeners 指定 0.0.0.0:本地端口<br>2、advertised.listeners指定 公网ip:公网端口</p>
 <pre><code>listeners=PLAINTEXT://0.0.0.0:9092
 advertised.listeners=PLAINTEXT://14.127.73.253:43398
@@ -566,55 +570,6 @@ zookeeper.connect=localhost:2181
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/kafka/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="kafka.md">
-                        
-                        <span class="card-title">kafka.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mq/" class="post-category" target="_blank">
-                                    mq
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mq/" target="_blank">
-                        <span class="chip bg-color">mq</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/2022/03/20/kakfa-xiao-xi-xu-lie-hua/">
                     <div class="card-image">
                         
@@ -627,15 +582,14 @@ zookeeper.connect=localhost:2181
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            对于胖友来说，可能最关心的是，消息 Message 是怎么序列化的。
-
-  在序列化时，我们使用了 JsonSerializer 序列化 Message 消息对象，它会在 Kafka 消息 Headers 的 __TypeId__ 上，值为
+                            
+title: kakfa消息序列化.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kafk
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -653,6 +607,56 @@ zookeeper.connect=localhost:2181
                     
                     <a href="/tags/mq-kafka/" target="_blank">
                         <span class="chip bg-color">mq-kafka</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/latin1-he-utf8mb4-cun-chu-aaa-du-shi-3-ge-zi-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="latin1和utf8mb4存储aaa都是3个字节.md">
+                        
+                        <span class="card-title">latin1和utf8mb4存储aaa都是3个字节.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+title: latin1和utf8mb4存储aaa都是3个字节.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summar
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -838,7 +842,7 @@ zookeeper.connect=localhost:2181
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

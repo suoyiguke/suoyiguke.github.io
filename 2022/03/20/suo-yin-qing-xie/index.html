@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="索引倾斜.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="索引倾斜.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###对对hint的态度：大部分情况查询优化器是对的。只有少量的复杂查询存在索引倾斜的情况需要使用 force index；优化器远远比我们像的聪明。
-###这种情况为什么不走索引比走索引快o_orderedate 上建立了辅助索引。
-se">
+    <meta name="description" content="
+title: 索引倾斜.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql基本catego">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,14 +457,14 @@ se">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    476
+                    500
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -481,7 +480,10 @@ se">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###对对hint的态度：<br>大部分情况查询优化器是对的。只有少量的复杂查询存在索引倾斜的情况需要使用 force index；<br>优化器远远比我们像的聪明。</p>
+                <hr>
+<p>title: 索引倾斜.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>###对对hint的态度：<br>大部分情况查询优化器是对的。只有少量的复杂查询存在索引倾斜的情况需要使用 force index；<br>优化器远远比我们像的聪明。</p>
 <p>###这种情况为什么不走索引比走索引快<br>o_orderedate 上建立了辅助索引。</p>
 <p>select * from user where o_orderedate &gt; ‘1997-01-01’\G (数据量大)<br><img src="https://upload-images.jianshu.io/upload_images/13965490-dd24781e5dd6c8a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>select * from user where o_orderedate &gt; ‘1999-01-01’\G（数据量小）</p>
@@ -604,10 +606,8 @@ se">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            系统吞吐量几个重要参数：QPS（TPS）、并发数、响应时间
-###系统吞度量的三个要素
-QPS（TPS）：每秒钟request数/事务 数量并发数： 系统同时处理的request数/事务数响应时间：  一般取平均响应时间
-###三要素之间的
+                            
+title: 系统吞吐量（TPS）、用户并发量、性能测试概念和公式.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -644,25 +644,20 @@ QPS（TPS）：每秒钟request数/事务 数量并发数： 系统同时处理�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/suo-yin-zi-bu-fen-dui-rows-sao-miao-xing-shu-cai-ce/">
+                <a href="/2022/03/20/suo-yin-de-qu-fen-du-cardinality/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="索引子部分对rows扫描行数猜测.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="索引的-区分度-CARDINALITY.md">
                         
-                        <span class="card-title">索引子部分对rows扫描行数猜测.md</span>
+                        <span class="card-title">索引的-区分度-CARDINALITY.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            索引子部分设置对rows列有影响。需要设置一个合理的值
-
-索引子部分设置太小，rows变多。需要扫描更多行才能找到数据，减低查找效率。
-索引子部分设置太大又浪费索引空间！
-
-a表的spu字段索引全部建立，扫描1行
-mysql&gt; EXP
+                            
+title: 索引的-区分度-CARDINALITY.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                         
                     </div>
                     <div class="publish-info">
@@ -871,7 +866,7 @@ mysql&gt; EXP
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java-线程基础之线程中断.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java-线程基础之线程中断.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="线程终止有两种情况：1、线程的任务执行完成2、线程在执行任务过程中发生异常这两者属于线程自行终止，如何让线程 A 把线程 B 终止呢？即线程A对线程B发出一个信号，让线程B终止执行
-所以java给我们提供了一些方法
-
-线程中断类方法stop">
+    <meta name="description" content="
+title: java-线程基础之线程中断.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: juc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -482,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>线程终止有两种情况：<br>1、线程的任务执行完成<br>2、线程在执行任务过程中发生异常<br>这两者属于线程自行终止，如何让线程 A 把线程 B 终止呢？<br>即线程A对线程B发出一个信号，让线程B终止执行</p>
+                <hr>
+<p>title: java-线程基础之线程中断.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>线程终止有两种情况：<br>1、线程的任务执行完成<br>2、线程在执行任务过程中发生异常<br>这两者属于线程自行终止，如何让线程 A 把线程 B 终止呢？<br>即线程A对线程B发出一个信号，让线程B终止执行</p>
 <p>所以java给我们提供了一些方法</p>
 <ul>
 <li><p>线程中断类方法stop()，resume(),suspend()已不建议使用，stop()会导致线程不会正确释放资源，suspend()容易导致死锁；</p>
@@ -689,23 +690,20 @@ https://www.jianshu.com/p/f24b347bb956
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-thread-isalive-fang-fa/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-ben-di-bian-liang-threadlocal/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="java-线程基础之Thread-isAlive()方法.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程本地变量ThreadLocal.md">
                         
-                        <span class="card-title">java-线程基础之Thread-isAlive()方法.md</span>
+                        <span class="card-title">java-线程基础之线程本地变量ThreadLocal.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            看到了一个关于thread.isAlive()方法的选项；答案表示thread.isAlive()返回 true不只是说明线程在执行中；于是动手写了个测试用例
-
-###java代码
-
-    public static void main(
+                            
+title: java-线程基础之线程本地变量ThreadLocal.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -742,22 +740,20 @@ https://www.jianshu.com/p/f24b347bb956
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-ru-he-rang-cpu-li-yong-lu-da-dao-100/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-zhuang-tai-zhuan-huan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java-线程基础之如何让cpu利用率达到100%？.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="java-线程基础之线程状态转换.md">
                         
-                        <span class="card-title">java-线程基础之如何让cpu利用率达到100%？.md</span>
+                        <span class="card-title">java-线程基础之线程状态转换.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            电脑8核处理器,只需要开启8个或者8个以上的线程就可以让CPU的利用率达到百分百了。一个线程一个处理器
-
-class zzz&#123;
-    static  CountDownLatch latch = new CountDownLat
+                            
+title: java-线程基础之线程状态转换.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: j
                         
                     </div>
                     <div class="publish-info">
@@ -966,7 +962,7 @@ class zzz&#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

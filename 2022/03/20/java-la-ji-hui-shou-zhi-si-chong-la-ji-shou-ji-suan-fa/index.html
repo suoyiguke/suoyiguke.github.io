@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JAVA-垃圾回收之-四种垃圾收集算法.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="JAVA-垃圾回收之-四种垃圾收集算法.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###引用计数法####用在哪里？JVM实现一般不采用此方式，但是在微软的com语言、ActionScript、Python中使用到####原理？每个对象有一个引用计数器，当对象被引用一次则计数器加1，当对象引用失效一次则计数器减1，对于计">
+    <meta name="description" content="
+title: JAVA-垃圾回收之-四种垃圾收集算法.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.1k
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###引用计数法<br>####用在哪里？<br>JVM实现一般不采用此方式，但是在微软的com语言、ActionScript、Python中使用到<br>####原理？<br>每个对象有一个引用计数器，当对象被引用一次则计数器加1，当对象引用失效一次则计数器减1，对于计数器为0的对象意味着是垃圾对象，可以被GC回收。<br><img src="https://upload-images.jianshu.io/upload_images/13965490-61f4d78b6757a829.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>###优势劣势？</p>
+                <hr>
+<p>title: JAVA-垃圾回收之-四种垃圾收集算法.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: JAVA-GC<br>categories: JAVA-GC</p>
+<hr>
+<p>###引用计数法<br>####用在哪里？<br>JVM实现一般不采用此方式，但是在微软的com语言、ActionScript、Python中使用到<br>####原理？<br>每个对象有一个引用计数器，当对象被引用一次则计数器加1，当对象引用失效一次则计数器减1，对于计数器为0的对象意味着是垃圾对象，可以被GC回收。<br><img src="https://upload-images.jianshu.io/upload_images/13965490-61f4d78b6757a829.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>###优势劣势？</p>
 <p>缺点：</p>
 <ul>
 <li><p>每次对对象赋值时均要维护引用计数器，且计数器本身也有一定消耗</p>
@@ -639,6 +643,7 @@
                     <div class="summary block-with-text">
                         
                             
+title: JAVA-垃圾回收之-GC优化之（一）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                         
                     </div>
                     <div class="publish-info">
@@ -675,22 +680,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-ruo-yin-yong-si/">
+                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-qiang-yin-yong-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="JAVA-垃圾回收之-弱引用（四）.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA-垃圾回收之-强引用（二）.md">
                         
-                        <span class="card-title">JAVA-垃圾回收之-弱引用（四）.md</span>
+                        <span class="card-title">JAVA-垃圾回收之-强引用（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-学不可以已
-
-弱引用也是用来描述那些非必须对象， 但是它的强度比软引用更弱一些，软引用需要等到jvm堆内存实在不够了才会被回收。 而被弱引用关联的对象只能生存到下一次垃圾收集发生为止。 当垃圾收集器开始工作， 无论当前内存是否足够， 都会
+title: JAVA-垃圾回收之-强引用（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
@@ -899,7 +902,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

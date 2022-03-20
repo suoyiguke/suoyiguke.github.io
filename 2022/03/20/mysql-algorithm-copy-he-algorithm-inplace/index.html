@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-ALGORITHM=COPY-和ALGORITHM=INPLACE.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-ALGORITHM=COPY-和ALGORITHM=INPLACE.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="①：Copy Table方式： 这是InnoDB最早支持的方式。顾名思义，通过临时表拷贝的方式实现的。新建一个带有新结构的临时表，将原表数据全部拷贝到临时表，然后Rename，完成创建操作。这个方式过程中，原表是可读的，不可写。但是会消耗一">
+    <meta name="description" content="
+title: mysql-ALGORITHM=COPY-和ALGORITHM=INPLACE.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49p">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    293
+                    323
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>①：Copy Table方式： 这是InnoDB最早支持的方式。顾名思义，通过临时表拷贝的方式实现的。新建一个带有新结构的临时表，将原表数据全部拷贝到临时表，然后Rename，完成创建操作。这个方式过程中，原表是可读的，不可写。但是会消耗一倍的存储空间。<br>若表的数据过大，可能会造成/tem 满了</p>
+                <hr>
+<p>title: mysql-ALGORITHM=COPY-和ALGORITHM=INPLACE.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>①：Copy Table方式： 这是InnoDB最早支持的方式。顾名思义，通过临时表拷贝的方式实现的。新建一个带有新结构的临时表，将原表数据全部拷贝到临时表，然后Rename，完成创建操作。这个方式过程中，原表是可读的，不可写。但是会消耗一倍的存储空间。<br>若表的数据过大，可能会造成/tem 满了</p>
 <p>②：Inplace方式：这是原生MySQL 5.5，以及innodb_plugin中提供的方式。所谓Inplace，也就是在原表上直接进行，不会拷贝临时表。相对于Copy                        Table方式，这比较高效率。原表同样可读的，但是不可写。</p>
 <p>③：Online方式：这是MySQL 5.6以上版本中提供的方式，也是今天我们重点说明的方式。无论是Copy Table方式，还是Inplace方式，原表只能允许读取，           不可写。对应用有较大的限制，因此MySQL最新版本中，InnoDB支持了所谓的Online方式DDL。与以上两种方式相比，online方式支持DDL时不仅可以读，还可以写，对于dba来说，这是一个非常棒的改进。</p>
 
@@ -562,23 +566,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xiao-shi-wen-ti/">
+                <a href="/2022/03/20/mysql-8-xin-te-xing-san-hash-join-lian-jie-cha-xun-suan-fa-zhi-hash-join-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-8小时问题.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md">
                         
-                        <span class="card-title">mysql-8小时问题.md</span>
+                        <span class="card-title">mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql5中已经不支持autoReconnect的方式了，网上的那些都是错的。只能轮询去发select 1 来保证连接不被踢出
-重现问题将wait_timeout 设置为1秒时，jdbc访问就报错
-
-**c**
-SET SESSION I
+                            
+title: mysql-8-新特性三-Hash-Join—联接查询算法之Hash-Join-(五).mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16
                         
                     </div>
                     <div class="publish-info">
@@ -615,22 +616,20 @@ SET SESSION I
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ddl-yu-dml-de-bing-fa-guan-xi/">
+                <a href="/2022/03/20/mysql-dba/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-DDL与DML的并发关系.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-DBA.md">
                         
-                        <span class="card-title">mysql-DDL与DML的并发关系.md</span>
+                        <span class="card-title">mysql-DBA.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###概念
-一、修改列1、修改列数据类型，还包括修改长度如varchar(10)==&gt;varchar(20) 是不允许dml并发的
-2、修改列名并且同时设置它为外键的时候是不允许dml并发的，若只是单纯修改列名就可以
-3、添加是自增列
+                            
+title: mysql-DBA.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: dbacateg
                         
                     </div>
                     <div class="publish-info">
@@ -641,8 +640,8 @@ SET SESSION I
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/dba/" class="post-category" target="_blank">
+                                    dba
                                 </a>
                             
                             
@@ -652,8 +651,8 @@ SET SESSION I
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/dba/" target="_blank">
+                        <span class="chip bg-color">dba</span>
                     </a>
                     
                 </div>
@@ -839,7 +838,7 @@ SET SESSION I
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-使用show-profiles性能分析和记录最近sql.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-使用show-profiles性能分析和记录最近sql.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="介绍：是mysql提供可以用来分析当前会话中语句执行的资源消耗情况。可以用于SQL的调优测量
-我们知道：sql值慢主要是cpu和IO 慢1、查看是否开启
-
-profiling = ON 开启 ； profiling = OFF 关闭
-pro">
+    <meta name="description" content="
+title: mysql-使用show-profiles性能分析和记录最近sql.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwor">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -460,7 +457,7 @@ pro">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    590
+                    624
                 </div>
                 
 
@@ -483,7 +480,10 @@ pro">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>介绍：是mysql提供可以用来分析当前会话中语句执行的资源消耗情况。可以用于SQL的调优测量</p>
+                <hr>
+<p>title: mysql-使用show-profiles性能分析和记录最近sql.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>介绍：是mysql提供可以用来分析当前会话中语句执行的资源消耗情况。可以用于SQL的调优测量</p>
 <p>我们知道：sql值慢主要是cpu和IO 慢<br>1、查看是否开启</p>
 <ul>
 <li>profiling = ON 开启 ； profiling = OFF 关闭</li>
@@ -620,22 +620,20 @@ show profiles;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-mysqld-multi-zai-yi-tai-ji-qi-shang-an-zhuang-duo-ge-bu-tong-ban-ben-de-mysql-shi-li/">
+                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-oltp-ce-shi-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-使用mysqld_multi在一台机器上安装多个不同版本的mysql实例.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-使用sysbench进行-oltp测试（二）.md">
                         
-                        <span class="card-title">mysql-使用mysqld_multi在一台机器上安装多个不同版本的mysql实例.md</span>
+                        <span class="card-title">mysql-使用sysbench进行-oltp测试（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-本篇在上篇文章https://www.jianshu.com/p/88adb36bbca9基础上继续演示，如何使用mysqld_multi做到在一台机器上安装不同版本的mysql实例。
-
-###增加5.6版本实例1、对5.6的mysql目
+title: mysql-使用sysbench进行-oltp测试（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:sum
                         
                     </div>
                     <div class="publish-info">
@@ -672,21 +670,20 @@ show profiles;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-oltp-ce-shi-er/">
+                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-qi-ta-ce-shi-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-使用sysbench进行-oltp测试（二）.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-使用sysbench进行-其它测试（三）.md">
                         
-                        <span class="card-title">mysql-使用sysbench进行-oltp测试（二）.md</span>
+                        <span class="card-title">mysql-使用sysbench进行-其它测试（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###OLTP测试
-1、准备测试数据
-sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.126 –mysql-port=3306 –my
+                            
+title: mysql-使用sysbench进行-其它测试（三）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -895,7 +892,7 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.1
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

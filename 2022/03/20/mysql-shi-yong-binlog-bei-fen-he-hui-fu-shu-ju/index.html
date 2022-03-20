@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-使用binlog备份和恢复数据.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-使用binlog备份和恢复数据.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="binlog 它记录了所有的DDL和DML(除了数据查询语句)语句，以事件形式记录，还包含语句所执行的消耗的时间，MySQL的二进制日志是事务安全型的。 一般来说开启二进制日志大概会有1%的性能损耗(参见MySQL官方中文手册 5.1.24">
+    <meta name="description" content="
+title: mysql-使用binlog备份和恢复数据.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:ta">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>binlog 它记录了所有的DDL和DML(除了数据查询语句)语句，以<code>事件</code>形式记录，还包含语句所执行的消耗的时间，MySQL的二进制日志是事务安全型的。 一般来说开启二进制日志大概会有1%的性能损耗(参见MySQL官方中文手册 5.1.24版)。binlog写入效率由sync_binlog参数控制,我们可以调整它来降低记录binlog的性能损耗  <a href="https://www.jianshu.com/p/67ebd0d2bb2f">https://www.jianshu.com/p/67ebd0d2bb2f</a></p>
+                <hr>
+<p>title: mysql-使用binlog备份和恢复数据.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>binlog 它记录了所有的DDL和DML(除了数据查询语句)语句，以<code>事件</code>形式记录，还包含语句所执行的消耗的时间，MySQL的二进制日志是事务安全型的。 一般来说开启二进制日志大概会有1%的性能损耗(参见MySQL官方中文手册 5.1.24版)。binlog写入效率由sync_binlog参数控制,我们可以调整它来降低记录binlog的性能损耗  <a href="https://www.jianshu.com/p/67ebd0d2bb2f">https://www.jianshu.com/p/67ebd0d2bb2f</a></p>
 <p><strong>使用场景</strong><br>  1、mysql的主从复制；MySQL Replication在Master端开启binlog，Mster把它的二进制日志传递给slaves来达到master-slave数据一致的目的。<br>  2、数据恢复；通过使用mysqlbinlog工具来使恢复数据。</p>
 <p><strong>bin_log文件组成</strong><br>1、二进制日志索引文件（文件名后缀为.index）用于记录所有的二进制文件<br>2、二进制日志文件（文件名后缀为.00000*）记录数据库所有的DDL和DML(除了数据查询语句)语句事件。<br>###binlog文件保存和传输的形式<br>1、Statement <br>每一条会修改数据的sql都会记录在binlog中。<br>优点：解决了row level的缺点，不需要记录每一行的变化；日志量少，节约IO，从库应用日志块。<br>缺点：一些新功能同步可能会有障碍,比如函数、触发器等。</p>
 <p>2、Row<br>优点：记录详细；兼容性好，解决statement level模式无法解决的复制问题。<br>缺点：日志量大，因为是按行来拆分。</p>
@@ -631,23 +635,20 @@ mysql&gt;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-you-hua-si-lu/">
+                <a href="/2022/03/20/mysql-shi-yong-preper-ke-yi-ti-sheng-xing-neng-qps/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-优化思路.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-使用preper可以提升性能qps.md">
                         
-                        <span class="card-title">mysql-优化思路.md</span>
+                        <span class="card-title">mysql-使用preper可以提升性能qps.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            分区、分表、分库读写分离、集群
-###大方向1、如果确实用的是单数据库，那么优化最先从数据库索引、分区、参数配置这块入手
-2、如果数据量确实大，并发量大，那就是基于以上操作，进行分库分表。读写分离、主从复制
-3、缓存
-###优化问题1、表关
+                            
+title: mysql-使用preper可以提升性能qps.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:
                         
                     </div>
                     <div class="publish-info">
@@ -684,21 +685,20 @@ mysql&gt;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-mysqld-multi-zai-yi-tai-ji-qi-shang-an-zhuang-duo-ge-mysql-shi-li-duo-shi-li-an-zhuang/">
+                <a href="/2022/03/20/mysql-shi-yong-show-profiles-bao-xi-sql-zai-xi-tong-zi-yuan-shang-de-xiao-hao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql-使用show-PROFILES-刨析sql在系统资源上的消耗.md">
                         
-                        <span class="card-title">mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md</span>
+                        <span class="card-title">mysql-使用show-PROFILES-刨析sql在系统资源上的消耗.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/5.7/en/mysqld-multi.html
-多实例安装即是一台服务器安装多个mysql实例；这样可以充分利用硬件资源；通过mysqld_multi程序即可。
-例如我们现
+                            
+title: mysql-使用show-PROFILES-刨析sql在系统资源上的消耗.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass
                         
                     </div>
                     <div class="publish-info">
@@ -907,7 +907,7 @@ mysql&gt;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

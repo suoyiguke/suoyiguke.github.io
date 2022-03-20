@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="juc---Lock的公平锁和非公平锁.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="juc---Lock的公平锁和非公平锁.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁
-非公平锁有可能刚释放锁的线程下次继续获取该锁，则有可能导致其他线程永远无法获取到锁，造成“饥饿”现象。
-公平锁为了保证时间上的绝">
+    <meta name="description" content="
+title: juc—Lock的公平锁和非公平锁.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    184
+                    211
                 </div>
                 
 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁</p>
+                <hr>
+<p>title: juc—Lock的公平锁和非公平锁.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁</p>
 <p>非公平锁有可能刚释放锁的线程下次继续获取该锁，则有可能导致其他线程永远无法获取到锁，造成“饥饿”现象。</p>
 <p>公平锁为了保证时间上的绝对顺序，需要频繁的上下文切换，而非公平锁会降低一定的上下文切换，降低性能开销。因此，ReentrantLock默认选择的是非公平锁，则是为了减少一部分上下文切换，保证了系统更大的吞吐量。</p>
 
@@ -564,24 +566,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-trylock-chang-shi-jia-suo-san/">
+                <a href="/2022/03/20/juc-lock-jie-kou-de-ji-ben-gai-nian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="juc---Lock接口之tryLock尝试加锁（三）.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock接口的基本概念（一）.md">
                         
-                        <span class="card-title">juc---Lock接口之tryLock尝试加锁（三）.md</span>
+                        <span class="card-title">juc---Lock接口的基本概念（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-我辈岂是蓬蒿人 
-
-tryLock()会去尝试获取锁，如果锁是被占有的状态，那么它会马上返回false。不会像 lock.lock()方法那样一直阻塞下去。这就是它的特点与优势。而且tryLock()有两个重载方法如下
-
-boolean 
+title: juc—Lock接口的基本概念（一）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags:
                         
                     </div>
                     <div class="publish-info">
@@ -630,12 +628,8 @@ boolean
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、多线程对HashMap进行put操作
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
-class TestLock &#123;
+                            
+title: juc—Map的线程不安全性和解决方案.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                         
                     </div>
                     <div class="publish-info">
@@ -844,7 +838,7 @@ class TestLock &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Nginx问题.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="Nginx问题.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###post请求body过大Nginx代理请求转发，出现 nginx 413 request too large 原因是post请求的body过大。可以通过调整client_max_body_size解决
-这个属性可以配置在http节点下">
+    <meta name="description" content="
+title: Nginx问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: nginxcateg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    227
+                    246
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###post请求body过大<br>Nginx代理请求转发，出现<code> nginx 413 request too large</code> 原因是post请求的body过大。可以通过调整client_max_body_size解决</p>
+                <hr>
+<p>title: Nginx问题.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: nginx<br>categories: nginx</p>
+<hr>
+<p>###post请求body过大<br>Nginx代理请求转发，出现<code> nginx 413 request too large</code> 原因是post请求的body过大。可以通过调整client_max_body_size解决</p>
 <p>这个属性可以配置在http节点下（http全局），可以配置在server节点下（server全局），也可以配置在location节点下（单应用）。要注意的是，这个属性在不配置的情况下默认值是1m，也就是限制了请求实体的大小为1m。</p>
 <p>http节点下：</p>
 <pre><code>http &#123;
@@ -585,21 +588,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/now-sysdate-dang-qian-shi-jian-han-shu-qu-bie/">
+                <a href="/2022/03/20/nm-you-3-chong-zhi-xing-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="NOW()、SYSDATE()-当前时间函数区别.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="NM-有-3-种执行模式.md">
                         
-                        <span class="card-title">NOW()、SYSDATE()-当前时间函数区别.md</span>
+                        <span class="card-title">NM-有-3-种执行模式.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            观察下面的例子
-mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
-+-------------------+-------------------+----------+
+                            
+title: NM-有-3-种执行模式.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: jvmca
                         
                     </div>
                     <div class="publish-info">
@@ -610,8 +612,8 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -621,8 +623,8 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>
@@ -636,20 +638,20 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/olap-he-oltp/">
+                <a href="/2022/03/20/oom-killer/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="OLAP-和-OLTP.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="OOM-killer.md">
                         
-                        <span class="card-title">OLAP-和-OLTP.md</span>
+                        <span class="card-title">OOM-killer.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、联机分析处理OLAP（On-Line Analytical Processing）。
-1、OLTP是传统的关系型数据库的主要应
+                            
+title: OOM-killer.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: linuxca
                         
                     </div>
                     <div class="publish-info">
@@ -660,8 +662,8 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/dba/" class="post-category" target="_blank">
-                                    dba
+                            <a href="/categories/linux/" class="post-category" target="_blank">
+                                    linux
                                 </a>
                             
                             
@@ -671,8 +673,8 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/dba/" target="_blank">
-                        <span class="chip bg-color">dba</span>
+                    <a href="/tags/linux/" target="_blank">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>
@@ -858,7 +860,7 @@ mysql&gt; SELECT now(),SYSDATE(),sleep(10),now(),SYSDATE();
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

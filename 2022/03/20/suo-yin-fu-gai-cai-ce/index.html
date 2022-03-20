@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="索引覆盖-猜测.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="索引覆盖-猜测.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="出现Using index condition、null 则表示当前建立的索引无法满足select查询字段的需要，需要回表查了。此时效率比较低；
-###索引覆盖出现的判断依据 
-查* ，出现 Using index condition
-查i">
+    <meta name="description" content="
+title: 索引覆盖-猜测.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql基本cat">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -459,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    870
+                    896
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
                 
@@ -482,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>出现Using index condition、null 则表示当前建立的索引无法满足select查询字段的需要，需要回表查了。此时效率比较低；</p>
+                <hr>
+<p>title: 索引覆盖-猜测.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>出现Using index condition、null 则表示当前建立的索引无法满足select查询字段的需要，需要回表查了。此时效率比较低；</p>
 <p>###索引覆盖出现的判断依据 </p>
 <p>查* ，出现 Using index condition</p>
 <p>查id，出现 Using where; Using index</p>
@@ -635,26 +636,20 @@ mysql&gt;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/suo-yin-de-qu-fen-du-cardinality/">
+                <a href="/2022/03/20/suo-yin-zi-bu-fen-dui-rows-sao-miao-xing-shu-cai-ce/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="索引的-区分度-CARDINALITY.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="索引子部分对rows扫描行数猜测.md">
                         
-                        <span class="card-title">索引的-区分度-CARDINALITY.md</span>
+                        <span class="card-title">索引子部分对rows扫描行数猜测.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SELECT
-    CARDINALITY,
-    INDEX_NAME,
-    TABLE_NAME 
-FROM
-    information_schema.STATISTICS 
-WHERE
-    TABLE_SCHEMA =
+                            
+title: 索引子部分对rows扫描行数猜测.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                         
                     </div>
                     <div class="publish-info">
@@ -691,24 +686,20 @@ WHERE
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/xian-cheng-dump-de-fen-xi-si-suo-shu-ju-ku-si-suo-io-deng-dai-deng/">
+                <a href="/2022/03/20/xian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="线程Dump的分析：死锁、数据库死锁、IO等待等.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="线程.md">
                         
-                        <span class="card-title">线程Dump的分析：死锁、数据库死锁、IO等待等.md</span>
+                        <span class="card-title">线程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原则
-结合代码阅读的推理。需要线程Dump和源码的相互推导和印证。
-造成Bug的根源往往丌会在调用栈上直接体现,一定格外注意线程当前调用之前的所有调用。
-
-几种典型的问题堆栈信息###进入区等待
-&quot;d&amp;a-3588&quo
+                            
+title: 线程.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 工具类categories: 
                         
                     </div>
                     <div class="publish-info">
@@ -719,8 +710,8 @@ WHERE
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="post-category" target="_blank">
+                                    工具类
                                 </a>
                             
                             
@@ -730,8 +721,8 @@ WHERE
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/" target="_blank">
+                        <span class="chip bg-color">工具类</span>
                     </a>
                     
                 </div>
@@ -917,7 +908,7 @@ WHERE
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

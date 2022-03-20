@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
@@ -305,10 +305,10 @@
         <div class="brand">
             <div class="title center-align">
                 <!-- 
-                    十年磨一剑
+                    因为我是一个人，要做一个人应该做的
                  -->
                 
-                    十年磨一剑
+                    因为我是一个人，要做一个人应该做的
                 
             </div>
 
@@ -341,75 +341,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-mvcc-ji-zhi/" target="_blank">
+                    <a href="/2022/03/20/mysql-zi-duan-ya-suo-he-biao-ya-suo-huan-you-qi-ta-de/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-mvcc机制.md">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-字段压缩和表压缩还有其它的.md">
                             
-                            <span class="card-title">mysql-mvcc机制.md</span>
+                            <span class="card-title">mysql-字段压缩和表压缩还有其它的.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            MVCC并发控制中，读操作可以分成两类：快照读 (snapshot read)与当前读 (current read)。
-
-快照读，读取的是记录的可见版本 (有可能是历史版本)，不用加锁。
-
-当前读，读取的是记录的最新版本，并且，当前读返回的
                             
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-mysqldump-bei-fen-he-hui-fu/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-mysqldump-备份和恢复.md">
-                            
-                            <span class="card-title">mysql-mysqldump-备份和恢复.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###mysql备份库手段1、全库备份
-mysqldump -uroot -pyk123 --all-databases &gt; /保存路径/文件名.sql
-
-2、单独库
-mysqldump -uroot -pyk123 --databa
+title: mysql-字段压缩和表压缩还有其它的.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                             
                         </div>
                         <div class="publish-info">
@@ -443,116 +389,13 @@ mysqldump -uroot -pyk123 --databa
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-null-wen-ti/" target="_blank">
+                    <a href="/2022/03/20/mysql-ru-he-cha-kan-mei-ge-lian-jie-zhong-ju-ti-mou-ge-session-ji-bie-can-shu-de-zhi/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-null-问题.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-如何查看每个连接中具体某个session-级别参数的值？.md">
                             
-                            <span class="card-title">mysql-null-问题.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            1、列中有Null值是可以用到索引的
-mysql&gt; EXPLAIN SELECT
-    * 
-FROM
-    `test` FORCE INDEX ( idx_name ) 
-WHERE
-    isNull( `name` ) 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-order-by-rand-you-hua/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-order-by-rand(-)-优化.md">
-                            
-                            <span class="card-title">mysql-order-by-rand(-)-优化.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            简言之，就是把下面这个SQL：
-SELECT * FROM test1  ORDER BY RAND() LIMIT 200000
-改造成下面这个：
-SELECT * FROM test1 t1 JOIN (SELECT RAND() * 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-replace-yu-ju-te-xing/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-replace语句特性.md">
-                            
-                            <span class="card-title">mysql-replace语句特性.md</span>
+                            <span class="card-title">mysql-如何查看每个连接中具体某个session-级别参数的值？.md</span>
                         </div>
                     </a>
 
@@ -560,63 +403,7 @@ SELECT * FROM test1 t1 JOIN (SELECT RAND() *
                         <div class="summary block-with-text">
                             
                             
-是故弟子不必不如师,师不必贤于弟子
-
-replace语句 要么插入，要么删除并插入。replace语句和insert语句都能够用来插入数据，前提是在没有主键冲突或唯一索引冲突的情况下。
-######replace 和  ON DUPLIC
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-router-mysql-shell-mgr-jiu-shi-innodb-cluster/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-router+mysql-shell+mgr就是innodb-cluster.md">
-                            
-                            <span class="card-title">mysql-router+mysql-shell+mgr就是innodb-cluster.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            田帅萌:这个不是我公众号的吗。。
-但行好事  莫问前程:美团和京东用mgr还是很多的
-但行好事  莫问前程:是的
-但行好事  莫问前程:优秀的文档，分享一下
-戒糖低盐轻碳水:记得是翻译的官方文档
-一失足成千古风流人物🐾:赞
-但行好事  莫
+title: mysql-如何查看每个连接中具体某个session-级别参数的值？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwo
                             
                         </div>
                         <div class="publish-info">
@@ -650,22 +437,117 @@ replace语句 要么插入，要么删除并插入。replace语句和insert语�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-row-lei-xing-de-binlog-fen-xi/" target="_blank">
+                    <a href="/2022/03/20/mysql-zi-cha-xun-zai-update-delete-zhong-he-select-zhong-de-qu-bie/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-row类型的-binlog-分析.md">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-子查询在update、delete中和select中的区别.md">
                             
-                            <span class="card-title">mysql-row类型的-binlog-分析.md</span>
+                            <span class="card-title">mysql-子查询在update、delete中和select中的区别.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            binlog类型选择请一定选择ROW类型，因为它是稳定最安全的。使用其它格式则很可能造成主从不一致
-**
-当用户提交一条修改语句时(如, insert, update, delete)，MySQL会产生2个Binlog事件: 第一个就是Ta
+                            
+title: mysql-子查询在update、delete中和select中的区别.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passw
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-zi-duan-shu-ju-lei-xing-xuan-ze-yuan-ze/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字段数据类型选择原则.md">
+                            
+                            <span class="card-title">mysql-字段数据类型选择原则.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+title: mysql-字段数据类型选择原则.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-zi-fu-ji-lie-biao-ku-zi-fu-ji-bu-tong-yi-hui-dao-zhi-cpu-kuang-biao-chu-xian-man-cha-xun/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-字符集列表库字符集不同一会导致cpu狂飙出现慢查询.md">
+                            
+                            <span class="card-title">mysql-字符集列表库字符集不同一会导致cpu狂飙出现慢查询.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+title: mysql-字符集列表库字符集不同一会导致cpu狂飙出现慢查询.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:
                             
                         </div>
                         <div class="publish-info">
@@ -699,20 +581,21 @@ replace语句 要么插入，要么删除并插入。replace语句和insert语�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-show-status-ming-ling/" target="_blank">
+                    <a href="/2022/03/20/mysql-zi-fu-ji-he-zi-fu-xiao-dui-gui-ze-2/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-show-status命令.md">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字符集和字符校对规则-（2）.md">
                             
-                            <span class="card-title">mysql-show-status命令.md</span>
+                            <span class="card-title">mysql-字符集和字符校对规则-（2）.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###不同的show status命令1、服务级别。 SHOW GLOBAL STATUS 查看mysql开机以后的所有记录，重启后重新记录2、连接级别。SHOW [SESSION 缺省 ] STATUS 查看mysql此次连接的记录，重新
+                            
+title: mysql-字符集和字符校对规则-（2）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                             
                         </div>
                         <div class="publish-info">
@@ -746,62 +629,13 @@ replace语句 要么插入，要么删除并插入。replace语句和insert语�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-slow-log/" target="_blank">
+                    <a href="/2022/03/20/mysql-zi-fu-ji-he-zi-fu-xiao-dui-gui-ze-1/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-slow-log.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-字符集和字符校对规则-（1）.md">
                             
-                            <span class="card-title">mysql-slow-log.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html
-slow log是工作中最重要的日志了。mysql启动不了看error log，查询慢就看slow log。
-查看slo
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                            <span class="chip bg-color">mysql运维操作</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-sql-mode/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-sql_mode.md">
-                            
-                            <span class="card-title">mysql-sql_mode.md</span>
+                            <span class="card-title">mysql-字符集和字符校对规则-（1）.md</span>
                         </div>
                     </a>
 
@@ -809,12 +643,7 @@ slow log是工作中最重要的日志了。mysql启动不了看error log，查�
                         <div class="summary block-with-text">
                             
                             
-下则为河岳，上则为日星###查询当前sql_mode
-
-SELECT @@sql_mode
-
-###几种sql_mode模式介绍
-sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定这个来方便达到使用多种sql_m
+title: mysql-字符集和字符校对规则-（1）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                             
                         </div>
                         <div class="publish-info">
@@ -848,13 +677,13 @@ sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-sql-you-hua-zhi-count-cha-xun/" target="_blank">
+                    <a href="/2022/03/20/mysql-zi-fu-ji-dui-xing-neng-de-ying-xiang/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-sql优化之-COUNT()-查询.md">
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-字符集对性能的影响.md">
                             
-                            <span class="card-title">mysql-sql优化之-COUNT()-查询.md</span>
+                            <span class="card-title">mysql-字符集对性能的影响.md</span>
                         </div>
                     </a>
 
@@ -862,11 +691,7 @@ sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定
                         <div class="summary block-with-text">
                             
                             
-为张睢阳齿，为颜常山舌。
-
-###关于COUNT()函数的几个谬误的纠正
-1、COUNT(*) 其实不存在性能问题!
-当我们使用COUNT(*)来统计返回结果集的行数的时候，这种情况下通配符 * 并不会像我们猜想的那样扩展所有的列，实际上
+title: mysql-字符集对性能的影响.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                             
                         </div>
                         <div class="publish-info">
@@ -900,13 +725,13 @@ sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-sql-you-hua-zhi-you-hua-group-by-he-distinct/" target="_blank">
+                    <a href="/2022/03/20/mysql-cun-chu-guo-cheng-zhi-you-biao/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-存储过程之游标.md">
                             
-                            <span class="card-title">mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md</span>
+                            <span class="card-title">mysql-存储过程之游标.md</span>
                         </div>
                     </a>
 
@@ -914,16 +739,151 @@ sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定
                         <div class="summary block-with-text">
                             
                             
-为严将军头，为嵇侍中血
+title: mysql-存储过程之游标.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysq
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-###数据准备
-创建表tb_point 表
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-cun-chu-guo-cheng-xue-xi/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-存储过程学习.md">
+                            
+                            <span class="card-title">mysql-存储过程学习.md</span>
+                        </div>
+                    </a>
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+title: mysql-存储过程学习.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
--- ----------------------------
--- 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-xue-xi-ji-hua-chong-yao/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-学习计划（重要）.md">
+                            
+                            <span class="card-title">mysql-学习计划（重要）.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+title: mysql-学习计划（重要）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-guan-wang-wen-dang-zen-me-kan-can-shu/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-官网文档怎么看参数？.md">
+                            
+                            <span class="card-title">mysql-官网文档怎么看参数？.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+title: mysql-官网文档怎么看参数？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                             
                         </div>
                         <div class="publish-info">
@@ -972,7 +932,7 @@ SET FOREIGN_KEY_CHECKS = 0;
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">56 / 121</div>
+            <div class="center-align b-text-gray">56 / 108</div>
         </div>
         <div class="col s6 m4 l4">
             
@@ -993,7 +953,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

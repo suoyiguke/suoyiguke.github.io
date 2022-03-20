@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jmm-synchronized关键字之基本用法.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="jmm-synchronized关键字之基本用法.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="synchronized 通过排他锁、互斥锁的方式保证了同一时间内，被synchronized 修饰的代码是单线程执行的。它可以通过对java中的对象加锁，并且它是一种可重入的锁。所以，当线程执行到一段被synchronized 修饰的代码">
+    <meta name="description" content="
+title: jmm-synchronized关键字之基本用法.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>synchronized 通过<code>排他锁、互斥锁</code>的方式保证了同一时间内，被synchronized 修饰的代码是<code>单线程</code>执行的。它可以通过对java中的对象加锁，并且它是一种可重入的锁。所以，当线程执行到一段被synchronized 修饰的代码之前，会先进行加锁，执行完之后再进行解锁。在加锁之后，解锁之前的<code>临界区</code>之内其它线程试无法再次获得锁的，只有这条加锁线程可以重复获得该锁</p>
+                <hr>
+<p>title: jmm-synchronized关键字之基本用法.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: jmm<br>categories: jmm</p>
+<hr>
+<p>synchronized 通过<code>排他锁、互斥锁</code>的方式保证了同一时间内，被synchronized 修饰的代码是<code>单线程</code>执行的。它可以通过对java中的对象加锁，并且它是一种可重入的锁。所以，当线程执行到一段被synchronized 修饰的代码之前，会先进行加锁，执行完之后再进行解锁。在加锁之后，解锁之前的<code>临界区</code>之内其它线程试无法再次获得锁的，只有这条加锁线程可以重复获得该锁</p>
 <p>###基本用法<br>synchronized关键字主要有以下这3种用法：</p>
 <ul>
 <li><p>修饰实例方法，作用于当前实例（this） 加锁，进入同步代码前要获得当前实例的锁</p>
@@ -737,23 +741,20 @@ class SynchTest2 &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-cas-suan-fa/">
+                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-zhi-64-wei-xie-ru-de-yuan-zi-xing-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-CAS算法.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="jmm-volatile关键字之64位写入的原子性（三）.md">
                         
-                        <span class="card-title">jmm-CAS算法.md</span>
+                        <span class="card-title">jmm-volatile关键字之64位写入的原子性（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-君子不器
-
-###什么是CAS?CAS 是 Compare and Swap 比较与交换 的英文开头字母缩写 
-CAS操作（又称为无锁操作）是一种乐观锁策略。之前在mysql中使用数据版本号来解决更新丢失的事务并发问题就是使用这中乐观锁机
+title: jmm-volatile关键字之64位写入的原子性（三）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:sum
                         
                     </div>
                     <div class="publish-info">
@@ -790,19 +791,20 @@ CAS操作（又称为无锁操作）是一种乐观锁策略。之前在mysql中
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-happen-before-gui-ze/">
+                <a href="/2022/03/20/jmm-synchronized-de-nei-cun-yu-yi-he-ta-shi-ru-he-bao-zheng-bing-fa-san-da-te-xing-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-happen-before规则.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="jmm-synchronized的内存语义和它是如何保证并发三大特性的.md">
                         
-                        <span class="card-title">jmm-happen-before规则.md</span>
+                        <span class="card-title">jmm-synchronized的内存语义和它是如何保证并发三大特性的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            从 JDK5 开始，java 使用新的 JSR -133 内存模型。 JSR-133 使用 happens-before 的概念来阐述操作之间的内存可见性。 在 JMM 中，如果一个操作执行的结果需要对另一个操作可见，那么这两个操作之间必须
+                            
+title: jmm-synchronized的内存语义和它是如何保证并发三大特性的.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passw
                         
                     </div>
                     <div class="publish-info">
@@ -1011,7 +1013,7 @@ CAS操作（又称为无锁操作）是一种乐观锁策略。之前在mysql中
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-开发规范之SQL语句.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-开发规范之SQL语句.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-【强制】不要使用count(列名)或count(常量)来替代count()，count()是SQL92定义的标准统计行数的语法，跟数据库无关，跟NULL和非NULL无关。 说明：count(*)会统计值为NULL的行，而count(列名)">
+title: mysql-开发规范之SQL语句.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    702
+                    731
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ol>
+                <hr>
+<p>title: mysql-开发规范之SQL语句.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<ol>
 <li><p>【强制】不要使用count(列名)或count(常量)来替代count(<em>)，count(</em>)是SQL92定义的标准统计行数的语法，跟数据库无关，跟NULL和非NULL无关。 说明：count(*)会统计值为NULL的行，而count(列名)不会统计此列为NULL值的行。</p>
 </li>
 <li><p>【强制】count(distinct col) 计算该列除NULL之外的不重复行数，注意 count(distinct col1, col2) 如果其中一列全为NULL，那么即使另一列有不同的值，也返回为0。</p>
@@ -586,23 +589,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ku-he-biao-de-xin-xi-cha-xun/">
+                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-jian-biao-gui-fan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-库和表的信息查询.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-开发规范之建表规范.md">
                         
-                        <span class="card-title">mysql-库和表的信息查询.md</span>
+                        <span class="card-title">mysql-开发规范之建表规范.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###查看所有数据库各容量大小
-select
-table_schema as &#39;数据库&#39;,
-sum(table_rows) as &#39;记录数&#39;,
-sum(truncate(data_length/1024/10
+                            
+title: mysql-开发规范之建表规范.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                         
                     </div>
                     <div class="publish-info">
@@ -639,20 +639,20 @@ sum(truncate(data_length/1024/10
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-jian-biao-gui-fan/">
+                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-suo-yin-gui-yue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-开发规范之建表规范.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-开发规范之索引规约.md">
                         
-                        <span class="card-title">mysql-开发规范之建表规范.md</span>
+                        <span class="card-title">mysql-开发规范之索引规约.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###建表规范
-1、【强制】表达是与否概念的字段，必须使用is_xxx的方式命名，数据类型是unsigned tinyint（1表示是，0表示否）。 说明：任何字段如果为非负数，必须是unsigned。 注意：POJO类中的任何布尔类型的变
+                            
+title: mysql-开发规范之索引规约.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                         
                     </div>
                     <div class="publish-info">
@@ -861,7 +861,7 @@ sum(truncate(data_length/1024/10
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-lock和latch区别.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-lock和latch区别.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。
-latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须非常短">
+    <meta name="description" content="
+title: mysql-lock和latch区别.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    564
+                    589
                 </div>
                 
 
@@ -480,7 +480,10 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。</p>
+                <hr>
+<p>title: mysql-lock和latch区别.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql底层<br>categories: mysql底层</p>
+<hr>
+<p>这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。</p>
 <p>latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须非常短。若持续的时间长,则应用的性能会非常差。在 InnoDB存储引擎中, latch又可以分为 mutex(互 斥量)和rwlock(读写锁)。其目的是用来保证并发线程操作临界资源的正确性,并且 通常没有死锁检测的机制。 </p>
 <blockquote>
 <p>latch就像是Java里的 lock，锁定对象也是线程。用于保证线程操作临界资源的正确性</p>
@@ -581,21 +584,20 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-like-he-es/">
+                <a href="/2022/03/20/mysql-json-lei-xing-shi-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-like和ES.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-json类型实践.md">
                         
-                        <span class="card-title">mysql-like和ES.md</span>
+                        <span class="card-title">mysql-json类型实践.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            南京-欢欣 14:53:29[图片上传失败…(image-5c9a6c-1627373516579)]
-南京-欢欣 14:53:31我也想咨询一个问题
-南京-欢欣 14:53:35[图片上传失败…(image-b2bbda-16273735
+                            
+title: mysql-json类型实践.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
                         
                     </div>
                     <div class="publish-info">
@@ -632,20 +634,20 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lock-dai-lai-de-zu-sai/">
+                <a href="/2022/03/20/mysql-myisam-yin-qing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-lock带来的阻塞.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-myisam引擎.md">
                         
-                        <span class="card-title">mysql-lock带来的阻塞.md</span>
+                        <span class="card-title">mysql-myisam引擎.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            因为不同锁之间的兼容性关系,在有些时刻一个事务中的锁需要等待另一个事务中的锁释放它所占用的资源,这就是阻塞。
-阻塞并不是一件坏事,其是为了确保事务可以 并发且正常地运行。在 InnoDB存储引擎中,参数 innodb_lock_wait_t
+                            
+title: mysql-myisam引擎.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
                         
                     </div>
                     <div class="publish-info">
@@ -656,8 +658,8 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                    mysql底层
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -667,8 +669,8 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
-                        <span class="chip bg-color">mysql底层</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -854,7 +856,7 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

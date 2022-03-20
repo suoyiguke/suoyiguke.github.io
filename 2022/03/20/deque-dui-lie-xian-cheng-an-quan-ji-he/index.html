@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="deque-队列-线程安全集合.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="deque-队列-线程安全集合.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="deque objectsclass collections.deque([iterable[, maxlen]])Returns a new deque object initialized left-to-right (using ap">
+    <meta name="description" content="
+title: deque-队列-线程安全集合.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: py">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    289
+                    314
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>deque objects<br>class collections.deque([iterable[, maxlen]])<br>Returns a new deque object initialized left-to-right (using append()) with data from iterable. If iterable is not specified, the new deque is empty.</p>
+                <hr>
+<p>title: deque-队列-线程安全集合.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: python<br>categories: python</p>
+<hr>
+<p>deque objects<br>class collections.deque([iterable[, maxlen]])<br>Returns a new deque object initialized left-to-right (using append()) with data from iterable. If iterable is not specified, the new deque is empty.</p>
 <p>Deques are a generalization of stacks and queues (the name is pronounced “deck” and is short for “double-ended queue”). Deques support thread-safe, memory efficient appends and pops from either side of the deque with approximately the same O(1) performance in either direction.</p>
 <p>Though list objects support similar operations, they are optimized for fast fixed-length operations and incur O(n) memory movement costs for pop(0) and insert(0, v) operations which change both the size and position of the underlying data representation.</p>
 <p>If maxlen is not specified or is None, deques may grow to an arbitrary length. Otherwise, the deque is bounded to the specified maximum length. Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end. Bounded length deques provide functionality similar to the tail filter in Unix. They are also useful for tracking transactions and other pools of data where only the most recent activity is of interest.</p>
@@ -580,27 +584,20 @@ if __name__ == &#39;__main__&#39;:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/docker-compose-chang-yong-pei-zhi/">
+                <a href="/2022/03/20/demo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="docker-compose-常用配置.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="demo.md">
                         
-                        <span class="card-title">docker-compose-常用配置.md</span>
+                        <span class="card-title">demo.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用1、docker-compose中容器设置上海时区
- environment:
-      TZ: &quot;Asia/Shanghai&quot;
-
-2、总是重启容器
-restart: always
-
-3、端口映射
-    port
+                            
+title: demo.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: uibotcategori
                         
                     </div>
                     <div class="publish-info">
@@ -611,8 +608,8 @@ restart: always
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/docker/" class="post-category" target="_blank">
-                                    docker
+                            <a href="/categories/uibot/" class="post-category" target="_blank">
+                                    uibot
                                 </a>
                             
                             
@@ -622,8 +619,8 @@ restart: always
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/docker/" target="_blank">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/uibot/" target="_blank">
+                        <span class="chip bg-color">uibot</span>
                     </a>
                     
                 </div>
@@ -637,26 +634,20 @@ restart: always
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/docker-compose-bu-shu-springboot/">
+                <a href="/2022/03/20/docker-compose-an-zhuang-redis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="docker-compose-部署springboot.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="docker-compose-安装redis.md">
                         
-                        <span class="card-title">docker-compose-部署springboot.md</span>
+                        <span class="card-title">docker-compose-安装redis.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            version: &quot;3&quot;
-services:
-  box:
-    image: java:8
-    volumes:
-      - ./work:/work
-    ports:
-      - &quot;808
+                            
+title: docker-compose-安装redis.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:t
                         
                     </div>
                     <div class="publish-info">
@@ -667,8 +658,8 @@ services:
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/springboot/" class="post-category" target="_blank">
-                                    springboot
+                            <a href="/categories/redis/" class="post-category" target="_blank">
+                                    redis
                                 </a>
                             
                             
@@ -678,8 +669,8 @@ services:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/springboot/" target="_blank">
-                        <span class="chip bg-color">springboot</span>
+                    <a href="/tags/redis/" target="_blank">
+                        <span class="chip bg-color">redis</span>
                     </a>
                     
                 </div>
@@ -865,7 +856,7 @@ services:
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

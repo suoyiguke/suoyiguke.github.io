@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-线程之--Master-Thread.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-线程之--Master-Thread.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content=" InnoDB存储引擎的主要工作都是在一个单独的后台线 程 Master Thread中完成的,这一节将具体解释该线程的具体实现及该线程可能存在 的问题。
-###InnoDB1.0.x版本之前的 Master Thread 
-Master ">
+    <meta name="description" content="
+title: mysql-线程之–Master-Thread.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -481,7 +480,10 @@ Master ">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> InnoDB存储引擎的主要工作都是在一个单独的后台线 程 Master Thread中完成的,这一节将具体解释该线程的具体实现及该线程可能存在 的问题。</p>
+                <hr>
+<p>title: mysql-线程之–Master-Thread.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql底层<br>categories: mysql底层</p>
+<hr>
+<p> InnoDB存储引擎的主要工作都是在一个单独的后台线 程 Master Thread中完成的,这一节将具体解释该线程的具体实现及该线程可能存在 的问题。</p>
 <p>###InnoDB1.0.x版本之前的 Master Thread </p>
 <p>Master Thread具有最高的线程优先级别。</p>
 <p>其内部由多个循环(loop)组成:<br>1、主循环 (loop)<br>2、后台循环( backgroup loop)<br>3、刷新循环(lush loop)<br>4、暂停循环(suspend loop) </p>
@@ -633,22 +635,20 @@ SET GLOBAL innodb_purge_batch_size = 400
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-block-nested-loop-join-bnl-er/">
+                <a href="/2022/03/20/mysql-xian-shang-dao-chu-shu-ju-ying-xiang-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-联接查询算法之Block-Nested-Loop-Join（BNL）-二.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-线上导出数据影响测试.md">
                         
-                        <span class="card-title">mysql-联接查询算法之Block-Nested-Loop-Join（BNL）-二.md</span>
+                        <span class="card-title">mysql-线上导出数据影响测试.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Block Nested-Loop Join：BNLJ，缓存块嵌套循环连接; 
-
-扫描一个表的过程其实是先把这个表从磁盘上加载到内存中，然后从内存中比较匹配条件是否满足。但内存里可能并不能完全存放的下表中所有的记录，所以在扫描表前边记录的
+title: mysql-线上导出数据影响测试.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                         
                     </div>
                     <div class="publish-info">
@@ -659,8 +659,8 @@ Block Nested-Loop Join：BNLJ，缓存块嵌套循环连接;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -670,8 +670,8 @@ Block Nested-Loop Join：BNLJ，缓存块嵌套循环连接;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -685,21 +685,20 @@ Block Nested-Loop Join：BNLJ，缓存块嵌套循环连接;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-batched-key-access-bka-si/">
+                <a href="/2022/03/20/mysql-xian-shang-bu-huo-sql-de-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-联接查询算法之Batched-key-access-(BKA)-四.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-线上捕获sql的方法.md">
                         
-                        <span class="card-title">mysql-联接查询算法之Batched-key-access-(BKA)-四.md</span>
+                        <span class="card-title">mysql-线上捕获sql的方法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Batched key access (BKA)
-
-BKA算法集结了 INLJ、BNLJ、MRR 算法的特性。它用到了INLJ的内部表索引减少关联匹配的次数；又使用到了BNLJ的join buffer，用以暂存外表连接数据减少访问内部表；还
+                            
+title: mysql-线上捕获sql的方法.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                         
                     </div>
                     <div class="publish-info">
@@ -710,8 +709,8 @@ BKA算法集结了 INLJ、BNLJ、MRR 算法的特性。它用到了INLJ的内部
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -721,8 +720,8 @@ BKA算法集结了 INLJ、BNLJ、MRR 算法的特性。它用到了INLJ的内部
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -908,7 +907,7 @@ BKA算法集结了 INLJ、BNLJ、MRR 算法的特性。它用到了INLJ的内部
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

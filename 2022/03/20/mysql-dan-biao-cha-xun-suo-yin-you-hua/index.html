@@ -4,17 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-单表查询索引优化.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-单表查询索引优化.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="1、数据准备
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : CentOS6.7--Clone
-Source Server Version : 50554
-Source Hos">
+    <meta name="description" content="
+title: mysql-单表查询索引优化.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -462,7 +457,7 @@ Source Hos">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    665
+                    694
                 </div>
                 
 
@@ -485,7 +480,10 @@ Source Hos">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、数据准备</p>
+                <hr>
+<p>title: mysql-单表查询索引优化.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>1、数据准备</p>
 <pre><code>/*
 Navicat MySQL Data Transfer
 
@@ -642,21 +640,20 @@ INSERT INTO `article` VALUES (&#39;3&#39;, &#39;1&#39;, &#39;1&#39;, &#39;3&#39;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-ming-ming-de-gui-ze/">
+                <a href="/2022/03/20/mysql-fen-ku-fen-biao-gai-lun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-参数命名的规则.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-分库分表概论.md">
                         
-                        <span class="card-title">mysql-参数命名的规则.md</span>
+                        <span class="card-title">mysql-分库分表概论.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            百分比的英文是 percentage，刚好取驼峰字母 pct
-脏页刷新阈值 innodb_max_dirty_pages_pct 的后缀是pct 表示该值是个百分比
-
+                            
+title: mysql-分库分表概论.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql
                         
                     </div>
                     <div class="publish-info">
@@ -693,20 +690,20 @@ INSERT INTO `article` VALUES (&#39;3&#39;, &#39;1&#39;, &#39;1&#39;, &#39;3&#39;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-1-zhi-nei-cun-huan-chong-chi-innodb-buffer-pool-size/">
+                <a href="/2022/03/20/mysql-dan-biao-dao-ci-neng-duo-shao-tiao-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-参数调优(1)之内存缓冲池innodb_buffer_pool_size.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-单表到此能多少条数据？.md">
                         
-                        <span class="card-title">mysql-参数调优(1)之内存缓冲池innodb_buffer_pool_size.md</span>
+                        <span class="card-title">mysql-单表到此能多少条数据？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            内存的大小是最能直接反映数据库的性能。InnoDB存储引擎既缓存数据，又缓存索引，并且将它们缓存于一个很大的缓冲池中，即InnoDB Buffer Pool。因此，内存的大小直接影响了数据库的性能性能测试。
-Percona公司的CTO Va
+                            
+title: mysql-单表到此能多少条数据？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
@@ -717,8 +714,8 @@ Percona公司的CTO Va
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -728,8 +725,8 @@ Percona公司的CTO Va
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -915,7 +912,7 @@ Percona公司的CTO Va
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

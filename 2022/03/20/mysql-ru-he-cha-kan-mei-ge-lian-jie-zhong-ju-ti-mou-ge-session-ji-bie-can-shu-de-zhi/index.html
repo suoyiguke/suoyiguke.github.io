@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-如何查看每个连接中具体某个session-级别参数的值？.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-如何查看每个连接中具体某个session-级别参数的值？.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="我们知道mysql中参数变量分为session 会话级别和global 全局级别。如long_query_time 就是一个典型的会话级别参数。set session long_query_time = 1.5; 设置后仅仅在当前会话中有效">
+    <meta name="description" content="
+title: mysql-如何查看每个连接中具体某个session-级别参数的值？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    776
+                    821
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>我们知道mysql中参数变量分为<strong>session 会话级别和global 全局级别</strong>。<br>如long_query_time 就是一个典型的会话级别参数。<br>set session long_query_time = 1.5; 设置后仅仅在当前会话中有效。重新打开一个会话仍然是默认值。session 可以省略<br>set global long_query_time =1.5 ；设置后重新打开一个会话，重新打开一个会话，值是1.5</p>
+                <hr>
+<p>title: mysql-如何查看每个连接中具体某个session-级别参数的值？.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>我们知道mysql中参数变量分为<strong>session 会话级别和global 全局级别</strong>。<br>如long_query_time 就是一个典型的会话级别参数。<br>set session long_query_time = 1.5; 设置后仅仅在当前会话中有效。重新打开一个会话仍然是默认值。session 可以省略<br>set global long_query_time =1.5 ；设置后重新打开一个会话，重新打开一个会话，值是1.5</p>
 <blockquote>
 <p>注意：我们将一个会话级别的参数如long_query_time 的global 全局范围值修改为新的值，那么以后新创建的会话会是这个新的值。但是对于原来已经创建的连接，它们的参数值还是老样子。很多线上修改话级别的参数不生效就是这个原因（需要set session一下才能影响到当前会话）。</p>
 </blockquote>
@@ -663,21 +667,20 @@ processlist_command: Sleep
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-duo-biao-join-cha-xun-suo-yin-you-hua/">
+                <a href="/2022/03/20/mysql-zi-duan-ya-suo-he-biao-ya-suo-huan-you-qi-ta-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-多表join查询索引优化.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-字段压缩和表压缩还有其它的.md">
                         
-                        <span class="card-title">mysql-多表join查询索引优化.md</span>
+                        <span class="card-title">mysql-字段压缩和表压缩还有其它的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据准备CREATE TABLE IF NOT EXISTS `class` (
-`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-`card` int(10) unsigned NOT NULL
+                            
+title: mysql-字段压缩和表压缩还有其它的.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags
                         
                     </div>
                     <div class="publish-info">
@@ -688,8 +691,8 @@ processlist_command: Sleep
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -699,8 +702,8 @@ processlist_command: Sleep
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -714,19 +717,20 @@ processlist_command: Sleep
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ru-he-de-dao-innodb-zhu-jian-suo-yin-b-shu-de-shu-gao-du/">
+                <a href="/2022/03/20/mysql-zi-cha-xun-zai-update-delete-zhong-he-select-zhong-de-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-如何得到innodb主键索引B+树的树高度.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-子查询在update、delete中和select中的区别.md">
                         
-                        <span class="card-title">mysql-如何得到innodb主键索引B+树的树高度.md</span>
+                        <span class="card-title">mysql-子查询在update、delete中和select中的区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            B+树的高度通常是1-3; 在InnoDB的表空间文件中，约定 page number 为3的代表主键索引的根页，而在根页偏移量为64的地方存放了该B+树的page level。如果page level为1，树高为2，page level为
+                            
+title: mysql-子查询在update、delete中和select中的区别.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passw
                         
                     </div>
                     <div class="publish-info">
@@ -935,7 +939,7 @@ processlist_command: Sleep
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

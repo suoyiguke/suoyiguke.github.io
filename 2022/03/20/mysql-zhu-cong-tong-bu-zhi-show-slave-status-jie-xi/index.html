@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-主从同步之-show-slave-status解析.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-主从同步之-show-slave-status解析.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###Slave_IO_State这里显示了当前slave I/O线程的状态(slave连接到master的状态)。状态信息和使用show processlist | grep “system user”(会显示两条信息，一条slave I">
+    <meta name="description" content="
+title: mysql-主从同步之-show-slave-status解析.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2k
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###Slave_IO_State<br>这里显示了当前slave I/O线程的状态(slave连接到master的状态)。状态信息和使用show processlist | grep “system user”(会显示两条信息，一条slave I/O线程的，一条是slave SQL线程的)显示的内容一样。slave I/O线程的状态，有以下几种：</p>
+                <hr>
+<p>title: mysql-主从同步之-show-slave-status解析.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###Slave_IO_State<br>这里显示了当前slave I/O线程的状态(slave连接到master的状态)。状态信息和使用show processlist | grep “system user”(会显示两条信息，一条slave I/O线程的，一条是slave SQL线程的)显示的内容一样。slave I/O线程的状态，有以下几种：</p>
 <p>1、waiting for master update<br>        这是connecting to master状态之前的状态<br>2、connecting to master<br>线程正尝试连接到master<br>3、 checking master version<br>在与master建立连接后，会出现该状态。该状态出现的时间非常短暂。<br>4、 registering slave on master<br>在与master建立连接后，会出现该状态。该状态出现的时间非常短暂。<br>5、requesting binlog dump<br>在与master建立连接后，会出现该状态。该状态出现的时间非常短暂。在这个状态下，I/O线程向master发送请求，请求binlog，位置从指定的binglog 名字和binglog的position位置开始。<br>6、 waiting to reconnect after a failed binlog dump request<br>如果因为连接断开，导致binglog的请求失败，I/O线程会进入睡眠状态。然后定期尝试重连。尝试重连的时间间隔，可以使用命令”change master to master_connect_trt=X;”改变。<br>7、reconnecting after a failed binglog dump request<br> I/O进程正在尝试连接master<br>8、waiting for master to send event<br>说明，已经成功连接到master，正等待二进制日志时间的到达。如果master 空闲，这个状态会持续很长时间。如果等待的时间超过了slave_net_timeout(单位是秒)的值，会出现连接超时。在这种状态下，I/O线程会人为连接失败，并开始尝试重连<br><strong>9、queueing master event to the relay log</strong><br>此时，I/O线程已经读取了一个event，并复制到了relay log 中。这样SQL 线程可以执行此event；</p>
 <blockquote>
 <p>出现这个说明IO线程正在工作，生成中继日志中；</p>
@@ -612,26 +616,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-zhu-tong-bu-fu-zhi/">
+                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-zhong-ji-ge-fei-chang-nan-yong-de-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-主主同步复制.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-主从同步中几个非常难用的参数.md">
                         
-                        <span class="card-title">mysql-主主同步复制.md</span>
+                        <span class="card-title">mysql-主从同步中几个非常难用的参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            机器一、3305
-[mysqld]
-## server_id，一般设置为IP，注意要唯一
-server_id=3305
-log_bin=mysql-bin
-## 需要主从复制的数据库
-binlog-do-db=iam
-## 开启二进制日志功
+                            
+title: mysql-主从同步中几个非常难用的参数.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                         
                     </div>
                     <div class="publish-info">
@@ -668,19 +666,20 @@ binlog-do-db=iam
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-wen-ti-hui-zong/">
+                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-yan-chi-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-主从同步问题汇总.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-主从同步延迟问题.md">
                         
-                        <span class="card-title">mysql-主从同步问题汇总.md</span>
+                        <span class="card-title">mysql-主从同步延迟问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###主从复制中断错误1、Slave_IO_Running 为yes；Slave_SQL_Running 为no；Last_SQL_Error为Error ‘Table ‘zf’ already exists’ on query. Defa
+                            
+title: mysql-主从同步延迟问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
                         
                     </div>
                     <div class="publish-info">
@@ -889,7 +888,7 @@ binlog-do-db=iam
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

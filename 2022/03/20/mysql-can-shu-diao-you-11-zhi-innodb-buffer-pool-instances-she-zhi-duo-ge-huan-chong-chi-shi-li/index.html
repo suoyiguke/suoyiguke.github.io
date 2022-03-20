@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-INNODB_BUFFER_POOL_INSTANCES 参数也是在高并发高负载下设置后会对性能有提升
-
-MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量的手段。在5.5版本这个对提升吞吐量帮助很小，然后在MySQ">
+title: mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -459,14 +457,14 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    524
+                    565
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -482,7 +480,10 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<blockquote>
 <p>INNODB_BUFFER_POOL_INSTANCES 参数也是在高并发高负载下设置后会对性能有提升</p>
 </blockquote>
 <p>MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量的手段。在5.5版本这个对提升吞吐量帮助很小，然后在MySQL 5.6版本这个提升就非常大了，所以在MySQL5.5中你可能会保守地设置innodb_buffer_pool_instances=4，在MySQL 5.6和5.7中你可以设置为8-16个缓冲池实例。设置后观察会觉得性能提高不大，但在大多数高负载情况下，它应该会有不错的表现。对了，不要指望这个设置能减少你单个查询的响应时间。这个是在高并发负载的服务器上才看得出区别。比如多个线程同时做许多事情。</p>
@@ -572,19 +573,20 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-zhi-innodb-lock-wait-timeout-he-lock-wait-timeout-de-qu-bie/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-5-zhi-auto-increment-zhu-jian-zi-zeng-you-hua-can-shu-zhi-innodb-autoinc-lock-mode/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优之-innodb_lock_wait_timeout和lock_wait_timeout的区别.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md">
                         
-                        <span class="card-title">mysql-参数调优之-innodb_lock_wait_timeout和lock_wait_timeout的区别.md</span>
+                        <span class="card-title">mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            innodb_lock_wait_timeoutThe length of time in seconds an InnoDB transaction waits for a row lock before giving up.innodb
+                            
+title: mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.mdtop: falsecover: falsetoc: truemathjax: truedate
                         
                     </div>
                     <div class="publish-info">
@@ -621,22 +623,20 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-12-zhi-innodb-thread-concurrency-innodb-concurrency-tickets-he-li/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-13-zhi-qi-ta-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-参数调优（13）之-其他参数.md">
                         
-                        <span class="card-title">mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md</span>
+                        <span class="card-title">mysql-参数调优（13）之-其他参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-设置这个参数在mysql低负载时没有效果，建议在mysql非常繁忙时可以关注并配置
-
-你可能会经常听到应该设置 innodb_thread_concurrency=0 （表示不进行并发线程数量控制）然后就不要管它了。不过这个只在低负载服务
+title: mysql-参数调优（13）之-其他参数.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                         
                     </div>
                     <div class="publish-info">
@@ -845,7 +845,7 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

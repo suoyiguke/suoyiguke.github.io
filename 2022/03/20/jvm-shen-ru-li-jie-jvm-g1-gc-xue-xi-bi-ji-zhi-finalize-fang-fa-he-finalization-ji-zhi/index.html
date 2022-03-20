@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="Java 语言提供了对象终止（ finalization ） 机制来允许开发人员提供对象被销毁之前的自定义处理逻辑。 Object 类提供了 finalize 方法来添加自定义的销毁逻辑。如果一个类有特殊的销毁逻辑，可以覆写 finaliz">
+    <meta name="description" content="
+title: jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.mdtop: falsecover: falsetoc: truemathjax: truedate: 202">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    657
+                    695
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Java 语言提供了对象终止（ finalization ） 机制来允许开发人员提供对象被销毁之前的自定义处理逻辑。 Object 类提供了 finalize 方法来添加自定义的销毁逻辑。<br>如果一个类有特殊的销毁逻辑，可以覆写 finalize 方法。从功能上来说， finalize 方法与 C＋＋中 的析构函数比较相似，但是 Java 采用的是基于垃圾回收器的自动内存管理机制，所以 finalize 方法在本质上不同于 C＋＋中的析构函数。当垃圾回收器发现没有引用指向一个对象时 ， 会调用这个对象的 finalize 方法。通常在这个方法中进行一些资源释放和清理的工作，比如关闭文件、套接字和数据库连接等 。</p>
+                <hr>
+<p>title: jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: JAVA-GC<br>categories: JAVA-GC</p>
+<hr>
+<p>Java 语言提供了对象终止（ finalization ） 机制来允许开发人员提供对象被销毁之前的自定义处理逻辑。 Object 类提供了 finalize 方法来添加自定义的销毁逻辑。<br>如果一个类有特殊的销毁逻辑，可以覆写 finalize 方法。从功能上来说， finalize 方法与 C＋＋中 的析构函数比较相似，但是 Java 采用的是基于垃圾回收器的自动内存管理机制，所以 finalize 方法在本质上不同于 C＋＋中的析构函数。当垃圾回收器发现没有引用指向一个对象时 ， 会调用这个对象的 finalize 方法。通常在这个方法中进行一些资源释放和清理的工作，比如关闭文件、套接字和数据库连接等 。</p>
 <p>由于 finalize 方法的存在，虚拟机中的对象一般处于三种可能的状态。</p>
 <p>###finalize 方法将对象分为三种状态<br>######第一种是可达状态<br>当有引用指向该对象时，该对象处于可达状态。<br>根据引用类型的不同，有可能处于<code>强引用可达</code>、<code>软引用可达</code>或<code>弱引用可达</code>状态。</p>
 <p>######第二种是可复活状态</p>
@@ -574,77 +578,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ke-da-xing-fen-xi-suan-fa/">
+                <a href="/2022/03/20/jvm-static-jing-tai-kuai-te-zheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="jvm-static-静态块特征.md">
                         
-                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md</span>
+                        <span class="card-title">jvm-static-静态块特征.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-驽马十驾，功在不舍
-
-######可达性分析算法的应用当前主流的商用程序语言（Java、 C#， 上溯至前面提到的古老的Lisp） 的内存管理子系统， 都是通过可达性分析（Reachability Analysis） 算法来判定对象是否存
+title: jvm-static-静态块特征.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: j
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-fang-fa-qu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之方法区.md">
-                        
-                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之方法区.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            方法区（Method Area） 与Java堆一样， 是各个线程共享的内存区域， 它用于存储已被虚拟机加载的类型信息、 常量、 静态变量、 即时编译器编译后的代码缓存等数据。 虽然《Java虚拟机规范》 中把方法区描述为堆的一个逻辑部分， 
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -662,6 +615,56 @@
                     
                     <a href="/tags/jvm/" target="_blank">
                         <span class="chip bg-color">jvm</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ke-da-xing-fen-xi-suan-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md">
+                        
+                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+title: jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:su
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
+                                    JAVA-GC
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA-GC/" target="_blank">
+                        <span class="chip bg-color">JAVA-GC</span>
                     </a>
                     
                 </div>
@@ -847,7 +850,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

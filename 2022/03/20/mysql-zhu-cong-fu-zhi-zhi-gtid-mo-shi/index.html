@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-主从复制之GTID模式.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-主从复制之GTID模式.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="从MySQL5.6开始增加了强大的GTID（Global Transaction ID，全局事务ID）这个特性，用来强化数据库的主备一致性， 故障恢复， 以及容错能力。用于取代过去传统的主从复制（即：基于binlog和position的异步">
+    <meta name="description" content="
+title: mysql-主从复制之GTID模式.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    521
+                    554
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>从MySQL5.6开始增加了强大的GTID（Global Transaction ID，全局事务ID）这个特性，用来强化数据库的主备一致性， 故障恢复， 以及容错能力。用于取代过去传统的主从复制（即：基于binlog和position的异步复制）。</p>
+                <hr>
+<p>title: mysql-主从复制之GTID模式.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>从MySQL5.6开始增加了强大的GTID（Global Transaction ID，全局事务ID）这个特性，用来强化数据库的主备一致性， 故障恢复， 以及容错能力。用于取代过去传统的主从复制（即：基于binlog和position的异步复制）。</p>
 <p>借助GTID，在发生主备切换的情况下，MySQL的其他slave可以自动在新主上找到正确的复制位置，这大大简化了复杂复制拓扑下集群的维护，也减少了人为设置复制position发生误操作的风险。另外，基于GTID的复制可以忽略已经执行过的事务，减少了数据发生不一致的风险。</p>
 <p>只需要在之前的配置基础上加上 </p>
 <pre><code>gtid_mode=ON
@@ -617,8 +621,8 @@ MASTER_AUTO_POSITION=1;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在 EMySQL5.5/5.6版本里,设置同步复制过滤,例如,设置忽略掉test库的t2表,你需要在my.cnf配置文件里增加 replicate-ignore-table=test. t2 必须重启mysq服务进程才能生效 
-在 MySQ
+                            
+title: mysql-主从复制之在线设置或忽略需要同步的库和表.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -655,19 +659,20 @@ MASTER_AUTO_POSITION=1;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-ri-chang-wei-hu-gong-zuo-1-zhu-cong-fu-zhi-zhi-shou-dong-qiang-zhi-tong-bu/">
+                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-ri-chang-wei-hu-gong-zuo-2-cha-kan-zhu-cong-fu-zhi-de-jin-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-主从复制日常维护工作1主从复制之手动强制同步.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-主从复制日常维护工作2--查看主从复制的进度.md">
                         
-                        <span class="card-title">mysql-主从复制日常维护工作1主从复制之手动强制同步.md</span>
+                        <span class="card-title">mysql-主从复制日常维护工作2--查看主从复制的进度.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在某些繁忙的 OLTP(在线事务处理）系统上，由于主库更新频繁，而从库由于各种原因(比如硬件性能较差）导致更新速度较慢，从而使得主从库之间的数据差距越来越大，最终对某些应用产生影响。在这种情况下，我们就需要定期地进行主从库的数据同步，使得主
+                            
+title: mysql-主从复制日常维护工作2–查看主从复制的进度.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -876,7 +881,7 @@ MASTER_AUTO_POSITION=1;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-记录一次线上出现的表锁问题.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-记录一次线上出现的表锁问题.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="今天突然线上业务接口出现了一直请求超时，远程到服务器查看日志，报了我们熟悉的 lock time out　错误。查询　SELECT * from information_schema.INNODB_TRX，观察到有事务在00:00:00 凌">
+    <meta name="description" content="
+title: mysql-记录一次线上出现的表锁问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    641
+                    679
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天突然线上业务接口出现了一直请求超时，远程到服务器查看日志，报了我们熟悉的 lock time out　错误。查询　SELECT * from information_schema.INNODB_TRX，观察到有事务在00:00:00 凌晨开启，到现在仍然活跃。要么就是事务超级大，要么就是代码哪里没有commit这个事务，导致一直将biz_cert_info表占用，并迟迟不释放。那么就到系统中寻找在00:00:00时开启的定时任务，得到了以下sql。</p>
+                <hr>
+<p>title: mysql-记录一次线上出现的表锁问题.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>今天突然线上业务接口出现了一直请求超时，远程到服务器查看日志，报了我们熟悉的 lock time out　错误。查询　SELECT * from information_schema.INNODB_TRX，观察到有事务在00:00:00 凌晨开启，到现在仍然活跃。要么就是事务超级大，要么就是代码哪里没有commit这个事务，导致一直将biz_cert_info表占用，并迟迟不释放。那么就到系统中寻找在00:00:00时开启的定时任务，得到了以下sql。</p>
 <p>目标锁定到了这个sql，经过询问，作用是每天将过期的证书状态值设置为2：</p>
 <pre><code>update  biz_cert_info  set STATUS = 2 WHERE valid_to_date &lt; NOW();
 </code></pre>
@@ -583,25 +587,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-biao-suo/">
+                <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
                         
-                        <span class="card-title">mysql-表锁.md</span>
+                        <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
-###使用
-
-锁表命令：lock table tablename read,tablename2 write;  
-
-
-解锁命令：unlo
+                            
+title: mysql-记录下工作中自己写的存储过程.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                         
                     </div>
                     <div class="publish-info">
@@ -638,23 +637,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
+                <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-sql-tong-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-运维操作之sql统计.md">
                         
-                        <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
+                        <span class="card-title">mysql-运维操作之sql统计.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 随机读a表的一行数据，循环插入到b表
-CREATE DEFINER=&quot;root&quot;@&quot;%&quot; PROCEDURE &quot;updateDate&quot;()
-BEGIN
-
-declare co
+                            
+title: mysql-运维操作之sql统计.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m
                         
                     </div>
                     <div class="publish-info">
@@ -665,8 +661,8 @@ declare co
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -676,8 +672,8 @@ declare co
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -863,7 +859,7 @@ declare co
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

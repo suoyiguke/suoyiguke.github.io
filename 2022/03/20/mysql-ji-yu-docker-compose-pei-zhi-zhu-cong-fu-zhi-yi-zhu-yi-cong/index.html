@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-基于docker-compose配置主从复制（一主一从）.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-基于docker-compose配置主从复制（一主一从）.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###MySQL主从复制有那些好处1、做数据的热备，作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。2、架构的扩展。业务量越来越大，I/O访问频率过高，单机无法满足，此时做多库的存储，降低磁盘I/O访问的频率，">
+    <meta name="description" content="
+title: mysql-基于docker-compose配置主从复制（一主一从）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.7k
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###MySQL主从复制有那些好处<br>1、做数据的热备，作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。<br>2、架构的扩展。业务量越来越大，I/O访问频率过高，单机无法满足，此时做多库的存储，降低磁盘I/O访问的频率，提高单个机器的I/O性能。<br>3、读写分离，使数据库能支撑更大的并发。</p>
+                <hr>
+<p>title: mysql-基于docker-compose配置主从复制（一主一从）.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###MySQL主从复制有那些好处<br>1、做数据的热备，作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。<br>2、架构的扩展。业务量越来越大，I/O访问频率过高，单机无法满足，此时做多库的存储，降低磁盘I/O访问的频率，提高单个机器的I/O性能。<br>3、读写分离，使数据库能支撑更大的并发。</p>
 <p>###MySQL复制过程</p>
 <ul>
 <li><p>master将改变记录到二进制日志（binary log）。这些记录过程叫做二进制日志事件，binary log events；</p>
@@ -743,12 +747,8 @@ relay_log=replicas-mysql-relay-bin
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###手动将表存为旧表，新创建一个新表来接收数据原子性修改，不阻塞业务
-
-一种不会出现业务抖动的方式
-
- DROP TABLE IF EXISTS my_summary_new, my_summary_old;
- CREATE TABLE 
+                            
+title: mysql-在线DDL操作之手动处理.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags:
                         
                     </div>
                     <div class="publish-info">
@@ -785,20 +785,20 @@ relay_log=replicas-mysql-relay-bin
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-zhun-ce-shi-sysbench-an-zhuang-yi/">
+                <a href="/2022/03/20/mysql-ji-yu-docker-de-an-zhuang-he-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-基准测试sysbench-安装（一）.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker的安装和配置.md">
                         
-                        <span class="card-title">mysql-基准测试sysbench-安装（一）.md</span>
+                        <span class="card-title">mysql-基于docker的安装和配置.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SysBench是一个模块化的、跨平台、多线程基准测试工具，主要用于评估测试各种不同系统参数下的数据库负载情况。https://github.com/akopytov/sysbench###sysbench的测试可运用：
-1、CPU性能2、
+                            
+title: mysql-基于docker的安装和配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tag
                         
                     </div>
                     <div class="publish-info">
@@ -1007,7 +1007,7 @@ relay_log=replicas-mysql-relay-bin
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

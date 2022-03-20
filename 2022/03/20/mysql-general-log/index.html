@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-general-log.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-general-log.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="查询全局日志情况
-(root@localhost) [mysql]&amp;gt;SHOW VARIABLES LIKE &amp;#39;general_log%&amp;#39;;
-+------------------+-------------------">
+    <meta name="description" content="
+title: mysql-general-log.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    485
+                    512
                 </div>
                 
 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>查询全局日志情况</p>
+                <hr>
+<p>title: mysql-general-log.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>查询全局日志情况</p>
 <pre><code>(root@localhost) [mysql]&gt;SHOW VARIABLES LIKE &#39;general_log%&#39;;
 +------------------+------------------------------+
 | Variable_name    | Value                        |
@@ -614,21 +616,20 @@ Time                 Id Command    Argument
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-hint-you-hua-qi-ti-shi-zhi-shi-yong-straight-join-qiang-zhi-zhi-ding-inner-join-de-lian-jie-shun-xu/">
+                <a href="/2022/03/20/mysql-explain-zhi-extra-lie-e-wai-xin-xi-chang-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-hint优化器提示之使用STRAIGHT_JOIN强制指定inner-join的连接顺序.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-explain之Extra列额外信息-常用.md">
                         
-                        <span class="card-title">mysql-hint优化器提示之使用STRAIGHT_JOIN强制指定inner-join的连接顺序.md</span>
+                        <span class="card-title">mysql-explain之Extra列额外信息-常用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            用explain进行分析，发现执行顺序为Table1-&gt;Table2，这时就由Table1来作为驱动表了，Table1中相应的索引也就用上了，执行时间竟然低于1s了。
-分析到这里，必须要重点说下：
-STRAIGHT_JOIN只适用于i
+                            
+title: mysql-explain之Extra列额外信息-常用.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -665,23 +666,20 @@ STRAIGHT_JOIN只适用于i
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-hint-you-hua-qi-ti-shi-zhi-shi-yong-force-index-qiang-zhi-shi-yong-suo-yin-he-zhi-ding-jin-yong-suo-yin/">
+                <a href="/2022/03/20/mysql-global-transaction-identifiers-gtid-te-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-global-transaction-identifiers-GTID特性.md">
                         
-                        <span class="card-title">mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md</span>
+                        <span class="card-title">mysql-global-transaction-identifiers-GTID特性.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###mysql强制使用索引1、mysql强制使用主键索引
-select * from table force index(PRI) limit 2;(强制使用主键)
-
-2、强制指定一个特定索引
-select * from table fo
+                            
+title: mysql-global-transaction-identifiers-GTID特性.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16
                         
                     </div>
                     <div class="publish-info">
@@ -890,7 +888,7 @@ select * from table fo
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-事务并发问题之存在性判断后插入多条问题.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-事务并发问题之存在性判断后插入多条问题.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-古之学者必有师。师者，所以传道受业解惑也。
-
-一个简单的需求，先判断表中是否存在对应的记录。不存在则插入，存在则忽略。如果使用先select查询是否存在，然后使用insert语句插入数据这种方式。在事务并发执行下会出现插入多条的事务并发问">
+title: mysql-事务并发问题之存在性判断后插入多条问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summar">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -482,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: mysql-事务并发问题之存在性判断后插入多条问题.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<blockquote>
 <p>古之学者必有师。师者，所以传道受业解惑也。</p>
 </blockquote>
 <p>一个简单的需求，先判断表中是否存在对应的记录。不存在则插入，存在则忽略。<br>如果使用先select查询是否存在，然后使用insert语句插入数据这种方式。在事务并发执行下会出现<code>插入多条</code>的事务并发问题。这个问题就像之前遇到的<code>更新丢失</code>的问题一样。关于更新丢失可以看看这篇文章 <a href="https://www.jianshu.com/p/bfd7c684412d">https://www.jianshu.com/p/bfd7c684412d</a></p>
@@ -750,28 +751,20 @@ public class TestServiceImpl implements TestService &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-wu-zhi-ji-ben-yong-fa-yu-shou-dong-ti-jiao/">
+                <a href="/2022/03/20/mysql-shi-wu-bing-fa-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-事务之基本用法与手动提交.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-事务并发问题.md">
                         
-                        <span class="card-title">mysql-事务之基本用法与手动提交.md</span>
+                        <span class="card-title">mysql-事务并发问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###mysql中使用事务
-######1、用begin,rollback,commit来实现
-
-
-begin    开始一个事务
-rollback 事务回滚
-commit  事务提交
-
-
-######使用begin的方式开启事务试验提交一
+                            
+title: mysql-事务并发问题.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql
                         
                     </div>
                     <div class="publish-info">
@@ -821,15 +814,7 @@ commit  事务提交
                     <div class="summary block-with-text">
                         
                             
-两个事务同时操作相同的数据，后提交的事务会覆盖先提交的事务处理结果
-
-使用银行转账的经典例子来帮助理解，这里的更新丢失是因为并发读后写造成的
-###更新丢失模拟
-mysql数据准备
-
-
-SET NAMES utf8mb4;
-SET FOR
+title: mysql-事务并发问题之更新丢失.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
@@ -1038,7 +1023,7 @@ SET FOR
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

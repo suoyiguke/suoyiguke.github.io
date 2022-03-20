@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-使用规范.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-使用规范.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###命名方面
- 命名约定 对于命名，并没有很严苛的规定，但在同一个应用中，建议风格统一。 以下是一些通用的法则，可能有互相冲突的地方，请读者自行衡量取舍。
-1、命名应有意义，以使用方便记忆、描述性强的可读性名称为第一准则，应尽量避免使用缩">
+    <meta name="description" content="
+title: mysql-使用规范.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql基本">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###命名方面</p>
+                <hr>
+<p>title: mysql-使用规范.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>###命名方面</p>
 <p> 命名约定 对于命名，并没有很严苛的规定，但在同一个应用中，建议风格统一。 以下是一些通用的法则，可能有互相冲突的地方，请读者自行衡量取舍。</p>
 <p>1、命名应有意义，以使用方便记忆、描述性强的可读性名称为第一准则，应尽量避免使用缩写或代码来命名。传统的使用缩写或代码的方法是出于一些历史原因，比如希望节省空间、尽快加载数据等，但随着硬件的快速发展，目前来说这么做的意义不大。<br>2、数据库、表都用小写（尽量不要使用除下划线、小写英文字母之外的其他字符，如果要用下划线，应该尽量保持一致的 风格）。<br>3、索引的命名以idx_为前缀。<br>4、命名不要过长（应尽量少于25个字符）。<br>5、不要使用保留字。<br>6、注意字段类型的一致性。<br>7、命名的一致性，同一个字段在不同的表中也应是相同的类型或长度。<br>8、如果同一个数据库下有不同的应用模块，则可以考虑对表名用不同的前缀标识。<br>9、备份表时加上时间标识。<br>10、新建库必须提供库名，库的命名规则必须契合所属业务的特点，新建库必须说明需要授权的用户，若要新建用户，则必须提供用户名，用户命名规则要契合业务。</p>
 <p>###索引方面<br>1、建议索引中的字段数量不要超过5个。<br>2、 单张表的索引数量建议控制在5个以内。<br>3、唯一键和主键不要重复。<br>4、索引字段的顺序需要考虑字段唯一值的个数，选择性高的字段（频繁使用的，作为查询条件的）一般放在前面。<br>5、ORDERBY、GROUP BY、DISTINCT的字段需要放在复合索引的后面，也就是说，复合索引的前面部分用于等值查询， 后面的部分用于排序。<br>6、使用EXPLAIN判断SQL语句是否合理使用了索引，尽量避免Extra列出现Using File Sort，UsingTemporary。<br>7、UPDATE、DELETE语句需要根据WHERE条件添加索引。<br>8、建议不要使用“like%value”的形式，因为MySQL仅支持最左前缀索引。<br>9、对长度过长的VARCHAR字段（比如网页地址）建立索引时，需要增加散列字段，对VARCHAR使用散列算法时，散列后 的字段最好是整型，然后对该字段建立索引。<br>10、存储域名地址时，可以考虑采用反向存储的方法，比如把news.sohu.com存储为com.sohu.news，方便在其上构建索引和进行 统计。<br>11、合理地创建复合索引，复合索引(a,b,c)可以用于“wherea=?”、“wherea=?and b=?”<br>12、“wherea=?and b=?and c=?”等形式，但对 于“wherea=?”的查询，可能会比仅仅在a列上创建单列索引查询要慢，因此需要在空间和效率上达成平衡。<br>13、合理地利用覆盖索引。由于覆盖索引一般常驻于内存中，因此可以大大提高查询速度。 ·把范围条件放到复合索引的最后，WHERE条件中的范围条件（BETWEEN、&lt;、&lt;=、&gt;、&gt;=）会导致后面的条件使用不了 索引。</p>
@@ -579,21 +581,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yuan-shu-ju-biao/">
+                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-qi-ta-ce-shi-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-元数据表.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-使用sysbench进行-其它测试（三）.md">
                         
-                        <span class="card-title">mysql-元数据表.md</span>
+                        <span class="card-title">mysql-使用sysbench进行-其它测试（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            3、      PARTITIONS  表分区表元数据表信息      
-(root@localhost) [information_schema]&gt;select * from PARTITIONS \G;
-    TABLE_CAT
+                            
+title: mysql-使用sysbench进行-其它测试（三）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -630,19 +631,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-yi-insert-buffer-cha-ru-huan-chong/">
+                <a href="/2022/03/20/mysql-yuan-shu-ju-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-元数据表.md">
                         
-                        <span class="card-title">mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md</span>
+                        <span class="card-title">mysql-元数据表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Insert Buffer可能是 InnoDB存储引擎关键特性中最令人激动与兴奋的一个功能。不过这个名字可能会让人认为插人缓冲是缓冲池中的一个组成部分。其实不然, InnoDB缓冲池中有 InsertBuffer 信息固然不错,但是Inse
+                            
+title: mysql-元数据表.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql运维
                         
                     </div>
                     <div class="publish-info">
@@ -653,8 +655,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                    mysql底层
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -664,8 +666,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
-                        <span class="chip bg-color">mysql底层</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -851,7 +853,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

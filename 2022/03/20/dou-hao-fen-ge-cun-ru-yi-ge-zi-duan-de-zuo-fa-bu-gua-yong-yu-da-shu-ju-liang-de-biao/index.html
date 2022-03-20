@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="逗号分隔存入一个字段的做法不适用于大数据量的表.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="逗号分隔存入一个字段的做法不适用于大数据量的表.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="最后使用like查询起来非常的慢！！
-Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一个字段里面。 然后查询的时候就卵了。 只能模糊 匹配。这种怎么优化查询呀？
-彰玉:就是放ES啊
-彰玉:mysql 的全文索引并不什么好用
-古">
+    <meta name="description" content="
+title: 逗号分隔存入一个字段的做法不适用于大数据量的表.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -460,7 +457,7 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    214
+                    257
                 </div>
                 
 
@@ -483,7 +480,10 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>最后使用like查询起来非常的慢！！</p>
+                <hr>
+<p>title: 逗号分隔存入一个字段的做法不适用于大数据量的表.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>最后使用like查询起来非常的慢！！</p>
 <p>Yoúng:<br>有个场景。 开发同事把多个字符串拼接在一起，放在一个字段里面。 然后查询的时候就卵了。 只能模糊 匹配。这种怎么优化查询呀？</p>
 <p>彰玉:<br>就是放ES啊</p>
 <p>彰玉:<br>mysql 的全文索引并不什么好用</p>
@@ -577,20 +577,20 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/shu-ru-shu-chu-liu-shi-yong/">
+                <a href="/2022/03/20/tong-yong-dian-zan-she-ji-yi-shi-yong-redis-de-set-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="输入输出流使用.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="通用点赞设计（一）使用redis的set类型.md">
                         
-                        <span class="card-title">输入输出流使用.md</span>
+                        <span class="card-title">通用点赞设计（一）使用redis的set类型.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用输出流 FileOutputStream 写入文件
-      File file = new File(System.getProperty(&quot;user.dir&quot;).concat(&quot;/config/org
+                            
+title: 通用点赞设计（一）使用redis的set类型.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:t
                         
                     </div>
                     <div class="publish-info">
@@ -601,8 +601,8 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/%E4%B8%9A%E5%8A%A1/" class="post-category" target="_blank">
+                                    业务
                                 </a>
                             
                             
@@ -612,8 +612,8 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/%E4%B8%9A%E5%8A%A1/" target="_blank">
+                        <span class="chip bg-color">业务</span>
                     </a>
                     
                 </div>
@@ -639,11 +639,8 @@ Yoúng:有个场景。 开发同事把多个字符串拼接在一起，放在一
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            注意返回值是void，只返回json就不需要添加配置文件了
-
-public void addUser()  &#123;
-
-      response.setContentType(&quot;application/json;chars
+                            
+title: 返回json.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: strut2categ
                         
                     </div>
                     <div class="publish-info">
@@ -852,7 +849,7 @@ public void addUser()  &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

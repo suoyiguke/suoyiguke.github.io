@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jmm-volatile关键字之内存语义的实现原理和内存屏障（二）.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="jmm-volatile关键字之内存语义的实现原理和内存屏障（二）.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-不积小流，无以成江海
-
-###java内存模型中8种原子指令
-关于主内存与工作内存之间的交互协议，即一个变量如何从主内存拷贝到工作内存。如何从工作内存同步到主内存中的实现细节。java内存模型定义了8种操作来完成。这8种操作每一种都是原子">
+title: jmm-volatile关键字之内存语义的实现原理和内存屏障（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwor">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -460,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.5k
                 </div>
                 
 
@@ -483,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: jmm-volatile关键字之内存语义的实现原理和内存屏障（二）.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: jmm<br>categories: jmm</p>
+<hr>
+<blockquote>
 <p>不积小流，无以成江海</p>
 </blockquote>
 <p>###java内存模型中8种原子指令</p>
@@ -616,25 +616,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-java-nei-cun-mo-xing/">
+                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-zhi-jin-zhi-zhi-ling-chong-pai-xu-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-java内存模型.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="jmm-volatile关键字之禁止指令重排序（二）.md">
                         
-                        <span class="card-title">jmm-java内存模型.md</span>
+                        <span class="card-title">jmm-volatile关键字之禁止指令重排序（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是JMM
-
-JMM定义了Java 虚拟机(JVM)在计算机内存(RAM)中的工作方式。
-
-JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
-
-从抽象的角度来看，JMM定义了线程和主内存之间的抽象关系：线程之间的共享变量存储
+                            
+title: jmm-volatile关键字之禁止指令重排序（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summa
                         
                     </div>
                     <div class="publish-info">
@@ -671,23 +666,20 @@ JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-de-shi-yong-zhu-yi/">
+                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-de-nei-cun-yu-yi-ke-jian-xing-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="jmm-volatile-关键字的使用注意.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="jmm-volatile关键字的内存语义，可见性（一）.md">
                         
-                        <span class="card-title">jmm-volatile-关键字的使用注意.md</span>
+                        <span class="card-title">jmm-volatile关键字的内存语义，可见性（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-忍耐有多久，器量就有多大
-
-
-【参考】 volatile 解决多线程内存不可见问题。对于一写多读，是可以解决变量同步问题，但是如果多写，同样无法解决线程安全问题。说明：如果是 count++操作，使用如下类实现：AtomicInteger
+title: jmm-volatile关键字的内存语义，可见性（一）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -896,7 +888,7 @@ JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="final关键字.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="final关键字.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="答案是：a，b未必一定等于1，2。和DCL的例子类似，也就是构造函数溢出问题。obj=new Example（）这行代码，分解成三个操作：① 分配一块内存；② 在内存上初始化i=1，j=2；③ 把obj指向这块内存。操作②和操作③可能重排序">
+    <meta name="description" content="
+title: final关键字.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: jmmcatego">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    450
+                    470
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>答案是：a，b未必一定等于1，2。和DCL的例子类似，也就是构造<br>函数溢出问题。obj=new Example（）这行代码，分解成三个操作：<br>① 分配一块内存；<br>② 在内存上初始化i=1，j=2；<br>③ 把obj指向这块内存。<br>操作②和操作③可能重排序，因此线程B可能看到未正确初始化的 值。对于构造函数溢出，通俗来讲，就是一个对象的构造并不是“原 子的”，当一个线程正在构造对象时，另外一个线程却可以读到未构造好的“一半对象”。</p>
+                <hr>
+<p>title: final关键字.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: jmm<br>categories: jmm</p>
+<hr>
+<p>答案是：a，b未必一定等于1，2。和DCL的例子类似，也就是构造<br>函数溢出问题。obj=new Example（）这行代码，分解成三个操作：<br>① 分配一块内存；<br>② 在内存上初始化i=1，j=2；<br>③ 把obj指向这块内存。<br>操作②和操作③可能重排序，因此线程B可能看到未正确初始化的 值。对于构造函数溢出，通俗来讲，就是一个对象的构造并不是“原 子的”，当一个线程正在构造对象时，另外一个线程却可以读到未构造好的“一半对象”。</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/13965490-3cc63d630ac439ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <h3 id="final的happen-before语义"><a href="#final的happen-before语义" class="headerlink" title="final的happen-before语义"></a>final的happen-before语义</h3><p>要解决这个问题，不止有一种办法。<br>办法1：给i，j都加上volatile关键字，禁止指令重排序。<br>办法2：为read/write函数都加上synchronized关键字。<br>如果i，j只需要初始化一次，则后续值就不会再变了，还有办法3，为其加上final关键字。<br>之所以能解决问题，是因为同volatile一样，final关键字也有相<br>应的happen-before语义：<br>（1）对final域的写（构造函数内部），happen-before于后续对<br>final域所在对象的读。<br>（2）对final域所在对象的读，happen-before于后续对final域<br>的读。<br>通过这种happen-before语义的限定，保证了final域的赋值，一 定在构造函数之前完成，不会出现另外一个线程读取到了对象，但对 象里面的变量却还没有初始化的情形，避免出现构造函数溢出的问<br>题。<br>关于final和volatile的特性与背后的原理，到此为止就讲完了， 在后续Concurrent包的源码分析中会反复看到这两个关键字的身影。<br>接下来总结常用的几个happen-before规则。</p>
 
@@ -562,22 +566,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/first/">
+                <a href="/2022/03/20/fastjson/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="first.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="fastjson.md">
                         
-                        <span class="card-title">first.md</span>
+                        <span class="card-title">fastjson.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:23password:summary:tags:categories:
-
-###
+title: fastjson.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: java-三方库学
                         
                     </div>
                     <div class="publish-info">
@@ -588,8 +590,8 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" class="post-category" target="_blank">
+                                    java-三方库学习
                                 </a>
                             
                             
@@ -599,8 +601,8 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
+                        <span class="chip bg-color">java-三方库学习</span>
                     </a>
                     
                 </div>
@@ -614,22 +616,20 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/for-bi-while-true-hao/">
+                <a href="/2022/03/20/flutter-huan-jing-da-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="for(;;)-比-while(true)-好.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="flutter环境搭建.md">
                         
-                        <span class="card-title">for(;;)-比-while(true)-好.md</span>
+                        <span class="card-title">flutter环境搭建.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            为啥:如下（底层完全不同）
-“死循环”有两种写法：for(;;)和while(true)，两者有啥区别，为啥源码中多数是for( ; ; )这种形式的，
-  编译前              编译后 
-while (1)；         
+                            
+title: flutter环境搭建.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: flutte
                         
                     </div>
                     <div class="publish-info">
@@ -640,8 +640,8 @@ while (1)；
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/flutter/" class="post-category" target="_blank">
+                                    flutter
                                 </a>
                             
                             
@@ -651,8 +651,8 @@ while (1)；
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/flutter/" target="_blank">
+                        <span class="chip bg-color">flutter</span>
                     </a>
                     
                 </div>
@@ -838,7 +838,7 @@ while (1)；
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

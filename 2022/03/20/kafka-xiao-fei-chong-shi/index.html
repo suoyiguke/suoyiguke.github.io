@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kafka-消费重试.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="kafka-消费重试.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="Spring-Kafka 提供消费重试的机制。在消息消费失败的时候，Spring-Kafka 会通过消费重试机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。
-当然，Spring-Kafka">
+    <meta name="description" content="
+title: kafka-消费重试.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kafk">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    458
+                    481
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Spring-Kafka 提供<strong>消费重试</strong>的机制。在消息<strong>消费失败</strong>的时候，Spring-Kafka 会通过<strong>消费重试</strong>机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。</p>
+                <hr>
+<p>title: kafka-消费重试.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mq-kafka<br>categories: mq-kafka</p>
+<hr>
+<p>Spring-Kafka 提供<strong>消费重试</strong>的机制。在消息<strong>消费失败</strong>的时候，Spring-Kafka 会通过<strong>消费重试</strong>机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。</p>
 <p>当然，Spring-Kafka 并不会无限重新投递消息给 Consumer 重新消费，而是在默认情况下，达到 N 次重试次数时，Consumer 还是消费失败时，该消息就会进入到<strong>死信队列</strong>。</p>
 <blockquote>
 <p>死信队列用于处理无法被正常消费的消息。当一条消息初次消费失败，Spring-Kafka 会自动进行消息重试；达到最大重试次数后，若消费依然失败，则表明消费者在正常情况下无法正确地消费该消息，此时，Spring-Kafka 不会立刻将消息丢弃，而是将其发送到该消费者对应的特殊队列中。</p>
@@ -573,22 +576,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/kafka-bing-fa-xiao-fei/">
+                <a href="/2022/03/20/kafka-de-xiao-fei-zhe-shou-dong-ti-jiao-xiao-xi-jin-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="kafka-并发消费.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="kafka-的消费者手动提交消息进度.md">
                         
-                        <span class="card-title">kafka-并发消费.md</span>
+                        <span class="card-title">kafka-的消费者手动提交消息进度.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-示例代码对应仓库：lab-03-kafka-demo-concurrency 。
-
-在上述的示例中，我们配置的每一个 Spring-Kafka @KafkaListener ，都是串行消费的。显然，这在监听的 Topic 每秒消息量比较大
+title: kafka-的消费者手动提交消息进度.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags:
                         
                     </div>
                     <div class="publish-info">
@@ -625,20 +626,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/kafka-pi-liang-xiao-fei/">
+                <a href="/2022/03/20/kafka-ji-qun-xiao-fei-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="kafka-批量消费.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="kafka-集群消费模式.md">
                         
-                        <span class="card-title">kafka-批量消费.md</span>
+                        <span class="card-title">kafka-集群消费模式.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的「4. 批量发送消息」 没有直接关联哈。
-下面，我们来实现一个 Consumer 批量消费消息的
+                            
+title: kafka-集群消费模式.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-ka
                         
                     </div>
                     <div class="publish-info">
@@ -847,7 +848,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

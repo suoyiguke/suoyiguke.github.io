@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql--sql预处理-Prepared-Statements.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql--sql预处理-Prepared-Statements.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###使用sql预编译的优势1、使用PAREPARE STATEMENT可以减少每次执行SQL的语法分析，比如用于执行带有WHERE条件的SELECT和DELETE，或者UPDATE，或者INSERT，只需要每次修改变量值即可。这样有些性能">
+    <meta name="description" content="
+title: mysql–sql预处理-Prepared-Statements.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    719
+                    746
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###使用sql预编译的优势<br>1、使用PAREPARE STATEMENT可以减少每次执行SQL的语法分析，比如用于执行带有WHERE条件的SELECT和DELETE，或者UPDATE，或者INSERT，只需要每次修改变量值即可。这样有些性能上的帮助。</p>
+                <hr>
+<p>title: mysql–sql预处理-Prepared-Statements.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>###使用sql预编译的优势<br>1、使用PAREPARE STATEMENT可以减少每次执行SQL的语法分析，比如用于执行带有WHERE条件的SELECT和DELETE，或者UPDATE，或者INSERT，只需要每次修改变量值即可。这样有些性能上的帮助。</p>
 <p>2、同样可以防止SQL注入，参数值可以包含转义符和定界符。</p>
 <p>3、使用在应用程序中，比如我们java JDBC的<code>PreparedStatement</code> 可以达到类似的预编译效果，可以看看这篇<br><a href="https://www.jianshu.com/p/19a9f2340ebe">https://www.jianshu.com/p/19a9f2340ebe</a> 。<br>当然也可以使用sql脚本来完成。</p>
 <p>###使用PREPARE 来预编译一条sql</p>
@@ -589,19 +593,20 @@ DEALLOCATE PREPARE s1;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-waiting-for-table-metadata-lock/">
+                <a href="/2022/03/20/mysql-zabbix-jian-kong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql--Waiting-for-table-metadata-lock.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--zabbix监控.md">
                         
-                        <span class="card-title">mysql--Waiting-for-table-metadata-lock.md</span>
+                        <span class="card-title">mysql--zabbix监控.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###解决方案1、SHOW  PROCESSLIST，得到Waiting for table metadata lock 的 id。然后kill之2、 设置ddl语句超时时间，注意需要在出现问题之前就设置，可以防止一直阻塞下去。就连读都会有
+                            
+title: mysql–zabbix监控.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
                         
                     </div>
                     <div class="publish-info">
@@ -638,21 +643,20 @@ DEALLOCATE PREPARE s1;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-15-zhi-innodb-page-size-she-zhi-ye-da-xiao/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-10-zhi-tmp-table-size-you-hua-lin-shi-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--参数调优（15）之-innodb_page_size设置页大小.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql--参数调优（10）之-tmp_table_size-优化临时表.md">
                         
-                        <span class="card-title">mysql--参数调优（15）之-innodb_page_size设置页大小.md</span>
+                        <span class="card-title">mysql--参数调优（10）之-tmp_table_size-优化临时表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            推荐设置：8192
-作用：
-这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。in
+                            
+title: mysql–参数调优（10）之-tmp_table_size-优化临时表.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass
                         
                     </div>
                     <div class="publish-info">
@@ -861,7 +865,7 @@ DEALLOCATE PREPARE s1;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

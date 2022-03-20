@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java-util-concurrent-Phaser.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java-util-concurrent-Phaser.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="Phaser 比较适合这样一种场景，一种任务可以分为多个阶段，希望多个线程去处理该批任务，对于每个阶段，多个线程可以并发进行，但是希望保证只有前面一个阶段的任务完成之后才能开始后面的任务。
-这种场景可以使用多个CyclicBarrier来实">
+    <meta name="description" content="
+title: java-util-concurrent-Phaser.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    527
+                    547
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Phaser 比较适合这样一种场景，一种任务可以分为多个阶段，希望多个线程去处理该批任务，对于每个阶段，多个线程可以并发进行，但是希望保证只有前面一个阶段的任务完成之后才能开始后面的任务。</p>
+                <hr>
+<p>title: java-util-concurrent-Phaser.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>Phaser 比较适合这样一种场景，一种任务可以分为多个阶段，希望多个线程去处理该批任务，对于每个阶段，多个线程可以并发进行，但是希望保证只有前面一个阶段的任务完成之后才能开始后面的任务。</p>
 <p>这种场景可以使用多个CyclicBarrier来实现，每个CyclicBarrier负责等待一个阶段的任务全部完成。</p>
 <p>但是使用CyclicBarrier的缺点在于，需要明确知道总共有多少个阶段，同时并行的任务数需要提前预定义好，且无法动态修改。而Phaser可同时解决这两个问题。</p>
 <p>1、传统用法：发令枪</p>
@@ -662,20 +665,20 @@ public class Merge2 &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-util-stream-collectors-minby-fan-hui-de-optional-ben-shen-ke-neng-hui-kong-zhi-zhen/">
+                <a href="/2022/03/20/java-util-concurrent-exchanger-jiao-huan-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="java-util-concurrent-Exchanger-交换数据.md">
                         
-                        <span class="card-title">java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md</span>
+                        <span class="card-title">java-util-concurrent-Exchanger-交换数据.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            所以拿出这个 Optional对象也记得要判空！
-   public static  Collector&lt;T, ?, Optional&gt;    minBy(Comparator&lt;? super T&gt; comparat
+                            
+title: java-util-concurrent-Exchanger-交换数据.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passw
                         
                     </div>
                     <div class="publish-info">
@@ -686,8 +689,8 @@ public class Merge2 &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -697,8 +700,8 @@ public class Merge2 &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -712,20 +715,20 @@ public class Merge2 &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-zhong-de-wei-yun-suan-wei-yun-suan-fu/">
+                <a href="/2022/03/20/java-ju-you-ding-ren-wu-gong-neng-de-xian-cheng-chi-threadpooltaskscheduler/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-中的位运算-位运算符(&，--，^).md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-具有定任务功能的线程池-ThreadPoolTaskScheduler.md">
                         
-                        <span class="card-title">java-中的位运算-位运算符(&，--，^).md</span>
+                        <span class="card-title">java-具有定任务功能的线程池-ThreadPoolTaskScheduler.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关于位运算符无非也就 与(&amp;)、或(|)、异或(^)、取反(~)、左移(&lt;&lt;)、右移(&gt;&gt;)、无符号右移(&gt;&gt;&gt;)
-位运算其实就是二进制的运算，加减乘除适用于十进制，而位运算就是二进制的运算
+                            
+title: java-具有定任务功能的线程池-ThreadPoolTaskScheduler.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49
                         
                     </div>
                     <div class="publish-info">
@@ -736,8 +739,8 @@ public class Merge2 &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -747,8 +750,8 @@ public class Merge2 &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -934,7 +937,7 @@ public class Merge2 &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

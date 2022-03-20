@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql---Next-Key-Lock-临键锁.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql---Next-Key-Lock-临键锁.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###InnoDB的三种行锁算法介绍 InnoDB存储引擎有3种行锁的算法,其分别是: 
-1、Record Lock单个行记录上的锁Record Lock  InnoDB总是会去锁住索引记录,如果存储引擎表在建立的时候没有设置任何一个索引,">
+    <meta name="description" content="
+title: mysql—Next-Key-Lock-临键锁.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###InnoDB的三种行锁算法介绍<br> InnoDB存储引擎有3种行锁的算法,其分别是: </p>
+                <hr>
+<p>title: mysql—Next-Key-Lock-临键锁.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql底层<br>categories: mysql底层</p>
+<hr>
+<p>###InnoDB的三种行锁算法介绍<br> InnoDB存储引擎有3种行锁的算法,其分别是: </p>
 <p><strong>1、Record Lock</strong><br>单个行记录上的锁<br>Record Lock  InnoDB总是会去锁住索引记录,如果存储引擎表在建立的时候没有设置任何一个索引,那么这时 InnoDB存储擎会使用隐式的主键来进行锁定。</p>
 <p><strong>2、Gap Lock</strong><br>间隙锁,锁定一个范围；我对GAP的认识一直有误解，之前以为只是会出现在 where 范围条件的时候</p>
 <p>来看一个删除不存在的记录造成的GAP:<br>DELETE不存在的记录 + insert ;之间也会出现GAP锁；<br>test表中只存在1，5 这两条数据；<br>sessionA执行BEGIN;DELETE FROM test WHERE id =3;<br>sessionB执行 BEGIN;INSERT INTO test(id) VALUES (2);</p>
@@ -665,78 +668,26 @@ INSERT INTO z SELECT 6,7;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-explain-de-key-len-de-chang-du-shi-ru-he-ji-suan-chu-lai-de/">
+                <a href="/2022/03/20/mybatis-de-xml-wen-jian-keng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--EXPLAIN-的key_len的长度是如何计算出来的？.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mybatis的xml文件坑.md">
                         
-                        <span class="card-title">mysql--EXPLAIN-的key_len的长度是如何计算出来的？.md</span>
+                        <span class="card-title">mybatis的xml文件坑.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            key_len的长度在联合索引中的查询分析特别有意义，可以通过它来判断查询的索引使用情况。可以清晰的分析出没有良好使用索引的查询。
-###key_len的长度计算公式：
-
-varchr 比 char 需要多使用1个字节存储长度;允许NULL
+                            
+title: mybatis的xml文件坑.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: jav
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mybatis-yuan-ma/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mybatis源码.md">
-                        
-                        <span class="card-title">mybatis源码.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            org.apache.ibatis.datasource.pooled.PoolState 维护活跃连接和闲置连接
-org.apache.ibatis.datasource.pooled.PooledDataSource 使用了PoolSt
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -754,6 +705,56 @@ org.apache.ibatis.datasource.pooled.PooledDataSource 使用了PoolSt
                     
                     <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" target="_blank">
                         <span class="chip bg-color">java持久化框架</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-explain-de-key-len-de-chang-du-shi-ru-he-ji-suan-chu-lai-de/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--EXPLAIN-的key_len的长度是如何计算出来的？.md">
+                        
+                        <span class="card-title">mysql--EXPLAIN-的key_len的长度是如何计算出来的？.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+title: mysql–EXPLAIN-的key_len的长度是如何计算出来的？.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49passwo
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -939,7 +940,7 @@ org.apache.ibatis.datasource.pooled.PooledDataSource 使用了PoolSt
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

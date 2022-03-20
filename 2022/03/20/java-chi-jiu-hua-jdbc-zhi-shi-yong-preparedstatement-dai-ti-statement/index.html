@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java持久化-jdbc之使用PreparedStatement代替Statement.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="java持久化-jdbc之使用PreparedStatement代替Statement.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="######相对于Statement，PreparedStatement的优点是什么？
-
-PreparedStatement有助于防止SQL注入，因为它会自动对特殊字符转义。
-PreparedStatement预编译sql。尤其当你重用它或">
+    <meta name="description" content="
+title: java持久化-jdbc之使用PreparedStatement代替Statement.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -459,7 +457,7 @@ PreparedStatement预编译sql。尤其当你重用它或">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.5k
                 </div>
                 
 
@@ -482,7 +480,10 @@ PreparedStatement预编译sql。尤其当你重用它或">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>######相对于Statement，PreparedStatement的优点是什么？</p>
+                <hr>
+<p>title: java持久化-jdbc之使用PreparedStatement代替Statement.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: java持久化框架<br>categories: java持久化框架</p>
+<hr>
+<p>######相对于Statement，PreparedStatement的优点是什么？</p>
 <ul>
 <li>PreparedStatement有助于防止SQL注入，因为它会自动对特殊字符转义。</li>
 <li>PreparedStatement预编译sql。尤其当你重用它或者使用它的拼量查询接口执行多条语句时。因此执行起来效率比Statement高</li>
@@ -780,27 +781,20 @@ class JDBCUtils &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xiao-ji-qiao-2-shi-yong-mei-ju-er-bu-shi-if-else-huo-zhe-switch-lai-zuo-shu-ju-zi-dian-dui-huan/">
+                <a href="/2022/03/20/java-zhong-de-arraylist-he-hashset-liang-zhe-de-an-yuan-su-nei-rong-cha-zhao-de-xiao-lu-chai-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="java小技巧2，使用枚举而不是if-else或者Switch来做数据字典兑换.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java中的ArrayList和HashSet-两者的按元素内容查找的效率差异.md">
                         
-                        <span class="card-title">java小技巧2，使用枚举而不是if-else或者Switch来做数据字典兑换.md</span>
+                        <span class="card-title">java中的ArrayList和HashSet-两者的按元素内容查找的效率差异.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            定义枚举
-package com.gbm.cloud.treasure.enums;
-
-/**
- * @Author: hjh
- * @Date: 2021/7/7 17:54
- * @Description: 商品状态枚举
- */
-pub
+                            
+title: java中的ArrayList和HashSet-两者的按元素内容查找的效率差异.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49p
                         
                     </div>
                     <div class="publish-info">
@@ -811,8 +805,8 @@ pub
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" class="post-category" target="_blank">
+                                    数据结构和算法
                                 </a>
                             
                             
@@ -822,8 +816,8 @@ pub
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" target="_blank">
+                        <span class="chip bg-color">数据结构和算法</span>
                     </a>
                     
                 </div>
@@ -837,22 +831,20 @@ pub
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-ji-ben-yong-fa/">
+                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-kai-shi-shi-wu-ti-jiao-shi-wu-hui-gun-shi-wu-she-zhi-savepoint/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java持久化-jdbc基本用法.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md">
                         
-                        <span class="card-title">java持久化-jdbc基本用法.md</span>
+                        <span class="card-title">java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            jdbc是java中进行数据库操作的基本工具，像mybatis和hibernate均是它的封装
-###JDBC代码的规定步骤
-1、加载驱动（装载相应的JDBC驱动并进行初始化）
- Class.forName(&quot;com.mysql.
+                            
+title: java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pa
                         
                     </div>
                     <div class="publish-info">
@@ -1061,7 +1053,7 @@ pub
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

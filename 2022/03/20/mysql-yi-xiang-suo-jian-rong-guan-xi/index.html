@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-意向锁兼容关系.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-意向锁兼容关系.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="从锁的粒度和范围，大致分三类：全局锁，表锁，行锁。共享锁S，与排它锁X均为行锁。innodb支持对更粗粒度（数据库级，表级，页级）加意向锁。MYSQL意向共享锁IS及意向排他锁IX均属于表级锁。
-
-
-IS、IX相互兼容，S兼容S、IS，X谁">
+    <meta name="description" content="
+title: mysql-意向锁兼容关系.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysq">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -459,7 +457,7 @@ IS、IX相互兼容，S兼容S、IS，X谁">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    101
+                    129
                 </div>
                 
 
@@ -482,7 +480,10 @@ IS、IX相互兼容，S兼容S、IS，X谁">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>从锁的粒度和范围，大致分三类：全局锁，表锁，行锁。<br>共享锁S，与排它锁X均为行锁。innodb支持对更粗粒度（数据库级，表级，页级）加意向锁。MYSQL意向共享锁IS及意向排他锁IX均属于表级锁。</p>
+                <hr>
+<p>title: mysql-意向锁兼容关系.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql底层<br>categories: mysql底层</p>
+<hr>
+<p>从锁的粒度和范围，大致分三类：全局锁，表锁，行锁。<br>共享锁S，与排它锁X均为行锁。innodb支持对更粗粒度（数据库级，表级，页级）加意向锁。MYSQL意向共享锁IS及意向排他锁IX均属于表级锁。</p>
 <p><img src="//upload-images.jianshu.io/upload_images/13932735-ed72ec05278d0b0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/809/format/webp" alt="image"></p>
 <p><img src="//upload-images.jianshu.io/upload_images/13932735-761ab67736442e9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/856/format/webp" alt="image"></p>
 <p>IS、IX相互兼容，S兼容S、IS，X谁都不兼容<br><strong>注：截图来源&lt;高性能MySQL（第三版）&gt;</strong></p>
@@ -566,19 +567,20 @@ IS、IX相互兼容，S兼容S、IS，X谁">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yi-bu-fu-zhi-he-ban-tong-bu-fu-zhi/">
+                <a href="/2022/03/20/mysql-xing-neng-ping-jing-yu-zhi-ji-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="mysql-异步复制和半同步复制.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-性能瓶颈阈值记录.md">
                         
-                        <span class="card-title">mysql-异步复制和半同步复制.md</span>
+                        <span class="card-title">mysql-性能瓶颈阈值记录.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在MySQL5.5之前，MySQL 的复制是异步操作，主库和从库的数据之间存在一定的延迟，这样存在一个隐患:当在主库上写入一个事务并提交成功，而从库尚未得到主库推送的Binlog日志时，主库宕机了，例如主库可能因磁盘损坏、内存故障等造成主库
+                            
+title: mysql-性能瓶颈阈值记录.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys
                         
                     </div>
                     <div class="publish-info">
@@ -589,8 +591,8 @@ IS、IX相互兼容，S兼容S、IS，X谁">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -600,8 +602,8 @@ IS、IX相互兼容，S兼容S、IS，X谁">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -615,19 +617,20 @@ IS、IX相互兼容，S兼容S、IS，X谁">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-man-cha-xun-ri-zhi-fen-xi-zhi-box-anemometer-gong-ju/">
+                <a href="/2022/03/20/mysql-xing-neng-zhen-duan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-慢查询日志分析之-Box-Anemometer工具.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-性能诊断.md">
                         
-                        <span class="card-title">mysql-慢查询日志分析之-Box-Anemometer工具.md</span>
+                        <span class="card-title">mysql-性能诊断.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+title: mysql-性能诊断.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql运维
                         
                     </div>
                     <div class="publish-info">
@@ -836,7 +839,7 @@ IS、IX相互兼容，S兼容S、IS，X谁">
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

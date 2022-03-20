@@ -4,17 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="synchronized-原理.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="synchronized-原理.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###java 对象头：
-java object head–&amp;gt;Mark Word (64位8字节)。这64位有2个重要的字段：
-
-锁标志位
-占用该锁的thread ID 
-
-了解完synchronized的基本含义及其使用方式后，下面">
+    <meta name="description" content="
+title: synchronized-原理.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: jm">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -485,7 +480,10 @@ java object head–&amp;gt;Mark Word (64位8字节)。这64位有2个重要的�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###java 对象头：</p>
+                <hr>
+<p>title: synchronized-原理.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: jmm<br>categories: jmm</p>
+<hr>
+<p>###java 对象头：</p>
 <p>java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段：</p>
 <ul>
 <li>锁标志位</li>
@@ -722,21 +720,20 @@ SourceFile: &quot;SyncMethod.java&quot;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/stream-cao-zuo-dui-yuan-ji-he-de-ying-xiang/">
+                <a href="/2022/03/20/ssm-ssm-kuang-jia-zhong-mybatis-de-sql-yu-ju-ri-zhi-shu-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="stream操作对原集合的影响？.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="ssm-ssm框架中，mybatis的sql语句日志输出.md">
                         
-                        <span class="card-title">stream操作对原集合的影响？.md</span>
+                        <span class="card-title">ssm-ssm框架中，mybatis的sql语句日志输出.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、arrayList内部复合类型修改符合类型对象数据会影响原来的。毕竟是一个对象
-        ArrayList&lt;JgWarehouseOrder&gt; arrayList = new ArrayList();
-       
+                            
+title: ssm-ssm框架中，mybatis的sql语句日志输出.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:sum
                         
                     </div>
                     <div class="publish-info">
@@ -747,8 +744,8 @@ SourceFile: &quot;SyncMethod.java&quot;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/spring/" class="post-category" target="_blank">
+                                    spring
                                 </a>
                             
                             
@@ -758,8 +755,8 @@ SourceFile: &quot;SyncMethod.java&quot;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/spring/" target="_blank">
+                        <span class="chip bg-color">spring</span>
                     </a>
                     
                 </div>
@@ -773,19 +770,20 @@ SourceFile: &quot;SyncMethod.java&quot;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/synchronized-suo-bu-zhu-integer-lei-xing-jie-jue/">
+                <a href="/2022/03/20/ssm-dan-yuan-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="synchronized-锁不住-Integer-类型解决.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="ssm-单元测试.md">
                         
-                        <span class="card-title">synchronized-锁不住-Integer-类型解决.md</span>
+                        <span class="card-title">ssm-单元测试.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然
+                            
+title: ssm-单元测试.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: springcat
                         
                     </div>
                     <div class="publish-info">
@@ -796,8 +794,8 @@ SourceFile: &quot;SyncMethod.java&quot;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/spring/" class="post-category" target="_blank">
+                                    spring
                                 </a>
                             
                             
@@ -807,8 +805,8 @@ SourceFile: &quot;SyncMethod.java&quot;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/spring/" target="_blank">
+                        <span class="chip bg-color">spring</span>
                     </a>
                     
                 </div>
@@ -994,7 +992,7 @@ SourceFile: &quot;SyncMethod.java&quot;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

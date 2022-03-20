@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-explain之Extra列额外信息-常用.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-explain之Extra列额外信息-常用.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="mysql的sql执行计划中Extra字段是一个优化非常关键的参数
-
-Using MRR  read_cache _sizeUsing temopory temopory_sizeUsing filesort sort_buffer_siz">
+    <meta name="description" content="
+title: mysql-explain之Extra列额外信息-常用.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@ Using MRR  read_cache _sizeUsing temopory temopory_sizeUsing filesort sort_buffe
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    609
+                    639
                 </div>
                 
 
@@ -481,7 +480,10 @@ Using MRR  read_cache _sizeUsing temopory temopory_sizeUsing filesort sort_buffe
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>mysql的sql执行计划中Extra字段是一个优化非常关键的参数</p>
+                <hr>
+<p>title: mysql-explain之Extra列额外信息-常用.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>mysql的sql执行计划中Extra字段是一个优化非常关键的参数</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/13965490-9d886f397053f72c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>Using MRR  read_cache _size<br>Using temopory temopory_size<br>Using filesort sort_buffer_size<br>Using join buffer  join_buffer_size</p>
 <h3 id="Using-filesort"><a href="#Using-filesort" class="headerlink" title="Using filesort"></a>Using filesort</h3><p>文件内排序，出现这个就要优化orderby排序条件。说明mysql会对数据使用文件内排序，而不是按照表内的索引顺序进行读取。也就是说mysql中无法利用索引完成的排序操作称为“文件排序”。</p>
@@ -601,9 +603,8 @@ Using MRR  read_cache _sizeUsing temopory temopory_sizeUsing filesort sort_buffe
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###官网信息https://dev.mysql.com/doc/refman/5.7/en/explain-output.html
-FirstMatch(b)半连接的一种策略
-###LooseScan半连接的一种策略松散扫描(LooseS
+                            
+title: mysql-explain之Extra列额外信息-其它.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summ
                         
                     </div>
                     <div class="publish-info">
@@ -640,21 +641,20 @@ FirstMatch(b)半连接的一种策略
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-hint-you-hua-qi-ti-shi-zhi-shi-yong-straight-join-qiang-zhi-zhi-ding-inner-join-de-lian-jie-shun-xu/">
+                <a href="/2022/03/20/mysql-general-log/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-hint优化器提示之使用STRAIGHT_JOIN强制指定inner-join的连接顺序.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-general-log.md">
                         
-                        <span class="card-title">mysql-hint优化器提示之使用STRAIGHT_JOIN强制指定inner-join的连接顺序.md</span>
+                        <span class="card-title">mysql-general-log.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            用explain进行分析，发现执行顺序为Table1-&gt;Table2，这时就由Table1来作为驱动表了，Table1中相应的索引也就用上了，执行时间竟然低于1s了。
-分析到这里，必须要重点说下：
-STRAIGHT_JOIN只适用于i
+                            
+title: mysql-general-log.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
                         
                     </div>
                     <div class="publish-info">
@@ -665,8 +665,8 @@ STRAIGHT_JOIN只适用于i
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -676,8 +676,8 @@ STRAIGHT_JOIN只适用于i
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -863,7 +863,7 @@ STRAIGHT_JOIN只适用于i
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

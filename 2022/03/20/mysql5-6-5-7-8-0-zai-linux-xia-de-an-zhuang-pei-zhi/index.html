@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql5-6、5-7、8-0-在linux下的安装配置.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql5-6、5-7、8-0-在linux下的安装配置.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###安装前准备1、先卸载自带的有很多linux系统自带安装了mysql，但是并不是我们需要的，所以我们先得将他们卸载干净。
-rpm -qa | grep mysql
-rpm -e --nodeps mysql-libs-5.1.73-5.">
+    <meta name="description" content="
+title: mysql5-6、5-7、8-0-在linux下的安装配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:su">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -481,7 +480,10 @@ rpm -e --nodeps mysql-libs-5.1.73-5.">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###安装前准备<br>1、先卸载自带的<br>有很多linux系统自带安装了mysql，但是并不是我们需要的，所以我们先得将他们卸载干净。</p>
+                <hr>
+<p>title: mysql5-6、5-7、8-0-在linux下的安装配置.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###安装前准备<br>1、先卸载自带的<br>有很多linux系统自带安装了mysql，但是并不是我们需要的，所以我们先得将他们卸载干净。</p>
 <pre><code>rpm -qa | grep mysql
 rpm -e --nodeps mysql-libs-5.1.73-5.el6_6.x86_64
 </code></pre>
@@ -697,7 +699,7 @@ Query OK, 0 rows affected (0.00 sec)
 <p>这些用户要删除；<br>@localhost、@localhost.localdomain</p>
 <pre><code>delete from mysql.user where user=&#39;&#39;;
 </code></pre>
-<p>空密码的root用户要修改密码。<br>root@localhost、<a href="mailto:&#114;&#111;&#x6f;&#x74;&#x40;&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#111;&#115;&#x74;&#46;&#108;&#111;&#x63;&#x61;&#108;&#100;&#111;&#109;&#x61;&#x69;&#x6e;">&#114;&#111;&#x6f;&#x74;&#x40;&#x6c;&#111;&#99;&#x61;&#x6c;&#104;&#111;&#115;&#x74;&#46;&#108;&#111;&#x63;&#x61;&#108;&#100;&#111;&#109;&#x61;&#x69;&#x6e;</a>、root@127.0.0.1、root@::1</p>
+<p>空密码的root用户要修改密码。<br>root@localhost、<a href="mailto:&#x72;&#111;&#x6f;&#116;&#64;&#108;&#x6f;&#x63;&#x61;&#108;&#x68;&#111;&#115;&#x74;&#x2e;&#x6c;&#111;&#x63;&#97;&#x6c;&#x64;&#111;&#x6d;&#97;&#x69;&#110;">&#x72;&#111;&#x6f;&#116;&#64;&#108;&#x6f;&#x63;&#x61;&#108;&#x68;&#111;&#115;&#x74;&#x2e;&#x6c;&#111;&#x63;&#97;&#x6c;&#x64;&#111;&#x6d;&#97;&#x69;&#110;</a>、root@127.0.0.1、root@::1</p>
 <pre><code>UPDATE user SET password=PASSWORD(&quot;*****&quot;) WHERE user=&#39;root&#39;; #修改root密码。
 </code></pre>
 <p>2、5.6 root用户密码是空的。密码要改掉。<br>2、5.6有test库，5.7以后test已经删除</p>
@@ -781,20 +783,20 @@ Query OK, 0 rows affected (0.00 sec)
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-gao-ke-yong-fang-an-zhi-mha/">
+                <a href="/2022/03/20/mysql-luo-ji-ri-zhi-zhi-undo-log-hui-fu-ri-zhi-yuan-li-he-jie-shao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-高可用方案之-MHA.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-逻辑日志之undo-log（恢复日志）原理和介绍.md">
                         
-                        <span class="card-title">mysql-高可用方案之-MHA.md</span>
+                        <span class="card-title">mysql-逻辑日志之undo-log（恢复日志）原理和介绍.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MHA是 Perl编写的一套MySQL故障切换工具，支持通过修改全局配置和漂移虚拟IP两种方式处理单点故障，已经在许多生产环境中得到了验证，是值得考虑的方案。
-
+                            
+title: mysql-逻辑日志之undo-log（恢复日志）原理和介绍.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:s
                         
                     </div>
                     <div class="publish-info">
@@ -805,8 +807,8 @@ Query OK, 0 rows affected (0.00 sec)
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -816,8 +818,8 @@ Query OK, 0 rows affected (0.00 sec)
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>
@@ -831,20 +833,20 @@ Query OK, 0 rows affected (0.00 sec)
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql8-0-de-resultset-metadata-diao-you-ti-sheng-180/">
+                <a href="/2022/03/20/mysql8-0-ahi-zi-gua-ying-hash-suo-yin-kai-qi-innodb-adaptive-hash-index-ti-sheng-40/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql8-0-的-resultset_metadata-调优-提升180%.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md">
                         
-                        <span class="card-title">mysql8-0-的-resultset_metadata-调优-提升180%.md</span>
+                        <span class="card-title">mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            resultset_metadata
-System Variable    resultset_metadataScope    SessionDynamic    YesSET_VAR Hint Applies    NoType    
+                            
+title: mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.mdtop: falsecover: falsetoc: truemathjax: truedate: 20
                         
                     </div>
                     <div class="publish-info">
@@ -1053,7 +1055,7 @@ System Variable    resultset_metadataScope    SessionDynamic    YesSET_VAR Hint 
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

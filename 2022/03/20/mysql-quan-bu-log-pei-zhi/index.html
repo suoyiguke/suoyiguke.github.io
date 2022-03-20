@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-全部log-配置.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-全部log-配置.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="全部的
-
-[mysqld]#————–—-MysQL Log setting——————#log_error=mysql-error.loglog_bin=mysql-bin.logslow_query_log_file=mysql-slo">
+    <meta name="description" content="
+title: mysql-全部log-配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mys">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    38
+                    68
                 </div>
                 
 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>全部的
+                <hr>
+<p>title: mysql-全部log-配置.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<pre><code>全部的
 </code></pre>
 <p>[mysqld]<br>#————–—-MysQL Log setting——————#<br>log_error=mysql-error.log<br>log_bin=mysql-bin.log<br>slow_query_log_file=mysql-slow.log<br>relay_log=mysql-relay.log<br>log_slave_updates=1<br>sync_binlog=1<br>relay_log_recovery=1<br>binlog_format=row<br>expire_logs_days=30<br>slow_query_log=1<br>long_query_time=2<br>log_queries_not_using_indexes=1<br>log_throttle_queries_not_using_indexes=10<br>log_slow_admin_statements=1<br>log_slow_slave_statements=1<br>min_examined_row_limit=1000<br>log_output=FILE</p>
 <p>[mysqld-5.7]<br>log_timestamps=system </p>
@@ -579,8 +581,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们可以通过执行这个
-UPDATE performance_schema.setup_consumers SET ENABLED = ‘YES’ WHERE NAME =’global_instrumentation’;UPDATE per
+                            
+title: mysql-元数据锁深入.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql
                         
                     </div>
                     <div class="publish-info">
@@ -629,10 +631,8 @@ UPDATE performance_schema.setup_consumers SET ENABLED = ‘YES’ WHERE NAME =�
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            把索引利用看成下楼梯,where条件可以让联合索引一直往下走
-###order by 可以作用在当前楼和所有上层楼就是不能作用在下一楼例子1、索引结构 identity_number,updated_at
-
-EXPLAIN SELECT  
+                            
+title: mysql-关于如何在一条sql中更多的利用到索引的思考（尤其是join）：.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pa
                         
                     </div>
                     <div class="publish-info">
@@ -841,7 +841,7 @@ EXPLAIN SELECT
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

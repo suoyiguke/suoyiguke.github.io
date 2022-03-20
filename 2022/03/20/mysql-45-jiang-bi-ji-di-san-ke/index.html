@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-45讲笔记-第三课.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-45讲笔记-第三课.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="1、务的特性：原子性、一致性、隔离性、持久性2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读3、事务隔离级别：读未提交、读提交、可重复读、串行化4、不同事务隔离级别的区别：读未提交：一个事务还未提交，它所做的变更就可以被别">
+    <meta name="description" content="
+title: mysql-45讲笔记-第三课.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、务的特性：原子性、一致性、隔离性、持久性<br>2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读<br>3、事务隔离级别：读未提交、读提交、可重复读、串行化<br>4、不同事务隔离级别的区别：<br>读未提交：一个事务还未提交，它所做的变更就可以被别的事务看到<br>读提交：一个事务提交之后，它所做的变更才可以被别的事务看到<br>可重复读：一个事务执行过程中看到的数据是一致的。未提交的更改对其他事务是不可见的<br>串行化：对应一个记录会加读写锁，出现冲突的时候，后访问的事务必须等前一个事务执行完成才能继续执行<br>5、配置方法：启动参数transaction-isolation<br>6、事务隔离的实现：每条记录在更新的时候都会同时记录一条回滚操作。同一条记录在系统中可以存在多个版本，这就是数据库的多版本并发控制（MVCC）。<br>7、回滚日志什么时候删除？系统会判断当没有事务需要用到这些回滚日志的时候，回滚日志会被删除。<br>8、什么时候不需要了？当系统里么有比这个回滚日志更早的read-view的时候。</p>
+                <hr>
+<p>title: mysql-45讲笔记-第三课.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p>1、务的特性：原子性、一致性、隔离性、持久性<br>2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读<br>3、事务隔离级别：读未提交、读提交、可重复读、串行化<br>4、不同事务隔离级别的区别：<br>读未提交：一个事务还未提交，它所做的变更就可以被别的事务看到<br>读提交：一个事务提交之后，它所做的变更才可以被别的事务看到<br>可重复读：一个事务执行过程中看到的数据是一致的。未提交的更改对其他事务是不可见的<br>串行化：对应一个记录会加读写锁，出现冲突的时候，后访问的事务必须等前一个事务执行完成才能继续执行<br>5、配置方法：启动参数transaction-isolation<br>6、事务隔离的实现：每条记录在更新的时候都会同时记录一条回滚操作。同一条记录在系统中可以存在多个版本，这就是数据库的多版本并发控制（MVCC）。<br>7、回滚日志什么时候删除？系统会判断当没有事务需要用到这些回滚日志的时候，回滚日志会被删除。<br>8、什么时候不需要了？当系统里么有比这个回滚日志更早的read-view的时候。</p>
 <p>9、为什么尽量不要使用长事务。长事务意味着系统里面会存在很老的事务视图，在这个事务提交之前，回滚记录都要保留，这会导致大量占用存储空间。除此之外，长事务还占用锁资源，可能会拖垮库。</p>
 <p>10、事务启动方式：一、显式启动事务语句，begin或者start transaction,提交commit，回滚rollback；二、set autocommit=0，该命令会把这个线程的自动提交关掉。这样只要执行一个select语句，事务就启动，并不会自动提交，直到主动执行commit或rollback或断开连接。<br>11、建议使用方法一，如果考虑多一次交互问题，可以使用commit work and chain语法。在autocommit=1的情况下用begin显式启动事务，如果执行commit则提交事务。如果执行commit work and chain则提交事务并自动启动下一个事务。</p>
 <p>思考题：</p>
@@ -576,22 +580,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-17-zhi-undo-log-pei-zhi/">
+                <a href="/2022/03/20/mysql-45-jiang-bi-ji-di-yi-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--参数调优（17）之undo-log-配置.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-45讲笔记-第一课.md">
                         
-                        <span class="card-title">mysql--参数调优（17）之undo-log-配置.md</span>
+                        <span class="card-title">mysql-45讲笔记-第一课.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            innodb_undo_directory = /undolog/
-这个就不用解释了，太傻瓜了。这种路径的都可由运维决定，记得挂在大磁盘下。
-innodb_undo_logs = 128
-推荐设置：128作用：指定回滚段的个数（早期版本该参
+                            
+title: mysql-45讲笔记-第一课.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: my
                         
                     </div>
                     <div class="publish-info">
@@ -602,8 +604,8 @@ innodb_undo_logs = 128
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -613,8 +615,8 @@ innodb_undo_logs = 128
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -640,7 +642,8 @@ innodb_undo_logs = 128
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是
+                            
+title: mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49p
                         
                     </div>
                     <div class="publish-info">
@@ -849,7 +852,7 @@ innodb_undo_logs = 128
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

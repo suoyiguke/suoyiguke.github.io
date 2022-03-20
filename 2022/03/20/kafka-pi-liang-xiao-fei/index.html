@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kafka-批量消费.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="kafka-批量消费.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的「4. 批量发送消息」 没有直接关联哈。
-下面，我们来实现一个 Consumer 批量消费消息的">
+    <meta name="description" content="
+title: kafka-批量消费.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kafk">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    479
+                    502
                 </div>
                 
 
@@ -480,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的<a target="_blank" rel="noopener" href="https://www.iocoder.cn/Spring-Boot/Kafka/#">「4. 批量发送消息」</a> 没有直接关联哈。</p>
+                <hr>
+<p>title: kafka-批量消费.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mq-kafka<br>categories: mq-kafka</p>
+<hr>
+<p>在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的<a target="_blank" rel="noopener" href="https://www.iocoder.cn/Spring-Boot/Kafka/#">「4. 批量发送消息」</a> 没有直接关联哈。</p>
 <p>下面，我们来实现一个 Consumer 批量消费消息的示例。考虑到不污染<a target="_blank" rel="noopener" href="https://www.iocoder.cn/Spring-Boot/Kafka/#">「4. 批量发送消息」</a> 的示例，我们在 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03-kafka/lab-03-kafka-demo-batch">lab-03-kafka-demo-batch</a> 项目的基础上，复制出一个 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/tree/master/lab-03-kafka/lab-03-kafka-demo-batch-consume">lab-03-kafka-demo-batch-consume</a> 项目。😈 酱紫，我们也能少写点代码，哈哈哈~</p>
 <h2 id="5-1-应用配置文件"><a href="#5-1-应用配置文件" class="headerlink" title="5.1 应用配置文件"></a>5.1 应用配置文件</h2><p>增加了四个配置项</p>
 <ul>
@@ -599,20 +602,20 @@ public class Demo02Consumer &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/kafka-xiao-fei-chong-shi/">
+                <a href="/2022/03/20/kafka-bing-fa-xiao-fei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="kafka-消费重试.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="kafka-并发消费.md">
                         
-                        <span class="card-title">kafka-消费重试.md</span>
+                        <span class="card-title">kafka-并发消费.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Spring-Kafka 提供消费重试的机制。在消息消费失败的时候，Spring-Kafka 会通过消费重试机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。
-当然，Spring-Kafka
+                            
+title: kafka-并发消费.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kafk
                         
                     </div>
                     <div class="publish-info">
@@ -649,19 +652,20 @@ public class Demo02Consumer &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/kafka-de-xiao-fei-zhe-shou-dong-ti-jiao-xiao-xi-jin-du/">
+                <a href="/2022/03/20/kafka-guang-bo-xiao-fei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="kafka-的消费者手动提交消息进度.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafka-广播消费.md">
                         
-                        <span class="card-title">kafka-的消费者手动提交消息进度.md</span>
+                        <span class="card-title">kafka-广播消费.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+title: kafka-广播消费.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mq-kafk
                         
                     </div>
                     <div class="publish-info">
@@ -870,7 +874,7 @@ public class Demo02Consumer &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

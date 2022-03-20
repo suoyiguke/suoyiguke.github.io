@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-线上导出数据影响测试.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-线上导出数据影响测试.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="1、使用navicat 导出结构和数据不会影响到insert插入。不会加锁
-2、使用 INSERT into tb_box_cp1  SELECT * FROM tb_box  语句copy数据到另一张表也不会影响insert。
-但是要注意">
+    <meta name="description" content="
+title: mysql-线上导出数据影响测试.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    124
+                    159
                 </div>
                 
 
@@ -481,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、使用navicat 导出结构和数据不会影响到insert插入。不会加锁</p>
+                <hr>
+<p>title: mysql-线上导出数据影响测试.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>1、使用navicat 导出结构和数据不会影响到insert插入。不会加锁</p>
 <p>2、使用 INSERT into tb_box_cp1  SELECT * FROM <code>tb_box</code>  语句copy数据到另一张表也不会影响insert。</p>
 <p>但是要注意，若添加了where条件，且字段没有添加索引或索引失效。那么会锁主全表记录。where条件之外的<br>的insert特定行会被阻塞，直到insert select 语句执行完毕！</p>
 <p>但是直接在原来表的尾巴insert是不会阻塞的。</p>
@@ -565,29 +567,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-xian-shang-bu-huo-sql-de-fang-fa/">
+                <a href="/2022/03/20/mysql-xian-cheng-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-线上捕获sql的方法.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-线程之.md">
                         
-                        <span class="card-title">mysql-线上捕获sql的方法.md</span>
+                        <span class="card-title">mysql-线程之.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、首先要得到一份线上都在跑的sql列表2、常用sql捕获方式
-
-基于 TCPDUMP
-基于查询日志记录
-基于 slow query log
-
-
-###捕获的sql分析方法推荐工具 pt-query-digest输出分块
-
-文件概述部分
-P
+                            
+title: mysql-线程之.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: mysql底层c
                         
                     </div>
                     <div class="publish-info">
@@ -598,8 +591,8 @@ P
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -609,8 +602,8 @@ P
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>
@@ -624,23 +617,20 @@ P
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-xian-cheng-zhi/">
+                <a href="/2022/03/20/mysql-xian-cheng-zhi-master-thread/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-线程之.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-线程之--Master-Thread.md">
                         
-                        <span class="card-title">mysql-线程之.md</span>
+                        <span class="card-title">mysql-线程之--Master-Thread.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、Purge Thread
-
-purge thread：清空undo页、清理“deleted”page
-
- Purge Thread 事务被提交后,其所使用的 undolog可能不再需要,因此需要 Purge Thread来回收 已
+                            
+title: mysql-线程之–Master-Thread.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:
                         
                     </div>
                     <div class="publish-info">
@@ -849,7 +839,7 @@ purge thread：清空undo页、清理“deleted”page
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

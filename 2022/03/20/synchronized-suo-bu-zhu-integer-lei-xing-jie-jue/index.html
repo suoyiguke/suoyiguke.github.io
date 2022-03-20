@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="synchronized-锁不住-Integer-类型解决.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="synchronized-锁不住-Integer-类型解决.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然">
+    <meta name="description" content="
+title: synchronized-锁不住-Integer-类型解决.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:su">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    148
+                    173
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。<br>然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然后研究了研究发现好像新建的String类型是在堆中的，并不是在字符串常量池，这个时候我就想到了使用intern()方法，使其返回字符串常量池中的地址,然后就成功的锁住了</p>
+                <hr>
+<p>title: synchronized-锁不住-Integer-类型解决.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: juc<br>categories: juc</p>
+<hr>
+<p>但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。<br>然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然后研究了研究发现好像新建的String类型是在堆中的，并不是在字符串常量池，这个时候我就想到了使用intern()方法，使其返回字符串常量池中的地址,然后就成功的锁住了</p>
 
             </div>
             <hr />
@@ -560,31 +564,76 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/synchronized-yuan-li/">
+                <a href="/2022/03/20/ssm-dan-yuan-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="synchronized-原理.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="ssm-单元测试.md">
                         
-                        <span class="card-title">synchronized-原理.md</span>
+                        <span class="card-title">ssm-单元测试.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###java 对象头：
-java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段：
-
-锁标志位
-占用该锁的thread ID 
-
-了解完synchronized的基本含义及其使用方式后，下面
+                            
+title: ssm-单元测试.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: springcat
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/spring/" class="post-category" target="_blank">
+                                    spring
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/spring/" target="_blank">
+                        <span class="chip bg-color">spring</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/synchronized-de-ke-chong-ru-xing/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="synchronized的可重入性.md">
+                        
+                        <span class="card-title">synchronized的可重入性.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+title: synchronized的可重入性.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:summary:tags: 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -602,57 +651,6 @@ java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段
                     
                     <a href="/tags/jmm/" target="_blank">
                         <span class="chip bg-color">jmm</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/sys-statement-analysis-sql-cha-xun-shi-jian-tong-ji/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="sys-statement_analysis-sql查询时间统计.md">
-                        
-                        <span class="card-title">sys-statement_analysis-sql查询时间统计.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            SELECT    *FROM    sys.statement_analysis WHERE db=’mgb_treasure_system’
-该表记录了执行的sql，比慢查询日志更方便。非常有用
-1、statement_analysis
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -838,7 +836,7 @@ java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="
-纸上得来终觉浅，绝知此事要躬行
-
-这次的主角是    @Transactional(propagation= Propagation.REQUIRES_NEW)；它总是自己创建事务，给人一种另起炉灶，自力更生的感觉
-######1、Ins">
+title: spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49pass">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -460,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    467
+                    500
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -483,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <hr>
+<p>title: spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: spring<br>categories: spring</p>
+<hr>
+<blockquote>
 <p>纸上得来终觉浅，绝知此事要躬行</p>
 </blockquote>
 <p>这次的主角是    @Transactional(propagation= Propagation.REQUIRES_NEW)；它总是自己创建事务，给人一种另起炉灶，自力更生的感觉</p>
@@ -584,26 +584,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-chuan-bo-xing-wei-zhi-ben-lei-zhong-shi-wu-fang-fa-diao-yong-ling-yi-ge-shi-wu-fang-fa-dao-zhi-de-shi-wu-shi-xiao-wen-ti/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-required-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="spring-事务传播行为之本类中事务方法调用另一个事务方法导致的事务失效问题.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践REQUIRED（一）.md">
                         
-                        <span class="card-title">spring-事务传播行为之本类中事务方法调用另一个事务方法导致的事务失效问题.md</span>
+                        <span class="card-title">spring-事务管理之事务传播行为之实践REQUIRED（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-生于忧患，死于安乐
-
-在UsersServiceImpl中有两个事务方法
-
-
-InsertUsers() 和InsertCuser() 都是被事务注解所申明的方法；且InsertUsers中调用了InsertCuser
-InsertUse
+title: spring-事务管理之事务传播行为之实践REQUIRED（一）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password
                         
                     </div>
                     <div class="publish-info">
@@ -640,23 +634,20 @@ InsertUse
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-required-yi/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-supports-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践REQUIRED（一）.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践SUPPORTS（二）.md">
                         
-                        <span class="card-title">spring-事务管理之事务传播行为之实践REQUIRED（一）.md</span>
+                        <span class="card-title">spring-事务管理之事务传播行为之实践SUPPORTS（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-纸上得来终觉浅，绝知此事要躬行
-
-为了深入了解spring的事务传播行为，只是知道概念还是不行。需要自己亲自动手来实践下才能学到细节，而且网络上的一些结论也有被以讹传讹的。自己做的实验自己也就放心很多，我愿意做多数人不愿意做的事。
-我们知
+title: spring-事务管理之事务传播行为之实践SUPPORTS（二）.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password
                         
                     </div>
                     <div class="publish-info">
@@ -865,7 +856,7 @@ InsertUse
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

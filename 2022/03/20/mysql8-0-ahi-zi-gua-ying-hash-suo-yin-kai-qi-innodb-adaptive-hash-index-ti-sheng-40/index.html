@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="###AHIAdaptive Hash IndexAHI自适应hash索引 
-SHOW VARIABLES like &amp;#39;%innodb_adaptive_hash_index%&amp;#39;
-
-MySQL InnoDB存储引擎的自适应哈">
+    <meta name="description" content="
+title: mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.mdtop: falsecover: falsetoc: truemathjax: truedate: 20">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -459,7 +457,7 @@ MySQL InnoDB存储引擎的自适应哈">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    946
+                    985
                 </div>
                 
 
@@ -482,7 +480,10 @@ MySQL InnoDB存储引擎的自适应哈">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###AHI<br>Adaptive Hash Index<br>AHI<br>自适应hash索引 </p>
+                <hr>
+<p>title: mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql运维操作<br>categories: mysql运维操作</p>
+<hr>
+<p>###AHI<br>Adaptive Hash Index<br>AHI<br>自适应hash索引 </p>
 <pre><code>SHOW VARIABLES like &#39;%innodb_adaptive_hash_index%&#39;
 </code></pre>
 <p>MySQL InnoDB存储引擎的自适应哈希（Adaptive Hash Index，下简称AHI）功能，想必很多同学都有所了解。<strong>若用户的访问模式基本都是类似KV操作的点查询（point select），则InnoDB存储引擎会自动创建哈希索引。</strong> 在有了哈希索引后，查询无需走B+树搜索，而直接通过hash就能直接定位查询的数据。因此，通过AHI功能，MySQL的查询性能就能得到大幅提升。查询能提升多少呢？对于写入操作又是否有影响呢？AHI有什么副作用么？今天姜老师就将带你走进最熟悉的InnoDB功能：AHI。</p>
@@ -588,23 +589,20 @@ MySQL InnoDB存储引擎的自适应哈">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysqld-out-of-memory-needed-4194704-bytes-qing-wen-na-ge-can-shu-ke-yi-jie-jue-zhe-ge-wen-ti/">
+                <a href="/2022/03/20/mysql5-6-5-7-8-0-zai-linux-xia-de-an-zhuang-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysqld--Out-of-memory-(Needed-4194704-bytes)-请问哪个参数可以解决这个问题？.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql5-6、5-7、8-0-在linux下的安装配置.md">
                         
-                        <span class="card-title">mysqld--Out-of-memory-(Needed-4194704-bytes)-请问哪个参数可以解决这个问题？.md</span>
+                        <span class="card-title">mysql5-6、5-7、8-0-在linux下的安装配置.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            戒糖低盐轻碳水:超过内存了，buffer_pool设置大了吧
-不会游泳的鱼:给小点吧
-走失的小老虎儿:设置的是1g 
-走失的小老虎儿:
-set global read_buffer_size=131072;set global read_r
+                            
+title: mysql5-6、5-7、8-0-在linux下的安装配置.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:su
                         
                     </div>
                     <div class="publish-info">
@@ -641,21 +639,20 @@ set global read_buffer_size=131072;set global read_r
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql8-xin-te-xing-zhi-explain-jia-qiang/">
+                <a href="/2022/03/20/mysql8-0-de-resultset-metadata-diao-you-ti-sheng-180/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql8-新特性之EXPLAIN-加强.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql8-0-的-resultset_metadata-调优-提升180%.md">
                         
-                        <span class="card-title">mysql8-新特性之EXPLAIN-加强.md</span>
+                        <span class="card-title">mysql8-0-的-resultset_metadata-调优-提升180%.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、 format=json 
-Hash join
-mysql&gt; EXPLAIN format=json  SELECT *  FROM `user` a LEFT JOIN book  b IGNORE index(index
+                            
+title: mysql8-0-的-resultset_metadata-调优-提升180%.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49p
                         
                     </div>
                     <div class="publish-info">
@@ -666,8 +663,8 @@ mysql&gt; EXPLAIN format=json  SELECT *  FROM `user` a LEFT JOIN book  b IGNORE 
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -677,8 +674,8 @@ mysql&gt; EXPLAIN format=json  SELECT *  FROM `user` a LEFT JOIN book  b IGNORE 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -864,7 +861,7 @@ mysql&gt; EXPLAIN format=json  SELECT *  FROM `user` a LEFT JOIN book  b IGNORE 
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>

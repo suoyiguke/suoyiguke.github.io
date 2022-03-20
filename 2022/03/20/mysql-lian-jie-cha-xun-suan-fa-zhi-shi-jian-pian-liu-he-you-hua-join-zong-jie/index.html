@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql-联接查询算法之实践篇（六）和优化join总结.md, 想做一个冷漠的人，但又太乐于助人">
+    <meta name="keywords" content="mysql-联接查询算法之实践篇（六）和优化join总结.md, 尹凯，一个立志要转mysql dba的java工程师">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="mysql选择使用连接算法的优先级在选择Join算法时，会有优先级，理论上会优先判断能否使用INLJ、BNLJ：内部表关联字段上有索引 Index Nested-LoopJoin &amp;gt; 5.7 Block Nested-Loop Joi">
+    <meta name="description" content="
+title: mysql-联接查询算法之实践篇（六）和优化join总结.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:49password:sum">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    1.9k
                 </div>
                 
 
@@ -479,7 +480,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>mysql选择使用连接算法的优先级</strong><br>在选择Join算法时，会有优先级，理论上会优先判断能否使用INLJ、BNLJ：<br>内部表关联字段上有索引 Index Nested-LoopJoin &gt; 5.7 Block Nested-Loop Join、8.0  Hash Join &gt; Simple Nested-Loop Join<br><strong>示例</strong><br>1、数据准备</p>
+                <hr>
+<p>title: mysql-联接查询算法之实践篇（六）和优化join总结.md<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2022-03-20 18:16:49<br>password:<br>summary:<br>tags: mysql基本<br>categories: mysql基本</p>
+<hr>
+<p><strong>mysql选择使用连接算法的优先级</strong><br>在选择Join算法时，会有优先级，理论上会优先判断能否使用INLJ、BNLJ：<br>内部表关联字段上有索引 Index Nested-LoopJoin &gt; 5.7 Block Nested-Loop Join、8.0  Hash Join &gt; Simple Nested-Loop Join<br><strong>示例</strong><br>1、数据准备</p>
 <p>表结构</p>
 <pre><code>CREATE TABLE `user`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -660,22 +664,20 @@ EXPLAIN SELECT *  FROM `user` a LEFT JOIN book  b force index(index_user_id)  ON
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-index-nested-loop-join-inlj-san/">
+                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-block-nested-loop-join-bnl-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-联接查询算法之Block-Nested-Loop-Join（BNL）-二.md">
                         
-                        <span class="card-title">mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md</span>
+                        <span class="card-title">mysql-联接查询算法之Block-Nested-Loop-Join（BNL）-二.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Index Nested-Loop Join：INLJ，索引嵌套循环连接
-
-在Join的优化时候，通常都会建议在内表建立索引，以此降低 Simple  Nested-Loop Join算法的开销，减少内表扫描次数，MySQL数据库中使用较
+title: mysql-联接查询算法之Block-Nested-Loop-Join（BNL）-二.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:16:
                         
                     </div>
                     <div class="publish-info">
@@ -712,21 +714,20 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ruo-gong-xiang-biao-kong-jian-wen-jian-ibdata1-diu-shi-ying-gai-ru-he-cong-ibd-wen-jian-hui-fu-shu-ju/">
+                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-simple-nested-loop-join-snlj-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-若共享表空间文件ibdata1丢失，应该如何从-ibd文件恢复数据？.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-联接查询算法之Simple-Nested-Loop-Join（SNLJ）-一.md">
                         
-                        <span class="card-title">mysql-若共享表空间文件ibdata1丢失，应该如何从-ibd文件恢复数据？.md</span>
+                        <span class="card-title">mysql-联接查询算法之Simple-Nested-Loop-Join（SNLJ）-一.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql把共享表空间文件删除后重建，导致数据表直接没了。navicat中查不到，其实frm和ibd文件都是存在的，只是此时无法识别数据表而已。我们可以利用它们来恢复数据。
-
-思路就是创建一张表结构和目标表相同的数据表，然后指定该表的表空间
+                            
+title: mysql-联接查询算法之Simple-Nested-Loop-Join（SNLJ）-一.mdtop: falsecover: falsetoc: truemathjax: truedate: 2022-03-20 18:1
                         
                     </div>
                     <div class="publish-info">
@@ -737,8 +738,8 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -748,8 +749,8 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -935,7 +936,7 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">810.8k</span>
+            <span class="white-color">760.1k</span>
             
 
             <br>
