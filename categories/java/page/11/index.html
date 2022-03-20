@@ -410,6 +410,52 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="在一个静态方法内调用一个非静态成员为什么是非法的-.md">
+                            
+                            <span class="card-title">在一个静态方法内调用一个非静态成员为什么是非法的-.md</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                这个需要结合 JVM 的相关知识，静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，然后通过类的实例对象去访问。在类的非静态成员不存在的时候静态成员就已经存在了，此时
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/">
                         <div class="card-image tag-image">
                             
@@ -457,19 +503,20 @@ ExecutionException封装了正在执行的线程抛出的任何异常，所以�
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/">
+                    <a href="/2022/03/20/nei-bu-lei/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="在一个静态方法内调用一个非静态成员为什么是非法的-.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
                             
-                            <span class="card-title">在一个静态方法内调用一个非静态成员为什么是非法的-.md</span>
+                            <span class="card-title">内部类.md</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                这个需要结合 JVM 的相关知识，静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，然后通过类的实例对象去访问。在类的非静态成员不存在的时候静态成员就已经存在了，此时
+                                ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
+public vo
                             
                         </div>
                         <div class="publish-info">
@@ -652,100 +699,6 @@ Collections.sort(list,Comparator.comp
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jian-rong-windows-he-linux-de-ci-pan-lu-jing-xie-fa/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="兼容windows和linux的磁盘路径写法.md">
-                            
-                            <span class="card-title">兼容windows和linux的磁盘路径写法.md</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这样写  String path = File.separator + “home” + File.separator + “file” + File.separator;
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/nei-bu-lei/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
-                            
-                            <span class="card-title">内部类.md</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
-public vo
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/ba-gu-wen/">
                         <div class="card-image tag-image">
                             
@@ -759,6 +712,53 @@ public vo
                         <div class="summary block-with-text">
                             
                                 https://gitee.com/SnailClimb/JavaGuide
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/jian-rong-windows-he-linux-de-ci-pan-lu-jing-xie-fa/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="兼容windows和linux的磁盘路径写法.md">
+                            
+                            <span class="card-title">兼容windows和linux的磁盘路径写法.md</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                这样写  String path = File.separator + “home” + File.separator + “file” + File.separator;
 
                             
                         </div>

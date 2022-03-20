@@ -581,20 +581,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/">
+                <a href="/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="在一个静态方法内调用一个非静态成员为什么是非法的-.md">
                         
-                        <span class="card-title">在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md</span>
+                        <span class="card-title">在一个静态方法内调用一个非静态成员为什么是非法的-.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ExecutionException和InterruptedException是两个非常不同的事情。
-ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，
+                            这个需要结合 JVM 的相关知识，静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。而非静态成员属于实例对象，只有在对象实例化之后才存在，然后通过类的实例对象去访问。在类的非静态成员不存在的时候静态成员就已经存在了，此时
                         
                     </div>
                     <div class="publish-info">
@@ -631,23 +630,19 @@ ExecutionException封装了正在执行的线程抛出的任何异常，所以�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/ji-ben-shu-ju-lei-xing-yu-bao-zhuang-shu-ju-lei-xing-de-shi-yong-biao-zhun/">
+                <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基本数据类型与包装数据类型的使用标准.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
                         
-                        <span class="card-title">基本数据类型与包装数据类型的使用标准.md</span>
+                        <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Reference:《阿里巴巴Java开发手册》
-
-【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
-
-比如我们如果自定义了一个Stude
+                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
                         
                     </div>
                     <div class="publish-info">

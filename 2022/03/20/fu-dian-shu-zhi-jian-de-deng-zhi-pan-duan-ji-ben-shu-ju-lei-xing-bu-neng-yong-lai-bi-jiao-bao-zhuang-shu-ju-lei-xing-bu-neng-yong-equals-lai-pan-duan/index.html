@@ -611,22 +611,20 @@ System.out.println(n);// 1.255&lt;/pre&gt;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/bi-jiao-de-keng-suo-you-hui-cui/">
+                <a href="/2022/03/20/fan-xing-bian-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="比较的坑所有荟萃.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="泛型边界.md">
                         
-                        <span class="card-title">比较的坑所有荟萃.md</span>
+                        <span class="card-title">泛型边界.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-    public static void main(String[] args) &#123;
-        String a =&quot;abc&quot;;
-        String b =&quot;ab&quot;+&
+                            ###List list = new ArrayList(); 能添加各种类型的数据吗？
+可以的，JDK1.5后随着泛型的加入，默认这也是一种泛型，叫raw type，由于它不限制存入的类型，所以能存任何类型的元素。大家其实可以把它当做JD
                         
                     </div>
                     <div class="publish-info">
@@ -663,20 +661,21 @@ System.out.println(n);// 1.255&lt;/pre&gt;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jin-zhi-zai-finally-zhong-shi-yong-return/">
+                <a href="/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="禁止在-finally-中使用return.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="能用实体类就不要图方便用HashMap.md">
                         
-                        <span class="card-title">禁止在-finally-中使用return.md</span>
+                        <span class="card-title">能用实体类就不要图方便用HashMap.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###禁止在 finally 中使用return当 try 语句和 finally 语句中都有 return 语句时，在方法返回之前，finally 语句的内容将被执行，并且 finally 语句的返回值将会覆盖原始的返回值。如下：
-pub
+                            1、HashMap比起简单的实体类占用空间非常大
+场景：100W行的大数据量查询，使用List 结构导致OOM
+但这种方式只能解决燃眉之急，归根结底还是要看看到底是什么数据一次性占了 1.6 个 G！仔细一看，List 里面装的都是 Map
                         
                     </div>
                     <div class="publish-info">

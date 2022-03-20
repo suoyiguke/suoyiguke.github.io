@@ -442,21 +442,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-util-optional-que-xian/">
+                        <a href="/2022/03/20/java-util-optional-ifpresent/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-util-Optional-缺陷.md">
+                                <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-util-Optional#ifPresent.md">
                                 
-                                <span class="card-title">java-util-Optional-缺陷.md</span>
+                                <span class="card-title">java-util-Optional#ifPresent.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                在这种时候使用新写法就有些鸡肋了。不要为了使用而使用。反而原来的写法可读性更好
-        Set&lt;String&gt; keySet = map.keySet();
-        for (String s : keySet)
+                                ifPresent 用于对过滤出的数据如果存在。如果经过过滤条件后，有数据的话就可以进行修改。
+
+ Optional&lt;A&gt; firstA= AList.stream() 
+                          .f
                                 
                             </div>
                             <div class="publish-info">
@@ -580,6 +581,67 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                 实现用一个12345的list生成一个以”element-“ 为开头元素的List
     public static void main(String[] args) &#123;
         List&lt;Integer&gt; 
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/java/" class="post-category" target="_blank">
+                                        java
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/java-dai-ma-ji-lei/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-代码积累.md">
+                                
+                                <span class="card-title">java-代码积累.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                1、集合逗号拼接String join = org.apache.commons.lang3.StringUtils.StringUtils.join(doctorEmployeeNum,”,”);
+
                                 
                             </div>
                             <div class="publish-info">
@@ -753,20 +815,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-dai-ma-ji-lei/">
+                        <a href="/2022/03/20/java-nei-bu-lei-ying-yong-zhi-bo-chi-pei-zhi-dao-jing-tai-nei-bu-lei-rang-pei-zhi-xin-xi-chu-shi-hua-bu-yi-lai-yu-lei-de-ben-shen-chu-shi-hua/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-代码积累.md">
+                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md">
                                 
-                                <span class="card-title">java-代码积累.md</span>
+                                <span class="card-title">java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、集合逗号拼接String join = org.apache.commons.lang3.StringUtils.StringUtils.join(doctorEmployeeNum,”,”);
-
+                                现在有这么一种情况
+A 类和B类都实现了接口C，接口C中有两个方法，方法1和方法2。A类实现了方法1和方法2，而B类只实现了方法1，B类的方法2没有实现，只能去调用A类的方法2，但是这样调用会报空指针，因为A类使用了@Conditional
                                 
                             </div>
                             <div class="publish-info">
@@ -878,67 +940,6 @@ import lombok.AllArgsConstru
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-nei-bu-lei-ying-yong-zhi-bo-chi-pei-zhi-dao-jing-tai-nei-bu-lei-rang-pei-zhi-xin-xi-chu-shi-hua-bu-yi-lai-yu-lei-de-ben-shen-chu-shi-hua/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md">
-                                
-                                <span class="card-title">java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                现在有这么一种情况
-A 类和B类都实现了接口C，接口C中有两个方法，方法1和方法2。A类实现了方法1和方法2，而B类只实现了方法1，B类的方法2没有实现，只能去调用A类的方法2，但是这样调用会报空指针，因为A类使用了@Conditional
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/java/" class="post-category" target="_blank">
-                                        java
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
                         <a href="/2022/03/20/java-shua-ti/">
                             <div class="card-image">
                                 
@@ -953,68 +954,6 @@ A 类和B类都实现了接口C，接口C中有两个方法，方法1和方法2�
                                 
                                 1、byte b = (byte)129;  -127
 其实可以把每个数据类型范围画成一个圈，byte是从-128-127，可以这样想，从-128开始，向上加就是一步一步画圈，知道加到127，这个圆圈刚好补满了，所以127再加一就又到了-1
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/java/" class="post-category" target="_blank">
-                                        java
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/java-fan-she/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-反射.md">
-                                
-                                <span class="card-title">java-反射.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                1、调用所有包含get的方法名，参数数目为0的
-      Class&lt;?&gt; herosClass = Certificate.class;
-        Method[] methods = herosClass.getMe
                                 
                             </div>
                             <div class="publish-info">
@@ -1126,26 +1065,84 @@ public class MyThread &#123;
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-chu-zhi-random-sui-ji-shu/">
+                        <a href="/2022/03/20/java-fan-she/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-基础之Random-随机数.md">
+                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-反射.md">
                                 
-                                <span class="card-title">java-基础之Random-随机数.md</span>
+                                <span class="card-title">java-反射.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
+                                1、调用所有包含get的方法名，参数数目为0的
+      Class&lt;?&gt; herosClass = Certificate.class;
+        Method[] methods = herosClass.getMe
                                 
-吾生也有涯，而知也无涯
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/java/" class="post-category" target="_blank">
+                                        java
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
 
-######使用Random 生成指定大小范围内的随机数
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
 
-公式:  random.nextInt(n -m + 1) +m;
+            
+            
 
-如下生成[22,433]范围内的随机数，注意两边都是闭区间。22和443都会取得到
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/java-fa-qi-post-qing-qiu-zi-ding-yi-header-he-body/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-发起post请求,自定义header和body.md">
+                                
+                                <span class="card-title">java-发起post请求,自定义header和body.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                package io.renren.modules.websocket.test;
+import org.apache.http.HttpEntity;
+import org.apache.http.NameValuePair;
+impor
                                 
                             </div>
                             <div class="publish-info">

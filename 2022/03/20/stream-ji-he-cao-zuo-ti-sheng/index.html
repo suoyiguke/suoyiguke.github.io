@@ -763,20 +763,25 @@ System.out.println(data);
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/stream-peek-de-yong-fa-he-yu-stream-map-qu-bie/">
+                <a href="/2022/03/20/stream-flatmap-yong-fa-he-stream-map-de-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="stream()-peek的用法和-与-stream()-map区别.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="stream()-flatMap用法和stream()-map的区别.md">
                         
-                        <span class="card-title">stream()-peek的用法和-与-stream()-map区别.md</span>
+                        <span class="card-title">stream()-flatMap用法和stream()-map的区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            peek对应Consumer   没返回值，map对应Function  有返回值
-Stream.of(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;,&quot;four&quot;
+                            
+flatMap在流里面还有流时使用
+
+
+flatMap可以扁平化流，把流给压扁
+flatMap的参数只能是流对象
+flatMap相当于把操作流的主题从第一个转为（第二个）第一个对象的属性流~~~  HashMap&lt;String, L
                         
                     </div>
                     <div class="publish-info">
@@ -813,21 +818,20 @@ Stream.of(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;,&quot;four&quot;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/stream-cao-zuo-dui-yuan-ji-he-de-ying-xiang/">
+                <a href="/2022/03/20/stream-qi-ta-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="stream操作对原集合的影响？.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="stream其它的.md">
                         
-                        <span class="card-title">stream操作对原集合的影响？.md</span>
+                        <span class="card-title">stream其它的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、arrayList内部复合类型修改符合类型对象数据会影响原来的。毕竟是一个对象
-        ArrayList&lt;JgWarehouseOrder&gt; arrayList = new ArrayList();
-       
+                                     HashMap&lt;String, Integer&gt; stringStringHashMap = new HashMap&lt;&gt;();
+        stringStringHashMap.put(&qu
                         
                     </div>
                     <div class="publish-info">

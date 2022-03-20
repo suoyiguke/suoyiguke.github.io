@@ -606,23 +606,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/ji-ben-shu-ju-lei-xing-yu-bao-zhuang-shu-ju-lei-xing-de-shi-yong-biao-zhun/">
+                <a href="/2022/03/20/keng-list-de-remove-object-o-zhi-shi-shan-chu-di-yi-ge-pi-pei-de-yuan-su/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基本数据类型与包装数据类型的使用标准.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md">
                         
-                        <span class="card-title">基本数据类型与包装数据类型的使用标准.md</span>
+                        <span class="card-title">坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Reference:《阿里巴巴Java开发手册》
-
-【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
-
-比如我们如果自定义了一个Stude
+                            不是我们想象的那样删除所有的指定元素。如果想删除所有指定元素。请使用removeAll
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add(
                         
                     </div>
                     <div class="publish-info">
@@ -659,21 +657,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/an-quan-you-ya-de-shi-yong-simpledateformat-lei-chu-li-shi-jian/">
+                <a href="/2022/03/20/ji-ben-shu-ju-lei-xing-yu-bao-zhuang-shu-ju-lei-xing-de-shi-yong-biao-zhun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="安全优雅的使用SimpleDateFormat类处理时间.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基本数据类型与包装数据类型的使用标准.md">
                         
-                        <span class="card-title">安全优雅的使用SimpleDateFormat类处理时间.md</span>
+                        <span class="card-title">基本数据类型与包装数据类型的使用标准.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SimpleDateFormat是线程不安全的！所以不能因为想要公用一个实例而选择使用单例。
-我们可以配合使用ThreadLocal来达到这个效果。
-package org.szwj.ca.identityauthsrv.util.comm
+                            Reference:《阿里巴巴Java开发手册》
+
+【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
+
+比如我们如果自定义了一个Stude
                         
                     </div>
                     <div class="publish-info">

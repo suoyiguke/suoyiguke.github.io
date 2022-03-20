@@ -560,24 +560,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/">
+                <a href="/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="受查视图、不可修改视图、子范围.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md">
                         
-                        <span class="card-title">受查视图、不可修改视图、子范围.md</span>
+                        <span class="card-title">在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###受查视图
-这样的泛型约束是失效的   
- List&lt;String&gt; list = new ArrayList&lt;&gt;();
- List stList = list;
- //添加成功
- stList.add(new 
+                            ExecutionException和InterruptedException是两个非常不同的事情。
+ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，
                         
                     </div>
                     <div class="publish-info">
@@ -614,20 +610,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/">
+                <a href="/2022/03/20/keng-list-de-remove-object-o-zhi-shi-shan-chu-di-yi-ge-pi-pei-de-yuan-su/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md">
                         
-                        <span class="card-title">在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md</span>
+                        <span class="card-title">坑-List的remove(Object-o-)-只是删除第一个匹配的元素.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ExecutionException和InterruptedException是两个非常不同的事情。
-ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，
+                            不是我们想象的那样删除所有的指定元素。如果想删除所有指定元素。请使用removeAll
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add(
                         
                     </div>
                     <div class="publish-info">

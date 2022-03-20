@@ -699,19 +699,23 @@ public class DateUtils &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/">
+                <a href="/2022/03/20/ji-ben-shu-ju-lei-xing-yu-bao-zhuang-shu-ju-lei-xing-de-shi-yong-biao-zhun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基本数据类型与包装数据类型的使用标准.md">
                         
-                        <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
+                        <span class="card-title">基本数据类型与包装数据类型的使用标准.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
+                            Reference:《阿里巴巴Java开发手册》
+
+【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
+
+比如我们如果自定义了一个Stude
                         
                     </div>
                     <div class="publish-info">

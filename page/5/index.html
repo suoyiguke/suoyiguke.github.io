@@ -397,74 +397,21 @@ public static void main(String[] args) &#123;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-ji-chu-zhi-shi-5-xin-jian-shi-li-shi-ge-bu-fen-zhi-xing-shun-xu/" target="_blank">
+                    <a href="/2022/03/20/java-ji-chu-zhi-shi-2-bi-jiao-he-equals/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-基础知识5-新建实例时各部分执行顺序.md">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="java-基础知识2-比较-==-和-equals().md">
                             
-                            <span class="card-title">java-基础知识5-新建实例时各部分执行顺序.md</span>
+                            <span class="card-title">java-基础知识2-比较-==-和-equals().md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            我们先来看一个例子
-package test;
-
-
-class HelloA &#123;
-    public HelloA() &#123;
-        System.out.println(&quot;父类构造器执行&quot;)
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/java-zi-fu-chuan-cao-zuo/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-字符串操作.md">
-                            
-                            <span class="card-title">java-字符串操作.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###基础使用1、java字符串占位符替换
-java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&#125; 次.&quot;, domain , iVisit)
+                            == 的用法不推荐== 使用在数值类型之间1、 == 使用在包装类型之间，比较的是引用地址
+java中对于Integer var=?在-128至127之间的赋值，Integer对象是在IntegerCache.cache产生，会复用已有对象
                             
                         </div>
                         <div class="publish-info">
@@ -549,24 +496,21 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-shi-xian-an-map-de-value-pai-xu/" target="_blank">
+                    <a href="/2022/03/20/java-zi-fu-chuan-cao-zuo/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java-实现按Map的value排序.md">
+                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-字符串操作.md">
                             
-                            <span class="card-title">java-实现按Map的value排序.md</span>
+                            <span class="card-title">java-字符串操作.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
-自弃者天弃之
-
-如果要实现按value排序，不能采用SortedMap结构比如TreeMap，因为SortedMap是按key排序的Map，而不是按value排序
-可以使用ArrayList做排序过渡，然后构建一个LinkedHashMa
+                            ###基础使用1、java字符串占位符替换
+java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&#125; 次.&quot;, domain , iVisit)
                             
                         </div>
                         <div class="publish-info">
@@ -616,6 +560,57 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
                             list转map。使用id做key，name做value
     private Map&lt;String, String&gt; getChannel() &#123;
         List&lt;MgbChannel&gt; li
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-shi-xian-an-map-de-value-pai-xu/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java-实现按Map的value排序.md">
+                            
+                            <span class="card-title">java-实现按Map的value排序.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+自弃者天弃之
+
+如果要实现按value排序，不能采用SortedMap结构比如TreeMap，因为SortedMap是按key排序的Map，而不是按value排序
+可以使用ArrayList做排序过渡，然后构建一个LinkedHashMa
                             
                         </div>
                         <div class="publish-info">
@@ -889,23 +884,25 @@ java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/java-you-xu-map-zhi-treemap-de-shi-yong/" target="_blank">
+                    <a href="/2022/03/20/java-mei-ju/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="java-有序Map之TreeMap的使用.md">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-枚举.md">
                             
-                            <span class="card-title">java-有序Map之TreeMap的使用.md</span>
+                            <span class="card-title">java-枚举.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
-谦虚使人进步
+                            1、根据name获得value，非常方便，不要去写switch了！
+package com.sfpay.axg.enums;
 
-想要了解一个类，就可以从它实现的接口和继承的父类开始。我们可以看到TreeMap实现了java.util.NavigableMap接口，NavigableMap它又继承了排序Map接口 java.util.SortedMa
+import org.apache.commons.lang3.StringUtils;
+
+public enu
                             
                         </div>
                         <div class="publish-info">

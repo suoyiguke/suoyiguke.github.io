@@ -602,23 +602,22 @@ public class RandomTest &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ni-ming-nei-bu-lei-xiang-guan-gai-nian/">
+                <a href="/2022/03/20/java-ji-chu-zhi-finally-shi-fou-yi-ding-hui-zhi-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-匿名内部类相关概念.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-基础之finally是否一定会执行-.md">
                         
-                        <span class="card-title">java-匿名内部类相关概念.md</span>
+                        <span class="card-title">java-基础之finally是否一定会执行-.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###匿名内部类
-public class MyThread &#123;
-    private MyRunnable target;
-    public MyThread(MyRunnable target) &#123;
-     
+                            事实上finally区域代码在很多情况下都不会执行######没有进入try区域 1、程序在进入try区域之前抛出异常，那么整个try-catch -finally都不会执行
+class TestThreadLocal &#123;
+
+  
                         
                     </div>
                     <div class="publish-info">
@@ -655,22 +654,20 @@ public class MyThread &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-fa-qi-post-qing-qiu-zi-ding-yi-header-he-body/">
+                <a href="/2022/03/20/java-ji-chu-zhi-java-yi-chang-ti-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-发起post请求,自定义header和body.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="java-基础之java异常体系.md">
                         
-                        <span class="card-title">java-发起post请求,自定义header和body.md</span>
+                        <span class="card-title">java-基础之java异常体系.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package io.renren.modules.websocket.test;
-import org.apache.http.HttpEntity;
-import org.apache.http.NameValuePair;
-impor
+                            #Java异常类的架构
+RuntimeException/UnCheckException定义: RuntimeException及其子类都被称为运行时异常。特点: Java编译器不会检查它。也就是说，当程序中可能出现这类异常时，倘若既”没
                         
                     </div>
                     <div class="publish-info">
