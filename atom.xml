@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>尹凯的博客</title>
+  
+  <subtitle>因为我是一个人，要做一个人应该做的</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.jianshu.com/"/>
+  <updated>2022-03-20T10:20:43.934Z</updated>
+  <id>https://www.jianshu.com/</id>
+  
+  <author>
+    <name>尹凯</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javax-validation和hibernate-validator参数校验.md</title>
+    <link href="https://www.jianshu.com/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/"/>
+    <id>https://www.jianshu.com/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T10:20:43.934Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;javax-validation和hibernate-validator参数校验&quot;&gt;&lt;a href=&quot;#javax-validation和hibernate-validator参数校验&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql 使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）</title>
+    <link href="https://www.jianshu.com/2021/05/02/two/"/>
+    <id>https://www.jianshu.com/2021/05/02/two/</id>
+    <published>2021-05-02T11:08:12.000Z</published>
+    <updated>2022-03-20T10:10:48.967Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>first</title>
+    <link href="https://www.jianshu.com/2021/05/02/first/"/>
+    <id>https://www.jianshu.com/2021/05/02/first/</id>
+    <published>2021-05-02T10:45:23.000Z</published>
+    <updated>2022-03-20T10:10:48.966Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###first&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
