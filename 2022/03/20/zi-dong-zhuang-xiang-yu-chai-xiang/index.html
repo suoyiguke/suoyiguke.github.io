@@ -596,21 +596,21 @@ Integer i = 10;  //装箱int n = i;   //拆箱上面这两行代码对应的字�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/yu-fa-tang/">
+                <a href="/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="语法糖.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="能用实体类就不要图方便用HashMap.md">
                         
-                        <span class="card-title">语法糖.md</span>
+                        <span class="card-title">能用实体类就不要图方便用HashMap.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、JSONObject 的fluentPut 链式put
-JSONObject res = new JSONObject()
-            .fluentPut(&quot;mode&quot;, ClusterStateMan
+                            1、HashMap比起简单的实体类占用空间非常大
+场景：100W行的大数据量查询，使用List 结构导致OOM
+但这种方式只能解决燃眉之急，归根结底还是要看看到底是什么数据一次性占了 1.6 个 G！仔细一看，List 里面装的都是 Map
                         
                     </div>
                     <div class="publish-info">
@@ -647,20 +647,21 @@ JSONObject res = new JSONObject()
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/shu-ru-shu-chu-liu-shi-yong/">
+                <a href="/2022/03/20/yu-fa-tang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="输入输出流使用.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="语法糖.md">
                         
-                        <span class="card-title">输入输出流使用.md</span>
+                        <span class="card-title">语法糖.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用输出流 FileOutputStream 写入文件
-      File file = new File(System.getProperty(&quot;user.dir&quot;).concat(&quot;/config/org
+                            1、JSONObject 的fluentPut 链式put
+JSONObject res = new JSONObject()
+            .fluentPut(&quot;mode&quot;, ClusterStateMan
                         
                     </div>
                     <div class="publish-info">

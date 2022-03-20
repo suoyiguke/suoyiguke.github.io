@@ -665,26 +665,23 @@ class Main&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/">
+                <a href="/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java-hashCode和equals方法与对象比较和去重(一).md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="LongAdder与AtomicLong有什么区别？.md">
                         
-                        <span class="card-title">Java-hashCode和equals方法与对象比较和去重(一).md</span>
+                        <span class="card-title">LongAdder与AtomicLong有什么区别？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-事实胜于雄辩
+                            LongAdder与AtomicLong有什么区别？参考答案
 
-###什么时候需要重写hashCode 和 equals 方法呢？
+AtomicLong 是基于 CAS 方式自旋更新的；
 
-如果想使用equals比较对象，那么请将equals方法和hashCode方法重写
-
-######情景模式一在使用Set进行集合元素去重的时候，请将ha
+LongAdder 是把 value 分成若干cell，并发量低的时候，直接 CAS 更新值，成功即结束。并发量高的情
                         
                     </div>
                     <div class="publish-info">
@@ -721,23 +718,20 @@ class Main&#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/">
+                <a href="/2022/03/20/map-pi-liang-remove/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="LongAdder与AtomicLong有什么区别？.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Map-批量remove.md">
                         
-                        <span class="card-title">LongAdder与AtomicLong有什么区别？.md</span>
+                        <span class="card-title">Map-批量remove.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            LongAdder与AtomicLong有什么区别？参考答案
+                            saveMap.keySet().removeAll(errMap.keySet());
 
-AtomicLong 是基于 CAS 方式自旋更新的；
-
-LongAdder 是把 value 分成若干cell，并发量低的时候，直接 CAS 更新值，成功即结束。并发量高的情
                         
                     </div>
                     <div class="publish-info">

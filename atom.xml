@@ -181,33 +181,6 @@ List strList=
   </entry>
   
   <entry>
-    <title>Java-泛型了解么？什么是类型擦除？介绍一下常用的通配符？.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.092Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了编译时类型安全检测机制，该机制允许程序员在编译时检测到非法的类型。泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。&lt;/p&gt;
-&lt;p&gt;Java 的泛型是伪泛型，这是因为
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>LongAdder与AtomicLong有什么区别？.md</title>
     <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/"/>
     <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/</id>
@@ -238,11 +211,11 @@ List strList=
   </entry>
   
   <entry>
-    <title>Objects-equals-比较Long和Integer-一定记得加L.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/</id>
+    <title>Java-泛型了解么？什么是类型擦除？介绍一下常用的通配符？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.103Z</updated>
+    <updated>2022-03-20T11:54:58.092Z</updated>
     
     <summary type="html">
     
@@ -250,7 +223,8 @@ List strList=
       
         
         
-          &lt;p&gt; if (Objects.equals(1L, groupListSize)) {&lt;br&gt;&lt;img
+          &lt;p&gt;Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了编译时类型安全检测机制，该机制允许程序员在编译时检测到非法的类型。泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。&lt;/p&gt;
+&lt;p&gt;Java 的泛型是伪泛型，这是因为
         
       
     
@@ -291,47 +265,11 @@ List strList=
   </entry>
   
   <entry>
-    <title>assertTrue、assertEquals.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/</id>
+    <title>Objects-equals-比较Long和Integer-一定记得加L.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.075Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>eques.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>first.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
+    <updated>2022-03-20T11:54:58.103Z</updated>
     
     <summary type="html">
     
@@ -339,8 +277,7 @@ List strList=
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;title: first&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2021-05-02
+          &lt;p&gt; if (Objects.equals(1L, groupListSize)) {&lt;br&gt;&lt;img
         
       
     
@@ -381,6 +318,42 @@ List strList=
   </entry>
   
   <entry>
+    <title>eques.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>assertTrue、assertEquals.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.075Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>forEachRemaining继续输出其余的元素.md</title>
     <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/"/>
     <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/</id>
@@ -388,6 +361,33 @@ List strList=
     <updated>2022-03-20T11:54:58.076Z</updated>
     
     <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>first.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;title: first&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2021-05-02
+        
+      
     
     </summary>
     
@@ -481,6 +481,32 @@ List strList=
   </entry>
   
   <entry>
+    <title>java-DTO-DO-VO.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;《阿里巴巴开发手册》以及网上各种博客或多或少都有提到诸如DTO、DO、BO、PO、VO等等，也提倡对实体类进行分层。至于为什么要分层，它们的理由是“避免暴露内部设计细节，只展示必要的字段”，但我个人最大的感受其实是“解耦”。我曾遇到一件无奈的事，接口已经开发完毕，前后端也联
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java-error捕获.md</title>
     <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/"/>
     <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/</id>
@@ -499,32 +525,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java-DTO-DO-VO.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.077Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;《阿里巴巴开发手册》以及网上各种博客或多或少都有提到诸如DTO、DO、BO、PO、VO等等，也提倡对实体类进行分层。至于为什么要分层，它们的理由是“避免暴露内部设计细节，只展示必要的字段”，但我个人最大的感受其实是“解耦”。我曾遇到一件无奈的事，接口已经开发完毕，前后端也联
         
       
     

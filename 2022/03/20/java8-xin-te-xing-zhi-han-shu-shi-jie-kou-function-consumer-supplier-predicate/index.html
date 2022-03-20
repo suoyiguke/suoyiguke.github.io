@@ -641,23 +641,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java8-liu-de-yi-bu-die-dai/">
+                <a href="/2022/03/20/java8-xin-te-xing-zhi-localdate/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="java8-流的异步迭代.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java8-新特性之LocalDate.md">
                         
-                        <span class="card-title">java8-流的异步迭代.md</span>
+                        <span class="card-title">java8-新特性之LocalDate.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java 8 提供了parallelStream并行流，我们可以结合forEach方法轻松实现多线程的迭代
-        /**
-         * 串行流
-         */
-        Stream.of(&quot;A&q
+                            这是对java.util.Date强有力的补充，解决了 Date 类的大部分痛点：
+
+非线程安全
+时区处理麻烦
+各种格式化、和时间计算繁琐
+设计有缺陷，Date 类同时包含日期和时间；还有一个 java.sql.Date，容易混淆。
+
+ja
                         
                     </div>
                     <div class="publish-info">
@@ -694,23 +697,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java8-jian-tou-han-shu-he-fang-fa-yin-yong-lambda-biao-da-shi/">
+                <a href="/2022/03/20/java8-liu-de-yi-bu-die-dai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java8-箭头函数和方法引用、Lambda表达式.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="java8-流的异步迭代.md">
                         
-                        <span class="card-title">java8-箭头函数和方法引用、Lambda表达式.md</span>
+                        <span class="card-title">java8-流的异步迭代.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            filter(p -&gt; p.getAge()&gt;18)
-
-p方法参数 -&gt; p.getAge()&gt;18 方法内容
-这里是将整个箭头函数作为参数传递给map方法。map方法源码如下：
-   public&lt;U&gt;
+                            java 8 提供了parallelStream并行流，我们可以结合forEach方法轻松实现多线程的迭代
+        /**
+         * 串行流
+         */
+        Stream.of(&quot;A&q
                         
                     </div>
                     <div class="publish-info">

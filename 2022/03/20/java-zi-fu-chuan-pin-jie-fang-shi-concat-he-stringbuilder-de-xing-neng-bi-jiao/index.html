@@ -669,28 +669,25 @@ public class HelloTest &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-shi-4/">
+                <a href="/2022/03/20/java-ji-chu-zhi-shi-5-xin-jian-shi-li-shi-ge-bu-fen-zhi-xing-shun-xu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-基础知识4.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-基础知识5-新建实例时各部分执行顺序.md">
                         
-                        <span class="card-title">java-基础知识4.md</span>
+                        <span class="card-title">java-基础知识5-新建实例时各部分执行顺序.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、++i 和 i++的区别
-
-i++先赋值后增加
-
-++i 先增加后赋值
+                            我们先来看一个例子
+package test;
 
 
-public static void main(String[] args) &#123;
-    int i = 0;
-    System.out.prin
+class HelloA &#123;
+    public HelloA() &#123;
+        System.out.println(&quot;父类构造器执行&quot;)
                         
                     </div>
                     <div class="publish-info">
@@ -727,25 +724,20 @@ public static void main(String[] args) &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-shi-5-xin-jian-shi-li-shi-ge-bu-fen-zhi-xing-shun-xu/">
+                <a href="/2022/03/20/java-zi-fu-chuan-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-基础知识5-新建实例时各部分执行顺序.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-字符串操作.md">
                         
-                        <span class="card-title">java-基础知识5-新建实例时各部分执行顺序.md</span>
+                        <span class="card-title">java-字符串操作.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们先来看一个例子
-package test;
-
-
-class HelloA &#123;
-    public HelloA() &#123;
-        System.out.println(&quot;父类构造器执行&quot;)
+                            ###基础使用1、java字符串占位符替换
+java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&#125; 次.&quot;, domain , iVisit)
                         
                     </div>
                     <div class="publish-info">

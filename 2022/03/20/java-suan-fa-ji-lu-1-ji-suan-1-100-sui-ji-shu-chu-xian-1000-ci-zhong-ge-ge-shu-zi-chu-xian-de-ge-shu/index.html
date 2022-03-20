@@ -594,21 +594,20 @@ public class GGGA &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-neng-yong-yi-chang-kong-zhi-liu-cheng-de-di-fang-yi-ding-ke-yi-shi-yong-return/">
+                <a href="/2022/03/20/java-shen-kao-bei-he-qian-kao-bei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java-能用异常控制流程的地方一定可以使用return！.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="java-深拷贝和浅拷贝.md">
                         
-                        <span class="card-title">java-能用异常控制流程的地方一定可以使用return！.md</span>
+                        <span class="card-title">java-深拷贝和浅拷贝.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、在构造函数里也可以使用return的方式
-将返回包装类GbmResult声明到类的成员变量中：然后
-2、构造函数{        if (StringUtils.isEmpty(stringStringMap)) {          
+                            浅拷贝： 不额外创建子对象，只是把子对象的引用拷贝过去深拷贝： 创建新的子对象并拷贝属性
+如果把java bean划分为 DTO、DO、VO 的话就避免不了对象的copy了。一般选择的spring的工具类都是浅拷贝。当对象内部还有对象 时只
                         
                     </div>
                     <div class="publish-info">
@@ -645,20 +644,26 @@ public class GGGA &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-zhi-arraylist-he-linkedlist-de-qu-bie-he-shi-yong-jian-yi/">
+                <a href="/2022/03/20/java-suan-fa-ji-lu-2-fen-zu-tong-ji-zi-fu-chuan-zhong-chu-xian-zi-fu-chuan-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="java-集合之ArrayList和LinkedList的区别和使用建议.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-算法记录2-分组统计字符串中出现字符串数.md">
                         
-                        <span class="card-title">java-集合之ArrayList和LinkedList的区别和使用建议.md</span>
+                        <span class="card-title">java-算法记录2-分组统计字符串中出现字符串数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于双向链表实现的非线程安全的集合。
-2、扩容问题：ArrayList 使用数组实现，无参构造函数默认初始化长度为 10，数组扩容是会将原数组中的元素重新拷贝
+                            直接使用HashMap解决
+package GGG.COM.class1;
+
+import java.util.HashMap;
+
+public class GGGA &#123;
+
+    public static void main(
                         
                     </div>
                     <div class="publish-info">
