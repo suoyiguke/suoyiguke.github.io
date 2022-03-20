@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>尹凯的博客</title>
+  
+  <subtitle>十年磨一剑</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.jianshu.com/u/807abe8ee897/"/>
+  <updated>2022-03-20T12:59:04.939Z</updated>
+  <id>https://www.jianshu.com/u/807abe8ee897/</id>
+  
+  <author>
+    <name>尹凯</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>+-拼接生成的字符串是在字符串常量池在是在堆中？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/pin-jie-sheng-cheng-de-zi-fu-chuan-shi-zai-zi-fu-chuan-chang-liang-chi-zai-shi-zai-dui-zhong/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/pin-jie-sheng-cheng-de-zi-fu-chuan-shi-zai-zi-fu-chuan-chang-liang-chi-zai-shi-zai-dui-zhong/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:04.939Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;勤奋好学&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“+” 拼接生成的字符串是在字符串常量池在是在堆中？
+        
+      
+    
+    </summary>
+    
+      <category term="jvm" scheme="https://www.jianshu.com/u/807abe8ee897/categories/jvm/"/>
+    
+    
+      <category term="jvm" scheme="https://www.jianshu.com/u/807abe8ee897/tags/jvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>80%使用mysql踩到的坑-自增键不要做业务.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:05:29.140Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、用户数量信息泄露&lt;br&gt;2、如果mysql主键因为人为因素导致又从1开始，那么对整个应用都是毁灭性打击的！&lt;br&gt;3、双主同步写的时候会导致更新丢失&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7种遍历hashMap的方式那种最好？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;HashMap 遍历从大的方向来说，可分为以下 4 类：&lt;/p&gt;
+&lt;p&gt;迭代器（Iterator）方式遍历；&lt;br&gt;For Each 方式遍历；&lt;br&gt;Lambda 表达式遍历（JDK 1.8+）;&lt;br&gt;Streams API 遍历（JDK
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-0新特性总结.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.124Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###mysql clone plugin&lt;br&gt;远程备份方案&lt;br&gt;###Hash
+        
+      
+    
+    </summary>
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-0新特性之函数索引.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;二 - 顺序&lt;/p&gt;
+&lt;p&gt;操作的顺序是每个初学者都会学习的东西，因为了解计算机如何评估操作很重要。MySQL
+        
+      
+    
+    </summary>
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1-4-Collection-子接口之-Queue.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;1.4 Collection 子接口之 Queue&lt;/p&gt;
+&lt;h3 id=&quot;1-4-1-Queue-与-Deque-的区别&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-种基本类型的包装类和常量池.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.074Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Java 基本类型的包装类的大部分都实现了常量池技术。&lt;code&gt;Byte&lt;/code&gt;,&lt;code&gt;Short&lt;/code&gt;,&lt;code&gt;Integer&lt;/code&gt;,&lt;code&gt;Long&lt;/code&gt; 这 4
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Async注解的陷阱.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/async-zhu-jie-de-xian-jing/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/async-zhu-jie-de-xian-jing/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:06:51.910Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;之前在java并发编程中实现异步功能，一般是需要使用&lt;code&gt;线程&lt;/code&gt;或者&lt;code&gt;线程池&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;线程池的底层也是用的线程。&lt;/p&gt;
+&lt;p&gt;而实现一个线程，要么继承&lt;code&gt;Thread&lt;/code&gt;类，要么实现&lt;code&gt;Runna
+        
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KafkaListener.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:12:07.762Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mq-kafka/"/>
+    
+    
+      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mq-kafka/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Configuration注解-之间的顺序.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/configuration-zhi-jian-de-shun-xu/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/configuration-zhi-jian-de-shun-xu/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:03:48.140Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;@ConditionalOnBean：仅仅在当前上下文中存在某个对象时，才会实例化一个Bean。&lt;br&gt;@ConditionalOnClass：某个class位于类路径上，才会实例化一个Bean。&lt;br&gt;@ConditionalOnExpression：当表达式为true的
+        
+      
+    
+    </summary>
+    
+      <category term="springboot" scheme="https://www.jianshu.com/u/807abe8ee897/categories/springboot/"/>
+    
+    
+      <category term="springboot" scheme="https://www.jianshu.com/u/807abe8ee897/tags/springboot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lazy.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/lazy/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/lazy/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:08:51.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;背景：一个接口有两个实现类，根据配置切换不同的实现类。现在是spring启动会自动初始化两个，当其实我们只需使用一个，另一个的加载就是浪费资源！此时我们就可以使用@Lazy注解来达到只加载我们需要的！&lt;/p&gt;
+&lt;p&gt;1、在实现类上加上 @Lazy&lt;br&gt;2、在
+        
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MapperScan注解.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/mapperscan-zhu-jie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/mapperscan-zhu-jie/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:08:23.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、@Mapper注解：&lt;br&gt;作用：在接口类上添加了@Mapper，在编译之后会生成相应的接口实现类&lt;br&gt;添加位置：接口类上面&lt;/p&gt;
+&lt;p&gt;@Mapper&lt;br&gt;public interface UserDAO {&lt;br&gt;  
+        
+      
+    
+    </summary>
+    
+      <category term="java持久化框架" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="java持久化框架" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Primary.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/primary/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/primary/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:09:03.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;当系统中存在多个相同类型的bean声明时，我们想使用自己的。请使用注解  @Primary&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+    @Primary
+    @Bean
+    public TaskExecutor taskExecutor() &amp;#123;
+    
+        
+      
+    
+    </summary>
+    
+      <category term="springboot" scheme="https://www.jianshu.com/u/807abe8ee897/categories/springboot/"/>
+    
+    
+      <category term="springboot" scheme="https://www.jianshu.com/u/807abe8ee897/tags/springboot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Value()-直接注入List.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/value-zhi-jie-zhu-ru-list/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/value-zhi-jie-zhu-ru-list/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:09:17.237Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;    /**
+     * Some urls with suffixes which needn&amp;#39;t auth, such as htm, html, js and so on.
+     */
+   
+        
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SentinelResource.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/sentinelresource/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/sentinelresource/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:09:07.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;熔断，降级，限流&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="java-三方库学习" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="java-三方库学习" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TableField注解.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/tablefield-zhu-jie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/tablefield-zhu-jie/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:09:12.964Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Plus会遇到插入数据的时候，比如每条数据插入修改人、修改时间、创建人创建时间。可以自动填充&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@TableField(value = &amp;quot;create_time&amp;quot;, fill =
+        
+      
+    
+    </summary>
+    
+      <category term="java持久化框架" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="java持久化框架" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PostConstruct执行在-@NacosValue声明的set方法之后.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:08:59.344Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Value-配合-@PropertySource注入指定配置文件的属性.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/value-pei-he-propertysource-zhu-ru-zhi-ding-pei-zhi-wen-jian-de-shu-xing/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/value-pei-he-propertysource-zhu-ru-zhi-ding-pei-zhi-wen-jian-de-shu-xing/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:09:22.484Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;package org.szwj.ca.identityauthsrv.util.common.cache.redis;
+
+import org.springframework.beans.factory.annotation.Value;
+import
+        
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APM-统计的调用链路来看耗费在提供者服务的时间.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/apm-tong-ji-de-diao-yong-lian-lu-lai-kan-hao-fei-zai-ti-gong-zhe-fu-wu-de-shi-jian/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/apm-tong-ji-de-diao-yong-lian-lu-lai-kan-hao-fei-zai-ti-gong-zhe-fu-wu-de-shi-jian/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:06.919Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="服务监控" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/"/>
+    
+    
+      <category term="服务监控" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APM-工具.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/apm-gong-ju/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/apm-gong-ju/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:06.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; APM 工具有:
+        
+      
+    
+    </summary>
+    
+      <category term="服务监控" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/"/>
+    
+    
+      <category term="服务监控" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E6%9C%8D%E5%8A%A1%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+</feed>
