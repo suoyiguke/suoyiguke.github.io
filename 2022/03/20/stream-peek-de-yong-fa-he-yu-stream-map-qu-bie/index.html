@@ -644,25 +644,20 @@ Stream&lt;T&gt; peek(Consumer&lt;? super T&gt; action);
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/stream-flatmap-yong-fa-he-stream-map-de-qu-bie/">
+                <a href="/2022/03/20/stream-qi-ta-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="stream()-flatMap用法和stream()-map的区别.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="stream其它的.md">
                         
-                        <span class="card-title">stream()-flatMap用法和stream()-map的区别.md</span>
+                        <span class="card-title">stream其它的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-flatMap在流里面还有流时使用
-
-
-flatMap可以扁平化流，把流给压扁
-flatMap的参数只能是流对象
-flatMap相当于把操作流的主题从第一个转为（第二个）第一个对象的属性流~~~  HashMap&lt;String, L
+                                     HashMap&lt;String, Integer&gt; stringStringHashMap = new HashMap&lt;&gt;();
+        stringStringHashMap.put(&qu
                         
                     </div>
                     <div class="publish-info">
@@ -699,21 +694,21 @@ flatMap相当于把操作流的主题从第一个转为（第二个）第一个�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/stream-ji-he-cao-zuo-ti-sheng/">
+                <a href="/2022/03/20/stream-cao-zuo-dui-yuan-ji-he-de-ying-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="stream-集合操作提升.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="stream操作对原集合的影响？.md">
                         
-                        <span class="card-title">stream-集合操作提升.md</span>
+                        <span class="card-title">stream操作对原集合的影响？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###对比二者 list转map1、两个都是list转map
-第一个Collectors.toMap有去重含义
- Map&lt;Integer, JgOrderStateMate&gt; mateMap = mateList.stream(
+                            1、arrayList内部复合类型修改符合类型对象数据会影响原来的。毕竟是一个对象
+        ArrayList&lt;JgWarehouseOrder&gt; arrayList = new ArrayList();
+       
                         
                     </div>
                     <div class="publish-info">

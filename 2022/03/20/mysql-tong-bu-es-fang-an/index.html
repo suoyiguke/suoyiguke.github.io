@@ -612,23 +612,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-dao-ru-dao-chu-zong-jie/">
+                <a href="/2022/03/20/mysql-chu-xian-the-table-is-full-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql导入导出总结.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql出现_the-table-is-full_的问题.md">
                         
-                        <span class="card-title">mysql导入导出总结.md</span>
+                        <span class="card-title">mysql出现_the-table-is-full_的问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、将 dbt3_s1_fk.sql恢复到dbt3库中
-先创建一个dbt3库,然后直接使用 mysql xxx&lt; xxx.sql 导入
-create database dbt3；
-exit;
-mysql dbt3 &lt; dbt3_
+                            SHOW VARIABLES LIKE ‘%ibuf_pool_size_per%’
+SHOW VARIABLES LIKE ‘%tmp_table_size%’ SHOW VARIABLES LIKE ‘%max_heap_table_s
                         
                     </div>
                     <div class="publish-info">

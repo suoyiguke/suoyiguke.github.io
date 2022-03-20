@@ -570,13 +570,13 @@ Linux 内核有个机制叫OOM killer(Out Of Memory killer)，该机制会监控
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/oracle-zhi-xing-ji-hua-he-you-hua-shi-li/">
+                <a href="/2022/03/20/oracle-qiang-zhi-zou-suo-yin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Oracle-执行计划和优化示例.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="ORACLE-强制走索引.md">
                         
-                        <span class="card-title">Oracle-执行计划和优化示例.md</span>
+                        <span class="card-title">ORACLE-强制走索引.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -584,10 +584,9 @@ Linux 内核有个机制叫OOM killer(Out Of Memory killer)，该机制会监控
                         
                             EXPLAIN PLAN FOR
 SELECT
-    COUNT( DISTINCT F.CFID ) jg 
+      /*+index(F Relationship_5_FK) index(T SQ_BRJBXX_GHSJ)*/ COUNT( DISTINCT F.CFID ) jg 
 FROM
-    t_mz_brjbxx T
-    INNER  JOIN T_MZ_CFMX F  ON T.MZLSH 
+
                         
                     </div>
                     <div class="publish-info">

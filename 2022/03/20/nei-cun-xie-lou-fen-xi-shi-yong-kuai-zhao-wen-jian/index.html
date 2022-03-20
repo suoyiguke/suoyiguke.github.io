@@ -626,19 +626,21 @@ java.lang.OutOfMemoryError: Java heap space
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/nei-cun-xie-lou-he-nei-cun-yi-chu/">
+                <a href="/2022/03/20/nei-cun-xie-lou-fen-xi-shi-yong-ming-ling-fen-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="内存泄漏和内存溢出.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="内存泄漏分析,使用命令分析.md">
                         
-                        <span class="card-title">内存泄漏和内存溢出.md</span>
+                        <span class="card-title">内存泄漏分析,使用命令分析.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在Java中，和内存相关的问题主要有两种，内存溢出和内存泄漏。内存溢出（Out Of Memory） ：就是申请内存时，JVM没有足够的内存空间。通俗说法就是去蹲坑发现坑位满了。内存泄露（Memory Leak）：就是申请了内存，但是没有释
+                            「上面只是其中一种处理方法」
+在线上的应用，内存往往会设置得很大，这样发生OOM再把内存快照dump出来的文件就会很大，可能大到在本地的电脑中已经无法分析了（因为内存不足够打开这个dump文件）。这里介绍另一种处理办法：
+（1）用jps定位
                         
                     </div>
                     <div class="publish-info">
@@ -675,20 +677,19 @@ java.lang.OutOfMemoryError: Java heap space
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/nei-bu-lei/">
+                <a href="/2022/03/20/nei-cun-xie-lou-he-nei-cun-yi-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="内存泄漏和内存溢出.md">
                         
-                        <span class="card-title">内部类.md</span>
+                        <span class="card-title">内存泄漏和内存溢出.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
-public vo
+                            在Java中，和内存相关的问题主要有两种，内存溢出和内存泄漏。内存溢出（Out Of Memory） ：就是申请内存时，JVM没有足够的内存空间。通俗说法就是去蹲坑发现坑位满了。内存泄露（Memory Leak）：就是申请了内存，但是没有释
                         
                     </div>
                     <div class="publish-info">
@@ -699,8 +700,8 @@ public vo
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -710,8 +711,8 @@ public vo
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>

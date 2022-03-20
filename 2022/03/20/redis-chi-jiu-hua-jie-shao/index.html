@@ -730,21 +730,23 @@ config set dbfilename  newname.rdb
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/redis-huan-cun-wen-ti/">
+                <a href="/2022/03/20/redis-chi-jiu-hua-shi-yong-aof-fang-shi-hui-fu-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="redis缓存问题.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="redis持久化-使用AOF方式恢复数据.md">
                         
-                        <span class="card-title">redis缓存问题.md</span>
+                        <span class="card-title">redis持久化-使用AOF方式恢复数据.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://zhuanlan.zhihu.com/p/99383052
-Redis异常问题解决方案：缓存雪崩、预热、穿透、击穿、降解方案分析
-###缓存穿透key对应的数据在数据源并不存在，每次针对此key的请求从缓存获取不到，请求都会
+                            ###如果将一个key remove掉，请问可以恢复吗？怎么恢复？可以恢复。如果开启了AOF方式的持久化，就将aof文件末尾的del命令日志删除，然后重启redis即可恢复。比如：
+
+删除一个key
+
+编辑 appendonly.aof 文
                         
                     </div>
                     <div class="publish-info">
@@ -781,20 +783,20 @@ Redis异常问题解决方案：缓存雪崩、预热、穿透、击穿、降解
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/requests-mo-kuai/">
+                <a href="/2022/03/20/redis-chi-jiu-hua-shou-dong-shi-yong-rdb-fang-shi-hui-fu-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="requests模块.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="redis持久化-手动使用RDB方式恢复数据.md">
                         
-                        <span class="card-title">requests模块.md</span>
+                        <span class="card-title">redis持久化-手动使用RDB方式恢复数据.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、指定headers 
-headers = {    ‘Connection’: ‘keep-alive’,    ‘Cache-Control’: ‘no-cache’,    ‘sec-ch-ua’: ‘“Google Chrome”
+                            在aof和rdb同时开启时，仅仅使用rdb方式恢复时不起作用的，因为redis会优先使用aof恢复，但由于aof不存在则会创建一个新的aof文件，导致恢复的是空的aof指令，同样加载到redis内存中的数据也是空的。
+###先手动备份red
                         
                     </div>
                     <div class="publish-info">
@@ -805,8 +807,8 @@ headers = {    ‘Connection’: ‘keep-alive’,    ‘Cache-Control’: ‘no
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category" target="_blank">
-                                    python
+                            <a href="/categories/redis/" class="post-category" target="_blank">
+                                    redis
                                 </a>
                             
                             
@@ -816,8 +818,8 @@ headers = {    ‘Connection’: ‘keep-alive’,    ‘Cache-Control’: ‘no
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/" target="_blank">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/redis/" target="_blank">
+                        <span class="chip bg-color">redis</span>
                     </a>
                     
                 </div>

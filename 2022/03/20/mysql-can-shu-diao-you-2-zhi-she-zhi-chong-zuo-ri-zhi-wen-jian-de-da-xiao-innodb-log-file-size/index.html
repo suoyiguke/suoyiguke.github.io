@@ -587,21 +587,20 @@ innodb_log_files_in_group=2
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-ming-ming-de-gui-ze/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-1-zhi-nei-cun-huan-chong-chi-innodb-buffer-pool-size/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-参数命名的规则.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-参数调优(1)之内存缓冲池innodb_buffer_pool_size.md">
                         
-                        <span class="card-title">mysql-参数命名的规则.md</span>
+                        <span class="card-title">mysql-参数调优(1)之内存缓冲池innodb_buffer_pool_size.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            百分比的英文是 percentage，刚好取驼峰字母 pct
-脏页刷新阈值 innodb_max_dirty_pages_pct 的后缀是pct 表示该值是个百分比
-
+                            内存的大小是最能直接反映数据库的性能。InnoDB存储引擎既缓存数据，又缓存索引，并且将它们缓存于一个很大的缓冲池中，即InnoDB Buffer Pool。因此，内存的大小直接影响了数据库的性能性能测试。
+Percona公司的CTO Va
                         
                     </div>
                     <div class="publish-info">
@@ -612,8 +611,8 @@ innodb_log_files_in_group=2
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -623,8 +622,8 @@ innodb_log_files_in_group=2
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -638,23 +637,20 @@ innodb_log_files_in_group=2
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-3-zhi-innodb-de-log-buffer-xing-wei-she-zhi-innodb-flush-log-at-trx-commit/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-4-zhi-innodb-de-shu-ju-wen-jian-ji-redo-log-de-da-kai-shua-xie-mo-shi-she-zhi-innodb-flush-method/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md">
                         
-                        <span class="card-title">mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md</span>
+                        <span class="card-title">mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-这个参数直接影响到redo log 数据刷新到磁盘的性能，直接影响到插入、修改和删除的性能
-
-innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但稳定性更差）
-文件操作三个步骤： ope
+                            innodb_flush_method 可以对 innodb的数据文件及redo log的打开、刷写模式设置
+这种偏理论的东西还是看官方文档实在。找再多博客也没用的。然后进下实验，理论联系https://dev.mysql.com/doc/
                         
                     </div>
                     <div class="publish-info">

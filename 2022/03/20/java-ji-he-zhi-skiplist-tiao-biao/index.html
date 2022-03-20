@@ -560,22 +560,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-linkedhashmap/">
+                <a href="/2022/03/20/java-ji-he-zhi-arraylist-he-linkedlist-de-qu-bie-he-shi-yong-jian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="java-集合-LinkedHashMap.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="java-集合之ArrayList和LinkedList的区别和使用建议.md">
                         
-                        <span class="card-title">java-集合-LinkedHashMap.md</span>
+                        <span class="card-title">java-集合之ArrayList和LinkedList的区别和使用建议.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-可按put顺序或者get顺序排序~~~public static void main(String[] args) {
-  // 第三个参数用于指定accessOrder值
-  Map&lt;String, String&gt; link
+                            1、ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于双向链表实现的非线程安全的集合。
+2、扩容问题：ArrayList 使用数组实现，无参构造函数默认初始化长度为 10，数组扩容是会将原数组中的元素重新拷贝
                         
                     </div>
                     <div class="publish-info">
@@ -586,8 +584,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
-                                    java源码分析
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -597,8 +595,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" target="_blank">
-                        <span class="chip bg-color">java源码分析</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>
@@ -612,22 +610,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-arraylist-de-kuo-rong-ji-zhi/">
+                <a href="/2022/03/20/java-ji-he-zhi-collections-gong-ju-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="java-集合-ArrayList-的扩容机制.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-集合之Collections-工具类.md">
                         
-                        <span class="card-title">java-集合-ArrayList-的扩容机制.md</span>
+                        <span class="card-title">java-集合之Collections-工具类.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###ArrayList 有三种方式来初始化
-  public ArrayList() &#123;
-        this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
-    &#1
+                            Collections 工具类常用方法:
+排序查找,替换操作同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)###1.5.1. 排序操作
+void reverse(List list)//反转void shuf
                         
                     </div>
                     <div class="publish-info">
@@ -638,8 +635,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
-                                    java源码分析
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -649,8 +646,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" target="_blank">
-                        <span class="chip bg-color">java源码分析</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>

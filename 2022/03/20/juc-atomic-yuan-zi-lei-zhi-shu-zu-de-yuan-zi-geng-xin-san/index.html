@@ -576,19 +576,24 @@ AtomicReferenceArray">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-yin-yong-lei-xing-de-yuan-zi-geng-xin-si/">
+                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-shi-yong-longadder-dai-ti-atomiclong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---Atomic原子类之引用类型的原子更新（四）.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---Atomic原子类之使用LongAdder代替AtomicLong.md">
                         
-                        <span class="card-title">juc---Atomic原子类之引用类型的原子更新（四）.md</span>
+                        <span class="card-title">juc---Atomic原子类之使用LongAdder代替AtomicLong.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原子更新基本类型的AtomicInteger，只能更新一个变量，如果要原子更新多个变量，就需要使用这个原子更新引用类型提供的类。Atomic包提供了以下3个类。·AtomicReference：原子更新引用类型。·AtomicReferen
+                            
+不在其位，不谋其政
+
+《阿里巴巴Java开发手册》里面有提到：
+
+【参考】 volatile 解决多线程内存不可见问题。对于一写多读，是可以解决变量同步问题，但是如果多写，同样无法解决线程安全问题。说明：如果是 count++操作，使用如
                         
                     </div>
                     <div class="publish-info">
@@ -625,24 +630,20 @@ AtomicReferenceArray">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-shi-yong-longadder-dai-ti-atomiclong/">
+                <a href="/2022/03/20/juc-countdownlatch-de-shi-yong-he-zhu-yi-shi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---Atomic原子类之使用LongAdder代替AtomicLong.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="juc---CountDownLatch的使用和注意事项.md">
                         
-                        <span class="card-title">juc---Atomic原子类之使用LongAdder代替AtomicLong.md</span>
+                        <span class="card-title">juc---CountDownLatch的使用和注意事项.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-不在其位，不谋其政
-
-《阿里巴巴Java开发手册》里面有提到：
-
-【参考】 volatile 解决多线程内存不可见问题。对于一写多读，是可以解决变量同步问题，但是如果多写，同样无法解决线程安全问题。说明：如果是 count++操作，使用如
+                            java.util.concurrent.CountDownLatch 是Doug Lea大师编写的juc包中的一个线程通信工具。
+######使用场景一：实现多个线程在某个时间点同时执行多个线程同时开始执行即是所谓的并行执行；这个功能我们
                         
                     </div>
                     <div class="publish-info">

@@ -619,21 +619,23 @@ SET FOREIGN_KEY_CHECKS = 1;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-jian-diao-du-event-scheduler/">
+                <a href="/2022/03/20/mysql-zhi-and-he-or-cao-zuo-fu-de-ji-suan-ci-xu-dao-zhi-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-事件调度event_scheduler.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-之AND和OR操作符的计算次序导致的问题.md">
                         
-                        <span class="card-title">mysql-事件调度event_scheduler.md</span>
+                        <span class="card-title">mysql-之AND和OR操作符的计算次序导致的问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql自身提供了定时调度的功能
-###开启关闭MySQL事件调度器event_scheduler负责调用事件，它默认是关闭的。这个调度器不断地监视一个事件是否要调用， 要创建事件，必须打开调度器。查看调度器开启状态
- show vari
+                            
+AND 的优先级高于 OR 。AND会被优先处理；因此会引发一些问题
+
+WHERE可包含任意数目的AND和OR操作符。允许两者结合以进行复杂和高级的过滤。但是，组合AND和OR带来了一个有趣的问题。
+为了说明这个问题，来看一个例子。假如需
                         
                     </div>
                     <div class="publish-info">

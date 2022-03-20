@@ -562,24 +562,19 @@ C:\Program Files (x86)\VMware\VMware Workstation&amp;gt;vmware-vdiskmanager -R �
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/chou-xiang-lei-ke-yi-shi-xian-jie-kou-chou-xiang-lei-ke-yi-ji-cheng-shi-ti-lei/">
+                <a href="/2022/03/20/na-dao-yi-ge-sql-wo-men-ying-gai-cong-suo-yin-shang-kao-lu-dao-de-you-hua-si-kao-bu-zou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="抽象类可以实现接口，抽象类可以继承实体类.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="拿到一个sql我们应该从索引上考虑到的优化思考步骤.md">
                         
-                        <span class="card-title">抽象类可以实现接口，抽象类可以继承实体类.md</span>
+                        <span class="card-title">拿到一个sql我们应该从索引上考虑到的优化思考步骤.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            抽象类可以实现接口：抽象类实现接口，可以不实现接口的方法。
-interface  Inter &#123;
-    void print();
-&#125;
-
-abstract class GG implements  Inter&#123
+                            步骤step1、 先看join字段，小表驱动大表。大表关联字段上要加索引。若一张表中有2个关联字段那么就要按加载表的顺序设置子索引的顺序。比如 a join b join c ，若先加载c表，那么就要把c.join_colum放在索引的最前
                         
                     </div>
                     <div class="publish-info">
@@ -590,8 +585,8 @@ abstract class GG implements  Inter&#123
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -601,8 +596,8 @@ abstract class GG implements  Inter&#123
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>

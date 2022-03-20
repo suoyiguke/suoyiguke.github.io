@@ -649,24 +649,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/explain-zhi-type-lie/">
+                <a href="/2022/03/20/explain-for-connection-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="explain之type列.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="explain-for-connection用法.md">
                         
-                        <span class="card-title">explain之type列.md</span>
+                        <span class="card-title">explain-for-connection用法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-该列的值表示连接类型，是查看索引执行情况的一个重要指标。包含如下类型：
-
-执行结果从最好到最坏的的顺序是从上到下。
-我们需要重点掌握的是下面几种类型：
-system &gt; const &gt; eq_ref &gt; ref &gt;
+                            当show processlist时遇到慢sql通常会去看sql的执行计划。如果sql过长会显示不全。一般我们会使用show full processlist去查看完整的语句并explain语句得到执行计划。也可以使用explain for
                         
                     </div>
                     <div class="publish-info">
@@ -703,38 +698,27 @@ system &gt; const &gt; eq_ref &gt; ref &gt;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/explain-zhi-select-type-lie/">
+                <a href="/2022/03/20/explain-zhi-id-lie-de-dao-biao-de-du-qu-shun-xu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="explain之select_type列.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="explain之id列----得到表的读取顺序.md">
                         
-                        <span class="card-title">explain之select_type列.md</span>
+                        <span class="card-title">explain之id列----得到表的读取顺序.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            该列表示select的类型。具体包含了如下11种类型：
+                            id列该列的值是select查询中的序号，比如：1、2、3、4等，它决定了表的执行顺序。
+某条sql的执行计划中一般会出现三种情况：
 
-但是常用的其实就是下面几个：
+ id相同
+ id不同
+ id相同和不同都有
 
-
-
-类型
-含义
-
-
-
-SIMPLE
-简单SELECT查询，不包含子查询和UNION
-
-
-PRIMARY
-复杂查询中的最外层查询，表示主要的查询
-
-
-S
+那么这三种情况表的执行顺序是怎么样的呢？
+1.id相同执
                         
                     </div>
                     <div class="publish-info">

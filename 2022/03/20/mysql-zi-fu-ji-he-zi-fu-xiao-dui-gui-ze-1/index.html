@@ -678,23 +678,20 @@ init_connect=&#39;SET NAMES utf8mb4&#39;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zi-duan-shu-ju-lei-xing-xuan-ze-yuan-ze/">
+                <a href="/2022/03/20/mysql-zi-duan-ya-suo-he-biao-ya-suo-huan-you-qi-ta-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字段数据类型选择原则.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-字段压缩和表压缩还有其它的.md">
                         
-                        <span class="card-title">mysql-字段数据类型选择原则.md</span>
+                        <span class="card-title">mysql-字段压缩和表压缩还有其它的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###尽量选择范围小的数值类型
-###尽量使用整型表示字符串
-请使用mysql内建类型来存储时间等，而不是使用字符串！我待过的小公司全部使用字符串来存储所有的数据类型。这对我造成了很大的影响，之前我一直以为使用字符串存储比较好。
-
-整型比字
+                            压缩的实质就是降低网络带宽的占用和磁盘存储空间的占用，或者由于主机上存在大数据量的sql操作，而导致主从同步延迟时也可使用压缩，看看能不能缓解延迟。
+代价就是要用一定的cpu资源来交换。如果数据库机器的CPU负载已经很高或者网络带宽够用且磁
                         
                     </div>
                     <div class="publish-info">
@@ -705,8 +702,8 @@ init_connect=&#39;SET NAMES utf8mb4&#39;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -716,8 +713,8 @@ init_connect=&#39;SET NAMES utf8mb4&#39;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -731,21 +728,20 @@ init_connect=&#39;SET NAMES utf8mb4&#39;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zi-fu-ji-he-zi-fu-xiao-dui-gui-ze-2/">
+                <a href="/2022/03/20/mysql-zi-cha-xun-zai-update-delete-zhong-he-select-zhong-de-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字符集和字符校对规则-（2）.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-子查询在update、delete中和select中的区别.md">
                         
-                        <span class="card-title">mysql-字符集和字符校对规则-（2）.md</span>
+                        <span class="card-title">mysql-子查询在update、delete中和select中的区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql中所有支持的字符集
-mysql&gt; SHOW CHARACTER SET;
-+----------+---------------------------------+---------------------+-------
+                            https://dev.mysql.com/doc/refman/5.7/en/subquery-optimization.html
+update和delete不支持semijoin和Materialization的子查询优化，改写成joi
                         
                     </div>
                     <div class="publish-info">

@@ -592,84 +592,32 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-shi-5-xin-jian-shi-li-shi-ge-bu-fen-zhi-xing-shun-xu/">
+                <a href="/2022/03/20/java-duo-xian-cheng-zhi-sheng-chan-zhe-xiao-fei-zhe-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-基础知识5-新建实例时各部分执行顺序.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-多线程之生产者消费者模式.md">
                         
-                        <span class="card-title">java-基础知识5-新建实例时各部分执行顺序.md</span>
+                        <span class="card-title">java-多线程之生产者消费者模式.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们先来看一个例子
-package test;
+                            生产者消费者模式可以让生产者线程和消费者线程之间并发执行互不干扰。核心就是：
 
+数据没了停止消费
+数据满了停止生产
+数据有了激活消费
+数据没了激活生产，数据没了才激活生产？那不晚了吗
 
-class HelloA &#123;
-    public HelloA() &#123;
-        System.out.println(&quot;父类构造器执行&quot;)
+######使用synchronized和wait/n
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/java-duo-xian-cheng-ji-chu-zhi-synchronized-de-wait-notify-ji-zhi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-多线程基础之synchronized的wait-notify机制.md">
-                        
-                        <span class="card-title">java-多线程基础之synchronized的wait-notify机制.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ###为什么要使用wait-notify？
-为了避免处于blocked状态下的线程对监视器锁的竞争；而竞争是会消耗计算机资源的
-###正确使用wait-notify
-
-wait、notify/notifyAll方法一定要写在synchron
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -687,6 +635,56 @@ wait、notify/notifyAll方法一定要写在synchron
                     
                     <a href="/tags/juc/" target="_blank">
                         <span class="chip bg-color">juc</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/java-zi-fu-chuan-cao-zuo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-字符串操作.md">
+                        
+                        <span class="card-title">java-字符串操作.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ###基础使用1、java字符串占位符替换
+java.text.MessageFormat.format(&quot;该域名&#123;0&#125;被访问了 &#123;1&#125; 次.&quot;, domain , iVisit)
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>

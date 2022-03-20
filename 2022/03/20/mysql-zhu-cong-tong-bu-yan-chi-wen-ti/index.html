@@ -591,19 +591,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-zhi-show-slave-status-jie-xi/">
+                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-zhong-ji-ge-fei-chang-nan-yong-de-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-主从同步之-show-slave-status解析.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-主从同步中几个非常难用的参数.md">
                         
-                        <span class="card-title">mysql-主从同步之-show-slave-status解析.md</span>
+                        <span class="card-title">mysql-主从同步中几个非常难用的参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###Slave_IO_State这里显示了当前slave I/O线程的状态(slave连接到master的状态)。状态信息和使用show processlist | grep “system user”(会显示两条信息，一条slave I
+                            
+其实不用这些参数也能保证主从同步的顺利执行
+
+我们知道mysql主从同步可以选择性同步某几个数据库，并且要想实现这个目的可以借助如下几个参数：
+
+binlog-do-db=需要复制的数据库名，如果复制多个数据库，重复设置这个选项即可
+bi
                         
                     </div>
                     <div class="publish-info">
@@ -640,19 +646,26 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-wen-ti-hui-zong/">
+                <a href="/2022/03/20/mysql-zhu-zhu-tong-bu-fu-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-主从同步问题汇总.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-主主同步复制.md">
                         
-                        <span class="card-title">mysql-主从同步问题汇总.md</span>
+                        <span class="card-title">mysql-主主同步复制.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###主从复制中断错误1、Slave_IO_Running 为yes；Slave_SQL_Running 为no；Last_SQL_Error为Error ‘Table ‘zf’ already exists’ on query. Defa
+                            机器一、3305
+[mysqld]
+## server_id，一般设置为IP，注意要唯一
+server_id=3305
+log_bin=mysql-bin
+## 需要主从复制的数据库
+binlog-do-db=iam
+## 开启二进制日志功
                         
                     </div>
                     <div class="publish-info">

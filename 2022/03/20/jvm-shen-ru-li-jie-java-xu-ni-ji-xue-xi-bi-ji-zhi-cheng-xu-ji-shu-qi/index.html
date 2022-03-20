@@ -567,20 +567,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-yong-jiu-dai-he-yuan-kong-jian/">
+                <a href="/2022/03/20/jvm-guan-yu-string-zi-fu-chuan-de-wen-ti-da-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之永久代和元空间.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="jvm-关于String字符串的问题大总结.md">
                         
-                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之永久代和元空间.md</span>
+                        <span class="card-title">jvm-关于String字符串的问题大总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###PermGen 永久代
-说到方法区， 不得不提一下“永久代”这个概念， 尤其是在JDK 8以前， 许多Java程序员都习惯在HotSpot虚拟机上开发、 部署程序， 很多人都更愿意把方法区称呼为“永久代”（PermanentGener
+                            1、String str = new String(“abc”);  创建了几个字符串对象？
+1个或者2个。
+
+若字符串常量池中未找到”abc”这个对象，那么分别在堆和字符串常量池中创建一个对象，则共创建2个对象;若字符串常量池中已经存在了
                         
                     </div>
                     <div class="publish-info">
@@ -617,22 +619,22 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-guan-yu-string-zi-fu-chuan-de-wen-ti-da-zong-jie/">
+                <a href="/2022/03/20/jvm-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="jvm-关于String字符串的问题大总结.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="jvm-命令.md">
                         
-                        <span class="card-title">jvm-关于String字符串的问题大总结.md</span>
+                        <span class="card-title">jvm-命令.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、String str = new String(“abc”);  创建了几个字符串对象？
-1个或者2个。
+                            jps -l查看所有java进程对应的pid
+jstack 11104（pid）
+查看某个java进程的各个时间段线程堆栈快照
 
-若字符串常量池中未找到”abc”这个对象，那么分别在堆和字符串常量池中创建一个对象，则共创建2个对象;若字符串常量池中已经存在了
                         
                     </div>
                     <div class="publish-info">

@@ -564,22 +564,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-chang-jian-xian-cheng-ming/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-gua-qi-he-hui-fu-cao-zuo-suspend-resume/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="java线程基础之常见线程名.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="java线程基础之挂起和恢复操作suspend、resume.md">
                         
-                        <span class="card-title">java线程基础之常见线程名.md</span>
+                        <span class="card-title">java线程基础之挂起和恢复操作suspend、resume.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 tomcat的http请求线程
-http-nio-8087-exec-20    3610328    3,610,328 (0.2%)    0
+                            suspend 将线程状态变为 timed_waitingresume 则是恢复成 RUNNABLE
 
-2、pool-2-thread-1    898639608    898,639,
+使用这种方式挂起和恢复线程已经过时了，可以使用wait - notify 机制代替之
+
+    /**
+     * 暂停
+     *
                         
                     </div>
                     <div class="publish-info">

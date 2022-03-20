@@ -641,20 +641,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-map/">
+                <a href="/2022/03/20/java8-xin-te-xing-zhi-localdate/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-集合问题基础之Map.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java8-新特性之LocalDate.md">
                         
-                        <span class="card-title">java-集合问题基础之Map.md</span>
+                        <span class="card-title">java8-新特性之LocalDate.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###HashMap 和 Hashtable 的区别
-1、线程是否安全： HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过synchronized 修饰。（如果你要保证线程安全
+                            这是对java.util.Date强有力的补充，解决了 Date 类的大部分痛点：
+
+非线程安全
+时区处理麻烦
+各种格式化、和时间计算繁琐
+设计有缺陷，Date 类同时包含日期和时间；还有一个 java.sql.Date，容易混淆。
+
+ja
                         
                     </div>
                     <div class="publish-info">
@@ -691,23 +697,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java8-liu-de-yi-bu-die-dai/">
+                <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu-zhi-map/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="java8-流的异步迭代.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-集合问题基础之Map.md">
                         
-                        <span class="card-title">java8-流的异步迭代.md</span>
+                        <span class="card-title">java-集合问题基础之Map.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java 8 提供了parallelStream并行流，我们可以结合forEach方法轻松实现多线程的迭代
-        /**
-         * 串行流
-         */
-        Stream.of(&quot;A&q
+                            ###HashMap 和 Hashtable 的区别
+1、线程是否安全： HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过synchronized 修饰。（如果你要保证线程安全
                         
                     </div>
                     <div class="publish-info">

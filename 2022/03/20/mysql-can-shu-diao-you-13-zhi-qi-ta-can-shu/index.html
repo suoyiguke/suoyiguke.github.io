@@ -671,22 +671,22 @@ innodb_file_format_max = Barracuda
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-11-zhi-innodb-buffer-pool-instances-she-zhi-duo-ge-huan-chong-chi-shi-li/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-12-zhi-innodb-thread-concurrency-innodb-concurrency-tickets-he-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md">
                         
-                        <span class="card-title">mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md</span>
+                        <span class="card-title">mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-INNODB_BUFFER_POOL_INSTANCES 参数也是在高并发高负载下设置后会对性能有提升
+设置这个参数在mysql低负载时没有效果，建议在mysql非常繁忙时可以关注并配置
 
-MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量的手段。在5.5版本这个对提升吞吐量帮助很小，然后在MySQ
+你可能会经常听到应该设置 innodb_thread_concurrency=0 （表示不进行并发线程数量控制）然后就不要管它了。不过这个只在低负载服务
                         
                     </div>
                     <div class="publish-info">
@@ -723,21 +723,21 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-9-zhi-you-hua-filesort-sort-buffer-size-innodb-sort-buffer-size/">
+                <a href="/2022/03/20/mysql-ke-xiu-gai-can-shu-he-zhi-du-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-参数调优（9）之优化filesort-sort_buffer_size、innodb_sort_buffer_size.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-可修改参数和只读参数.md">
                         
-                        <span class="card-title">mysql-参数调优（9）之优化filesort-sort_buffer_size、innodb_sort_buffer_size.md</span>
+                        <span class="card-title">mysql-可修改参数和只读参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SHOW VARIABLES LIKE &#39;%sort_buffer_size%&#39;
-SHOW VARIABLES LIKE &#39;%innodb_sort_buffer_size%&#39;
-SHOW VARIABLES 
+                            ###可修改参数和只读参数
+例如datadir就是一个read only 参数，它是不能进行在线修改的。需要停机，重启。
+
                         
                     </div>
                     <div class="publish-info">

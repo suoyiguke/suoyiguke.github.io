@@ -728,24 +728,21 @@ System.out.println(t5.getName()+&quot;==&gt;&quot;+t5.getState());
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-ben-di-bian-liang-threadlocal/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-fang-fa-join-wait-sleep/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程本地变量ThreadLocal.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程方法join、wait、sleep.md">
                         
-                        <span class="card-title">java-线程基础之线程本地变量ThreadLocal.md</span>
+                        <span class="card-title">java-线程基础之线程方法join、wait、sleep.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-自助者天助之
-
-想在多个方法中使用某个变量，这个变量是当前线程的状态，其它线程不依赖这个变量。可以使用两种方法达到这种目的：
-
-可以把变量定义在方法内部，然后再方法之间传递参数来使用，这个方法能解决问题，但是有个烦人的地方就是，每个方法都
+                            ###join()
+1、在A线程中调用了B线程的join()方法时，表示只有当B线程执行完毕时，A线程才能继续执行
+2、带时间参数的join：如果A线程中调用B线程的join(10)，则表示A线程会等待B线程执行10毫秒，10毫秒过后，A、
                         
                     </div>
                     <div class="publish-info">
@@ -782,21 +779,21 @@ System.out.println(t5.getName()+&quot;==&gt;&quot;+t5.getState());
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-neng-yong-yi-chang-kong-zhi-liu-cheng-de-di-fang-yi-ding-ke-yi-shi-yong-return/">
+                <a href="/2022/03/20/java-zi-ding-yi-fan-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java-能用异常控制流程的地方一定可以使用return！.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-自定义泛型.md">
                         
-                        <span class="card-title">java-能用异常控制流程的地方一定可以使用return！.md</span>
+                        <span class="card-title">java-自定义泛型.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、在构造函数里也可以使用return的方式
-将返回包装类GbmResult声明到类的成员变量中：然后
-2、构造函数{        if (StringUtils.isEmpty(stringStringMap)) {          
+                            观察下面使用泛型的手法：
+    public static &lt;T&gt; T deepCopyObj(T object) throws IOException, ClassNotFoundException &#123;
+     
                         
                     </div>
                     <div class="publish-info">

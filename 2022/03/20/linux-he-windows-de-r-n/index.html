@@ -569,21 +569,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/linux-jin-cheng-duan-kou-pei-zhi-wen-jian-cha-zhao/">
+                <a href="/2022/03/20/linux-xi-tong-yun-wei-chang-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="linux-进程-端口-配置文件查找.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="linux-系统运维常用.md">
                         
-                        <span class="card-title">linux-进程-端口-配置文件查找.md</span>
+                        <span class="card-title">linux-系统运维常用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######查找指定端口上运行的nginx的配置文件若系统中有多个配置文件，该如何定位具体是哪个配置文件在运行？通过如下方法定位当前正在运行的nginx的配置文件：
-1、查看nginx的PID，以常用的80端口为例：
-netstat -an
+                            ###看各个程序占用cpu、内存百分比ps -auxw|head -n 1;ps -auxw|sort -rn -k 4|head -n 5
+[root@localhost ~]# ps -auxw|head -n 1;ps -auxw|s
                         
                     </div>
                     <div class="publish-info">
@@ -620,21 +619,27 @@ netstat -an
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-fang-huo-qiang-she-zhi/">
+                <a href="/2022/03/20/linux-he-windows-xi-tong-dui-da-xiao-xie-de-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="linux-防火墙设置.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="linux和windows系统对大小写的处理.md">
                         
-                        <span class="card-title">linux-防火墙设置.md</span>
+                        <span class="card-title">linux和windows系统对大小写的处理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CentOS 7.0默认使用的是firewall作为防火墙，之前版本是使用iptables。 所以在CentOS 7执行下面命令是无法查看防火墙状态的。
-service iptables status
-Redirecting to /bin
+                            windows 不区分大小写，同目录下A和a不可以同时存在
+
+G:\mysql&gt;dir
+ 驱动器 G 中的卷是 H
+ 卷的序列号是 4F71-E70A
+
+ G:\mysql 的目录
+
+2021/05/05  17:15    &lt;
                         
                     </div>
                     <div class="publish-info">

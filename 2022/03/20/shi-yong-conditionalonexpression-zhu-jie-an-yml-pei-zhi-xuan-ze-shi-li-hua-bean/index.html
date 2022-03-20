@@ -617,26 +617,20 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/ni-men-sheng-chan-huan-jing-yong-de-pcie-cun-chu-shi-shi-me-pai-zi-de-a/">
+                <a href="/2022/03/20/shi-yong-try-with-resources-dai-ti-try-catch-finally-diao-yong-close-guan-bi-zi-yuan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="你们生产环境用的pcie存储是什么牌子的啊.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="使用-try-with-resources-代替try-catch-finally调用close关闭资源.md">
                         
-                        <span class="card-title">你们生产环境用的pcie存储是什么牌子的啊.md</span>
+                        <span class="card-title">使用-try-with-resources-代替try-catch-finally调用close关闭资源.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            刘皇叔:你们生产环境用的pcie存储是什么牌子的啊
-刘皇叔:稳定性怎么样
-走失的小老虎儿:我们超云的，inter芯片！
-走失的小老虎儿:不过是sas协议
-走失的小老虎儿:不是pci
-刘皇叔:nvme的呢
-走失的小老虎儿:nvme 也是
-走失
+                            类似于InputStream、OutputStream 、Scanner 、PrintWriter等的资源都需要我们调用close()方法来手动关闭，一般情况下我们都是通过try-catch-finally语句：
+        //读取文
                         
                     </div>
                     <div class="publish-info">
@@ -647,8 +641,8 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -658,8 +652,8 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>
@@ -673,20 +667,24 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/shi-yong-conditionalonproperty-zhu-jie/">
+                <a href="/2022/03/20/shi-yong-arrayblockingqueue-shi-xian-sheng-chan-zhe-xiao-fei-zhe-mo-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="使用@ConditionalOnProperty注解.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="使用ArrayBlockingQueue实现生产者-消费者模型.md">
                         
-                        <span class="card-title">使用@ConditionalOnProperty注解.md</span>
+                        <span class="card-title">使用ArrayBlockingQueue实现生产者-消费者模型.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1. spring boot ConditionalOnProperty 使用讲解
-@Retention(RetentionPolicy.RUNTIME)@Target({ElementType.TYPE, ElementType.M
+                            
+CountDownLatch 确保生产者消费者线程同时执行
+BlockingQueue.put() 和 BlockingQueue.take()  会引发阻塞
+
+package 线程池;
+import java.util.concurre
                         
                     </div>
                     <div class="publish-info">
@@ -697,8 +695,8 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/springboot/" class="post-category" target="_blank">
-                                    springboot
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -708,8 +706,8 @@ public class GdcaUtilsServiceImpl  implements AiService &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/springboot/" target="_blank">
-                        <span class="chip bg-color">springboot</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>

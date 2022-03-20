@@ -586,23 +586,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-reentrantlock-he-condition-de-await-signal-ji-zhi/">
+                <a href="/2022/03/20/js-long-jing-du-diu-shi-zai-hou-duan-shi-yong-zi-fu-chuan-fan-hui/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="juc----ReentrantLock和Condition的await-signal机制.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="js-long-精度丢失，在后端使用字符串返回.md">
                         
-                        <span class="card-title">juc----ReentrantLock和Condition的await-signal机制.md</span>
+                        <span class="card-title">js-long-精度丢失，在后端使用字符串返回.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-await-signal的出现是为了代替wait-notify，比它更加强大
-我的这篇文章有对wait-notify进行介绍https://www.jianshu.com/p/36b57330531c
+                            js中无法存储java的long类型。最大值不过 1455799804067174400
 
-await-signal与wait
+可以在后端用String代替Long返回
+注意jackson的注解和Serializer类的全限定名。这里就算是用错了也不会报错。所以一直不生效
+/
                         
                     </div>
                     <div class="publish-info">
@@ -613,8 +613,8 @@ await-signal与wait
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/springboot/" class="post-category" target="_blank">
+                                    springboot
                                 </a>
                             
                             
@@ -624,8 +624,8 @@ await-signal与wait
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/springboot/" target="_blank">
+                        <span class="chip bg-color">springboot</span>
                     </a>
                     
                 </div>
@@ -639,19 +639,27 @@ await-signal与wait
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-yin-yong-lei-xing-de-yuan-zi-geng-xin-si/">
+                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-ji-ben-lei-xing-de-yuan-zi-geng-xin-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---Atomic原子类之引用类型的原子更新（四）.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="juc---Atomic原子类之基本类型的原子更新（一）.md">
                         
-                        <span class="card-title">juc---Atomic原子类之引用类型的原子更新（四）.md</span>
+                        <span class="card-title">juc---Atomic原子类之基本类型的原子更新（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原子更新基本类型的AtomicInteger，只能更新一个变量，如果要原子更新多个变量，就需要使用这个原子更新引用类型提供的类。Atomic包提供了以下3个类。·AtomicReference：原子更新引用类型。·AtomicReferen
+                            
+使用原子的方式更新基本类型，Atomic包提供了以下3个类。
+
+AtomicBoolean：原子更新布尔类型。
+AtomicInteger：原子更新整型。
+AtomicLong：原子更新长整型。
+
+
+以上3个类提供的方法几乎一模一样，就以
                         
                     </div>
                     <div class="publish-info">

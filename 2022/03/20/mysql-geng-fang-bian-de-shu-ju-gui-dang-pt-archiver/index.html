@@ -559,76 +559,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-geng-xin-diu-shi/">
+                <a href="/2022/03/20/mysql-wen-jian-zhi-ibdata1-he-ibtmp1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-更新丢失.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql-文件之-ibdata1和-ibtmp1.md">
                         
-                        <span class="card-title">mysql-更新丢失.md</span>
+                        <span class="card-title">mysql-文件之-ibdata1和-ibtmp1.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###更新丢失经典场景：财务系统加工资，若公司本次调薪决定给员工张三加1k人民币，财务部两名操作人员A和B，过程情况若是这样的：1）A操作员在应用系统的页面上查询出张三的薪水信息，然后选择薪水记录进行修改，打开修改页面但A突然有事离开了，页
+                            ###ibdata1ibdata1是InnoDB的共享表空间文件，默认情况下会把表空间存放在一个文件ibdata1中，会造成这个文件越来越大。
+发现问题所在之后，解决方法就是，使用独享表空间，将表空间分别单独存放。MySQL开启独享表空间的
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mysql-fu-wu-qi-can-shu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-服务器参数.md">
-                        
-                        <span class="card-title">mysql-服务器参数.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            次命令每时每刻都在变 show STATUS
-1、Queries 发生了多少次查询   ===&gt; 每秒请求数2、Threads_connected 有几个线程过来连接3、Threads_running 有几个线程在工作
-
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -646,6 +596,55 @@
                     
                     <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
                         <span class="chip bg-color">mysql运维操作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-geng-xin-diu-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-更新丢失.md">
+                        
+                        <span class="card-title">mysql-更新丢失.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ###更新丢失经典场景：财务系统加工资，若公司本次调薪决定给员工张三加1k人民币，财务部两名操作人员A和B，过程情况若是这样的：1）A操作员在应用系统的页面上查询出张三的薪水信息，然后选择薪水记录进行修改，打开修改页面但A突然有事离开了，页
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>

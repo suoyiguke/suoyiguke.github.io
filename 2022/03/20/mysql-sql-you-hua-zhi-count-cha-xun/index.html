@@ -689,21 +689,25 @@ end;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-row-lei-xing-de-binlog-fen-xi/">
+                <a href="/2022/03/20/mysql-sql-mode/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-row类型的-binlog-分析.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-sql_mode.md">
                         
-                        <span class="card-title">mysql-row类型的-binlog-分析.md</span>
+                        <span class="card-title">mysql-sql_mode.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            binlog类型选择请一定选择ROW类型，因为它是稳定最安全的。使用其它格式则很可能造成主从不一致
-**
-当用户提交一条修改语句时(如, insert, update, delete)，MySQL会产生2个Binlog事件: 第一个就是Ta
+                            
+下则为河岳，上则为日星###查询当前sql_mode
+
+SELECT @@sql_mode
+
+###几种sql_mode模式介绍
+sql_mode模式是具体的几种 sql_mode值的集合，我们可以直接指定这个来方便达到使用多种sql_m
                         
                     </div>
                     <div class="publish-info">
@@ -714,8 +718,8 @@ end;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -725,8 +729,8 @@ end;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -740,27 +744,29 @@ end;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-you-hua-zhi-limit-fen-ye-you-hua/">
+                <a href="/2022/03/20/mysql-sql-you-hua-zhi-you-hua-group-by-he-distinct/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-sql优化之-limit-分页优化.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md">
                         
-                        <span class="card-title">mysql-sql优化之-limit-分页优化.md</span>
+                        <span class="card-title">mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-在秦张良椎，在汉苏武节
+为严将军头，为嵇侍中血
 
-LIMIT 分页性能问题
-问题sql： 普通limit
-EXPLAIN SELECT *  FROM emp ORDER BY id LIMIT 5000000,10 
+###数据准备
+创建表tb_point 表
 
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
-问题sql执行时间 8.231秒，存在
+-- ----------------------------
+-- 
                         
                     </div>
                     <div class="publish-info">

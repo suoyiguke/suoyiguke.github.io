@@ -598,19 +598,21 @@ abstract class KK extends  JJ&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/na-dao-yi-ge-sql-wo-men-ying-gai-cong-suo-yin-shang-kao-lu-dao-de-you-hua-si-kao-bu-zou/">
+                <a href="/2022/03/20/pi-liang-geng-xin-uuid/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="拿到一个sql我们应该从索引上考虑到的优化思考步骤.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="批量更新uuid.md">
                         
-                        <span class="card-title">拿到一个sql我们应该从索引上考虑到的优化思考步骤.md</span>
+                        <span class="card-title">批量更新uuid.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            步骤step1、 先看join字段，小表驱动大表。大表关联字段上要加索引。若一张表中有2个关联字段那么就要按加载表的顺序设置子索引的顺序。比如 a join b join c ，若先加载c表，那么就要把c.join_colum放在索引的最前
+                            1、批量更新uuidUPDATE mgb_dict_data SET uuid=UUID();
+UPDATE mgb_dict_data SET uuid=REPLACE(uuid, ‘-‘, ‘’);
+注意不能使用UPDATE hongh
                         
                     </div>
                     <div class="publish-info">
@@ -647,20 +649,19 @@ abstract class KK extends  JJ&#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/zhi-ding-de-xu-ni-ci-pan-xu-yao-jin-xing-xiu-fu/">
+                <a href="/2022/03/20/da-bao-mou-ci-commit-dao-ya-suo-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="指定的虚拟磁盘需要进行修复。.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="打包某次commit到压缩文件.md">
                         
-                        <span class="card-title">指定的虚拟磁盘需要进行修复。.md</span>
+                        <span class="card-title">打包某次commit到压缩文件.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            指定的虚拟磁盘需要进行修复。
-C:\Program Files (x86)\VMware\VMware Workstation&gt;vmware-vdiskmanager -R “D:\vm\Windows 7\Windows 7.vmd
+                            打包某次commit：git diff-tree -r –no-commit-id –name-only f4710c4a32975904b00609f3145c709f31392140 | xargs tar -rf update_201
                         
                     </div>
                     <div class="publish-info">
@@ -671,8 +672,8 @@ C:\Program Files (x86)\VMware\VMware Workstation&gt;vmware-vdiskmanager -R “D:
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VMware/" class="post-category" target="_blank">
-                                    VMware
+                            <a href="/categories/git/" class="post-category" target="_blank">
+                                    git
                                 </a>
                             
                             
@@ -682,8 +683,8 @@ C:\Program Files (x86)\VMware\VMware Workstation&gt;vmware-vdiskmanager -R “D:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/VMware/" target="_blank">
-                        <span class="chip bg-color">VMware</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>

@@ -594,22 +594,24 @@ print(&quot;Main thread: &quot;, global_data)
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-bian-liang-zuo-yong-yu-bi-ji/">
+                <a href="/2022/03/20/python-ji-chu-bi-ji-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-变量作用域笔记.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-基础笔记1.md">
                         
-                        <span class="card-title">python-变量作用域笔记.md</span>
+                        <span class="card-title">python-基础笔记1.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######python中奇怪的变量作用域
+                            ######打印对象的所有属性,类似于java的tostring使用对象的__dict__属性
+或者使用这个
+list = []
+print(dir(list))
 
-①处定义的变量在def定义的函数中不可见；main块执行打印str变量是①
-def函数中定义的str变量只在该函数范围内有效~~~str = ‘yinkai’ # ①print(str) # y
+######判断对象是否有对应属性，非常重要！开发工具和编译器不会告诉我们
                         
                     </div>
                     <div class="publish-info">
@@ -646,24 +648,24 @@ def函数中定义的str变量只在该函数范围内有效~~~str = ‘yinkai�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-zi-fu-chuan-cao-zuo-bi-ji/">
+                <a href="/2022/03/20/python-rong-qi-lie-biao-list-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="python-字符串操作笔记.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python-容器-列表-list笔记.md">
                         
-                        <span class="card-title">python-字符串操作笔记.md</span>
+                        <span class="card-title">python-容器-列表-list笔记.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######判断字符串中是否包含指定字符
-str = &#39;yinkai&#39;
-if str.find(&#39;y&#39;) != -1:
-    print(&#39;yes&#39;)
-else:
-    print(&#3
+                            ######获得list长度
+list = [1,2,3,4,3,4,5,6,7,8,89,555,6,7,99,45,6,656,88]
+print(len(list))
+
+######快速生成一个list
+a=list(range(0,
                         
                     </div>
                     <div class="publish-info">

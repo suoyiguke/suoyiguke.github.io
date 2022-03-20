@@ -394,20 +394,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jvm-zhen-duan-gong-ju-zhi-serviceability-agent-sa/" target="_blank">
+                    <a href="/2022/03/20/kafak-yuan-li-san-fu-ben-replica/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="jvm-诊断工具之Serviceability-Agent-(-SA-).md">
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafak原理-（三）-副本（Replica）.md">
                             
-                            <span class="card-title">jvm-诊断工具之Serviceability-Agent-(-SA-).md</span>
+                            <span class="card-title">kafak原理-（三）-副本（Replica）.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
+                            副本（Replica）
+提到副本，肯定就会想到正本。副本是正本的拷贝。在kafka中，正本和副本都称之为副本（Repalica），但存在leader和follower之分。活跃的称之为leader，其他的是follower。
+每个分区的数据
                             
                         </div>
                         <div class="publish-info">
@@ -418,8 +420,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
+                                    mq-kafka
                                 </a>
                                 
                                 
@@ -430,8 +432,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/jvm/" target="_blank">
-                            <span class="chip bg-color">jvm</span>
+                        <a href="/tags/mq-kafka/" target="_blank">
+                            <span class="chip bg-color">mq-kafka</span>
                         </a>
                         
                     </div>
@@ -489,22 +491,20 @@ zookeeper集群，kafka是配合zookeeper进行工作的。kafka集群中可以�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/kafak-yuan-li-san-fu-ben-replica/" target="_blank">
+                    <a href="/2022/03/20/kafak-max-poll-records-xiao-fei-zhe-pi-liang-xiao-fei-tiao-shu/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafak原理-（三）-副本（Replica）.md">
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="kafak-max-poll-records-消费者批量消费条数.md">
                             
-                            <span class="card-title">kafak原理-（三）-副本（Replica）.md</span>
+                            <span class="card-title">kafak-max-poll-records-消费者批量消费条数.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            副本（Replica）
-提到副本，肯定就会想到正本。副本是正本的拷贝。在kafka中，正本和副本都称之为副本（Repalica），但存在leader和follower之分。活跃的称之为leader，其他的是follower。
-每个分区的数据
+                            
                             
                         </div>
                         <div class="publish-info">
@@ -736,6 +736,53 @@ clien
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/kafka-guang-bo-xiao-fei/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafka-广播消费.md">
+                            
+                            <span class="card-title">kafka-广播消费.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            示例代码对应仓库：lab-03-kafka-demo-broadcast 。  在上述的示例中，我们看到的都是使用集群消费。而在一些场景下，我们需要使用广播消费。  广播消费模式下，相同 Consumer Group 的每个 Consume
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
+                                    mq-kafka
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mq-kafka/" target="_blank">
+                            <span class="chip bg-color">mq-kafka</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/kafka-bing-fa-xiao-fei/" target="_blank">
                         <div class="card-image">
                             
@@ -786,101 +833,6 @@ clien
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/kafka-pi-liang-xiao-fei/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="kafka-批量消费.md">
-                            
-                            <span class="card-title">kafka-批量消费.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的「4. 批量发送消息」 没有直接关联哈。
-下面，我们来实现一个 Consumer 批量消费消息的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
-                                    mq-kafka
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mq-kafka/" target="_blank">
-                            <span class="chip bg-color">mq-kafka</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/kafka-guang-bo-xiao-fei/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafka-广播消费.md">
-                            
-                            <span class="card-title">kafka-广播消费.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            示例代码对应仓库：lab-03-kafka-demo-broadcast 。  在上述的示例中，我们看到的都是使用集群消费。而在一些场景下，我们需要使用广播消费。  广播消费模式下，相同 Consumer Group 的每个 Consume
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
-                                    mq-kafka
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mq-kafka/" target="_blank">
-                            <span class="chip bg-color">mq-kafka</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/kafka-xiao-fei-chong-shi/" target="_blank">
                         <div class="card-image">
                             
@@ -896,6 +848,54 @@ clien
                             
                             Spring-Kafka 提供消费重试的机制。在消息消费失败的时候，Spring-Kafka 会通过消费重试机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。
 当然，Spring-Kafka
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
+                                    mq-kafka
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mq-kafka/" target="_blank">
+                            <span class="chip bg-color">mq-kafka</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/kafka-pi-liang-xiao-fei/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="kafka-批量消费.md">
+                            
+                            <span class="card-title">kafka-批量消费.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            在一些业务场景下，我们希望使用 Consumer 批量消费消息，提高消费速度。要注意，Consumer 的批量消费消息，和 Producer 的「4. 批量发送消息」 没有直接关联哈。
+下面，我们来实现一个 Consumer 批量消费消息的
                             
                         </div>
                         <div class="publish-info">

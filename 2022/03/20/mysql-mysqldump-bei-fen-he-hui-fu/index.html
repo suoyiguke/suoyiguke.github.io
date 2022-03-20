@@ -582,20 +582,23 @@ mysqldump -uroot -pyk123 --databa">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ocp-ren-zheng-kao-shi/">
+                <a href="/2022/03/20/mysql-mvcc-ji-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-ocp认证考试.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-mvcc机制.md">
                         
-                        <span class="card-title">mysql-ocp认证考试.md</span>
+                        <span class="card-title">mysql-mvcc机制.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             ocp认证考试
+                            MVCC并发控制中，读操作可以分成两类：快照读 (snapshot read)与当前读 (current read)。
 
+快照读，读取的是记录的可见版本 (有可能是历史版本)，不用加锁。
+
+当前读，读取的是记录的最新版本，并且，当前读返回的
                         
                     </div>
                     <div class="publish-info">
@@ -606,8 +609,8 @@ mysqldump -uroot -pyk123 --databa">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -617,8 +620,8 @@ mysqldump -uroot -pyk123 --databa">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -632,23 +635,25 @@ mysqldump -uroot -pyk123 --databa">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-replace-yu-ju-te-xing/">
+                <a href="/2022/03/20/mysql-null-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-replace语句特性.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-null-问题.md">
                         
-                        <span class="card-title">mysql-replace语句特性.md</span>
+                        <span class="card-title">mysql-null-问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-是故弟子不必不如师,师不必贤于弟子
-
-replace语句 要么插入，要么删除并插入。replace语句和insert语句都能够用来插入数据，前提是在没有主键冲突或唯一索引冲突的情况下。
-######replace 和  ON DUPLIC
+                            1、列中有Null值是可以用到索引的
+mysql&gt; EXPLAIN SELECT
+    * 
+FROM
+    `test` FORCE INDEX ( idx_name ) 
+WHERE
+    isNull( `name` ) 
                         
                     </div>
                     <div class="publish-info">

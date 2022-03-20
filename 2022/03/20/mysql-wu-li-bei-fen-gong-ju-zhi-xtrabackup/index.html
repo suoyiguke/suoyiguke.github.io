@@ -720,22 +720,21 @@ innobackupex --defaults-file=/etc/my.cnf --host=192.168.6.128 --user=root --pass
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ban-ben/">
+                <a href="/2022/03/20/mysql-qing-chu-cha-xun-huan-cun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-版本.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-清楚查询缓存.md">
                         
-                        <span class="card-title">mysql-版本.md</span>
+                        <span class="card-title">mysql-清楚查询缓存.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            如果要下载源代码或者指定的版本，直接参照上图中的Archive。这里有各个版本记录。
-要下载最新版本，直接参考上图中的Community，要选择GA版本。
-一、版本代号说明
-1. MySQL Community Server 社区版本，开源
+                            进行sql优化时，连续执行两个sql。想要看看他们的效率差别。但是因为mysql有查询缓存的存在，导致两次sql查询差别不明显。
+FLUSH QUERY CACHE; -- // 清理查询缓存内存碎片。
+RESET QUERY CACHE;
                         
                     </div>
                     <div class="publish-info">

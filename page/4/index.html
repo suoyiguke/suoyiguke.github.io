@@ -341,56 +341,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/do-dto/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="DO、DTO.md">
-                            
-                            <span class="card-title">DO、DTO.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            何为JavaBeanJavaBean，可序列化的POJO，sun在早期有对其规范（JavaBeans Spec），它是Java中的可重用组件，主要规范约定如下：
-
-  JavaBean为公共类，并且具有一个空构造函数
-  所有属性为私有属性
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
-                                    软件工程和项目管理
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" target="_blank">
-                            <span class="chip bg-color">软件工程和项目管理</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/datetime-vs-timestamp-vs-int-zen-me-xuan/" target="_blank">
                         <div class="card-image">
                             
@@ -438,21 +388,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/condition-de-awaitnanos-he-await-qu-bie/" target="_blank">
+                    <a href="/2022/03/20/consumer-pi-liang-sheng-chan/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Condition的awaitNanos和await区别.md">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Consumer-批量生产.md">
                             
-                            <span class="card-title">Condition的awaitNanos和await区别.md</span>
+                            <span class="card-title">Consumer-批量生产.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                             long awaitNanos(long nanosTimeout) throws InterruptedException;
-void await() throws InterruptedException;boolean await(
+                            Kafka 提供的批量发送消息，它提供了一个 RecordAccumulator 消息收集器，将发送给相同 Topic 的相同 Partition 分区的消息们，“偷偷”收集在一起，当满足条件时候，一次性批量发送提交给 Kafka Brok
                             
                         </div>
                         <div class="publish-info">
@@ -463,8 +412,8 @@ void await() throws InterruptedException;boolean await(
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                                <a href="/categories/mq-kafka/" class="post-category" target="_blank">
+                                    mq-kafka
                                 </a>
                                 
                                 
@@ -475,8 +424,8 @@ void await() throws InterruptedException;boolean await(
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
+                        <a href="/tags/mq-kafka/" target="_blank">
+                            <span class="chip bg-color">mq-kafka</span>
                         </a>
                         
                     </div>
@@ -486,20 +435,23 @@ void await() throws InterruptedException;boolean await(
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/delayqueue-yan-shi-dui-lie/" target="_blank">
+                    <a href="/2022/03/20/do-dto/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="DelayQueue-延时队列.md">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="DO、DTO.md">
                             
-                            <span class="card-title">DelayQueue-延时队列.md</span>
+                            <span class="card-title">DO、DTO.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###一、DelayQueue是什么　　DelayQueue是一个无界的BlockingQueue，用于放置实现了Delayed接口的对象，其中的对象只能在其到期时才能从队列中取走。这种队列是有序的，即队头对象的延迟到期时间最长。注意：不能
+                            何为JavaBeanJavaBean，可序列化的POJO，sun在早期有对其规范（JavaBeans Spec），它是Java中的可重用组件，主要规范约定如下：
+
+  JavaBean为公共类，并且具有一个空构造函数
+  所有属性为私有属性
                             
                         </div>
                         <div class="publish-info">
@@ -510,8 +462,8 @@ void await() throws InterruptedException;boolean await(
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
+                                    软件工程和项目管理
                                 </a>
                                 
                                 
@@ -522,8 +474,8 @@ void await() throws InterruptedException;boolean await(
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
+                        <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" target="_blank">
+                            <span class="chip bg-color">软件工程和项目管理</span>
                         </a>
                         
                     </div>
@@ -581,6 +533,100 @@ void await() throws InterruptedException;boolean await(
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/disruptor-gao-xing-neng-dui-lie/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Disruptor-高性能队列.md">
+                            
+                            <span class="card-title">Disruptor-高性能队列.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            The LMAX Disruptor is a high performance inter-thread messaging library. It grew out of LMAX’s research into concurrency
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" class="post-category" target="_blank">
+                                    java-三方库学习
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
+                            <span class="chip bg-color">java-三方库学习</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/delayqueue-yan-shi-dui-lie/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="DelayQueue-延时队列.md">
+                            
+                            <span class="card-title">DelayQueue-延时队列.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ###一、DelayQueue是什么　　DelayQueue是一个无界的BlockingQueue，用于放置实现了Delayed接口的对象，其中的对象只能在其到期时才能从队列中取走。这种队列是有序的，即队头对象的延迟到期时间最长。注意：不能
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/juc/" target="_blank">
+                            <span class="chip bg-color">juc</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/easyexcel/" target="_blank">
                         <div class="card-image">
                             
@@ -620,54 +666,6 @@ void await() throws InterruptedException;boolean await(
                         
                         <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
                             <span class="chip bg-color">java-三方库学习</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/explain-format-json-cha-kan-cha-xun-hua-xiao/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="EXPLAIN-format=json-查看查询花销.md">
-                            
-                            <span class="card-title">EXPLAIN-format=json-查看查询花销.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            https://blog.csdn.net/weixin_38004638/article/details/106427205
-###字段解释###EXPLAIN.query_block.query_cost查询总成本EXPLAIN: {“
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
                         </a>
                         
                     </div>
@@ -725,20 +723,21 @@ withQuery #搜索条件withCollapseField # 字段折叠withPr
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/disruptor-gao-xing-neng-dui-lie/" target="_blank">
+                    <a href="/2022/03/20/explain-format-json-cha-kan-cha-xun-hua-xiao/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Disruptor-高性能队列.md">
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="EXPLAIN-format=json-查看查询花销.md">
                             
-                            <span class="card-title">Disruptor-高性能队列.md</span>
+                            <span class="card-title">EXPLAIN-format=json-查看查询花销.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            The LMAX Disruptor is a high performance inter-thread messaging library. It grew out of LMAX’s research into concurrency
+                            https://blog.csdn.net/weixin_38004638/article/details/106427205
+###字段解释###EXPLAIN.query_block.query_cost查询总成本EXPLAIN: {“
                             
                         </div>
                         <div class="publish-info">
@@ -749,8 +748,8 @@ withQuery #搜索条件withCollapseField # 字段折叠withPr
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" class="post-category" target="_blank">
-                                    java-三方库学习
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                                 
                                 
@@ -761,8 +760,8 @@ withQuery #搜索条件withCollapseField # 字段折叠withPr
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
-                            <span class="chip bg-color">java-三方库学习</span>
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
                         </a>
                         
                     </div>
@@ -772,22 +771,20 @@ withQuery #搜索条件withCollapseField # 字段折叠withPr
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/elasticsearch-shi-yong-script-jie-jue-pai-xu-wen-ti/" target="_blank">
+                    <a href="/2022/03/20/elasticsearch-zi-duan-zhe-die-field-collapsing-gong-neng/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Elasticsearch--使用script-解决排序问题.md">
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Elasticsearch-字段折叠Field-Collapsing功能.md">
                             
-                            <span class="card-title">Elasticsearch--使用script-解决排序问题.md</span>
+                            <span class="card-title">Elasticsearch-字段折叠Field-Collapsing功能.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            elasticsearch解决某一字段值等于某字符串时优先排序问题
-elasticsearch解决某一字段值等于某字符串时优先排序问题，这个很让我困扰，数据库中source字段为qyer时排在前面，对，就是这样用script完成这个排序
-p
+                            
                             
                         </div>
                         <div class="publish-info">
@@ -821,20 +818,22 @@ p
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/elasticsearch-zi-duan-zhe-die-field-collapsing-gong-neng/" target="_blank">
+                    <a href="/2022/03/20/elasticsearch-shi-yong-script-jie-jue-pai-xu-wen-ti/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Elasticsearch-字段折叠Field-Collapsing功能.md">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Elasticsearch--使用script-解决排序问题.md">
                             
-                            <span class="card-title">Elasticsearch-字段折叠Field-Collapsing功能.md</span>
+                            <span class="card-title">Elasticsearch--使用script-解决排序问题.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
+                            elasticsearch解决某一字段值等于某字符串时优先排序问题
+elasticsearch解决某一字段值等于某字符串时优先排序问题，这个很让我困扰，数据库中source字段为qyer时排在前面，对，就是这样用script完成这个排序
+p
                             
                         </div>
                         <div class="publish-info">

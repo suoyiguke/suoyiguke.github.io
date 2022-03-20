@@ -650,24 +650,30 @@ WHERE
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-you-hua-zhi-count-cha-xun/">
+                <a href="/2022/03/20/mysql-sql-you-hua-zhi-xie-fa-you-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-sql优化之-COUNT()-查询.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-sql优化之写法优化.md">
                         
-                        <span class="card-title">mysql-sql优化之-COUNT()-查询.md</span>
+                        <span class="card-title">mysql-sql优化之写法优化.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-为张睢阳齿，为颜常山舌。
+                            ###1、sql语句各个部分执行顺序
+FROM
+&lt;left_table&gt;
 
-###关于COUNT()函数的几个谬误的纠正
-1、COUNT(*) 其实不存在性能问题!
-当我们使用COUNT(*)来统计返回结果集的行数的时候，这种情况下通配符 * 并不会像我们猜想的那样扩展所有的列，实际上
+ON
+&lt;join_condition&gt;
+
+&lt;join_type&gt;
+ JOIN
+&lt;right_table&gt;
+
+WHER
                         
                     </div>
                     <div class="publish-info">
@@ -704,29 +710,20 @@ WHERE
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-you-hua-zhi-you-hua-group-by-he-distinct/">
+                <a href="/2022/03/20/mysql-sql-xing-neng-tong-ji-he-zhi-xing-shi-jian-pou-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-sql性能统计和执行时间剖析.md">
                         
-                        <span class="card-title">mysql-sql优化之-优化GROUP-BY-和-DISTINCT.md</span>
+                        <span class="card-title">mysql-sql性能统计和执行时间剖析.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-为严将军头，为嵇侍中血
-
-###数据准备
-创建表tb_point 表
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- 
+                            ###查看最近执行的的sql耗时
+使用 SHOW PROFILES可以得到最近执行的sql的执行时间。比如，要比较两种sql的执行时间。可以这样做，注意中间需要使用RESET QUERY CACHE; 清除QUERY CACHE缓存避免影响
                         
                     </div>
                     <div class="publish-info">

@@ -667,21 +667,20 @@ ERROR 1819 (HY000): Your password does not satisfy the current policy requiremen
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-an-zhuang-wen-ti/">
+                <a href="/2022/03/20/mysql-shi-yong-sql-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-安装问题.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-实用sql操作.md">
                         
-                        <span class="card-title">mysql-安装问题.md</span>
+                        <span class="card-title">mysql-实用sql操作.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###为什么推荐使用压缩包安装而不是自己编译安装或者使用yum、apt命令安装？
-1、老师：不必纠结于这个问题，不相信编译后有什么性能提升，官方的指定的参数是最好的；有这心思还不如去想想怎么优化一条业务sql。
-反方：指定一些参数，那些不用
+                            1、批量修改id为uuid 需要分步进行。不然生成的uuid重复UPDATE  video  set video_id = UUID()
+UPDATE video set video_id = REPLACE (video_id, ‘-‘,
                         
                     </div>
                     <div class="publish-info">
@@ -692,8 +691,8 @@ ERROR 1819 (HY000): Your password does not satisfy the current policy requiremen
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -703,8 +702,8 @@ ERROR 1819 (HY000): Your password does not satisfy the current policy requiremen
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -718,21 +717,22 @@ ERROR 1819 (HY000): Your password does not satisfy the current policy requiremen
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-dao-chu-shu-ju/">
+                <a href="/2022/03/20/mysql-xiao-biao-qu-dong-da-biao-in-he-exists-de-yong-fa-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-导出数据.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-小表驱动大表，in和exists的用法区别.md">
                         
-                        <span class="card-title">mysql-导出数据.md</span>
+                        <span class="card-title">mysql-小表驱动大表，in和exists的用法区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MySQL自带，服务端生成数据文件在客户端连接里使用SELECT * INTO OUTFILE  和 load data 方式
-show variables like ‘%secure%’;
-mysql&gt; show variables
+                            ###小表驱动大表的原理可以使用for循环来理解
+###经验按照“小表驱动大表”的优化经验，可以得出in和exists的使用经验
+1、当子查询数据集大小小于父查询数据集时，使用in
+2、当子查询数据集大小大于父查询数据集时，使用exists
                         
                     </div>
                     <div class="publish-info">
@@ -743,8 +743,8 @@ mysql&gt; show variables
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -754,8 +754,8 @@ mysql&gt; show variables
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>

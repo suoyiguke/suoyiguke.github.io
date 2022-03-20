@@ -574,21 +574,21 @@ WHERE可包含任意数目的AND和OR操作符。允许两者结合以进行复�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-jian-she-ji/">
+                <a href="/2022/03/20/mysql-shi-jian-diao-du-event-scheduler/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-主键设计.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-事件调度event_scheduler.md">
                         
-                        <span class="card-title">mysql-主键设计.md</span>
+                        <span class="card-title">mysql-事件调度event_scheduler.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###自增主键
-优点1、数据库自动编号，速度快，而且是增量增长，聚集型主键按顺序存放，对于检索非常有利。2、数字型，占用空间小，易排序，在程序中传递方便。
-缺点：1、不支持水平分库，这种方法显然不能保证全局唯一。需要采取其它的一些手段。2、
+                            mysql自身提供了定时调度的功能
+###开启关闭MySQL事件调度器event_scheduler负责调用事件，它默认是关闭的。这个调度器不断地监视一个事件是否要调用， 要创建事件，必须打开调度器。查看调度器开启状态
+ show vari
                         
                     </div>
                     <div class="publish-info">
@@ -625,21 +625,26 @@ WHERE可包含任意数目的AND和OR操作符。允许两者结合以进行复�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-jian-diao-du-event-scheduler/">
+                <a href="/2022/03/20/mysql-shi-wu-zhi-shi-yong-savepoint-bu-fen-hui-gun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-事件调度event_scheduler.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-事务之使用savepoint部分回滚.md">
                         
-                        <span class="card-title">mysql-事件调度event_scheduler.md</span>
+                        <span class="card-title">mysql-事务之使用savepoint部分回滚.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql自身提供了定时调度的功能
-###开启关闭MySQL事件调度器event_scheduler负责调用事件，它默认是关闭的。这个调度器不断地监视一个事件是否要调用， 要创建事件，必须打开调度器。查看调度器开启状态
- show vari
+                            
+ 十年磨一剑
+
+我们可以使用mysql中的savepoint保存点来实现事务的部分回滚~
+基本用法如下
+SAVEPOINT identifier
+ROLLBACK [WORK] TO [SAVEPOINT] identifier
+RELE
                         
                     </div>
                     <div class="publish-info">

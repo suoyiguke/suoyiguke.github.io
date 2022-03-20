@@ -679,21 +679,24 @@ public class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-qi-da-can-shu-jie-shao-he-zheng-que-de-gou-zao-xian-cheng-chi/">
+                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-threadpoolexecutor-lei-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="juc---线程池之七大参数介绍和正确的构造线程池.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc---线程池之ThreadPoolExecutor类用法.md">
                         
-                        <span class="card-title">juc---线程池之七大参数介绍和正确的构造线程池.md</span>
+                        <span class="card-title">juc---线程池之ThreadPoolExecutor类用法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###线程池之七大参数我们知道，线程池的核心类是 ThreadPoolExecutor，构造一个ThreadPoolExecutor需要7个参数！
-######int corePoolSize线程池中的常驻核心线程数
-######int m
+                            
+闻道有先后，术业有专攻
+
+java.util.concurrent.ThreadPoolExecutor 类是线程池的核心类，我们常常使用它来构建线程池，比如
+
+ExecutorService executorService = new 
                         
                     </div>
                     <div class="publish-info">
@@ -730,19 +733,22 @@ public class Test &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-du-xie-suo-readwritelock-de-shi-yong/">
+                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-si-chong-ju-jue-ce-lue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---读写锁ReadWriteLock的使用.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc---线程池之四种拒绝策略.md">
                         
-                        <span class="card-title">juc---读写锁ReadWriteLock的使用.md</span>
+                        <span class="card-title">juc---线程池之四种拒绝策略.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ReentrantReadWriteLock是ReentrantLock的升级版。它允许读操作并发，性能优于ReentrantLock。下面通过3个例子，分别比较不加锁、使用ReentrantLock、使用ReentrantReadWrit
+                            ###为什么要使用拒绝策略？等待队列已经排满了，再也塞不下新任务了同时，线程池中的max线程也达到了，无法继续为新任务服务。
+这个是时候我们就需要拒绝策略机制合理的处理这个问题。
+###四种拒绝策略介绍
+jdk中自带的拒绝策略均实现了jav
                         
                     </div>
                     <div class="publish-info">

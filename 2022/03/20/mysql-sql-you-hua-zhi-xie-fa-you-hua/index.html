@@ -731,20 +731,19 @@ FROM
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-xing-neng-tong-ji-he-zhi-xing-shi-jian-pou-xi/">
+                <a href="/2022/03/20/mysql-sql-you-hua-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-sql性能统计和执行时间剖析.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-sql优化总结.md">
                         
-                        <span class="card-title">mysql-sql性能统计和执行时间剖析.md</span>
+                        <span class="card-title">mysql-sql优化总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###查看最近执行的的sql耗时
-使用 SHOW PROFILES可以得到最近执行的sql的执行时间。比如，要比较两种sql的执行时间。可以这样做，注意中间需要使用RESET QUERY CACHE; 清除QUERY CACHE缓存避免影响
+                            ###优化步骤1、观察，至少跑一天，看看生成的慢sql情况2、开启慢查询日志，设置阈值，比如超过5秒钟就是慢sql，并抓取出来3、explain + 慢sql分析4、show profile     查询sql在mysql服务器里执行细节和
                         
                     </div>
                     <div class="publish-info">
@@ -781,21 +780,27 @@ FROM
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-bian-cheng/">
+                <a href="/2022/03/20/mysql-sql-you-hua-zhi-limit-fen-ye-you-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-sql编程.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-sql优化之-limit-分页优化.md">
                         
-                        <span class="card-title">mysql-sql编程.md</span>
+                        <span class="card-title">mysql-sql优化之-limit-分页优化.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql的sql编程一般使用在 存储过程/触发器/事件 等sql程序中。
-###DECLARE 变量申明 
-1、使用DECLARE 语句申明变量，而不是使用@x 形式的用户变量。因为用户变量的作用域为当前连接，范围比较大。而DECLARE
+                            
+在秦张良椎，在汉苏武节
+
+LIMIT 分页性能问题
+问题sql： 普通limit
+EXPLAIN SELECT *  FROM emp ORDER BY id LIMIT 5000000,10 
+
+
+问题sql执行时间 8.231秒，存在
                         
                     </div>
                     <div class="publish-info">

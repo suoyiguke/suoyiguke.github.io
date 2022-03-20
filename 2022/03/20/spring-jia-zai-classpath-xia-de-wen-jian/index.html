@@ -581,23 +581,23 @@ pfxFileName传入文件名即可
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-ji-ben-shi-yong/">
+                <a href="/2022/03/20/spring-sheng-ming-shi-shi-wu-yuan-ma-fen-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="spring-事务管理之基本使用.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="spring-声明式事务源码分析.md">
                         
-                        <span class="card-title">spring-事务管理之基本使用.md</span>
+                        <span class="card-title">spring-声明式事务源码分析.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们知道spring事务可以分为申明式事务和编程式事务
+                            核心类org.springframework.transaction.interceptor.TransactionAspectSupport#invokeWithinTransaction
 
 
-编程式事务 在代码中显式调用begin Transaction() commit(). rollback() 等事务管理相关的方法
-申明式事务 则是基于AOP面向切面编程思想的优秀
+    /**
+     * General
                         
                     </div>
                     <div class="publish-info">
@@ -634,22 +634,21 @@ pfxFileName传入文件名即可
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-jian-yan-zheng-yi-chang-he-spring-sheng-ming-shi-shi-wu-de-guan-xi/">
+                <a href="/2022/03/20/spring-sheng-ming-shi-shi-wu-yuan-li-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="spring-事务管理之实践，验证异常和spring声明式事务的关系.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="spring-声明式事物原理1.md">
                         
-                        <span class="card-title">spring-事务管理之实践，验证异常和spring声明式事务的关系.md</span>
+                        <span class="card-title">spring-声明式事物原理1.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-实践是检验真理的唯一标准！
-
-######验证==&gt;@Transactional只能回滚运行时异常，不能回滚受检异常。如果要回滚受检异常请使用@Transactional(rollbackFor=Exception.class)同时
+                            spring-tx-5.3.12.jarorg.springframework.transaction.interceptor.TransactionAspectSupport
+    /**
+     * General delegate
                         
                     </div>
                     <div class="publish-info">

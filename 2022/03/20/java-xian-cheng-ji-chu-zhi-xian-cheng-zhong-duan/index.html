@@ -689,22 +689,23 @@ https://www.jianshu.com/p/f24b347bb956
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-ji-chong-chuang-jian-xian-cheng-de-fang-shi/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-thread-isalive-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java-线程基础之几种创建线程的方式.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="java-线程基础之Thread-isAlive()方法.md">
                         
-                        <span class="card-title">java-线程基础之几种创建线程的方式.md</span>
+                        <span class="card-title">java-线程基础之Thread-isAlive()方法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###创建线程的几种方式1、使用Thread类，重写run方法
- Thread thread = new Thread() &#123;
-            @Override
-            public void run()
+                            看到了一个关于thread.isAlive()方法的选项；答案表示thread.isAlive()返回 true不只是说明线程在执行中；于是动手写了个测试用例
+
+###java代码
+
+    public static void main(
                         
                     </div>
                     <div class="publish-info">
@@ -741,21 +742,22 @@ https://www.jianshu.com/p/f24b347bb956
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-fang-fa-join-wait-sleep/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-ru-he-rang-cpu-li-yong-lu-da-dao-100/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程方法join、wait、sleep.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java-线程基础之如何让cpu利用率达到100%？.md">
                         
-                        <span class="card-title">java-线程基础之线程方法join、wait、sleep.md</span>
+                        <span class="card-title">java-线程基础之如何让cpu利用率达到100%？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###join()
-1、在A线程中调用了B线程的join()方法时，表示只有当B线程执行完毕时，A线程才能继续执行
-2、带时间参数的join：如果A线程中调用B线程的join(10)，则表示A线程会等待B线程执行10毫秒，10毫秒过后，A、
+                            电脑8核处理器,只需要开启8个或者8个以上的线程就可以让CPU的利用率达到百分百了。一个线程一个处理器
+
+class zzz&#123;
+    static  CountDownLatch latch = new CountDownLat
                         
                     </div>
                     <div class="publish-info">

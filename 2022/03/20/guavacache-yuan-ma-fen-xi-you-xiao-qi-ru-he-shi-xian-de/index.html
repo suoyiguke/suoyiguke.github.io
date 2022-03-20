@@ -578,19 +578,22 @@ com.google.common.cache.LocalCache#isExpired
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/guavacache-wen-ti/">
+                <a href="/2022/03/20/guavacache-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="GuavaCache-问题.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="GuavaCache-测试.md">
                         
-                        <span class="card-title">GuavaCache-问题.md</span>
+                        <span class="card-title">GuavaCache-测试.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、    private final ConcurrentMap&lt;String, Cache&gt; cacheMap = Maps.newConcurrentMap();的 CacheName 不会被回收，怎么实现CacheNam
+                            1、GuavaCache 的失效时间是 Cache对象的属性
+
+如下构造Cache 
+    protected Cache createGuavaCache(String name, CacheBuilder builder, long 
                         
                     </div>
                     <div class="publish-info">
@@ -627,20 +630,21 @@ com.google.common.cache.LocalCache#isExpired
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-full-gc-de-hong-fa-shi-ji/">
+                <a href="/2022/03/20/ik-fen-ci-qi-ik-smart-he-ik-max-word-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="JAVA-垃圾回收之-Full-GC的触发时机.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="IK分词器ik_smart和ik_max_word区别.md">
                         
-                        <span class="card-title">JAVA-垃圾回收之-Full-GC的触发时机.md</span>
+                        <span class="card-title">IK分词器ik_smart和ik_max_word区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            活下来的年轻代对象被复制到老年代 。 老年代的内存区域一般大于年轻代 。 因为它拥有更大的规模，为了提高系统整体性能，所以 GC 发生的次数比在年轻代的少。对象从老年代消失时，我们说“M句orGC”或“ Full GC ＂发生了
-###自动
+                            ###ik_smart和ik_max_word区别
+1、ik_max_word
+会将文本做最细粒度的拆分，比如会将“中华人民共和国人民大会堂”拆分为“中华人民共和国、中华人民、中华、华人、人民共和国、人民、共和国、大会堂、大会、会堂等词语。
                         
                     </div>
                     <div class="publish-info">
@@ -651,8 +655,8 @@ com.google.common.cache.LocalCache#isExpired
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
+                            <a href="/categories/%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2/" class="post-category" target="_blank">
+                                    全文搜索
                                 </a>
                             
                             
@@ -662,8 +666,8 @@ com.google.common.cache.LocalCache#isExpired
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
+                    <a href="/tags/%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2/" target="_blank">
+                        <span class="chip bg-color">全文搜索</span>
                     </a>
                     
                 </div>

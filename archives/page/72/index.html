@@ -442,21 +442,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-huo-de-liang-ge-ri-qi-fan-wei-nei-sui-ji-shi-jian/">
+                        <a href="/2022/03/20/mysql-xing-suo/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-获得两个日期范围内随机时间.md">
+                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-行锁.md">
                                 
-                                <span class="card-title">mysql-获得两个日期范围内随机时间.md</span>
+                                <span class="card-title">mysql-行锁.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                CREATE DEFINER=&quot;root&quot;@&quot;%&quot; FUNCTION &quot;getdate&quot;() RETURNS varchar(255) CHARSET utf8mb4
-BEGIN
+                                ###InnoDB的行锁按锁的互斥程度来划分
+####Shared Lock 共享锁（s）：又称读锁。
 
+允许一个事务去读一行，阻止其他事务获得相同数据集的排他锁。–读锁
+显式加锁select * from test lock in sha
                                 
                             </div>
                             <div class="publish-info">
@@ -504,23 +506,21 @@ BEGIN
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-xing-suo/">
+                        <a href="/2022/03/20/mysql-huo-de-liang-ge-ri-qi-fan-wei-nei-sui-ji-shi-jian/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-行锁.md">
+                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-获得两个日期范围内随机时间.md">
                                 
-                                <span class="card-title">mysql-行锁.md</span>
+                                <span class="card-title">mysql-获得两个日期范围内随机时间.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###InnoDB的行锁按锁的互斥程度来划分
-####Shared Lock 共享锁（s）：又称读锁。
+                                CREATE DEFINER=&quot;root&quot;@&quot;%&quot; FUNCTION &quot;getdate&quot;() RETURNS varchar(255) CHARSET utf8mb4
+BEGIN
 
-允许一个事务去读一行，阻止其他事务获得相同数据集的排他锁。–读锁
-显式加锁select * from test lock in sha
                                 
                             </div>
                             <div class="publish-info">
@@ -760,25 +760,24 @@ RECORD
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-biao-suo/">
+                        <a href="/2022/03/20/mysql-ji-shu-qi-shi-xian/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
+                                <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-计数器实现.md">
                                 
-                                <span class="card-title">mysql-表锁.md</span>
+                                <span class="card-title">mysql-计数器实现.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
-###使用
+                                
+或为辽东帽，清操厉冰雪。
 
-锁表命令：lock table tablename read,tablename2 write;  
+如果应用在表中保存计数器，则在更新计数器时可能，碰到并发问题。计数器表在web应用中很常见。可以用这种表缓存一个用户的朋友数、文件下载次数等。
 
-
-解锁命令：unlo
+问题在于，若只有一条记录保存计数器数量，那么在并发修改事务下因为
                                 
                             </div>
                             <div class="publish-info">
@@ -886,88 +885,25 @@ RECORD
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
+                        <a href="/2022/03/20/mysql-biao-suo/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
+                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
                                 
-                                <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
+                                <span class="card-title">mysql-表锁.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、 随机读a表的一行数据，循环插入到b表
-CREATE DEFINER=&quot;root&quot;@&quot;%&quot; PROCEDURE &quot;updateDate&quot;()
-BEGIN
+                                表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
+###使用
 
-declare co
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
+锁表命令：lock table tablename read,tablename2 write;  
 
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
 
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-ji-shu-qi-shi-xian/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-计数器实现.md">
-                                
-                                <span class="card-title">mysql-计数器实现.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                
-或为辽东帽，清操厉冰雪。
-
-如果应用在表中保存计数器，则在更新计数器时可能，碰到并发问题。计数器表在web应用中很常见。可以用这种表缓存一个用户的朋友数、文件下载次数等。
-
-问题在于，若只有一条记录保存计数器数量，那么在并发修改事务下因为
+解锁命令：unlo
                                 
                             </div>
                             <div class="publish-info">
@@ -1075,19 +1011,87 @@ declare co
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-yun-wei-ming-ling-zhi-tong-guo-show-status-liao-jie-ge-chong-sql-de-zhi-xing-xiao-lu/">
+                        <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md">
+                                <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
                                 
-                                <span class="card-title">mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md</span>
+                                <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ######SHOW STATUS LIKE ‘%Com_%’Com_admin_commands    0Com_assign_to_keycache    0Com_alter_db    1Com_alter_db_upgrade  
+                                1、 随机读a表的一行数据，循环插入到b表
+CREATE DEFINER=&quot;root&quot;@&quot;%&quot; PROCEDURE &quot;updateDate&quot;()
+BEGIN
+
+declare co
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-lian-jie-tong-ji/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-运维操作之连接统计.md">
+                                
+                                <span class="card-title">mysql-运维操作之连接统计.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                ###用户连接类1、查看每个客户端IP过来的连接消耗资源情况。
+select * from sys.host_summary;
+2、查看每个用户消耗资源情况
+select * from sys.user_summary;
+3、查看当前连接情
                                 
                             </div>
                             <div class="publish-info">
@@ -1135,23 +1139,26 @@ declare co
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-lian-jie-tong-ji/">
+                        <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-sql-tong-ji/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-运维操作之连接统计.md">
+                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-运维操作之sql统计.md">
                                 
-                                <span class="card-title">mysql-运维操作之连接统计.md</span>
+                                <span class="card-title">mysql-运维操作之sql统计.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###用户连接类1、查看每个客户端IP过来的连接消耗资源情况。
-select * from sys.host_summary;
-2、查看每个用户消耗资源情况
-select * from sys.user_summary;
-3、查看当前连接情
+                                ###统计信息(SQL维度)1、执行次数最多的SQL
+SELECT
+ DIGEST_TEXT,
+ COUNT_STAR,
+ FIRST_SEEN,
+ LAST_SEEN 
+FROM
+ `performance_schema`.events_
                                 
                             </div>
                             <div class="publish-info">

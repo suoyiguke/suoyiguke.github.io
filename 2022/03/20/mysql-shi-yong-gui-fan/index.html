@@ -579,80 +579,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-show-profiles-xing-neng-fen-xi-he-ji-lu-zui-jin-sql/">
+                <a href="/2022/03/20/mysql-yuan-shu-ju-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-使用show-profiles性能分析和记录最近sql.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-元数据表.md">
                         
-                        <span class="card-title">mysql-使用show-profiles性能分析和记录最近sql.md</span>
+                        <span class="card-title">mysql-元数据表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            介绍：是mysql提供可以用来分析当前会话中语句执行的资源消耗情况。可以用于SQL的调优测量
-我们知道：sql值慢主要是cpu和IO 慢1、查看是否开启
-
-profiling = ON 开启 ； profiling = OFF 关闭
-pro
+                            3、      PARTITIONS  表分区表元数据表信息      
+(root@localhost) [information_schema]&gt;select * from PARTITIONS \G;
+    TABLE_CAT
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-oltp-ce-shi-er/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-使用sysbench进行-oltp测试（二）.md">
-                        
-                        <span class="card-title">mysql-使用sysbench进行-oltp测试（二）.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ###OLTP测试
-1、准备测试数据
-sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.126 –mysql-port=3306 –my
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -670,6 +617,55 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.1
                     
                     <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
                         <span class="chip bg-color">mysql运维操作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-yi-insert-buffer-cha-ru-huan-chong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md">
+                        
+                        <span class="card-title">mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Insert Buffer可能是 InnoDB存储引擎关键特性中最令人激动与兴奋的一个功能。不过这个名字可能会让人认为插人缓冲是缓冲池中的一个组成部分。其实不然, InnoDB缓冲池中有 InsertBuffer 信息固然不错,但是Inse
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

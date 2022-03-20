@@ -562,24 +562,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-de-rowid/">
+                <a href="/2022/03/20/mysql-de-binlog-zu-ti-jiao-te-xing-group-commit/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-的-_rowid.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-的-binlog组提交特性（group-commit）.md">
                         
-                        <span class="card-title">mysql-的-_rowid.md</span>
+                        <span class="card-title">mysql-的-binlog组提交特性（group-commit）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MySQL中有一个隐藏列_rowid来标记唯一的标识。但是需要注意_rowid并不是一个真实存在的列，其本质是一个非空唯一列的别名。
-
-PS：本文是基于MySQL 5.7进行研究的
-
-在某些情况下_rowid是不存在的
-###_rowid什
+                            为了提高单位时间内的事务提交数，必须减少事务提交过程中的fsync调用次数MySQL 从5.6版本开始引入 group commit 技术（MariaDB 5.3版本引入）基本思想是多个并发提交的事务共用一次fsync操作来实现持久化
+##
                         
                     </div>
                     <div class="publish-info">

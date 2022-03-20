@@ -683,24 +683,20 @@ oin phone on book.card = phone.card;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-yu-docker-de-an-zhuang-he-pei-zhi/">
+                <a href="/2022/03/20/mysql-bei-fen-shu-ju-biao-qie-ti-huan-wei-xin-de-kong-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker的安装和配置.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-备份数据表，且替换为新的空表.md">
                         
-                        <span class="card-title">mysql-基于docker的安装和配置.md</span>
+                        <span class="card-title">mysql-备份数据表，且替换为新的空表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######docker-compose安装mysql
-version: &quot;2&quot;
-services:
-  mysql:
-   image: &quot;docker.io/mysql:5.7&quot;
-   envir
+                            CREATE TABLE  biz_cloudsign_sign_copy  like biz_cloudsign_sign;
+RENAME TABLE biz_cloudsign_sign    TO biz_cloudsign_sign
                         
                     </div>
                     <div class="publish-info">

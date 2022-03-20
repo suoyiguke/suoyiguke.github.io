@@ -751,20 +751,21 @@ Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/nei-bu-lei/">
+                <a href="/2022/03/20/zai-tan-comparator-bi-jiao-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="再谈-Comparator比较器.md">
                         
-                        <span class="card-title">内部类.md</span>
+                        <span class="card-title">再谈-Comparator比较器.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
-public vo
+                            ###结合lambda使用Arrays.sort(people, Comparator.comparing(Person::getName));
+###设置次级排序
+Collections.sort(list,Comparator.comp
                         
                     </div>
                     <div class="publish-info">
@@ -801,21 +802,20 @@ public vo
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/leng-re-shu-ju-ge-chi-shi-bian-xie-tou-lan-de-union/">
+                <a href="/2022/03/20/nei-bu-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="冷热数据隔离时编写偷懒的UNION.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
                         
-                        <span class="card-title">冷热数据隔离时编写偷懒的UNION.md</span>
+                        <span class="card-title">内部类.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            先到热数据表里查，没有再查冷数据的
-    SELECT logistics_username from (
-    select greatest(@found:=-1,1) as x,logistics_username from cl
+                            ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
+public vo
                         
                     </div>
                     <div class="publish-info">
@@ -826,8 +826,8 @@ public vo
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -837,8 +837,8 @@ public vo
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>

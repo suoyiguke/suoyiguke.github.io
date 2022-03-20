@@ -595,21 +595,19 @@ ORDER BY
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/stream-cao-zuo-dui-yuan-ji-he-de-ying-xiang/">
+                <a href="/2022/03/20/synchronized-suo-bu-zhu-integer-lei-xing-jie-jue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="stream操作对原集合的影响？.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="synchronized-锁不住-Integer-类型解决.md">
                         
-                        <span class="card-title">stream操作对原集合的影响？.md</span>
+                        <span class="card-title">synchronized-锁不住-Integer-类型解决.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、arrayList内部复合类型修改符合类型对象数据会影响原来的。毕竟是一个对象
-        ArrayList&lt;JgWarehouseOrder&gt; arrayList = new ArrayList();
-       
+                            但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然
                         
                     </div>
                     <div class="publish-info">
@@ -620,8 +618,8 @@ ORDER BY
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -631,8 +629,8 @@ ORDER BY
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>

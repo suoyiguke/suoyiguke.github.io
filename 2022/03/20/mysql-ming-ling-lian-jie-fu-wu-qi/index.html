@@ -561,21 +561,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ke-xiu-gai-can-shu-he-zhi-du-can-shu/">
+                <a href="/2022/03/20/mysql-fa-sheng-suo-deng-dai-chao-shi-san-chong-qing-kuang-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-可修改参数和只读参数.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-发生锁等待超时三种情况总结.md">
                         
-                        <span class="card-title">mysql-可修改参数和只读参数.md</span>
+                        <span class="card-title">mysql-发生锁等待超时三种情况总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###可修改参数和只读参数
-例如datadir就是一个read only 参数，它是不能进行在线修改的。需要停机，重启。
+                            1、有事务长时间未提交查询正在活跃的事务
+SELECT * FROM information_schema.INNODB_TRX
 
+杀死指定 trx_tread_id 即可
+2、线上dml，修改表结构
+Waiting for table m
                         
                     </div>
                     <div class="publish-info">

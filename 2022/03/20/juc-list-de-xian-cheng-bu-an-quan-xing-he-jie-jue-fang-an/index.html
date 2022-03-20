@@ -663,24 +663,19 @@ class TestLock &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-trylock-chang-shi-jia-suo-san/">
+                <a href="/2022/03/20/juc-cyclicbarrier-shi-yong-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="juc---Lock接口之tryLock尝试加锁（三）.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="juc---CyclicBarrier-使用方法.md">
                         
-                        <span class="card-title">juc---Lock接口之tryLock尝试加锁（三）.md</span>
+                        <span class="card-title">juc---CyclicBarrier-使用方法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-我辈岂是蓬蒿人 
-
-tryLock()会去尝试获取锁，如果锁是被占有的状态，那么它会马上返回false。不会像 lock.lock()方法那样一直阻塞下去。这就是它的特点与优势。而且tryLock()有两个重载方法如下
-
-boolean 
+                            CyclicBarrier拥有CountDownLatch的功能，任何一个线程在没有完成时，所有线程都在等待。当最后一个线程进入wait，到达屏障点。构造器中的Runnable接口的run方法会得到执行。 CyclicBarrie 可以翻译
                         
                     </div>
                     <div class="publish-info">
@@ -717,24 +712,23 @@ boolean
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-de-ji-ben-gai-nian-yi/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lock-jia-suo-fang-shi-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock接口的基本概念（一）.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="juc---Lock接口之lock()加锁方式（二）.md">
                         
-                        <span class="card-title">juc---Lock接口的基本概念（一）.md</span>
+                        <span class="card-title">juc---Lock接口之lock()加锁方式（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-今人不见古时月，今月曾经照古人
+理解万岁
 
-我们可以使用 java.util.concurrent.locks.Lock 来代替synchronized同步块。它的功能更加强大；######Lock相对于synchronized有以下优点
-
-Loc
+######如何正确的使用lock.lock()方法在使用阻塞等待获取锁的方式中，必须在try代码块之外，并且在加锁方法与try代码块之间没有任何可能抛出异常的方法调用，避免加锁成功后，在finally中无法解锁。
+1、如果在
                         
                     </div>
                     <div class="publish-info">

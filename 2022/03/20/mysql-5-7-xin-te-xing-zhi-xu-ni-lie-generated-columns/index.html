@@ -655,19 +655,20 @@ FROM
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xin-te-xing-yi-algorithm-instant-shi-xian-de-kuai-su-ddl/">
+                <a href="/2022/03/20/mysql-8-xin-te-xing-er-ddl-cao-zuo-de-yuan-zi-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-8-新特性二DDL操作的原子化.md">
                         
-                        <span class="card-title">mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md</span>
+                        <span class="card-title">mysql-8-新特性二DDL操作的原子化.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是
+                            https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html
+MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与D
                         
                     </div>
                     <div class="publish-info">
@@ -704,19 +705,22 @@ FROM
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-45-jiang-bi-ji-di-san-ke/">
+                <a href="/2022/03/20/mysql-8-xin-te-xing-san-hash-join-lian-jie-cha-xun-suan-fa-zhi-hash-join-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-45讲笔记-第三课.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md">
                         
-                        <span class="card-title">mysql-45讲笔记-第三课.md</span>
+                        <span class="card-title">mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、务的特性：原子性、一致性、隔离性、持久性2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读3、事务隔离级别：读未提交、读提交、可重复读、串行化4、不同事务隔离级别的区别：读未提交：一个事务还未提交，它所做的变更就可以被别
+                            
+Hash Join 算法
+
+mysql8以前 的 join 算法只有 nested loop 这一种，在 MySQL8 中推出了一种新的算法 hash join，比  nested loop 更加高效。mysql8中的部分NLJ算法已经取
                         
                     </div>
                     <div class="publish-info">

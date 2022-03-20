@@ -605,19 +605,20 @@ MASTER_AUTO_POSITION=1;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-tong-bu-wen-ti-hui-zong/">
+                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-zhi-zai-xian-she-zhi-huo-hu-lue-xu-yao-tong-bu-de-ku-he-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-主从同步问题汇总.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-主从复制之在线设置或忽略需要同步的库和表.md">
                         
-                        <span class="card-title">mysql-主从同步问题汇总.md</span>
+                        <span class="card-title">mysql-主从复制之在线设置或忽略需要同步的库和表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###主从复制中断错误1、Slave_IO_Running 为yes；Slave_SQL_Running 为no；Last_SQL_Error为Error ‘Table ‘zf’ already exists’ on query. Defa
+                            在 EMySQL5.5/5.6版本里,设置同步复制过滤,例如,设置忽略掉test库的t2表,你需要在my.cnf配置文件里增加 replicate-ignore-table=test. t2 必须重启mysq服务进程才能生效 
+在 MySQ
                         
                     </div>
                     <div class="publish-info">

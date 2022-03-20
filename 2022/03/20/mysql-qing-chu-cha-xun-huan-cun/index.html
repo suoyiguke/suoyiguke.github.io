@@ -583,23 +583,22 @@ SELECT @@innodb_max_dirty_pages_pct
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-si-suo-pai-cha/">
+                <a href="/2022/03/20/mysql-ban-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-死锁排查.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-版本.md">
                         
-                        <span class="card-title">mysql-死锁排查.md</span>
+                        <span class="card-title">mysql-版本.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、当出现事务执行阻塞时，首先想到查询当前MySQL进程状态：
-SHOW FULL PROCESSLIST;
-
-###2、查看当前的死锁线程id和导致的sql
-SELECT * FROM PERFORMANCE_SCHEMA.even
+                            如果要下载源代码或者指定的版本，直接参照上图中的Archive。这里有各个版本记录。
+要下载最新版本，直接参考上图中的Community，要选择GA版本。
+一、版本代号说明
+1. MySQL Community Server 社区版本，开源
                         
                     </div>
                     <div class="publish-info">
@@ -610,8 +609,8 @@ SELECT * FROM PERFORMANCE_SCHEMA.even
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -621,8 +620,8 @@ SELECT * FROM PERFORMANCE_SCHEMA.even
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -636,19 +635,19 @@ SELECT * FROM PERFORMANCE_SCHEMA.even
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-wu-li-ri-zhi-zhi-redo-log-chong-zuo-ri-zhi-yuan-li-he-jie-shao/">
+                <a href="/2022/03/20/mysql-wu-li-bei-fen-gong-ju-zhi-xtrabackup/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="mysql-物理日志之redo-log（重做日志）原理和介绍.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-物理备份工具之-xtrabackup.md">
                         
-                        <span class="card-title">mysql-物理日志之redo-log（重做日志）原理和介绍.md</span>
+                        <span class="card-title">mysql-物理备份工具之-xtrabackup.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            重做日志用来实现事务的持久性,即事务ACID中的D。 InnoDB是事务的存储引擎,其通过 Force Log at Commit机制实现事务的持久性,即当事务提交(COMMIT)时,必须先将该事务的所有日志写入到重做日志文件 进行持久化,
+                            之前使用 mysqldump 备份的 https://www.jianshu.com/p/f34dc0a3c5ce  它是一种备份sql文件的逻辑备份。备份恢复速度慢而且文件体积也大。mysql可以通过xtrabackup 实现物理备份，备
                         
                     </div>
                     <div class="publish-info">

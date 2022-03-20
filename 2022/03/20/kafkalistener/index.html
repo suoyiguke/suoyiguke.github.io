@@ -559,22 +559,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/async-zhu-jie-de-xian-jing/">
+                <a href="/2022/03/20/lazy/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Async注解的陷阱.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Lazy.md">
                         
-                        <span class="card-title">Async注解的陷阱.md</span>
+                        <span class="card-title">Lazy.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            之前在java并发编程中实现异步功能，一般是需要使用线程或者线程池。
-线程池的底层也是用的线程。
-而实现一个线程，要么继承Thread类，要么实现Runnable接口，然后在run方法中写具体的业务逻辑代码。
-开发spring的大神们，为了
+                            背景：一个接口有两个实现类，根据配置切换不同的实现类。现在是spring启动会自动初始化两个，当其实我们只需使用一个，另一个的加载就是浪费资源！此时我们就可以使用@Lazy注解来达到只加载我们需要的！
+1、在实现类上加上 @Lazy2、在 
                         
                     </div>
                     <div class="publish-info">
@@ -611,19 +609,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/configuration-zhi-jian-de-shun-xu/">
+                <a href="/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Configuration注解-之间的顺序.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="PostConstruct执行在-@NacosValue声明的set方法之后.md">
                         
-                        <span class="card-title">Configuration注解-之间的顺序.md</span>
+                        <span class="card-title">PostConstruct执行在-@NacosValue声明的set方法之后.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            @ConditionalOnBean：仅仅在当前上下文中存在某个对象时，才会实例化一个Bean。@ConditionalOnClass：某个class位于类路径上，才会实例化一个Bean。@ConditionalOnExpression：当
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -634,8 +632,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/springboot/" class="post-category" target="_blank">
-                                    springboot
+                            <a href="/categories/spring/" class="post-category" target="_blank">
+                                    spring
                                 </a>
                             
                             
@@ -645,8 +643,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/springboot/" target="_blank">
-                        <span class="chip bg-color">springboot</span>
+                    <a href="/tags/spring/" target="_blank">
+                        <span class="chip bg-color">spring</span>
                     </a>
                     
                 </div>

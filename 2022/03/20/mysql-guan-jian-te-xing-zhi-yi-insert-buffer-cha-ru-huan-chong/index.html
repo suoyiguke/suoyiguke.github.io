@@ -593,22 +593,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-guan-yu-ru-he-zai-yi-tiao-sql-zhong-geng-duo-de-li-yong-dao-suo-yin-de-si-kao-you-qi-shi-join/">
+                <a href="/2022/03/20/mysql-shi-yong-gui-fan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-关于如何在一条sql中更多的利用到索引的思考（尤其是join）：.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-使用规范.md">
                         
-                        <span class="card-title">mysql-关于如何在一条sql中更多的利用到索引的思考（尤其是join）：.md</span>
+                        <span class="card-title">mysql-使用规范.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            把索引利用看成下楼梯,where条件可以让联合索引一直往下走
-###order by 可以作用在当前楼和所有上层楼就是不能作用在下一楼例子1、索引结构 identity_number,updated_at
-
-EXPLAIN SELECT  
+                            ###命名方面
+ 命名约定 对于命名，并没有很严苛的规定，但在同一个应用中，建议风格统一。 以下是一些通用的法则，可能有互相冲突的地方，请读者自行衡量取舍。
+1、命名应有意义，以使用方便记忆、描述性强的可读性名称为第一准则，应尽量避免使用缩
                         
                     </div>
                     <div class="publish-info">
@@ -645,19 +644,20 @@ EXPLAIN SELECT
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-san-zi-gua-ying-ha-xi-suo-yin/">
+                <a href="/2022/03/20/mysql-yuan-shu-ju-suo-shen-ru/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-关键特性之（三）-自适应哈希索引.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-元数据锁深入.md">
                         
-                        <span class="card-title">mysql-关键特性之（三）-自适应哈希索引.md</span>
+                        <span class="card-title">mysql-元数据锁深入.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            我们可以通过执行这个
+UPDATE performance_schema.setup_consumers SET ENABLED = ‘YES’ WHERE NAME =’global_instrumentation’;UPDATE per
                         
                     </div>
                     <div class="publish-info">

@@ -583,23 +583,20 @@ sync_binlog ：这个参数是对于MySQL系统来说是至关重要的，他不
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-5-zhi-auto-increment-zhu-jian-zi-zeng-you-hua-can-shu-zhi-innodb-autoinc-lock-mode/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-4-zhi-innodb-de-shu-ju-wen-jian-ji-redo-log-de-da-kai-shua-xie-mo-shi-she-zhi-innodb-flush-method/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md">
                         
-                        <span class="card-title">mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md</span>
+                        <span class="card-title">mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###AUTO_INCREMENT初始值和步长相关操作查看mysql的递增初始值和步长
-SHOW VARIABLES LIKE &#39;auto_inc%&#39;; 
-
-查看表的当前递增值和步长
- SELECT auto_increme
+                            innodb_flush_method 可以对 innodb的数据文件及redo log的打开、刷写模式设置
+这种偏理论的东西还是看官方文档实在。找再多博客也没用的。然后进下实验，理论联系https://dev.mysql.com/doc/
                         
                     </div>
                     <div class="publish-info">
@@ -636,19 +633,23 @@ SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-8-zhi-join-buffer-size/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-3-zhi-innodb-de-log-buffer-xing-wei-she-zhi-innodb-flush-log-at-trx-commit/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-参数调优(8)之join_buffer_size.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md">
                         
-                        <span class="card-title">mysql-参数调优(8)之join_buffer_size.md</span>
+                        <span class="card-title">mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            当无法保证被驱动表的 Join 条件字段被索引且内存资源充足的前提下，不要太吝惜 JoinBuffer 的设置；当在某些特殊的环境中，我们的 Join 必须是 All， Index， range或者是 index_merge类型的时候， J
+                            
+这个参数直接影响到redo log 数据刷新到磁盘的性能，直接影响到插入、修改和删除的性能
+
+innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但稳定性更差）
+文件操作三个步骤： ope
                         
                     </div>
                     <div class="publish-info">

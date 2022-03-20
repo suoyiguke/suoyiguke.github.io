@@ -617,22 +617,19 @@ MRR针对于辅助索引上的范围查询进行优化,收集辅助索引对应�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-guan-li-zhi-information-schema-biao/">
+                <a href="/2022/03/20/mysql-ci-pan-dui-shu-ju-ku-xing-neng-de-ying-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-管理之-information_schema表.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-磁盘对数据库性能的影响.md">
                         
-                        <span class="card-title">mysql-管理之-information_schema表.md</span>
+                        <span class="card-title">mysql-磁盘对数据库性能的影响.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######查看information_schema表中所有的子表SHOW TABLES FROM information_schema
-CHARACTER_SETS
-COLLATIONS
-COLLATION_CHARACTER_SET_A
+                            ###传统机械硬盘当前大多数数据库使用的都是传统的机械硬盘。机械硬盘的技术目前已非常成熟，在服务器领域一般使用SAS或SATA接口的硬盘。服务器机械硬盘开始向小型化转型，目前大部分使用25寸的SAS机械硬盘。机械硬盘有两个重要的指标：一个是
                         
                     </div>
                     <div class="publish-info">
@@ -669,24 +666,25 @@ COLLATION_CHARACTER_SET_A
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-yuan-li/">
+                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-xia-tui/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-索引原理.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-索引优化特性之索引下推.md">
                         
-                        <span class="card-title">mysql-索引原理.md</span>
+                        <span class="card-title">mysql-索引优化特性之索引下推.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
-B+ 树： 
+                            
+索引下推优化默认开启，索引下推 和联合索引有密切的关系，它让组合索引里的范围条件变得有意义
 
-通过多叉来减少树的深度，提高查询效率
+查询开启状态
+SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
 
-多叉平衡树1、非叶子节点不存储data，只存储索引字段（冗
+我们可以通过修改系统变量opt
                         
                     </div>
                     <div class="publish-info">
@@ -697,8 +695,8 @@ B+ 树：
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                    mysql底层
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -708,8 +706,8 @@ B+ 树：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
-                        <span class="chip bg-color">mysql底层</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>

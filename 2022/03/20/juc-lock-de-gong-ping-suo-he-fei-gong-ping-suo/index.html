@@ -564,24 +564,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lockinterruptibly-ke-zhong-duan-zu-sai-de-jia-suo-fang-fa-si/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-trylock-chang-shi-jia-suo-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="juc---Lock接口之tryLock尝试加锁（三）.md">
                         
-                        <span class="card-title">juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md</span>
+                        <span class="card-title">juc---Lock接口之tryLock尝试加锁（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-人生如逆旅，我亦是行人
+我辈岂是蓬蒿人 
 
-Lock接口还提供了一个lockInterruptibly()方法，从名字来看他就和线程中断有着紧密的联系。。Lock接口的lockInterruptibly方法 源码如下
+tryLock()会去尝试获取锁，如果锁是被占有的状态，那么它会马上返回false。不会像 lock.lock()方法那样一直阻塞下去。这就是它的特点与优势。而且tryLock()有两个重载方法如下
 
-void lockInterrupt
+boolean 
                         
                     </div>
                     <div class="publish-info">
@@ -618,24 +618,24 @@ void lockInterrupt
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-trylock-chang-shi-jia-suo-san/">
+                <a href="/2022/03/20/juc-map-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="juc---Lock接口之tryLock尝试加锁（三）.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="juc---Map的线程不安全性和解决方案.md">
                         
-                        <span class="card-title">juc---Lock接口之tryLock尝试加锁（三）.md</span>
+                        <span class="card-title">juc---Map的线程不安全性和解决方案.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-我辈岂是蓬蒿人 
+                            ######1、多线程对HashMap进行put操作
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
-tryLock()会去尝试获取锁，如果锁是被占有的状态，那么它会马上返回false。不会像 lock.lock()方法那样一直阻塞下去。这就是它的特点与优势。而且tryLock()有两个重载方法如下
-
-boolean 
+class TestLock &#123;
                         
                     </div>
                     <div class="publish-info">

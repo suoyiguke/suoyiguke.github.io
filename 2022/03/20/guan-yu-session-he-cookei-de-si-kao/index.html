@@ -566,21 +566,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/guan-yu-explain-de-fitered-lie-cai-ce/">
+                <a href="/2022/03/20/li-xing-xun-jian-cha-xun-1-mysql-ji-ben-qing-kuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="关于EXPLAIN-的fitered列-猜测.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="例行巡检查询1---mysql基本情况.md">
                         
-                        <span class="card-title">关于EXPLAIN-的fitered列-猜测.md</span>
+                        <span class="card-title">例行巡检查询1---mysql基本情况.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、where走索引，fitered总是等于100，显示Using where; Using index，type显示range
-2、错误 没有走索引就会出现小于100的数值，且显示Using where，type显示All
-3、错误 fi
+                            1、检查哪些表不是innodb查看默认引擎 
+SHOW VARIABLES LIKE &#39;%storage_engine%&#39;; 
+
+2、查看非InnoDB引擎的业务表： 
+SELECT
+    `TABLE_NAME`,
+  
                         
                     </div>
                     <div class="publish-info">
@@ -591,8 +595,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -602,8 +606,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -617,20 +621,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/guan-yu-ti-gao-ti-qian-gui-hua-zuo-shi-yi-shi/">
+                <a href="/2022/03/20/guan-yu-java-lei-dao-di-shi-me-shi-hou-bei-chu-shi-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="关于提高提前规划做事意识.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="关于java类到底什么时候被初始化？.md">
                         
-                        <span class="card-title">关于提高提前规划做事意识.md</span>
+                        <span class="card-title">关于java类到底什么时候被初始化？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            做事情没有规划，还没想好就自己开始动手写代码是不明智的。因为可能做一半发现方案/思路不对要调整。然后自己的代码也报废了。这样做事是要不得的。
-而且我发现杨经理在这块做的不是很好，开发工作执行起来很难受，每次都是边做边去询问要如何设计。可能当
+                            只有当代码执行到调用了A类的方法时，才会去初始化A类。而且一个类只会初始化（装载）一次，后面再调用不用再初始化。
+
+idea中断点若里面有√则说明该类已经初始化，无√就是没有初始化。此时代码不会执行到这里来！
+
+这种情况下，若authori
                         
                     </div>
                     <div class="publish-info">
@@ -641,8 +648,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
-                                    软件工程和项目管理
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -652,8 +659,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" target="_blank">
-                        <span class="chip bg-color">软件工程和项目管理</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>

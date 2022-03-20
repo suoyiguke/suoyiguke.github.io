@@ -597,19 +597,19 @@ SET GLOBAL log_error_verbosity=3
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-dba/">
+                <a href="/2022/03/20/mysql-8-xin-te-xing-yi-algorithm-instant-shi-xian-de-kuai-su-ddl/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-DBA.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md">
                         
-                        <span class="card-title">mysql-DBA.md</span>
+                        <span class="card-title">mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            书籍1、&lt;&lt;高性能mysql&gt;&gt;2、 &lt;&lt;深入浅出mysql&gt;&gt;3、Gary Chen《MySQL DBA修炼之道》作者。关注产品、架构和数据。4、千金良方:MySQL性能优化金字塔法则 - 
+                            参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是
                         
                     </div>
                     <div class="publish-info">
@@ -620,8 +620,8 @@ SET GLOBAL log_error_verbosity=3
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/dba/" class="post-category" target="_blank">
-                                    dba
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -631,8 +631,8 @@ SET GLOBAL log_error_verbosity=3
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/dba/" target="_blank">
-                        <span class="chip bg-color">dba</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -646,23 +646,19 @@ SET GLOBAL log_error_verbosity=3
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xiao-shi-wen-ti/">
+                <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-8小时问题.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
                         
-                        <span class="card-title">mysql-8小时问题.md</span>
+                        <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql5中已经不支持autoReconnect的方式了，网上的那些都是错的。只能轮询去发select 1 来保证连接不被踢出
-重现问题将wait_timeout 设置为1秒时，jdbc访问就报错
-
-**c**
-SET SESSION I
+                            有时候需要对字段上加函数然后进行GROUP BY。使用执行分析，发现出现  Using temporary， 分组条件并没有走索引。因为mysql 5.7 的函数会导致索引失效。我们可以通过添加一个冗余字段来保存函数的计算结果，然后添加索引
                         
                     </div>
                     <div class="publish-info">

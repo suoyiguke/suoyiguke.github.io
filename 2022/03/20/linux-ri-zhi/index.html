@@ -561,20 +561,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/linux-wen-jian-cha-zhao/">
+                <a href="/2022/03/20/linux-an-zhuang-yi-lai-yu-dao-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="linux-文件查找.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="linux-安装依赖遇到的问题.md">
                         
-                        <span class="card-title">linux-文件查找.md</span>
+                        <span class="card-title">linux-安装依赖遇到的问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######按文件名查找指定内容，返回文件路径
- find ./ -name &quot;index.html&quot; | xargs grep  &quot;#content dl dd&#123; padding-bottom:10
+                            1、报错 ImportError: libSM.so.6: cannot open shared object file: No such file or director
+我们可以通过  libSM.so.6这个文件去寻找相关的依赖，使用
                         
                     </div>
                     <div class="publish-info">
@@ -611,22 +611,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-huan-jing-bian-liang/">
+                <a href="/2022/03/20/linux-fu-wu-qi-shi-yong-zhu-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="linux-环境变量.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="linux-服务器使用注意.md">
                         
-                        <span class="card-title">linux-环境变量.md</span>
+                        <span class="card-title">linux-服务器使用注意.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###$PATH环境变量详解首先就要考虑root 的$PATH里是否已经包含了这些环境变量。 
-主要是这四个：/bin ,/usr/bin,/sbin,/usr/sbin。 
-./bin: 
-bin为binary的简写主要放置一些系统的必备
+                            1、授权一定要注意
+chmod 777 -R ./*  不要把前面的点号落下了。否则将对服务器所有文件授权！若对ssh文件也授权777了。则下次的ssh连接就连不上了
+2、没有使用docker时候，直接java -jar xxx.jar 运
                         
                     </div>
                     <div class="publish-info">

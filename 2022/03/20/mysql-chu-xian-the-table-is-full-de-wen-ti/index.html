@@ -562,20 +562,20 @@ SHOW VARIABLES LIKE ‘%tmp_table_size%’ SHOW VARIABLES LIKE ‘%max_heap_tabl
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-zhi-yuan-li/">
+                <a href="/2022/03/20/mysql-tong-bu-es-fang-an/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql主从复制之原理.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql同步es方案.md">
                         
-                        <span class="card-title">mysql主从复制之原理.md</span>
+                        <span class="card-title">mysql同步es方案.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            三个线程各司其职
-MySQL通过3个线程来完成主从库间的数据复制:其中 Binlog Dump线程 跑在主库上，I/O线程和SQL线程跑在从库上;每个从机连上主机都会维护一个Binlog Dump，有多少个从机就有多少个Binlog Dum
+                            有专们的工具啊，用canal 到ES 先备份一次。后面都是日志同步https://github.com/alibaba
+
                         
                     </div>
                     <div class="publish-info">
@@ -612,21 +612,23 @@ MySQL通过3个线程来完成主从库间的数据复制:其中 Binlog Dump线�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ru-he-cong-5-6-sheng-ji-dao-5-7/">
+                <a href="/2022/03/20/mysql-dao-ru-dao-chu-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql如何从5-6升级到5-7？.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql导入导出总结.md">
                         
-                        <span class="card-title">mysql如何从5-6升级到5-7？.md</span>
+                        <span class="card-title">mysql导入导出总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/5.7/en/upgrade-binary-package.html#upgrade-procedure-inplace###In-place Upgrade 
-
-原地跟新，
+                            1、将 dbt3_s1_fk.sql恢复到dbt3库中
+先创建一个dbt3库,然后直接使用 mysql xxx&lt; xxx.sql 导入
+create database dbt3；
+exit;
+mysql dbt3 &lt; dbt3_
                         
                     </div>
                     <div class="publish-info">

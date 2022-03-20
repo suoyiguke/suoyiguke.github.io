@@ -590,25 +590,21 @@ kafka.zookeeper.ZooKeeperClientTimeoutException: Timed out waiting for connectio
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/kafka-shun-xu-xiao-xi/">
+                <a href="/2022/03/20/kafka-yun-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="kafka-顺序消息.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="kafka运行.md">
                         
-                        <span class="card-title">kafka-顺序消息.md</span>
+                        <span class="card-title">kafka运行.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-示例代码对应仓库：lab-03-kafka-demo-concurrency 。
+                            bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
 
-我们先来一起了解下顺序消息的顺序消息的定义：
-
-  普通顺序消息 ：Producer 将相关联的消息发送到相同的消息队列。
-  完全严格顺序 ：在【普通顺
                         
                     </div>
                     <div class="publish-info">
@@ -645,19 +641,25 @@ kafka.zookeeper.ZooKeeperClientTimeoutException: Timed out waiting for connectio
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/kafka-pei-zhi-gong-wang-fang-wen/">
+                <a href="/2022/03/20/kafka-shun-xu-xiao-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="kafka配置公网访问.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="kafka-顺序消息.md">
                         
-                        <span class="card-title">kafka配置公网访问.md</span>
+                        <span class="card-title">kafka-顺序消息.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###通过内网穿透，这种情况比较特殊现在有一台公网ip为14.127.73.253的服务器，通过内网穿透可以提供公网访问。将kafka端口9092映射到了43398。zookeeper 部署在2181端口，zookeeper没有进行端口映射
+                            
+示例代码对应仓库：lab-03-kafka-demo-concurrency 。
+
+我们先来一起了解下顺序消息的顺序消息的定义：
+
+  普通顺序消息 ：Producer 将相关联的消息发送到相同的消息队列。
+  完全严格顺序 ：在【普通顺
                         
                     </div>
                     <div class="publish-info">

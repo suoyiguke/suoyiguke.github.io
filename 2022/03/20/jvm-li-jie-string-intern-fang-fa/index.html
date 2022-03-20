@@ -595,23 +595,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-jian-kong-gui-gong-ju-zhi-arthas-a-er-sa-si/">
+                <a href="/2022/03/20/jvm-zhan-zhi-ju-bu-bian-liang-biao-he-slot/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="jvm-监控GUI工具之--Arthas-阿尔萨斯.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="jvm-栈之--局部变量表和Slot.md">
                         
-                        <span class="card-title">jvm-监控GUI工具之--Arthas-阿尔萨斯.md</span>
+                        <span class="card-title">jvm-栈之--局部变量表和Slot.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            上述的GUI诊断工具不利于在生产环境使用
-官方文档: https://arthas.aliyun.com/doc
-下载并使用在Linux中
-#下载
-curl -O https://arthas.aliyun.com/arthas-boot.
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -648,23 +644,22 @@ curl -O https://arthas.aliyun.com/arthas-boot.
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-da-yin-xu-ni-ji-can-shu/">
+                <a href="/2022/03/20/jvm-bu-huo-oom-de-kuai-zhao-wen-jian-hprof-he-fen-xi-kuai-zhao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="jvm-打印虚拟机参数.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="jvm-捕获oom的快照文件hprof和分析快照.md">
                         
-                        <span class="card-title">jvm-打印虚拟机参数.md</span>
+                        <span class="card-title">jvm-捕获oom的快照文件hprof和分析快照.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             打印JDK位数
-   String arch = System.getProperty(&quot;sun.arch.data.model&quot;);
-        System.out.println(arch);
+                            在JAVA_OPTIONS变量中增加
 
-
+-XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=$&#123;目录&#125;。
+例如：export JAVA_OPTS=&quot;-Xms204
                         
                     </div>
                     <div class="publish-info">

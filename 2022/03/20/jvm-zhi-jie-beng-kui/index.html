@@ -702,23 +702,19 @@ v  ~StubRoutines::call_stub
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-lei-chu-shi-hua-chang-jing/">
+                <a href="/2022/03/20/jvm-jian-kong-gong-ju-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="jvm-类初始化场景.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="jvm-监控工具总结.md">
                         
-                        <span class="card-title">jvm-类初始化场景.md</span>
+                        <span class="card-title">jvm-监控工具总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###类初始化场景
-
-执行main方法，main方法所在的类会先被初始化
-执行new（创建对象）、getstatic(访问静态属性)、putstatic(设置静态属性)和invokestatic(调用静态方法)指令；
-使用reflect对类
+                            ###命令行        jps 查看Java进程        jstat 查看某Java进程各种信息占用情况        jinfo 查看Java进程参数信息        jmap 导出dump文件        jhat 分析d
                         
                     </div>
                     <div class="publish-info">
@@ -755,20 +751,24 @@ v  ~StubRoutines::call_stub
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-lei-jia-zai-qi/">
+                <a href="/2022/03/20/jvm-jian-kong-ming-ling-gong-ju-zhi-jps-cha-kan-java-jin-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="jvm-类加载器.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="jvm-监控命令工具之--jps-查看Java进程.md">
                         
-                        <span class="card-title">jvm-类加载器.md</span>
+                        <span class="card-title">jvm-监控命令工具之--jps-查看Java进程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是类加载器
-负责加载class文件，class文件在文件开头由特定的文件标识，将class文件字节码内容加载到内存中，并将这些内容转换成方法区中的运行时数据结构并且ClassLoader只负责class文件的加载，至于它是否可以运
+                            Java Virtual Machine Process Status Tool
+Java进程和操作系统中的进程相同
+jps: 显示Java进程号和主类名称
+jps -q:只显示Java进程号
+jps -l:显示主类全类名
+jps -m:显
                         
                     </div>
                     <div class="publish-info">

@@ -442,23 +442,19 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-hint-you-hua-qi-ti-shi-zhi-shi-yong-force-index-qiang-zhi-shi-yong-suo-yin-he-zhi-ding-jin-yong-suo-yin/">
+                        <a href="/2022/03/20/mysql-innodb-buffer-pool-huan-cun-chi/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md">
+                                <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-innodb-buffer-pool-缓存池.md">
                                 
-                                <span class="card-title">mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md</span>
+                                <span class="card-title">mysql-innodb-buffer-pool-缓存池.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###mysql强制使用索引1、mysql强制使用主键索引
-select * from table force index(PRI) limit 2;(强制使用主键)
-
-2、强制指定一个特定索引
-select * from table fo
+                                 InnoDB存储引擎是基于磁盘存储的,并将其中的记录按照页的方式进行管理。因此可将其视为基于磁盘的数据库系统。（Disk-base Database）。在数据库系统中，由于CPU速度与磁盘速度之间的鸿沟，基于磁盘的数据库系统通常使用缓冲池
                                 
                             </div>
                             <div class="publish-info">
@@ -470,8 +466,8 @@ select * from table fo
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
+                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                        mysql底层
                                     </a>
                                     
                                     
@@ -482,7 +478,7 @@ select * from table fo
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
                             
                         </div>
                         
@@ -568,20 +564,21 @@ mysql&gt; SHOW VARIABLES LIKE &#39;%innodb_data_file_path%&#39;;
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-insert-into-a-select-b-qian-yi-shu-ju-shi-zai-read-committed-ge-chi-ji-bie-shi-biao-a-he-biao-b-de-jia-suo-fang-shi-shi-me/">
+                        <a href="/2022/03/20/mysql-innodb-yin-qing-wen-jian/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md">
+                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-innodb引擎文件.md">
                                 
-                                <span class="card-title">mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md</span>
+                                <span class="card-title">mysql-innodb引擎文件.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                insert into A select B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？
-@郑州-税友-常伟俊 8.0.19 是 如果rc+statement 那就是插入数据失败，如果rc+row，a表加
+                                ###文件我在test_innodb库类创建了一张test1表，那么打开库对应的文件夹下可以发发现 
+
+######xxx.frm 文件1、frm文件是一种表结构定义文件。无论采用何种存储引擎，mysql都有一个以frm为后缀名的文件，这个
                                 
                             </div>
                             <div class="publish-info">
@@ -629,21 +626,20 @@ mysql&gt; SHOW VARIABLES LIKE &#39;%innodb_data_file_path%&#39;;
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-innodb-yin-qing-wen-jian/">
+                        <a href="/2022/03/20/mysql-insert-into-a-select-b-qian-yi-shu-ju-shi-zai-read-committed-ge-chi-ji-bie-shi-biao-a-he-biao-b-de-jia-suo-fang-shi-shi-me/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-innodb引擎文件.md">
+                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md">
                                 
-                                <span class="card-title">mysql-innodb引擎文件.md</span>
+                                <span class="card-title">mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###文件我在test_innodb库类创建了一张test1表，那么打开库对应的文件夹下可以发发现 
-
-######xxx.frm 文件1、frm文件是一种表结构定义文件。无论采用何种存储引擎，mysql都有一个以frm为后缀名的文件，这个
+                                insert into A select B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？
+@郑州-税友-常伟俊 8.0.19 是 如果rc+statement 那就是插入数据失败，如果rc+row，a表加
                                 
                             </div>
                             <div class="publish-info">
@@ -709,6 +705,68 @@ mysql&gt; SHOW VARIABLES LIKE &#39;%innodb_data_file_path%&#39;;
 之前学习mysql的时候都是零敲碎打。这次尝试系统性学习insert语句的用法
 ######使用IGNORE修饰符
 插入或忽略。如果使用IGNORE修饰符，则执行INSERT语句时发生的主键冲突或唯一索引冲突错误
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mysql-json-lei-xing-shi-jian/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-json类型实践.md">
+                                
+                                <span class="card-title">mysql-json类型实践.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                ###createcreate table t2 (id int primary key, r1 json);
+###insert
+INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                                 
                             </div>
                             <div class="publish-info">
@@ -881,21 +939,20 @@ insert into a
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-json-lei-xing-shi-jian/">
+                        <a href="/2022/03/20/mysql-lock-he-latch-qu-bie/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-json类型实践.md">
+                                <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-lock和latch区别.md">
                                 
-                                <span class="card-title">mysql-json类型实践.md</span>
+                                <span class="card-title">mysql-lock和latch区别.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###createcreate table t2 (id int primary key, r1 json);
-###insert
-INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
+                                这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。
+latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须非常短
                                 
                             </div>
                             <div class="publish-info">
@@ -907,8 +964,8 @@ INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
+                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                        mysql底层
                                     </a>
                                     
                                     
@@ -919,7 +976,7 @@ INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
                             
                         </div>
                         
@@ -1004,84 +1061,19 @@ INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-lock-he-latch-qu-bie/">
+                        <a href="/2022/03/20/mysql-myisam-yin-qing/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-lock和latch区别.md">
+                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-myisam引擎.md">
                                 
-                                <span class="card-title">mysql-lock和latch区别.md</span>
+                                <span class="card-title">mysql-myisam引擎.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。
-latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须非常短
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                        mysql底层
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-mvcc-ji-zhi/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-mvcc机制.md">
-                                
-                                <span class="card-title">mysql-mvcc机制.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                MVCC并发控制中，读操作可以分成两类：快照读 (snapshot read)与当前读 (current read)。
-
-快照读，读取的是记录的可见版本 (有可能是历史版本)，不用加锁。
-
-当前读，读取的是记录的最新版本，并且，当前读返回的
+                                ###myisam 特性myisam 采用表级锁读写数据都会对表加锁 ，主要有3中锁类型1、read local  允许并发读取，但不允许写入。除非是在表尾追加数据2、read  跟 read local类似 但不允许追加数据3、 writ
                                 
                             </div>
                             <div class="publish-info">
@@ -1129,25 +1121,20 @@ latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须�
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-null-wen-ti/">
+                        <a href="/2022/03/20/mysql-ocp-ren-zheng-kao-shi/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-null-问题.md">
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-ocp认证考试.md">
                                 
-                                <span class="card-title">mysql-null-问题.md</span>
+                                <span class="card-title">mysql-ocp认证考试.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、列中有Null值是可以用到索引的
-mysql&gt; EXPLAIN SELECT
-    * 
-FROM
-    `test` FORCE INDEX ( idx_name ) 
-WHERE
-    isNull( `name` ) 
+                                 ocp认证考试
+
                                 
                             </div>
                             <div class="publish-info">
@@ -1159,8 +1146,8 @@ WHERE
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
+                                    <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                        mysql运维操作
                                     </a>
                                     
                                     
@@ -1171,7 +1158,7 @@ WHERE
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"><span class="chip bg-color">mysql运维操作</span></a>
                             
                         </div>
                         

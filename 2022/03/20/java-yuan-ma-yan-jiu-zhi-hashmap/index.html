@@ -662,23 +662,23 @@ static int indexFor(int h, int length) &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-cyclicbarrier/">
+                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-源码研究之CyclicBarrier.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-源码研究之HashSet.md">
                         
-                        <span class="card-title">java-源码研究之CyclicBarrier.md</span>
+                        <span class="card-title">java-源码研究之HashSet.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###先看看他的类属性
-/** The number of parties */
-private final int parties;
+                            1、HashSet的底层实现是HashMap
+2、为什么HashSet中add进去的元素是一个，而HashMap确需要key、value两个数据
 
-parties是不可变int类型变量，在CyclicBarrier构造时会进行赋值。即是达到屏障点的线
+HashSet中add进去的数据充当HashMap的key
+HashMap的value是一个
                         
                     </div>
                     <div class="publish-info">
@@ -715,25 +715,21 @@ parties是不可变int类型变量，在CyclicBarrier构造时会进行赋值。
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-suan-fa-ji-lu-1-ji-suan-1-100-sui-ji-shu-chu-xian-1000-ci-zhong-ge-ge-shu-zi-chu-xian-de-ge-shu/">
+                <a href="/2022/03/20/java-ban-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-算法记录1，计算1-100随机数出现1000次中各个数字出现的个数.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-版本.md">
                         
-                        <span class="card-title">java-算法记录1，计算1-100随机数出现1000次中各个数字出现的个数.md</span>
+                        <span class="card-title">java-版本.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package GGG.COM.class1;
-
-public class GGGA &#123;
-
-    public static void main(String[] args) &#123;
-
-        int[] arr 
+                            
+java8、java11、java17
+现在使用最多的版本还是java 8（或者1.8）。因为java 8版本，具备了java开发者足够的功能，生态也比较完善，不用担心使用的包，没有足够的支持，而且不用担心会被Oracle罚款。下面是来自
                         
                     </div>
                     <div class="publish-info">

@@ -576,22 +576,21 @@ net.ipv4.tcp_tw_recycle = 0
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/linux-huan-jing-bian-liang/">
+                <a href="/2022/03/20/linux-fu-wu-qi-shi-yong-zhu-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="linux-环境变量.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="linux-服务器使用注意.md">
                         
-                        <span class="card-title">linux-环境变量.md</span>
+                        <span class="card-title">linux-服务器使用注意.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###$PATH环境变量详解首先就要考虑root 的$PATH里是否已经包含了这些环境变量。 
-主要是这四个：/bin ,/usr/bin,/sbin,/usr/sbin。 
-./bin: 
-bin为binary的简写主要放置一些系统的必备
+                            1、授权一定要注意
+chmod 777 -R ./*  不要把前面的点号落下了。否则将对服务器所有文件授权！若对ssh文件也授权777了。则下次的ssh连接就连不上了
+2、没有使用docker时候，直接java -jar xxx.jar 运
                         
                     </div>
                     <div class="publish-info">
@@ -628,21 +627,22 @@ bin为binary的简写主要放置一些系统的必备
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-fu-wu-qi-shi-yong-zhu-yi/">
+                <a href="/2022/03/20/linux-huan-jing-bian-liang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="linux-服务器使用注意.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="linux-环境变量.md">
                         
-                        <span class="card-title">linux-服务器使用注意.md</span>
+                        <span class="card-title">linux-环境变量.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、授权一定要注意
-chmod 777 -R ./*  不要把前面的点号落下了。否则将对服务器所有文件授权！若对ssh文件也授权777了。则下次的ssh连接就连不上了
-2、没有使用docker时候，直接java -jar xxx.jar 运
+                            ###$PATH环境变量详解首先就要考虑root 的$PATH里是否已经包含了这些环境变量。 
+主要是这四个：/bin ,/usr/bin,/sbin,/usr/sbin。 
+./bin: 
+bin为binary的简写主要放置一些系统的必备
                         
                     </div>
                     <div class="publish-info">

@@ -846,19 +846,21 @@ mysql&gt; SELECT * FROM t;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/fan-wei-tiao-jian-hou-mian-de-suo-yin-bi-ding-shi-xiao/">
+                <a href="/2022/03/20/zi-xuan-suo-lang-fei-cpu-zi-yuan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="范围条件后面的索引必定失效.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="自旋锁浪费cpu资源.md">
                         
-                        <span class="card-title">范围条件后面的索引必定失效.md</span>
+                        <span class="card-title">自旋锁浪费cpu资源.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            当前时间在表中两个字段的范围内。就相当于 2个范围条件，如果有索引，那么索引肯定只能部分生效EXPLAIN SELECT * from jg_gift_rule WHERE now( ) BETWEEN d.gift_start_time 
+                            在并发编程中，自旋锁想必大家都已经耳熟能详了。
+自旋锁有个非常经典的使用场景就是：CAS（即比较和交换），它是一种无锁化思想（说白了用了一个死循环），用来解决高并发场景下，更新数据的问题。
+而atomic包下的很多类，比如：AtomicIn
                         
                     </div>
                     <div class="publish-info">
@@ -869,8 +871,8 @@ mysql&gt; SELECT * FROM t;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -880,8 +882,8 @@ mysql&gt; SELECT * FROM t;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>

@@ -599,25 +599,21 @@ WHERE
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-xia-tui/">
+                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-he-bing-ce-lue-index-merge/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-索引优化特性之索引下推.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-索引优化特性之索引合并策略-Index-Merge.md">
                         
-                        <span class="card-title">mysql-索引优化特性之索引下推.md</span>
+                        <span class="card-title">mysql-索引优化特性之索引合并策略-Index-Merge.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-索引下推优化默认开启，索引下推 和联合索引有密切的关系，它让组合索引里的范围条件变得有意义
-
-查询开启状态
-SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
-
-我们可以通过修改系统变量opt
+                             https://dev.mysql.com/doc/refman/8.0/en/index-merge-optimization.html
+####什么是Index Merge？Index Merge的限制有哪些？
+如果查询中使用到了不同
                         
                     </div>
                     <div class="publish-info">
@@ -654,20 +650,21 @@ SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-te-xing-zhi-suo-yin-fu-gai-he-zui-zuo-pi-pei-yuan-ze/">
+                <a href="/2022/03/20/mysql-suo-yin-chang-du-qu-fen-du-he-qian-zhui-suo-yin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql-索引特性之索引覆盖和最左匹配原则.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-索引长度、区分度和前缀索引.md">
                         
-                        <span class="card-title">mysql-索引特性之索引覆盖和最左匹配原则.md</span>
+                        <span class="card-title">mysql-索引长度、区分度和前缀索引.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###索引覆盖如果要查询的字段都建立过索引，那么引擎会直接在索引表中查询而不会访问原始数据（否则只要有一个字段没有建立索引就会做全表扫描），这叫索引覆盖。因此我们需要尽可能的在select后只写必要的查询字段，以增加索引覆盖的几率。
-比如，
+                            ###好的索引1、查询频繁 2、 区分度高 3、长度小 4、尽量能覆盖常用查询字段###
+###索引长度的重要性索引长度直接影响索引文件的大小，影响增删改的速度，并间接影响查询速度（占用内存多）
+针对列的值，从左往右截取部分来来建立索引。即
                         
                     </div>
                     <div class="publish-info">

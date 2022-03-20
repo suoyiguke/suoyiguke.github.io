@@ -442,19 +442,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-yi-insert-buffer-cha-ru-huan-chong/">
+                        <a href="/2022/03/20/mysql-guan-yu-ru-he-zai-yi-tiao-sql-zhong-geng-duo-de-li-yong-dao-suo-yin-de-si-kao-you-qi-shi-join/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md">
+                                <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-关于如何在一条sql中更多的利用到索引的思考（尤其是join）：.md">
                                 
-                                <span class="card-title">mysql-关键特性之（一）-Insert-Buffer-插入缓冲.md</span>
+                                <span class="card-title">mysql-关于如何在一条sql中更多的利用到索引的思考（尤其是join）：.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                Insert Buffer可能是 InnoDB存储引擎关键特性中最令人激动与兴奋的一个功能。不过这个名字可能会让人认为插人缓冲是缓冲池中的一个组成部分。其实不然, InnoDB缓冲池中有 InsertBuffer 信息固然不错,但是Inse
+                                把索引利用看成下楼梯,where条件可以让联合索引一直往下走
+###order by 可以作用在当前楼和所有上层楼就是不能作用在下一楼例子1、索引结构 identity_number,updated_at
+
+EXPLAIN SELECT  
                                 
                             </div>
                             <div class="publish-info">
@@ -466,8 +469,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                        mysql底层
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
                                     </a>
                                     
                                     
@@ -478,7 +481,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
                             
                         </div>
                         
@@ -562,13 +565,13 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-wu-shua-xin-lin-jie-ye/">
+                        <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-er-liang-ci-xie/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-关键特性之（五）-刷新邻接页.md">
+                                <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-关键特性之（二）-两次写.md">
                                 
-                                <span class="card-title">mysql-关键特性之（五）-刷新邻接页.md</span>
+                                <span class="card-title">mysql-关键特性之（二）-两次写.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
@@ -622,13 +625,13 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-er-liang-ci-xie/">
+                        <a href="/2022/03/20/mysql-guan-jian-te-xing-zhi-wu-shua-xin-lin-jie-ye/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-关键特性之（二）-两次写.md">
+                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-关键特性之（五）-刷新邻接页.md">
                                 
-                                <span class="card-title">mysql-关键特性之（二）-两次写.md</span>
+                                <span class="card-title">mysql-关键特性之（五）-刷新邻接页.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
@@ -765,140 +768,6 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- -------------
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-han-shu-zhi-shu-zhi-chu-li-han-shu/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-函数之数值处理函数.md">
-                                
-                                <span class="card-title">mysql-函数之数值处理函数.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                
-在齐太史简，在晋董狐笔###最值######行最值
-
-SELECT GREATEST(3, 12, 34, 8, 25); 
-SELECT LEAST(3, 12, 34, 8, 25); 
-
-######列最值
-SELECT MAX(a
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-han-shu-zhi-qi-ta-han-shu/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-函数之其它函数.md">
-                                
-                                <span class="card-title">mysql-函数之其它函数.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                -- test
-SELECT DATABASE()
--- 5.7.22-log
-SELECT VERSION()
--- root@localhost
-SELECT USER()
--- ip字符串转ip数值 3232235620
-SELECT
                                 
                             </div>
                             <div class="publish-info">
@@ -1115,6 +984,136 @@ SELECT  Left(&#39;yinkai&#39;,3)
                         <div class="card-action article-tags">
                             
                             <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mysql-han-shu-zhi-qi-ta-han-shu/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-函数之其它函数.md">
+                                
+                                <span class="card-title">mysql-函数之其它函数.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                -- test
+SELECT DATABASE()
+-- 5.7.22-log
+SELECT VERSION()
+-- root@localhost
+SELECT USER()
+-- ip字符串转ip数值 3232235620
+SELECT
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mysql-fen-qu-partitions-zhi-fen-qu-fang-fa/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-分区PARTITIONS之分区方法.md">
+                                
+                                <span class="card-title">mysql-分区PARTITIONS之分区方法.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                
+分区依据的字段必须是主键/唯一索引的组成部分，分区是为了快速定位数据，因此该字段的搜索频次较高应作为强检索字段，否则依照该字段分区毫无意义。
+
+联合分区键作为分区键只能保证在分区内唯一，不能实现全局唯一；dbt3.orders。如何实现全
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                        mysql运维操作
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"><span class="chip bg-color">mysql运维操作</span></a>
                             
                         </div>
                         

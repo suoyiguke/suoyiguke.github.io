@@ -731,20 +731,24 @@ relay_log=replicas-mysql-relay-bin
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-zhun-ce-shi-sysbench-an-zhuang-yi/">
+                <a href="/2022/03/20/mysql-zai-xian-ddl-cao-zuo-zhi-shou-dong-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-基准测试sysbench-安装（一）.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-在线DDL操作之手动处理.md">
                         
-                        <span class="card-title">mysql-基准测试sysbench-安装（一）.md</span>
+                        <span class="card-title">mysql-在线DDL操作之手动处理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SysBench是一个模块化的、跨平台、多线程基准测试工具，主要用于评估测试各种不同系统参数下的数据库负载情况。https://github.com/akopytov/sysbench###sysbench的测试可运用：
-1、CPU性能2、
+                            ###手动将表存为旧表，新创建一个新表来接收数据原子性修改，不阻塞业务
+
+一种不会出现业务抖动的方式
+
+ DROP TABLE IF EXISTS my_summary_new, my_summary_old;
+ CREATE TABLE 
                         
                     </div>
                     <div class="publish-info">
@@ -781,20 +785,20 @@ relay_log=replicas-mysql-relay-bin
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-bei-fen-shu-ju-biao-qie-ti-huan-wei-xin-de-kong-biao/">
+                <a href="/2022/03/20/mysql-ji-zhun-ce-shi-sysbench-an-zhuang-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-备份数据表，且替换为新的空表.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-基准测试sysbench-安装（一）.md">
                         
-                        <span class="card-title">mysql-备份数据表，且替换为新的空表.md</span>
+                        <span class="card-title">mysql-基准测试sysbench-安装（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CREATE TABLE  biz_cloudsign_sign_copy  like biz_cloudsign_sign;
-RENAME TABLE biz_cloudsign_sign    TO biz_cloudsign_sign
+                            SysBench是一个模块化的、跨平台、多线程基准测试工具，主要用于评估测试各种不同系统参数下的数据库负载情况。https://github.com/akopytov/sysbench###sysbench的测试可运用：
+1、CPU性能2、
                         
                     </div>
                     <div class="publish-info">

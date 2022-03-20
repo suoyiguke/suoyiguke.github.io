@@ -574,19 +574,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-xiang-guan-pei-zhi/">
+                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-ri-chang-wei-hu-gong-zuo-1-zhu-cong-fu-zhi-zhi-shou-dong-qiang-zhi-tong-bu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-主从复制-相关配置.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-主从复制日常维护工作1主从复制之手动强制同步.md">
                         
-                        <span class="card-title">mysql-主从复制-相关配置.md</span>
+                        <span class="card-title">mysql-主从复制日常维护工作1主从复制之手动强制同步.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、从中设置log_slave_updates=ON且开启binlog（log_bin=mysql-bin）时，会将主库发过来的的events也记录为binlog保存下来；show VARIABLES like ‘%log_slave_up
+                            在某些繁忙的 OLTP(在线事务处理）系统上，由于主库更新频繁，而从库由于各种原因(比如硬件性能较差）导致更新速度较慢，从而使得主从库之间的数据差距越来越大，最终对某些应用产生影响。在这种情况下，我们就需要定期地进行主从库的数据同步，使得主
                         
                     </div>
                     <div class="publish-info">

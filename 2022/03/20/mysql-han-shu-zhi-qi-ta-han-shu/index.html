@@ -585,26 +585,28 @@ SELECT md5(&quot;123&quot;)
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-han-shu-zhi-shu-zhi-chu-li-han-shu/">
+                <a href="/2022/03/20/mysql-han-shu-zhi-zi-fu-chuan-chu-li-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-函数之数值处理函数.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-函数之字符串处理函数.md">
                         
-                        <span class="card-title">mysql-函数之数值处理函数.md</span>
+                        <span class="card-title">mysql-函数之字符串处理函数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-在齐太史简，在晋董狐笔###最值######行最值
+时穷节乃现，一一垂丹青######字符串长度
 
-SELECT GREATEST(3, 12, 34, 8, 25); 
-SELECT LEAST(3, 12, 34, 8, 25); 
+SELECT Length(&#39;yinkai&#39;)   
 
-######列最值
-SELECT MAX(a
+输出 6
+######字符串截取1、left
+SELECT  Left(&#39;yinkai&#39;,3)  
+
+
                         
                     </div>
                     <div class="publish-info">
@@ -641,20 +643,22 @@ SELECT MAX(a
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-nei-bu-ming-ling-jie-mian-zhong-zhi-xing-cao-zuo-xi-tong-de-ming-ling/">
+                <a href="/2022/03/20/mysql-fen-qu-partitions-zhi-fen-qu-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="mysql-内部命令界面中执行操作系统的命令.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-分区PARTITIONS之分区方法.md">
                         
-                        <span class="card-title">mysql-内部命令界面中执行操作系统的命令.md</span>
+                        <span class="card-title">mysql-分区PARTITIONS之分区方法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql&gt; system ls;
-appmetadatadb_20181210.sql  deleteDataInExtractdb.sh           lib     my.cnf_20181023           sh
+                            
+分区依据的字段必须是主键/唯一索引的组成部分，分区是为了快速定位数据，因此该字段的搜索频次较高应作为强检索字段，否则依照该字段分区毫无意义。
+
+联合分区键作为分区键只能保证在分区内唯一，不能实现全局唯一；dbt3.orders。如何实现全
                         
                     </div>
                     <div class="publish-info">

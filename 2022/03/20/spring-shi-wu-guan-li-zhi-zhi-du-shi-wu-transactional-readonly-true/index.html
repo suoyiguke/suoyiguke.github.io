@@ -702,23 +702,23 @@ optimization in some cases, such as when you are using Hibernate.
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-supports-er/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-ji-ben-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践SUPPORTS（二）.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="spring-事务管理之基本使用.md">
                         
-                        <span class="card-title">spring-事务管理之事务传播行为之实践SUPPORTS（二）.md</span>
+                        <span class="card-title">spring-事务管理之基本使用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-纸上得来终觉浅，绝知此事要躬行
+                            我们知道spring事务可以分为申明式事务和编程式事务
 
-继续验证，这次的主角是@Transactional(propagation= Propagation.SUPPORTS)它总是使用调用者事务，若调用者没事务则以无事务状态执行
-######1、Insert
+
+编程式事务 在代码中显式调用begin Transaction() commit(). rollback() 等事务管理相关的方法
+申明式事务 则是基于AOP面向切面编程思想的优秀
                         
                     </div>
                     <div class="publish-info">
@@ -755,23 +755,22 @@ optimization in some cases, such as when you are using Hibernate.
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-ji-ben-shi-yong/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-jian-yan-zheng-yi-chang-he-spring-sheng-ming-shi-shi-wu-de-guan-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="spring-事务管理之基本使用.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="spring-事务管理之实践，验证异常和spring声明式事务的关系.md">
                         
-                        <span class="card-title">spring-事务管理之基本使用.md</span>
+                        <span class="card-title">spring-事务管理之实践，验证异常和spring声明式事务的关系.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们知道spring事务可以分为申明式事务和编程式事务
+                            
+实践是检验真理的唯一标准！
 
-
-编程式事务 在代码中显式调用begin Transaction() commit(). rollback() 等事务管理相关的方法
-申明式事务 则是基于AOP面向切面编程思想的优秀
+######验证==&gt;@Transactional只能回滚运行时异常，不能回滚受检异常。如果要回滚受检异常请使用@Transactional(rollbackFor=Exception.class)同时
                         
                     </div>
                     <div class="publish-info">

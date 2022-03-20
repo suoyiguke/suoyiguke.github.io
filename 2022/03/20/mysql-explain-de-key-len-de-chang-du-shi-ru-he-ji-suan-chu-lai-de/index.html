@@ -643,19 +643,20 @@ varchr 比 char 需要多使用1个字节存储长度;允许NULL">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-waiting-for-table-metadata-lock/">
+                <a href="/2022/03/20/mysql-next-key-lock-lin-jian-suo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql--Waiting-for-table-metadata-lock.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql---Next-Key-Lock-临键锁.md">
                         
-                        <span class="card-title">mysql--Waiting-for-table-metadata-lock.md</span>
+                        <span class="card-title">mysql---Next-Key-Lock-临键锁.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###解决方案1、SHOW  PROCESSLIST，得到Waiting for table metadata lock 的 id。然后kill之2、 设置ddl语句超时时间，注意需要在出现问题之前就设置，可以防止一直阻塞下去。就连读都会有
+                            ###InnoDB的三种行锁算法介绍 InnoDB存储引擎有3种行锁的算法,其分别是: 
+1、Record Lock单个行记录上的锁Record Lock  InnoDB总是会去锁住索引记录,如果存储引擎表在建立的时候没有设置任何一个索引,
                         
                     </div>
                     <div class="publish-info">
@@ -666,8 +667,8 @@ varchr 比 char 需要多使用1个字节存储长度;允许NULL">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -677,8 +678,8 @@ varchr 比 char 需要多使用1个字节存储长度;允许NULL">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

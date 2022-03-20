@@ -568,26 +568,20 @@ union all select 0 AS x ,&#39;reset&#39; from dual where (@found:=NULL) is not n
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/nei-cun-xie-lou-chang-jian-ji-chong-qing-kuang/">
+                <a href="/2022/03/20/nei-bu-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="内存泄漏常见几种情况.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="内部类.md">
                         
-                        <span class="card-title">内存泄漏常见几种情况.md</span>
+                        <span class="card-title">内部类.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            内存泄漏简介内存泄漏: 不需要使用对象,但是GC无法回收它
-
-宽泛意义上的内存泄漏
-
-不良的操作导致对象生命周期变长
-
-Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生命周期少于X也是同理)
-当大量内存泄漏,没有内存
+                            ###局部内部类如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在start 方法中创建这个类型的对象时使用了一次。当遇到这类情况时， 可以在一个方法中定义局部类。
+public vo
                         
                     </div>
                     <div class="publish-info">
@@ -598,8 +592,8 @@ Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生�
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -609,8 +603,8 @@ Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>
@@ -624,21 +618,23 @@ Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/zai-tan-comparator-bi-jiao-qi/">
+                <a href="/2022/03/20/han-shu-shi-jie-kou-ying-yong-jin-yi-bu-bo-chi-chong-fu-dai-ma/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="再谈-Comparator比较器.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="函数式接口应用---进一步剥离重复代码.md">
                         
-                        <span class="card-title">再谈-Comparator比较器.md</span>
+                        <span class="card-title">函数式接口应用---进一步剥离重复代码.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###结合lambda使用Arrays.sort(people, Comparator.comparing(Person::getName));
-###设置次级排序
-Collections.sort(list,Comparator.comp
+                            ###Runnable 抽取应用在try -catch 中，补货到多个异常。且存在相同的代码模块
+原：
+   /**
+     * @Des 反射调用set; 返回true设置成功，返回false设置失败
+     * @Author yi
                         
                     </div>
                     <div class="publish-info">

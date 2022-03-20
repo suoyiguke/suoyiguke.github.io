@@ -341,76 +341,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-lian-jie-shu-xing/" target="_blank">
+                    <a href="/2022/03/20/mysql-yun-wei-ming-ling-zhi-tong-guo-show-status-liao-jie-ge-chong-sql-de-zhi-xing-xiao-lu/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-连接属性.md">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md">
                             
-                            <span class="card-title">mysql-连接属性.md</span>
+                            <span class="card-title">mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            SHOW PROCESSLIST;
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-sql-tong-ji/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-运维操作之sql统计.md">
-                            
-                            <span class="card-title">mysql-运维操作之sql统计.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###统计信息(SQL维度)1、执行次数最多的SQL
-SELECT
- DIGEST_TEXT,
- COUNT_STAR,
- FIRST_SEEN,
- LAST_SEEN 
-FROM
- `performance_schema`.events_
+                            ######SHOW STATUS LIKE ‘%Com_%’Com_admin_commands    0Com_assign_to_keycache    0Com_alter_db    1Com_alter_db_upgrade  
                             
                         </div>
                         <div class="publish-info">
@@ -483,6 +427,55 @@ FROM
                         
                         <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
                             <span class="chip bg-color">mysql运维操作</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql-lian-jie-shu-xing/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-连接属性.md">
+                            
+                            <span class="card-title">mysql-连接属性.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            SHOW PROCESSLIST;
+
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
                         </a>
                         
                     </div>
@@ -785,56 +778,6 @@ System Variable    resultset_metadataScope    SessionDynamic    YesSET_VAR Hint 
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql8-0-ahi-zi-gua-ying-hash-suo-yin-kai-qi-innodb-adaptive-hash-index-ti-sheng-40/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md">
-                            
-                            <span class="card-title">mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###AHIAdaptive Hash IndexAHI自适应hash索引 
-SHOW VARIABLES like &#39;%innodb_adaptive_hash_index%&#39;
-
-MySQL InnoDB存储引擎的自适应哈
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                            <span class="chip bg-color">mysql运维操作</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/mysql8-an-zhuang-mei-you-mysqld-safe-shi-yong-systemd-guan-li-mysql-fu-wu-qi/" target="_blank">
                         <div class="card-image">
                             
@@ -901,6 +844,56 @@ MySQL InnoDB存储引擎的自适应哈
 走失的小老虎儿:设置的是1g 
 走失的小老虎儿:
 set global read_buffer_size=131072;set global read_r
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                            <span class="chip bg-color">mysql运维操作</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/mysql8-0-ahi-zi-gua-ying-hash-suo-yin-kai-qi-innodb-adaptive-hash-index-ti-sheng-40/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md">
+                            
+                            <span class="card-title">mysql8-0-AHI-自适应hash索引-开启innodb_adaptive_hash_index-提升40%.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ###AHIAdaptive Hash IndexAHI自适应hash索引 
+SHOW VARIABLES like &#39;%innodb_adaptive_hash_index%&#39;
+
+MySQL InnoDB存储引擎的自适应哈
                             
                         </div>
                         <div class="publish-info">

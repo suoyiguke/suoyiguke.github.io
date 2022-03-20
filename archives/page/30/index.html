@@ -442,20 +442,19 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-he-zhi-arraylist-he-linkedlist-de-qu-bie-he-shi-yong-jian-yi/">
+                        <a href="/2022/03/20/java-ji-he-zhi-skiplist-tiao-biao/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="java-集合之ArrayList和LinkedList的区别和使用建议.md">
+                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java-集合之-SkipList跳表.md">
                                 
-                                <span class="card-title">java-集合之ArrayList和LinkedList的区别和使用建议.md</span>
+                                <span class="card-title">java-集合之-SkipList跳表.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于双向链表实现的非线程安全的集合。
-2、扩容问题：ArrayList 使用数组实现，无参构造函数默认初始化长度为 10，数组扩容是会将原数组中的元素重新拷贝
+                                跳表(SkipList，全称跳跃表)是用于有序元素序列快速搜索查找的一个数据结构，跳表是一个随机化的数据结构，实质就是一种可以进行二分查找的有序链表。跳表在原有的有序链表上面增加了多级索引，通过索引来实现快速查找。跳表不仅能提高搜索性能，同
                                 
                             </div>
                             <div class="publish-info">
@@ -467,8 +466,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/java/" class="post-category" target="_blank">
-                                        java
+                                    <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
+                                        java源码分析
                                     </a>
                                     
                                     
@@ -479,7 +478,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
+                            <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"><span class="chip bg-color">java源码分析</span></a>
                             
                         </div>
                         
@@ -518,66 +517,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                 Collections 工具类常用方法:
 排序查找,替换操作同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)###1.5.1. 排序操作
 void reverse(List list)//反转void shuf
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/java/" class="post-category" target="_blank">
-                                        java
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/java-ji-he-zhi-ru-he-jue-ding-shi-yong-hashmap-huan-shi-treemap/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="java-集合之如何决定使用HashMap还是TreeMap？.md">
-                                
-                                <span class="card-title">java-集合之如何决定使用HashMap还是TreeMap？.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                HashMap基于散列桶（数组和链表）实现；TreeMap基于红黑树实现。HashMap不支持排序；TreeMap默认是按照Key值升序排序的，可指定排序的比较器，主要用于存入元素时对元素进行自动排序。HashMap大多数情况下有更好的性能
                                 
                             </div>
                             <div class="publish-info">
@@ -690,21 +629,19 @@ void reverse(List list)//反转void shuf
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-he-ji-chu-cao-zuo/">
+                        <a href="/2022/03/20/java-ji-he-zhi-ru-he-jue-ding-shi-yong-hashmap-huan-shi-treemap/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="java-集合基础操作.md">
+                                <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="java-集合之如何决定使用HashMap还是TreeMap？.md">
                                 
-                                <span class="card-title">java-集合基础操作.md</span>
+                                <span class="card-title">java-集合之如何决定使用HashMap还是TreeMap？.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、map 边遍历边删除
-   Iterator&lt;Entry&lt;String, Cache&gt;&gt; it = cacheMap.entrySet().iterator();
-        while (it.hasNex
+                                HashMap基于散列桶（数组和链表）实现；TreeMap基于红黑树实现。HashMap不支持排序；TreeMap默认是按照Key值升序排序的，可指定排序的比较器，主要用于存入元素时对元素进行自动排序。HashMap大多数情况下有更好的性能
                                 
                             </div>
                             <div class="publish-info">
@@ -752,23 +689,21 @@ void reverse(List list)//反转void shuf
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-he-rong-qi-chang-yong-cao-zuo/">
+                        <a href="/2022/03/20/java-ji-he-ji-chu-cao-zuo/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-集合容器常用操作.md">
+                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="java-集合基础操作.md">
                                 
-                                <span class="card-title">java-集合容器常用操作.md</span>
+                                <span class="card-title">java-集合基础操作.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、快速构建集合容器
-
-ListList&lt;Integer&gt; sList = Arrays.asList(1, 2, 3);
-
-这样构建出来的不是真正的List，不可以add；或者可以这样ArrayList&lt;String&g
+                                1、map 边遍历边删除
+   Iterator&lt;Entry&lt;String, Cache&gt;&gt; it = cacheMap.entrySet().iterator();
+        while (it.hasNex
                                 
                             </div>
                             <div class="publish-info">
@@ -835,6 +770,70 @@ ListList&lt;Integer&gt; sList = Arrays.asList(1, 2, 3);
   // 源码
    public static void main(String[] args) &#123;
         Arra
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/java/" class="post-category" target="_blank">
+                                        java
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/java-ji-he-rong-qi-chang-yong-cao-zuo/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-集合容器常用操作.md">
+                                
+                                <span class="card-title">java-集合容器常用操作.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                1、快速构建集合容器
+
+ListList&lt;Integer&gt; sList = Arrays.asList(1, 2, 3);
+
+这样构建出来的不是真正的List，不可以add；或者可以这样ArrayList&lt;String&g
                                 
                             </div>
                             <div class="publish-info">
@@ -1004,19 +1003,20 @@ Fail-Fast Iterator
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu/">
+                        <a href="/2022/03/20/java-ji-he-jie-gou/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="java-集合问题基础.md">
+                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-集合结构.md">
                                 
-                                <span class="card-title">java-集合问题基础.md</span>
+                                <span class="card-title">java-集合结构.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                https://gitee.com/SnailClimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B
+                                ###1.1.3. 集合框架底层数据结构总结先来看一下 Collection 接口下面的集合。
+####1.1.3.1. ListArraylist： Object[]数组Vector：Object[]数组LinkedList： 双向链表(
                                 
                             </div>
                             <div class="publish-info">
@@ -1064,20 +1064,19 @@ Fail-Fast Iterator
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/java-ji-he-jie-gou/">
+                        <a href="/2022/03/20/java-ji-he-wen-ti-ji-chu/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-集合结构.md">
+                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="java-集合问题基础.md">
                                 
-                                <span class="card-title">java-集合结构.md</span>
+                                <span class="card-title">java-集合问题基础.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###1.1.3. 集合框架底层数据结构总结先来看一下 Collection 接口下面的集合。
-####1.1.3.1. ListArraylist： Object[]数组Vector：Object[]数组LinkedList： 双向链表(
+                                https://gitee.com/SnailClimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B
                                 
                             </div>
                             <div class="publish-info">

@@ -569,19 +569,21 @@ kill 线程id
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-8-zhi-join-buffer-size/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-6-zhi-ci-pan-io-xing-neng-xiang-guan-de-innodb-io-capacity-max-he-innodb-io-capacity/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-参数调优(8)之join_buffer_size.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优(6)之磁盘IO性能相关的innodb_io_capacity_max-和innodb_io_capacity.md">
                         
-                        <span class="card-title">mysql-参数调优(8)之join_buffer_size.md</span>
+                        <span class="card-title">mysql-参数调优(6)之磁盘IO性能相关的innodb_io_capacity_max-和innodb_io_capacity.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            当无法保证被驱动表的 Join 条件字段被索引且内存资源充足的前提下，不要太吝惜 JoinBuffer 的设置；当在某些特殊的环境中，我们的 Join 必须是 All， Index， range或者是 index_merge类型的时候， J
+                            作用于磁盘IO，可以提高db吞吐量,提高写入性能
+###innodb_io_capacity
+ 在Innodb 1.0.x版本之前，这个参数不存在，InnoDB存储引擎最大只会每秒只会刷新100个脏页到磁盘、合并20个插入缓冲。这种硬编码实
                         
                     </div>
                     <div class="publish-info">

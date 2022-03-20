@@ -603,19 +603,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mybatis-plus-zhong-de-keng/">
+                <a href="/2022/03/20/mybatis-plus-update-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mybatis_plus-中的坑.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mybatis_plus--update问题.md">
                         
-                        <span class="card-title">mybatis_plus-中的坑.md</span>
+                        <span class="card-title">mybatis_plus--update问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、必须加.last(“limit 1”) 否则可能 selectOne()报错 源码：JgOrderTemplate template = templateService.query().eq(“template_no”, templat
+                            mybatis_plus 如何做到批量更新 set 和in 同时都是批量的？现在只能是in 是批量
+updateBatchById 直接更新list可以做到。但是会去更新所有值而不是我只想更新的值
+1、批量更新不同的属性值时还是得写循环单条
                         
                     </div>
                     <div class="publish-info">

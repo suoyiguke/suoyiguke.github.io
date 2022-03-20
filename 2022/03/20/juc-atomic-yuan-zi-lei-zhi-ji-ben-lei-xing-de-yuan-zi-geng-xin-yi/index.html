@@ -637,24 +637,25 @@ public class Test_Automic &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-shi-yong-longadder-dai-ti-atomiclong/">
+                <a href="/2022/03/20/js-de-activexobject-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---Atomic原子类之使用LongAdder代替AtomicLong.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="js的ActiveXObject编程.md">
                         
-                        <span class="card-title">juc---Atomic原子类之使用LongAdder代替AtomicLong.md</span>
+                        <span class="card-title">js的ActiveXObject编程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-不在其位，不谋其政
+                            ActiveXObject只有IE支持
+1、读取文件
 
-《阿里巴巴Java开发手册》里面有提到：
-
-【参考】 volatile 解决多线程内存不可见问题。对于一写多读，是可以解决变量同步问题，但是如果多写，同样无法解决线程安全问题。说明：如果是 count++操作，使用如
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&qu
                         
                     </div>
                     <div class="publish-info">
@@ -665,8 +666,8 @@ public class Test_Automic &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/js/" class="post-category" target="_blank">
+                                    js
                                 </a>
                             
                             
@@ -676,8 +677,8 @@ public class Test_Automic &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/js/" target="_blank">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
                 </div>
@@ -691,23 +692,19 @@ public class Test_Automic &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-ji-ben-gai-nian-yi/">
+                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-zhi-yin-yong-lei-xing-de-yuan-zi-geng-xin-si/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="juc---Atomic原子类基本概念（一）.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---Atomic原子类之引用类型的原子更新（四）.md">
                         
-                        <span class="card-title">juc---Atomic原子类基本概念（一）.md</span>
+                        <span class="card-title">juc---Atomic原子类之引用类型的原子更新（四）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-天道酬勤
-
-我们知道，多线程并发地执行i++，因为i++操作不具备原子性，可能导致更新丢失。如A线程和B线程同时执行i++，两个线程读到的i的值都为1，均在1的基础上加1。那么经过两个线程操作之后可能i不等于3，而是等于2。
-因为A和B线
+                            原子更新基本类型的AtomicInteger，只能更新一个变量，如果要原子更新多个变量，就需要使用这个原子更新引用类型提供的类。Atomic包提供了以下3个类。·AtomicReference：原子更新引用类型。·AtomicReferen
                         
                     </div>
                     <div class="publish-info">

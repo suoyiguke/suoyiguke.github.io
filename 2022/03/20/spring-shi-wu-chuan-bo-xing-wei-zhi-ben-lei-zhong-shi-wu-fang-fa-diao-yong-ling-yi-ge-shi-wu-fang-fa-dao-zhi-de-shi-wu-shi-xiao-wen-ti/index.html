@@ -751,13 +751,13 @@ public class UsersServiceImpl implements UsersService &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-not-supported-wu/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-requires-new-si/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践NOT_SUPPORTED（五）.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.md">
                         
-                        <span class="card-title">spring-事务管理之事务传播行为之实践NOT_SUPPORTED（五）.md</span>
+                        <span class="card-title">spring-事务管理之事务传播行为之实践REQUIRES_NEW（四）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -766,7 +766,8 @@ public class UsersServiceImpl implements UsersService &#123;
                             
 纸上得来终觉浅，绝知此事要躬行
 
-这次的主角是@Transactional(propagation= Propagation.NOT_SUPPORTED)调用者事务方法调用使用该注解的申明方法时，事务不会进到此方法。即把外部事务挂起，直到
+这次的主角是    @Transactional(propagation= Propagation.REQUIRES_NEW)；它总是自己创建事务，给人一种另起炉灶，自力更生的感觉
+######1、Ins
                         
                     </div>
                     <div class="publish-info">

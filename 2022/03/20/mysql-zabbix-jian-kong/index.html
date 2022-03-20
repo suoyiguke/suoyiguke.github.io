@@ -559,21 +559,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-15-zhi-innodb-page-size-she-zhi-ye-da-xiao/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-10-zhi-tmp-table-size-you-hua-lin-shi-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--参数调优（15）之-innodb_page_size设置页大小.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql--参数调优（10）之-tmp_table_size-优化临时表.md">
                         
-                        <span class="card-title">mysql--参数调优（15）之-innodb_page_size设置页大小.md</span>
+                        <span class="card-title">mysql--参数调优（10）之-tmp_table_size-优化临时表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            推荐设置：8192
-作用：
-这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。in
+                            https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html
+###实践tmp_table_size默认16M。tmp_table_size如果过小，存不下了就
                         
                     </div>
                     <div class="publish-info">
@@ -610,24 +609,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-lru-scan-depth/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-buffer-pool-load-at-startup-innodb-buffer-pool/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql--参数调优（16）之innodb_lru_scan_depth.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md">
                         
-                        <span class="card-title">mysql--参数调优（16）之innodb_lru_scan_depth.md</span>
+                        <span class="card-title">mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            27)innodb_lru_scan_depth
-推荐设置：2000
+                            25)innodb_buffer_pool_load_at_startup
+推荐设置：
+0
 作用：
-innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配置2000以上。
-可使用默认配置。即不设。如果不配的后果：
-默认
+这两个参数几乎没人用一般dba也不曾听说过，它是什么意思呢？Mysql在第一次（重启）时，它的buffer_pool_size中是空的，随着
                         
                     </div>
                     <div class="publish-info">

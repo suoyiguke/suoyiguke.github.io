@@ -584,20 +584,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-synchronized-guan-jian-zi-zhi-ba-chong-suo-ce-yan/">
+                <a href="/2022/03/20/jmm-synchronized-guan-jian-zi-zhi-ji-ben-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="jmm--synchronized关键字之八种锁测验.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jmm-synchronized关键字之基本用法.md">
                         
-                        <span class="card-title">jmm--synchronized关键字之八种锁测验.md</span>
+                        <span class="card-title">jmm-synchronized关键字之基本用法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###规则线程之前不是竞争同一个监视器锁的话可以无视synchronized 
-######1、printA和printB方法均加上synchronized 关键字，A和B的打印顺序？打印顺序是A，B 原因是同一个实例，同一把锁。由于mai
+                            synchronized 通过排他锁、互斥锁的方式保证了同一时间内，被synchronized 修饰的代码是单线程执行的。它可以通过对java中的对象加锁，并且它是一种可重入的锁。所以，当线程执行到一段被synchronized 修饰的代码
                         
                     </div>
                     <div class="publish-info">
@@ -634,19 +633,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-synchronized-guan-jian-zi-zhi-ji-ben-yong-fa/">
+                <a href="/2022/03/20/jmm-synchronized-de-nei-cun-yu-yi-he-ta-shi-ru-he-bao-zheng-bing-fa-san-da-te-xing-de/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jmm-synchronized关键字之基本用法.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="jmm-synchronized的内存语义和它是如何保证并发三大特性的.md">
                         
-                        <span class="card-title">jmm-synchronized关键字之基本用法.md</span>
+                        <span class="card-title">jmm-synchronized的内存语义和它是如何保证并发三大特性的.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            synchronized 通过排他锁、互斥锁的方式保证了同一时间内，被synchronized 修饰的代码是单线程执行的。它可以通过对java中的对象加锁，并且它是一种可重入的锁。所以，当线程执行到一段被synchronized 修饰的代码
+                            ###synchronized实现可见性
+jmm中的happens-before规则中有一条监视器规则：对同一个监视器的解锁，happens-before于对该监视器的加锁
+1、线程解锁前，必须把工作内存中共享变量的最新值刷新到主内存中2、
                         
                     </div>
                     <div class="publish-info">

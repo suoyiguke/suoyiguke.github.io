@@ -610,19 +610,21 @@ public class AccountingSync implements Runnable &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/synchronized-suo-bu-zhu-integer-lei-xing-jie-jue/">
+                <a href="/2022/03/20/sys-ku-zhi-sys-schema-unused-indexes/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="synchronized-锁不住-Integer-类型解决.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="sys库之-sys-schema_unused_indexes.md">
                         
-                        <span class="card-title">synchronized-锁不住-Integer-类型解决.md</span>
+                        <span class="card-title">sys库之-sys-schema_unused_indexes.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            但是运行起来好像是锁不住，debug了一下看了一下，因为userId是Intefer类型的所以每次获取到的userId的地址值都是不一样的，所以根本没法锁。然后我就想到了把Integer类型转换成String类型来使用，后来一弄还是不行，然
+                            查看未使用的索引SELECT * from sys.schema_unused_indexes where object_schema=’mgb_treasure_system’ 
+8.0 可以将索引设置为不可见的。
+| schema_un
                         
                     </div>
                     <div class="publish-info">
@@ -633,8 +635,8 @@ public class AccountingSync implements Runnable &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -644,8 +646,8 @@ public class AccountingSync implements Runnable &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -659,25 +661,20 @@ public class AccountingSync implements Runnable &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/synchronized-yuan-li/">
+                <a href="/2022/03/20/sys-ku-zhi-statement-analysis-cha-kan-suo-yin-de-shi-yong-qing-kuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="synchronized-原理.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="sys库之statement_analysis查看索引的使用情况.md">
                         
-                        <span class="card-title">synchronized-原理.md</span>
+                        <span class="card-title">sys库之statement_analysis查看索引的使用情况.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###java 对象头：
-java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段：
-
-锁标志位
-占用该锁的thread ID 
-
-了解完synchronized的基本含义及其使用方式后，下面
+                            介绍的是实例下所有库里的索引的信息
+SELECT    *FROM    sys.schema_index_statisticsWHERE    table_schema = ‘mgb_treasure_system’ORDER BY   
                         
                     </div>
                     <div class="publish-info">
@@ -688,8 +685,8 @@ java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jmm/" class="post-category" target="_blank">
-                                    jmm
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -699,8 +696,8 @@ java object head–&gt;Mark Word (64位8字节)。这64位有2个重要的字段
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jmm/" target="_blank">
-                        <span class="chip bg-color">jmm</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

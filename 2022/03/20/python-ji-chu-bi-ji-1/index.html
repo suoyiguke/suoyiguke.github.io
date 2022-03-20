@@ -755,24 +755,22 @@ if __name__ == &#39;__main__&#39;:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-zi-fu-chuan-cao-zuo-bi-ji/">
+                <a href="/2022/03/20/python-bian-liang-zuo-yong-yu-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="python-字符串操作笔记.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-变量作用域笔记.md">
                         
-                        <span class="card-title">python-字符串操作笔记.md</span>
+                        <span class="card-title">python-变量作用域笔记.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######判断字符串中是否包含指定字符
-str = &#39;yinkai&#39;
-if str.find(&#39;y&#39;) != -1:
-    print(&#39;yes&#39;)
-else:
-    print(&#3
+                            ######python中奇怪的变量作用域
+
+①处定义的变量在def定义的函数中不可见；main块执行打印str变量是①
+def函数中定义的str变量只在该函数范围内有效~~~str = ‘yinkai’ # ①print(str) # y
                         
                     </div>
                     <div class="publish-info">
@@ -809,22 +807,23 @@ else:
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-ji-chu-huan-jing-pei-zhi/">
+                <a href="/2022/03/20/python-duo-xian-cheng-bian-xie-zhi-threadlocal/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="python-基础环境配置.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="python-多线程编写之ThreadLocal.md">
                         
-                        <span class="card-title">python-基础环境配置.md</span>
+                        <span class="card-title">python-多线程编写之ThreadLocal.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###安装Python 
-https://www.python.org/downloads/windows/
+                            python 线程库实现了 ThreadLocal 变量 (Java 语言有类似的实现)。ThreadLocal 真正做到了线程之间的数据隔离，并且使用时不需要手动获取自己的线程 ID。
+###使用案例
 
-Gzipped source tarball    Source releaseXZ compressed source tar
+import threading
+
                         
                     </div>
                     <div class="publish-info">

@@ -603,21 +603,24 @@ exist
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/windows-fu-wu-qi-yin-wei-xu-ni-nei-cun-bu-gou-dao-zhi-de-si-ji/">
+                <a href="/2022/03/20/windows-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="windows-服务器因为虚拟内存不够导致的死机.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="windows操作.md">
                         
-                        <span class="card-title">windows-服务器因为虚拟内存不够导致的死机.md</span>
+                        <span class="card-title">windows操作.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Windows 成功诊断出虚拟内存不足的情况。以下程序使用了大部分虚拟内存: mmc.exe
-指定虚拟 内存位为 物理内存的1.5到3倍看看情况
+                            ###进程和端口操作1、查看端口是否占用。回车，记下最后一位数字，即PID,这里是2720。
+netstat -aon|findstr &quot;8080&quot;
 
+
+2、查看指定pid对应的程序名，得到执行文件名
+tasklist|
                         
                     </div>
                     <div class="publish-info">
@@ -654,24 +657,19 @@ exist
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/windows-cao-zuo/">
+                <a href="/2022/03/20/windows-zi-dong-sha-si-zhan-yong-nei-cun-guo-gao-de-jin-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="windows操作.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="windows自动杀死占用内存过高的进程.md">
                         
-                        <span class="card-title">windows操作.md</span>
+                        <span class="card-title">windows自动杀死占用内存过高的进程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###进程和端口操作1、查看端口是否占用。回车，记下最后一位数字，即PID,这里是2720。
-netstat -aon|findstr &quot;8080&quot;
-
-
-2、查看指定pid对应的程序名，得到执行文件名
-tasklist|
+                            
                         
                     </div>
                     <div class="publish-info">

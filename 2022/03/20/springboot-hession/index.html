@@ -643,21 +643,23 @@ public class HessionClientController &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-yuan-ma-fen-xi-zhi-shi-wu-shi-xian-yuan-li/">
+                <a href="/2022/03/20/spring-she-ji-mo-shi-ying-yong-yi-xuan-ze-zhu-ru-shi-xian-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="spring-源码分析之事务实现原理.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="spring-设计模式应用一，选择注入实现类.md">
                         
-                        <span class="card-title">spring-源码分析之事务实现原理.md</span>
+                        <span class="card-title">spring-设计模式应用一，选择注入实现类.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://blog.csdn.net/dapinxiaohuo/article/details/52092447
+                            一个接口对应多个实现类，通过配置文件或者请求参数来决定选择注入哪个实现类。
+接口中定义静态方法，根据hospital变量获取具体实现
+package com.ruoyi.business.hospital.service;
 
-
+import 
                         
                     </div>
                     <div class="publish-info">
@@ -668,8 +670,8 @@ public class HessionClientController &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/springboot/" class="post-category" target="_blank">
-                                    springboot
+                            <a href="/categories/spring/" class="post-category" target="_blank">
+                                    spring
                                 </a>
                             
                             
@@ -679,8 +681,8 @@ public class HessionClientController &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/springboot/" target="_blank">
-                        <span class="chip bg-color">springboot</span>
+                    <a href="/tags/spring/" target="_blank">
+                        <span class="chip bg-color">spring</span>
                     </a>
                     
                 </div>
@@ -694,22 +696,25 @@ public class HessionClientController &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/springboot-controller-ceng-zhu-jie/">
+                <a href="/2022/03/20/springboot-aop-zhi-xi-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="springboot-controller层注解.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="springboot-aop之细节.md">
                         
-                        <span class="card-title">springboot-controller层注解.md</span>
+                        <span class="card-title">springboot-aop之细节.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            public R checkUser(@RequestBody User user) &#123;
+                            1、ProceedingJoinPoint对象详解
 
-
-@RequestMapping(value = &quot;/checkUser&quot;, method = RequestMeth
+    /**
+     * @description 使用环绕通知
+     */
+    @Around(&quot;BrokerAspect()&quot;)
+    public
                         
                     </div>
                     <div class="publish-info">

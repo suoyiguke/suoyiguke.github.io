@@ -341,23 +341,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/juc-xian-cheng-chi-zhi-gong-zuo-yuan-li/" target="_blank">
+                    <a href="/2022/03/20/juc-du-xie-suo-readwritelock-de-shi-yong/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="juc---线程池之工作原理.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---读写锁ReadWriteLock的使用.md">
                             
-                            <span class="card-title">juc---线程池之工作原理.md</span>
+                            <span class="card-title">juc---读写锁ReadWriteLock的使用.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ######线程池原理示意这张图已经完全概括了线程池的工作流程，其中1,2,3,4 就是执行步骤
-######线程池内部对新提交的任务处理流程图
-###原理描述step1、在创建了线程池后，开始等待请求。
-step2、当调用execute(
+                            ReentrantReadWriteLock是ReentrantLock的升级版。它允许读操作并发，性能优于ReentrantLock。下面通过3个例子，分别比较不加锁、使用ReentrantLock、使用ReentrantReadWrit
                             
                         </div>
                         <div class="publish-info">
@@ -391,119 +388,22 @@ step2、当调用execute(
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/juc-zu-sai-dui-lie/" target="_blank">
+                    <a href="/2022/03/20/juc-suo-de-gai-nian-he-suo-de-fen-lei/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---阻塞队列.md">
+                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="juc---锁的概念和锁的分类.md">
                             
-                            <span class="card-title">juc---阻塞队列.md</span>
+                            <span class="card-title">juc---锁的概念和锁的分类.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###什么是阻塞队列
-
-当队列是空的，从队列中获取元素的操作将会被阻塞。直到其他线程往空的队列里插入新的元素的时候解除阻塞，继续获取
-当队列是满的，从队列中添加元素的操作将会被阻塞。直到其他线程从队列里移除一个或多个元素或者完全清空的时候解
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/juc-atomic-zhi-lazyset/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="juc-Atomic-之-lazySet.md">
-                            
-                            <span class="card-title">juc-Atomic-之-lazySet.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            lazySet是使用Unsafe.putOrderedObject方法，这个方法在对低延迟代码是很有用的，它能够实现非堵塞的写入，这些写入不会被Java的JIT重新排序指令(instruction reordering)，这样它使用快速的存
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/juc-scheduledfuturetask-he-scheduledexecutorservice-scheduledthreadpoolex/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md">
-                            
-                            <span class="card-title">juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ScheduledFutureTaskScheduledExecutorService 接口
-ScheduledThreadPoolExecutor 实现类
-    public static void main(String[] args
+                            转载至：https://my.oschina.net/ConstXiong/blog/3118284
+###锁的概念在并发编程中，经常会遇到多个线程访问同一个共享变量，当同时对共享变量进行读写操作时，就会产生数据不一致的情况。
+为了解决这个
                             
                         </div>
                         <div class="publish-info">
@@ -587,21 +487,22 @@ ScheduledThreadPoolExecutor 实现类
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/juc-bing-fa-bian-cheng-zhu-yi-shi-xiang/" target="_blank">
+                    <a href="/2022/03/20/juc-scheduledfuturetask-he-scheduledexecutorservice-scheduledthreadpoolex/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="juc-并发编程注意事项.md">
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md">
                             
-                            <span class="card-title">juc-并发编程注意事项.md</span>
+                            <span class="card-title">juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            【强制】 高并发时，同步调用应该去考量锁的性能损耗。能用无锁数据结构，就不要用锁；能锁区块，就不要锁整个方法体；能用对象锁，就不要用类锁。说明：尽可能使加锁的代码块工作量尽可能的小，避免在锁代码块中调用 RPC 方法
-
+                            ScheduledFutureTaskScheduledExecutorService 接口
+ScheduledThreadPoolExecutor 实现类
+    public static void main(String[] args
                             
                         </div>
                         <div class="publish-info">
@@ -635,13 +536,60 @@ ScheduledThreadPoolExecutor 实现类
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/juc-xian-cheng-chi-yi-wen/" target="_blank">
+                    <a href="/2022/03/20/juc-atomic-zhi-lazyset/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc-线程池疑问？.md">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="juc-Atomic-之-lazySet.md">
                             
-                            <span class="card-title">juc-线程池疑问？.md</span>
+                            <span class="card-title">juc-Atomic-之-lazySet.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            lazySet是使用Unsafe.putOrderedObject方法，这个方法在对低延迟代码是很有用的，它能够实现非堵塞的写入，这些写入不会被Java的JIT重新排序指令(instruction reordering)，这样它使用快速的存
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/juc/" target="_blank">
+                            <span class="chip bg-color">juc</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/juc-yin-fa-si-suo-de-chang-jing/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc-引发死锁的场景.md">
+                            
+                            <span class="card-title">juc-引发死锁的场景.md</span>
                         </div>
                     </a>
 
@@ -649,7 +597,59 @@ ScheduledThreadPoolExecutor 实现类
                         <div class="summary block-with-text">
                             
                             
-这种初始化的线程池，我一开始认为根本不会有线程在工作。实际运行起来真的是有的。不知道为什么！！！    ThreadPoolExecutor cancellator = new ThreadPoolExecutor(0, 1, 1000,
+学而不思则罔，思而不学则殆
+
+死锁：多个线程之间互相持有对方需要的锁导致的持续阻塞问题
+######synchronized 嵌套使用不当导致死锁
+如下面的程序，线程1 加锁顺序是 a,b ； 线程2 加锁顺序是b,a；使用CountDo
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/juc/" target="_blank">
+                            <span class="chip bg-color">juc</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/juc-bing-fa-bian-cheng-zhu-yi-shi-xiang/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="juc-并发编程注意事项.md">
+                            
+                            <span class="card-title">juc-并发编程注意事项.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            【强制】 高并发时，同步调用应该去考量锁的性能损耗。能用无锁数据结构，就不要用锁；能锁区块，就不要锁整个方法体；能用对象锁，就不要用类锁。说明：尽可能使加锁的代码块工作量尽可能的小，避免在锁代码块中调用 RPC 方法
+
                             
                         </div>
                         <div class="publish-info">
@@ -735,13 +735,13 @@ import org.junit.jupiter.api.Test;
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/juc-yin-fa-si-suo-de-chang-jing/" target="_blank">
+                    <a href="/2022/03/20/juc-xian-cheng-chi-yi-wen/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc-引发死锁的场景.md">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc-线程池疑问？.md">
                             
-                            <span class="card-title">juc-引发死锁的场景.md</span>
+                            <span class="card-title">juc-线程池疑问？.md</span>
                         </div>
                     </a>
 
@@ -749,11 +749,7 @@ import org.junit.jupiter.api.Test;
                         <div class="summary block-with-text">
                             
                             
-学而不思则罔，思而不学则殆
-
-死锁：多个线程之间互相持有对方需要的锁导致的持续阻塞问题
-######synchronized 嵌套使用不当导致死锁
-如下面的程序，线程1 加锁顺序是 a,b ； 线程2 加锁顺序是b,a；使用CountDo
+这种初始化的线程池，我一开始认为根本不会有线程在工作。实际运行起来真的是有的。不知道为什么！！！    ThreadPoolExecutor cancellator = new ThreadPoolExecutor(0, 1, 1000,
                             
                         </div>
                         <div class="publish-info">
@@ -778,53 +774,6 @@ import org.junit.jupiter.api.Test;
                         
                         <a href="/tags/juc/" target="_blank">
                             <span class="chip bg-color">juc</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/jvm-java-dui-xiang-tou/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="jvm-Java-对象头.md">
-                            
-                            <span class="card-title">jvm-Java-对象头.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/jvm/" target="_blank">
-                            <span class="chip bg-color">jvm</span>
                         </a>
                         
                     </div>
@@ -903,6 +852,53 @@ import org.junit.jupiter.api.Test;
 -Xms10m -Xmx10m 
 
 2
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/jvm/" target="_blank">
+                            <span class="chip bg-color">jvm</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/jvm-java-dui-xiang-tou/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="jvm-Java-对象头.md">
+                            
+                            <span class="card-title">jvm-Java-对象头.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
                             
                         </div>
                         <div class="publish-info">

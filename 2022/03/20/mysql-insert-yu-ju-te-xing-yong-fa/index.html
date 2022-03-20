@@ -588,21 +588,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-innodb-yin-qing-wen-jian/">
+                <a href="/2022/03/20/mysql-insert-into-a-select-b-qian-yi-shu-ju-shi-zai-read-committed-ge-chi-ji-bie-shi-biao-a-he-biao-b-de-jia-suo-fang-shi-shi-me/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-innodb引擎文件.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md">
                         
-                        <span class="card-title">mysql-innodb引擎文件.md</span>
+                        <span class="card-title">mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###文件我在test_innodb库类创建了一张test1表，那么打开库对应的文件夹下可以发发现 
-
-######xxx.frm 文件1、frm文件是一种表结构定义文件。无论采用何种存储引擎，mysql都有一个以frm为后缀名的文件，这个
+                            insert into A select B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？
+@郑州-税友-常伟俊 8.0.19 是 如果rc+statement 那就是插入数据失败，如果rc+row，a表加
                         
                     </div>
                     <div class="publish-info">
@@ -639,22 +638,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-join-cha-xun-zhong-tiao-jian-xie-dao-on-huo-where-you-shi-me-qu-bie/">
+                <a href="/2022/03/20/mysql-json-lei-xing-shi-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-join查询中条件写到ON或WHERE有什么区别？.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-json类型实践.md">
                         
-                        <span class="card-title">mysql-join查询中条件写到ON或WHERE有什么区别？.md</span>
+                        <span class="card-title">mysql-json类型实践.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            准备数据
-create table a(f1 int, f2 int, index(f1))engine=innodb;
-create table b(f1 int, f2 int)engine=innodb;
-insert into a 
+                            ###createcreate table t2 (id int primary key, r1 json);
+###insert
+INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                         
                     </div>
                     <div class="publish-info">

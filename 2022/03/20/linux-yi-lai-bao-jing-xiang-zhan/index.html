@@ -610,19 +610,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-an-zhuang-jdk/">
+                <a href="/2022/03/20/linux-crontab-ding-shi-ren-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="linux-安装jdk.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="linux-crontab定时任务.md">
                         
-                        <span class="card-title">linux-安装jdk.md</span>
+                        <span class="card-title">linux-crontab定时任务.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、先卸载自带的openJDK，这个jdk和我们工程使用的jdk不同，有些代码的jar包可能找不到。比如 java.lang.ClassNotFoundException: com.sun.image.codec.jpeg.JPEGCode
+                            ###安装
+yum -y install crontab
+
+###使用示例1、编写shell脚本文件vi /data/docker/mysql/slave/test.sh
+#!/bin/sh
+echo hello &gt;&gt; /hom
                         
                     </div>
                     <div class="publish-info">

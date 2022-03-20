@@ -599,22 +599,20 @@ public class Demo02Consumer &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/kafka-bing-fa-xiao-fei/">
+                <a href="/2022/03/20/kafka-xiao-fei-chong-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="kafka-并发消费.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="kafka-消费重试.md">
                         
-                        <span class="card-title">kafka-并发消费.md</span>
+                        <span class="card-title">kafka-消费重试.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-示例代码对应仓库：lab-03-kafka-demo-concurrency 。
-
-在上述的示例中，我们配置的每一个 Spring-Kafka @KafkaListener ，都是串行消费的。显然，这在监听的 Topic 每秒消息量比较大
+                            Spring-Kafka 提供消费重试的机制。在消息消费失败的时候，Spring-Kafka 会通过消费重试机制，重新投递该消息给 Consumer ，让 Consumer 有机会重新消费消息，实现消费成功。
+当然，Spring-Kafka
                         
                     </div>
                     <div class="publish-info">
@@ -651,19 +649,19 @@ public class Demo02Consumer &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/kafka-guang-bo-xiao-fei/">
+                <a href="/2022/03/20/kafka-de-xiao-fei-zhe-shou-dong-ti-jiao-xiao-xi-jin-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="kafka-广播消费.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="kafka-的消费者手动提交消息进度.md">
                         
-                        <span class="card-title">kafka-广播消费.md</span>
+                        <span class="card-title">kafka-的消费者手动提交消息进度.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            示例代码对应仓库：lab-03-kafka-demo-broadcast 。  在上述的示例中，我们看到的都是使用集群消费。而在一些场景下，我们需要使用广播消费。  广播消费模式下，相同 Consumer Group 的每个 Consume
+                            
                         
                     </div>
                     <div class="publish-info">

@@ -582,24 +582,21 @@ UiElement.SetAttribute(&#123;&quot;html&quot;:&#123;&quot;attrMap&quot;:&#123;&q
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/uibot-zhi-yuan-su-ding-wei-zhi-xuan-qu-wang-ye-mu-biao/">
+                <a href="/2022/03/20/uibot-kai-fa-yu-dao-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="uibot-之元素定位之选取网页目标.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="uibot-开发遇到的问题.md">
                         
-                        <span class="card-title">uibot-之元素定位之选取网页目标.md</span>
+                        <span class="card-title">uibot-开发遇到的问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-网页目标：百度主页的二维码 wnd信息标明了这个网页所在的浏览器窗口，html信息才是网页上的界面元素的关键信息。
-
-  **html**：代表这是一个网页界面元素；
-
-  **url**：对应浏览器地址栏中显示的URL，不参与元素特征匹
+                            1、遍历list下的按钮/链接。点击一个按钮/链接 又切换回原来的浏览器tab页
+//点击a标签打开信tab链接，签到后返回贴吧主页tab
+// Mouse.Action(value,&quot;left&quot;,&quot;click
                         
                     </div>
                     <div class="publish-info">
@@ -636,22 +633,22 @@ UiElement.SetAttribute(&#123;&quot;html&quot;:&#123;&quot;attrMap&quot;:&#123;&q
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/uibot-zhi-shu-ju-zhua-qu-gong-neng-uielement-datascrap-shi-yong/">
+                <a href="/2022/03/20/uibot-cao-zuo-excel/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="uibot-之数据抓取功能UiElement-DataScrap使用.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="uibot-操作excel.md">
                         
-                        <span class="card-title">uibot-之数据抓取功能UiElement-DataScrap使用.md</span>
+                        <span class="card-title">uibot-操作excel.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-1、两次选择同一层级下的不同字段uibot需要至少两次选择不同条目（这里是商品）的相同字段才可以识别特定选中字段；比如这里我选择商品A的评价、然后又再选择商品B的评价；这样商品的评价字段就被识别到添加到返回列表了。
-第一次选择
-第二次选择
+                            1、二维数组arrayData 写入excel
+
+objExcelWorkBook = Excel.OpenExcel(@res&quot;test1.xlsx&quot;,true)
+Dialog.Notify(&quot;将数据写入Ex
                         
                     </div>
                     <div class="publish-info">

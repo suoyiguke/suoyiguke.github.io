@@ -720,20 +720,24 @@ public class TestLock implements Runnable &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-countdownlatch-de-shi-yong-he-zhu-yi-shi-xiang/">
+                <a href="/2022/03/20/juc-list-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="juc---CountDownLatch的使用和注意事项.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---List的线程不安全性和解决方案.md">
                         
-                        <span class="card-title">juc---CountDownLatch的使用和注意事项.md</span>
+                        <span class="card-title">juc---List的线程不安全性和解决方案.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java.util.concurrent.CountDownLatch 是Doug Lea大师编写的juc包中的一个线程通信工具。
-######使用场景一：实现多个线程在某个时间点同时执行多个线程同时开始执行即是所谓的并行执行；这个功能我们
+                            ######1、启动20个线程对ArrayList做add剿操作
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+class TestLo
                         
                     </div>
                     <div class="publish-info">
@@ -770,19 +774,24 @@ public class TestLock implements Runnable &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-cyclicbarrier-shi-yong-fang-fa/">
+                <a href="/2022/03/20/juc-lock-jie-kou-de-ji-ben-gai-nian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="juc---CyclicBarrier-使用方法.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock接口的基本概念（一）.md">
                         
-                        <span class="card-title">juc---CyclicBarrier-使用方法.md</span>
+                        <span class="card-title">juc---Lock接口的基本概念（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CyclicBarrier拥有CountDownLatch的功能，任何一个线程在没有完成时，所有线程都在等待。当最后一个线程进入wait，到达屏障点。构造器中的Runnable接口的run方法会得到执行。 CyclicBarrie 可以翻译
+                            
+今人不见古时月，今月曾经照古人
+
+我们可以使用 java.util.concurrent.locks.Lock 来代替synchronized同步块。它的功能更加强大；######Lock相对于synchronized有以下优点
+
+Loc
                         
                     </div>
                     <div class="publish-info">

@@ -621,22 +621,23 @@ class ReorderExample &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-bing-fa-bian-cheng-ling-yu-de-guan-jian-wen-ti-xian-cheng-tong-xin-he-xian-cheng-tong-bu/">
+                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-de-nei-cun-yu-yi-ke-jian-xing-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="jmm-并发编程领域的关键问题：线程通信和线程同步.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="jmm-volatile关键字的内存语义，可见性（一）.md">
                         
-                        <span class="card-title">jmm-并发编程领域的关键问题：线程通信和线程同步.md</span>
+                        <span class="card-title">jmm-volatile关键字的内存语义，可见性（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###线程之间的通信线程的通信是指线程之间以何种机制来交换信息。在编程中，线程之间的通信机制有两种，共享内存和消息传递。
-####共享内存的并发模型
+                            读音  [ˈvɒlətaɪl]
+volatile是java虚拟机提供的最轻量级的同步机制
+######happens-before规则和volatile的关系happens-before规则中有一条是：
 
-在共享内存的并发模型里，线程之间共享程序的公共状态，线程之间通过写-读内存中的公共状态来
+volatile变量规则，对一个v
                         
                     </div>
                     <div class="publish-info">
@@ -673,25 +674,22 @@ class ReorderExample &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jps-top-jstack-zhao-dao-zi-yuan-zhan-yong-te-bie-duo-de-xian-cheng-bing-zhao-dao-dui-zhan-xin-xi/">
+                <a href="/2022/03/20/jmm-bing-fa-bian-cheng-ling-yu-de-guan-jian-wen-ti-xian-cheng-tong-xin-he-xian-cheng-tong-bu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="jps、top、jstack-找到资源占用特别多的线程，并找到堆栈信息。.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="jmm-并发编程领域的关键问题：线程通信和线程同步.md">
                         
-                        <span class="card-title">jps、top、jstack-找到资源占用特别多的线程，并找到堆栈信息。.md</span>
+                        <span class="card-title">jmm-并发编程领域的关键问题：线程通信和线程同步.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、使用jps，找到对应程序的pid（第一列）
-root@7489c31b97ee:/# jps
-1 app.jar
-840 Jps
+                            ###线程之间的通信线程的通信是指线程之间以何种机制来交换信息。在编程中，线程之间的通信机制有两种，共享内存和消息传递。
+####共享内存的并发模型
 
-2、使用top -Hp 进程pid打印该进程下面的所有线程占用资源排名，找到第一名的pid=702
- r
+在共享内存的并发模型里，线程之间共享程序的公共状态，线程之间通过写-读内存中的公共状态来
                         
                     </div>
                     <div class="publish-info">
@@ -702,8 +700,8 @@ root@7489c31b97ee:/# jps
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/jmm/" class="post-category" target="_blank">
+                                    jmm
                                 </a>
                             
                             
@@ -713,8 +711,8 @@ root@7489c31b97ee:/# jps
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/jmm/" target="_blank">
+                        <span class="chip bg-color">jmm</span>
                     </a>
                     
                 </div>

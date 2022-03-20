@@ -584,23 +584,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-de-qi-da-chuan-bo-xing-wei-zhi-li-lun/">
+                <a href="/2022/03/20/spring-shi-wu-chuan-bo-xing-wei-zhi-ben-lei-zhong-shi-wu-fang-fa-diao-yong-ling-yi-ge-shi-wu-fang-fa-dao-zhi-de-shi-wu-shi-xiao-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="spring-事务管理之事务的七大传播行为之理论.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="spring-事务传播行为之本类中事务方法调用另一个事务方法导致的事务失效问题.md">
                         
-                        <span class="card-title">spring-事务管理之事务的七大传播行为之理论.md</span>
+                        <span class="card-title">spring-事务传播行为之本类中事务方法调用另一个事务方法导致的事务失效问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-譬如朝露，去日苦多
+生于忧患，死于安乐
 
-事务传播行为： Propagation [ˌprɒpə’ɡeɪʃ(ə)n]
-spring 给我们提供了7大传播行为；我们打开org.springframework.transaction.annotation.Pro
+在UsersServiceImpl中有两个事务方法
+
+
+InsertUsers() 和InsertCuser() 都是被事务注解所申明的方法；且InsertUsers中调用了InsertCuser
+InsertUse
                         
                     </div>
                     <div class="publish-info">
@@ -637,13 +640,13 @@ spring 给我们提供了7大传播行为；我们打开org.springframework.tran
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-supports-er/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-required-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践SUPPORTS（二）.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="spring-事务管理之事务传播行为之实践REQUIRED（一）.md">
                         
-                        <span class="card-title">spring-事务管理之事务传播行为之实践SUPPORTS（二）.md</span>
+                        <span class="card-title">spring-事务管理之事务传播行为之实践REQUIRED（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -652,8 +655,8 @@ spring 给我们提供了7大传播行为；我们打开org.springframework.tran
                             
 纸上得来终觉浅，绝知此事要躬行
 
-继续验证，这次的主角是@Transactional(propagation= Propagation.SUPPORTS)它总是使用调用者事务，若调用者没事务则以无事务状态执行
-######1、Insert
+为了深入了解spring的事务传播行为，只是知道概念还是不行。需要自己亲自动手来实践下才能学到细节，而且网络上的一些结论也有被以讹传讹的。自己做的实验自己也就放心很多，我愿意做多数人不愿意做的事。
+我们知
                         
                     </div>
                     <div class="publish-info">

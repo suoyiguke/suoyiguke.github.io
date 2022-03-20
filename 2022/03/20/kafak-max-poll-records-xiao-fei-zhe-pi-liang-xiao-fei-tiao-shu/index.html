@@ -559,19 +559,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-jie-shao/">
+                <a href="/2022/03/20/kafak-yuan-li-yi-liao-jie-ji-ben-gai-nian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="jvm介绍.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="kafak-原理（一）了解基本概念.md">
                         
-                        <span class="card-title">jvm介绍.md</span>
+                        <span class="card-title">kafak-原理（一）了解基本概念.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是JVMJava程序的跨平台特性主要是指字节码文件可以在任何具有Java虚拟机的计算机或者电子设备上运行，Java虚拟机中的Java解释器负责将字节码文件解释成为特定的机器码进行运行。因此在运行时，Java源程序需要通过编译器编译
+                            ###先看图
+zookeeper集群，kafka是配合zookeeper进行工作的。kafka集群中可以看到有若干个Broker，其中一个broker是leader，其他的broker是follower。consumer外面包裹了一层Con
                         
                     </div>
                     <div class="publish-info">
@@ -582,8 +583,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/mq-kafka/" class="post-category" target="_blank">
+                                    mq-kafka
                                 </a>
                             
                             
@@ -593,8 +594,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/mq-kafka/" target="_blank">
+                        <span class="chip bg-color">mq-kafka</span>
                     </a>
                     
                 </div>
@@ -608,25 +609,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/kafak-yuan-li-er-fen-qu-gai-nian/">
+                <a href="/2022/03/20/kafka-san-chong-sheng-chan-xin-xi-de-fang-shi-tong-bu-sheng-chan-yi-bu-sheng-chan-he-oneway/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="kafak-原理（二）-分区概念.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="kafka-三种生产信息的方式：同步生产、异步生产和-oneway.md">
                         
-                        <span class="card-title">kafak-原理（二）-分区概念.md</span>
+                        <span class="card-title">kafka-三种生产信息的方式：同步生产、异步生产和-oneway.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             分区（Partition）
-大多数消息系统，同一个topic下的消息，存储在一个队列。
+                            同步；get()方法会让当前线程阻塞，直到有回调结果时才继续执行。
+    @Resource
+    private KafkaTemplate&lt;Object, Object&gt; kafkaTemplate;
 
-分区的概念就是把这个队列划分为若干个小队列，每一个小队列就是一个分区，如下图：
-
-
-这样做的好处是什么呢？其实从上图已经可以看出来。无分区时，一个t
+    @Get
                         
                     </div>
                     <div class="publish-info">

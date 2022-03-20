@@ -859,22 +859,21 @@ String c = a.concat(b);
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-bao-zheng-san-da-bing-fa-te-xing-de-shou-duan/">
+                <a href="/2022/03/20/jmm-zhi-ling-chong-pai-xu-he-as-if-serial-yu-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="jmm-保证三大并发特性的手段.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="jmm-指令重排序和as-if-serial语义.md">
                         
-                        <span class="card-title">jmm-保证三大并发特性的手段.md</span>
+                        <span class="card-title">jmm-指令重排序和as-if-serial语义.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###解决可见性问题######使用Atomic类解决
-import java.util.concurrent.atomic.AtomicBoolean;
-class Test&#123;
-    static AtomicBoolean 
+                            ###三种重排序类型在执行程序时为了提高性能，编译器和处理器常常会对指令做重排序。重排序分三种类型：
+1、编译器优化的重排序。编译器在不改变单线程程序语义的前提下，可以重新安排语句的执行顺序。
+2、指令级并行的重排序。现代处理器采用了指令级
                         
                     </div>
                     <div class="publish-info">

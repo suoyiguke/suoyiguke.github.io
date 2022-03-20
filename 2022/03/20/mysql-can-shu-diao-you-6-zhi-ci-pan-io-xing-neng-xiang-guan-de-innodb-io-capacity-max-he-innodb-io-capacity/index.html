@@ -581,23 +581,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-3-zhi-innodb-de-log-buffer-xing-wei-she-zhi-innodb-flush-log-at-trx-commit/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-8-zhi-join-buffer-size/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-参数调优(8)之join_buffer_size.md">
                         
-                        <span class="card-title">mysql-参数调优(3)之innodb的log-buffer行为设置innodb_flush_log_at_trx_commit.md</span>
+                        <span class="card-title">mysql-参数调优(8)之join_buffer_size.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-这个参数直接影响到redo log 数据刷新到磁盘的性能，直接影响到插入、修改和删除的性能
-
-innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但稳定性更差）
-文件操作三个步骤： ope
+                            当无法保证被驱动表的 Join 条件字段被索引且内存资源充足的前提下，不要太吝惜 JoinBuffer 的设置；当在某些特殊的环境中，我们的 Join 必须是 All， Index， range或者是 index_merge类型的时候， J
                         
                     </div>
                     <div class="publish-info">
@@ -634,20 +630,19 @@ innodb_flush_log_at_trx_commit    1（默认值），0/2 （性能更好，但�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-4-zhi-innodb-de-shu-ju-wen-jian-ji-redo-log-de-da-kai-shua-xie-mo-shi-she-zhi-innodb-flush-method/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-zhi-innodb-lock-wait-timeout-he-lock-wait-timeout-de-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优之-innodb_lock_wait_timeout和lock_wait_timeout的区别.md">
                         
-                        <span class="card-title">mysql-参数调优(4)之innodb的数据文件及redo-log的打开、刷写模式设置innodb_flush_method.md</span>
+                        <span class="card-title">mysql-参数调优之-innodb_lock_wait_timeout和lock_wait_timeout的区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            innodb_flush_method 可以对 innodb的数据文件及redo log的打开、刷写模式设置
-这种偏理论的东西还是看官方文档实在。找再多博客也没用的。然后进下实验，理论联系https://dev.mysql.com/doc/
+                            innodb_lock_wait_timeoutThe length of time in seconds an InnoDB transaction waits for a row lock before giving up.innodb
                         
                     </div>
                     <div class="publish-info">

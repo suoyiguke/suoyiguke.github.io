@@ -341,23 +341,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-8-xin-te-xing-san-hash-join-lian-jie-cha-xun-suan-fa-zhi-hash-join-wu/" target="_blank">
+                    <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md">
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
                             
-                            <span class="card-title">mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md</span>
+                            <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
-Hash Join 算法
-
-mysql8以前 的 join 算法只有 nested loop 这一种，在 MySQL8 中推出了一种新的算法 hash join，比  nested loop 更加高效。mysql8中的部分NLJ算法已经取
+                            有时候需要对字段上加函数然后进行GROUP BY。使用执行分析，发现出现  Using temporary， 分组条件并没有走索引。因为mysql 5.7 的函数会导致索引失效。我们可以通过添加一个冗余字段来保存函数的计算结果，然后添加索引
                             
                         </div>
                         <div class="publish-info">
@@ -391,68 +388,23 @@ mysql8以前 的 join 算法只有 nested loop 这一种，在 MySQL8 中推�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-dba/" target="_blank">
+                    <a href="/2022/03/20/mysql-8-xin-te-xing-san-hash-join-lian-jie-cha-xun-suan-fa-zhi-hash-join-wu/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-DBA.md">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md">
                             
-                            <span class="card-title">mysql-DBA.md</span>
+                            <span class="card-title">mysql-8-新特性三-Hash-Join---联接查询算法之Hash-Join-(五).md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            书籍1、&lt;&lt;高性能mysql&gt;&gt;2、 &lt;&lt;深入浅出mysql&gt;&gt;3、Gary Chen《MySQL DBA修炼之道》作者。关注产品、架构和数据。4、千金良方:MySQL性能优化金字塔法则 - 
                             
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/dba/" class="post-category" target="_blank">
-                                    dba
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+Hash Join 算法
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/dba/" target="_blank">
-                            <span class="chip bg-color">dba</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/mysql-8-xin-te-xing-er-ddl-cao-zuo-de-yuan-zi-hua/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-8-新特性二DDL操作的原子化.md">
-                            
-                            <span class="card-title">mysql-8-新特性二DDL操作的原子化.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html
-MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与D
+mysql8以前 的 join 算法只有 nested loop 这一种，在 MySQL8 中推出了一种新的算法 hash join，比  nested loop 更加高效。mysql8中的部分NLJ算法已经取
                             
                         </div>
                         <div class="publish-info">
@@ -634,6 +586,53 @@ SET SESSION I
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/mysql-dba/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-DBA.md">
+                            
+                            <span class="card-title">mysql-DBA.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            书籍1、&lt;&lt;高性能mysql&gt;&gt;2、 &lt;&lt;深入浅出mysql&gt;&gt;3、Gary Chen《MySQL DBA修炼之道》作者。关注产品、架构和数据。4、千金良方:MySQL性能优化金字塔法则 - 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/dba/" class="post-category" target="_blank">
+                                    dba
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/dba/" target="_blank">
+                            <span class="chip bg-color">dba</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/mysql-group-by-distinct-order-by-yu-ju-you-hua/" target="_blank">
                         <div class="card-image">
                             
@@ -730,20 +729,21 @@ SET SESSION I
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-set-var-you-hua-qi-ti-shi/" target="_blank">
+                    <a href="/2022/03/20/mysql-utilities-guan-fang-gong-ju-ji/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-SET_VAR-优化器提示.md">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-Utilities-官方工具集.md">
                             
-                            <span class="card-title">mysql-SET_VAR-优化器提示.md</span>
+                            <span class="card-title">mysql-Utilities-官方工具集.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
+                            现在主流使用procona tools ，官方的用的少了。
+###安装mysql Utilities1、下载https://downloads.mysql.com/archives/utilities/2、安装 python setup.p
                             
                         </div>
                         <div class="publish-info">
@@ -777,21 +777,20 @@ SET SESSION I
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/mysql-utilities-guan-fang-gong-ju-ji/" target="_blank">
+                    <a href="/2022/03/20/mysql-set-var-you-hua-qi-ti-shi/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-Utilities-官方工具集.md">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-SET_VAR-优化器提示.md">
                             
-                            <span class="card-title">mysql-Utilities-官方工具集.md</span>
+                            <span class="card-title">mysql-SET_VAR-优化器提示.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            现在主流使用procona tools ，官方的用的少了。
-###安装mysql Utilities1、下载https://downloads.mysql.com/archives/utilities/2、安装 python setup.p
+                            
                             
                         </div>
                         <div class="publish-info">

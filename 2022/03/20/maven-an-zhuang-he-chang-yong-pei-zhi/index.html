@@ -643,23 +643,20 @@ mvn dependency:resolve -Dclassifier=javadoc
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/maven-da-bao/">
+                <a href="/2022/03/20/maven-yin-ru-di-san-fang-de-bu-cun-zai-yu-cang-ku-zhong-de-jar/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="maven-打包.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="maven-引入第三方的不存在于仓库中的jar.md">
                         
-                        <span class="card-title">maven-打包.md</span>
+                        <span class="card-title">maven-引入第三方的不存在于仓库中的jar.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            请在父级模块上点击打包
-若只在子模块中打包则只会得到相应的jar包
-如下打印的jar包
-如下打印的jar包
-
+                            ###方式1，maven注册jar包注意下mvn命令的环境变量指定的maven程序是不是project指定的maven，若不是同一个那还是找不到依赖。
+mvn install:install-file -DgroupId=com.jztec
                         
                     </div>
                     <div class="publish-info">
@@ -696,23 +693,23 @@ mvn dependency:resolve -Dclassifier=javadoc
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/maven-cha-jian-docker-maven-plugin-zhi-gou-jian-docker-jing-xiang-bing-yun-xing-yi/">
+                <a href="/2022/03/20/maven-da-bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="maven-插件docker-maven-plugin之构建docker镜像并运行（一）.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="maven-打包.md">
                         
-                        <span class="card-title">maven-插件docker-maven-plugin之构建docker镜像并运行（一）.md</span>
+                        <span class="card-title">maven-打包.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-众生皆苦
+                            请在父级模块上点击打包
+若只在子模块中打包则只会得到相应的jar包
+如下打印的jar包
+如下打印的jar包
 
-之前的文章https://www.jianshu.com/p/f954bf0486dd讲到了如何使用传统的方式将jar包上传至linux服务器且自动运行。
-但是现在有另一种的方式可以更加简化部署，那就是docker容器化技术。
                         
                     </div>
                     <div class="publish-info">

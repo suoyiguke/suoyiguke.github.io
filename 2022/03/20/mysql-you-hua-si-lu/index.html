@@ -569,25 +569,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-you-hua-zhi-shi-ji-lei-bi-ji/">
+                <a href="/2022/03/20/mysql-qi-ye-ban-enterprise-he-she-qu-ban-community-you-shi-me-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-优化知识积累笔记.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-企业版-Enterprise-和社区版Community--有什么区别？.md">
                         
-                        <span class="card-title">mysql-优化知识积累笔记.md</span>
+                        <span class="card-title">mysql-企业版-Enterprise-和社区版Community--有什么区别？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###数据库优化方向总结####设计方向
-
-字段设计。尽量使用小范围。如11位手机号就使用char(11)
-
-避免join过多表，可以采用反范式化的设计
-
-ip字段我们可以使用 mysql函数iprr()将ipv4它转为数值类型存储####
+                            1、二者源代码相同，性能相同2、企业版多了一些特性如下MySQL Enterprise FeaturesMySQL Enterprise Security 安全工具 MySQL Enterprise Encryption 加密工具MySQL
                         
                     </div>
                     <div class="publish-info">
@@ -598,8 +592,8 @@ ip字段我们可以使用 mysql函数iprr()将ipv4它转为数值类型存储##
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -609,8 +603,8 @@ ip字段我们可以使用 mysql函数iprr()将ipv4它转为数值类型存储##
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -624,21 +618,19 @@ ip字段我们可以使用 mysql函数iprr()将ipv4它转为数值类型存储##
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-mysqld-multi-zai-yi-tai-ji-qi-shang-an-zhuang-duo-ge-mysql-shi-li-duo-shi-li-an-zhuang/">
+                <a href="/2022/03/20/mysql-shi-yong-binlog-bei-fen-he-hui-fu-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-使用binlog备份和恢复数据.md">
                         
-                        <span class="card-title">mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md</span>
+                        <span class="card-title">mysql-使用binlog备份和恢复数据.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/5.7/en/mysqld-multi.html
-多实例安装即是一台服务器安装多个mysql实例；这样可以充分利用硬件资源；通过mysqld_multi程序即可。
-例如我们现
+                            binlog 它记录了所有的DDL和DML(除了数据查询语句)语句，以事件形式记录，还包含语句所执行的消耗的时间，MySQL的二进制日志是事务安全型的。 一般来说开启二进制日志大概会有1%的性能损耗(参见MySQL官方中文手册 5.1.24
                         
                     </div>
                     <div class="publish-info">

@@ -643,23 +643,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-chi-jiu-hua-mybatis-zhong-ru-he-fang-zhi-dai-lai-de-sql-zhu-ru-wen-ti-er/">
+                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-ji-ben-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="java持久化-mybatis-中如何防止${}带来的sql注入问题？（二）.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java持久化-jdbc基本用法.md">
                         
-                        <span class="card-title">java持久化-mybatis-中如何防止${}带来的sql注入问题？（二）.md</span>
+                        <span class="card-title">java持久化-jdbc基本用法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-大成若缺
-
-在上篇文章 https://www.jianshu.com/p/8549841d24da ，我们知道有时候不得不使用${}。如like模糊查询和order by 动态传参这两种情况；
-但${}越会带来sql注入的风险，那么应该
+                            jdbc是java中进行数据库操作的基本工具，像mybatis和hibernate均是它的封装
+###JDBC代码的规定步骤
+1、加载驱动（装载相应的JDBC驱动并进行初始化）
+ Class.forName(&quot;com.mysql.
                         
                     </div>
                     <div class="publish-info">
@@ -696,21 +695,27 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-chi-jiu-hua-mybatis-plus-ji-ben-shi-yong/">
+                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-kai-shi-shi-wu-ti-jiao-shi-wu-hui-gun-shi-wu-she-zhi-savepoint/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="java持久化-mybatis_plus基本使用.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md">
                         
-                        <span class="card-title">java持久化-mybatis_plus基本使用.md</span>
+                        <span class="card-title">java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            官网 https://mp.baomidou.com/
-###QueryWrapper的使用
-1、    QueryWrapper queryWrapper = new QueryWrapper&lt;&gt;();        quer
+                            
+学海无涯
+
+这次我们来学习基于jdbc的原生事务操作，不要小看jdbc喔~ mybatis、jpa等持久化框架都是在它上面的封装。
+准备数据
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+
                         
                     </div>
                     <div class="publish-info">

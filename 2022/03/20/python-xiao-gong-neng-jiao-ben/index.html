@@ -808,22 +808,25 @@ myTimer.stop()
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-wen-jian-cao-zuo-bi-ji/">
+                <a href="/2022/03/20/python-pi-liang-xls-zhuan-xlsx/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="python-文件操作笔记.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python-批量xls转xlsx.md">
                         
-                        <span class="card-title">python-文件操作笔记.md</span>
+                        <span class="card-title">python-批量xls转xlsx.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######文件夹不存在则创建文件
-home = &#39;E:\\gggg\\zzzzz&#39;
-print(home)  # Print the location
-if not os.path.exists(home):  # os.
+                            import os
+import os.path
+import win32com.client as win32
+
+## 根目录
+rootdir = u&#39;D:\\搜狗高速下载\\data\\excel\\&#39;
+# 三个参数：父
                         
                     </div>
                     <div class="publish-info">
@@ -860,24 +863,22 @@ if not os.path.exists(home):  # os.
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-shi-jian-cao-zuo-bi-ji/">
+                <a href="/2022/03/20/python-wen-jian-cao-zuo-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python-时间操作笔记.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="python-文件操作笔记.md">
                         
-                        <span class="card-title">python-时间操作笔记.md</span>
+                        <span class="card-title">python-文件操作笔记.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######当前时间1、获得当前时间戳
-print(int(time.time()))
-
-2、格式化输出当前时间
-import time
-t = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, time
+                            ######文件夹不存在则创建文件
+home = &#39;E:\\gggg\\zzzzz&#39;
+print(home)  # Print the location
+if not os.path.exists(home):  # os.
                         
                     </div>
                     <div class="publish-info">

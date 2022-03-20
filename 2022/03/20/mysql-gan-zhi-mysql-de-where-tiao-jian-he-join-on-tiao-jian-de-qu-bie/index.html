@@ -758,19 +758,20 @@ LIMIT 15
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yi-bu-fu-zhi-he-ban-tong-bu-fu-zhi/">
+                <a href="/2022/03/20/mysql-xing-neng-zhen-duan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="mysql-异步复制和半同步复制.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-性能诊断.md">
                         
-                        <span class="card-title">mysql-异步复制和半同步复制.md</span>
+                        <span class="card-title">mysql-性能诊断.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在MySQL5.5之前，MySQL 的复制是异步操作，主库和从库的数据之间存在一定的延迟，这样存在一个隐患:当在主库上写入一个事务并提交成功，而从库尚未得到主库推送的Binlog日志时，主库宕机了，例如主库可能因磁盘损坏、内存故障等造成主库
+                            ###诊断步骤1．检查系统全局资源负载2．检查MySQL错误日志3.  检查MySQL在做什么4. 检查lnnoDB事务情况5. 检查MySQL复制状态
+###MySQL诊断工具1、 error log &amp; slow log &am
                         
                     </div>
                     <div class="publish-info">

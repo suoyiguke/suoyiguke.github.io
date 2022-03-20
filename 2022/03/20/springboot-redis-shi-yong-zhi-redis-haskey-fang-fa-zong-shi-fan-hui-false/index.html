@@ -559,25 +559,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/springboot-aop-zhi-xi-jie/">
+                <a href="/2022/03/20/springboot-redis-shi-yong-zhi-redis-shi-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="springboot-aop之细节.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="springboot-redis使用之redis事务.md">
                         
-                        <span class="card-title">springboot-aop之细节.md</span>
+                        <span class="card-title">springboot-redis使用之redis事务.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、ProceedingJoinPoint对象详解
+                            
+保持自信
 
-    /**
-     * @description 使用环绕通知
-     */
-    @Around(&quot;BrokerAspect()&quot;)
-    public
+redis也是有它的事务支持的，我们来看看在springboot中如何使用redis的事务特性吧###方法一首先在redis的配置类中开启事务支持
+
+template.setEnableTransactionSupport(t
                         
                     </div>
                     <div class="publish-info">
@@ -614,20 +613,22 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/springboot-redis-shi-yong-zhi-shi-xian-spring-cache/">
+                <a href="/2022/03/20/springboot-controller-ceng-zhu-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="springboot-redis使用之实现Spring-Cache.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="springboot-controller层注解.md">
                         
-                        <span class="card-title">springboot-redis使用之实现Spring-Cache.md</span>
+                        <span class="card-title">springboot-controller层注解.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            spring给我们提供了缓存的封装，类似于事务管理一样。可以基于注解直接开箱即用。不需要复杂的配置。而且spring cache底层实现实现可以如下方式
-redis只是其中一种，如果工程内只配置了redis则以redis为cache的实现。
+                            public R checkUser(@RequestBody User user) &#123;
+
+
+@RequestMapping(value = &quot;/checkUser&quot;, method = RequestMeth
                         
                     </div>
                     <div class="publish-info">

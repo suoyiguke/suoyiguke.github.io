@@ -662,22 +662,25 @@ public class Threads
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/suo-yin-fu-gai-cai-ce/">
+                <a href="/2022/03/20/suo-yin-zi-bu-fen-dui-rows-sao-miao-xing-shu-cai-ce/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="索引覆盖-猜测.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="索引子部分对rows扫描行数猜测.md">
                         
-                        <span class="card-title">索引覆盖-猜测.md</span>
+                        <span class="card-title">索引子部分对rows扫描行数猜测.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            出现Using index condition、null 则表示当前建立的索引无法满足select查询字段的需要，需要回表查了。此时效率比较低；
-###索引覆盖出现的判断依据 
-查* ，出现 Using index condition
-查i
+                            索引子部分设置对rows列有影响。需要设置一个合理的值
+
+索引子部分设置太小，rows变多。需要扫描更多行才能找到数据，减低查找效率。
+索引子部分设置太大又浪费索引空间！
+
+a表的spu字段索引全部建立，扫描1行
+mysql&gt; EXP
                         
                     </div>
                     <div class="publish-info">
@@ -714,24 +717,26 @@ public class Threads
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/xian-cheng-dump-de-fen-xi-si-suo-shu-ju-ku-si-suo-io-deng-dai-deng/">
+                <a href="/2022/03/20/suo-yin-de-qu-fen-du-cardinality/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="线程Dump的分析：死锁、数据库死锁、IO等待等.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="索引的-区分度-CARDINALITY.md">
                         
-                        <span class="card-title">线程Dump的分析：死锁、数据库死锁、IO等待等.md</span>
+                        <span class="card-title">索引的-区分度-CARDINALITY.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原则
-结合代码阅读的推理。需要线程Dump和源码的相互推导和印证。
-造成Bug的根源往往丌会在调用栈上直接体现,一定格外注意线程当前调用之前的所有调用。
-
-几种典型的问题堆栈信息###进入区等待
-&quot;d&amp;a-3588&quo
+                            SELECT
+    CARDINALITY,
+    INDEX_NAME,
+    TABLE_NAME 
+FROM
+    information_schema.STATISTICS 
+WHERE
+    TABLE_SCHEMA =
                         
                     </div>
                     <div class="publish-info">
@@ -742,8 +747,8 @@ public class Threads
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -753,8 +758,8 @@ public class Threads
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>

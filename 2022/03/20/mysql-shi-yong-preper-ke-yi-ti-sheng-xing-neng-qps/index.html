@@ -568,21 +568,21 @@ mysql8.0.23版本
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-mysqld-multi-zai-yi-tai-ji-qi-shang-an-zhuang-duo-ge-mysql-shi-li-duo-shi-li-an-zhuang/">
+                <a href="/2022/03/20/mysql-shi-yong-mysqlbinlog-ming-ling-dao-chu-he-fen-xi-binlog-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-使用mysqlbinlog命令导出和分析binlog文件.md">
                         
-                        <span class="card-title">mysql-使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）.md</span>
+                        <span class="card-title">mysql-使用mysqlbinlog命令导出和分析binlog文件.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/5.7/en/mysqld-multi.html
-多实例安装即是一台服务器安装多个mysql实例；这样可以充分利用硬件资源；通过mysqld_multi程序即可。
-例如我们现
+                            简单执行话不多说，我们直接上手使用这个命令试下
+
+C:\mysql5715\data&gt;C:\mysql5715\bin\mysqlbinlog.exe –no-defaults –database=test –base64-outpu
                         
                     </div>
                     <div class="publish-info">
@@ -619,21 +619,22 @@ mysql8.0.23版本
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-mysqlbinlog-ming-ling-dao-chu-he-fen-xi-binlog-wen-jian/">
+                <a href="/2022/03/20/mysql-shi-yong-mysqld-multi-zai-yi-tai-ji-qi-shang-an-zhuang-duo-ge-bu-tong-ban-ben-de-mysql-shi-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-使用mysqlbinlog命令导出和分析binlog文件.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-使用mysqld_multi在一台机器上安装多个不同版本的mysql实例.md">
                         
-                        <span class="card-title">mysql-使用mysqlbinlog命令导出和分析binlog文件.md</span>
+                        <span class="card-title">mysql-使用mysqld_multi在一台机器上安装多个不同版本的mysql实例.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            简单执行话不多说，我们直接上手使用这个命令试下
+                            
+本篇在上篇文章https://www.jianshu.com/p/88adb36bbca9基础上继续演示，如何使用mysqld_multi做到在一台机器上安装不同版本的mysql实例。
 
-C:\mysql5715\data&gt;C:\mysql5715\bin\mysqlbinlog.exe –no-defaults –database=test –base64-outpu
+###增加5.6版本实例1、对5.6的mysql目
                         
                     </div>
                     <div class="publish-info">

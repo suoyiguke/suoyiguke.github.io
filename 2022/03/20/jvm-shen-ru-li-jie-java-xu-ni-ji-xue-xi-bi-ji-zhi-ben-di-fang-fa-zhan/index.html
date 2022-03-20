@@ -562,22 +562,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ke-da-xing-fen-xi-suan-fa/">
+                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-yong-jiu-dai-he-yuan-kong-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之永久代和元空间.md">
                         
-                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之可达性分析算法.md</span>
+                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之永久代和元空间.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-驽马十驾，功在不舍
-
-######可达性分析算法的应用当前主流的商用程序语言（Java、 C#， 上溯至前面提到的古老的Lisp） 的内存管理子系统， 都是通过可达性分析（Reachability Analysis） 算法来判定对象是否存
+                            ###PermGen 永久代
+说到方法区， 不得不提一下“永久代”这个概念， 尤其是在JDK 8以前， 许多Java程序员都习惯在HotSpot虚拟机上开发、 部署程序， 很多人都更愿意把方法区称呼为“永久代”（PermanentGener
                         
                     </div>
                     <div class="publish-info">
@@ -588,8 +586,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -599,8 +597,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>
@@ -614,19 +612,25 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-shen-ru-li-jie-jvm-g1-gc-xue-xi-bi-ji-zhi-finalize-fang-fa-he-finalization-ji-zhi/">
+                <a href="/2022/03/20/jvm-zhi-zao-oom-yi-chang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="jvm-制造OOM异常.md">
                         
-                        <span class="card-title">jvm-《深入理解JVM-＆-G1-GC-》学习笔记之-finalize()方法和finalization-机制.md</span>
+                        <span class="card-title">jvm-制造OOM异常.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java 语言提供了对象终止（ finalization ） 机制来允许开发人员提供对象被销毁之前的自定义处理逻辑。 Object 类提供了 finalize 方法来添加自定义的销毁逻辑。如果一个类有特殊的销毁逻辑，可以覆写 finaliz
+                            ###能够导致OutOfMemoryError的代码先设置
+-Xms10m -Xmx10m -XX:+PrintGCDetails
+
+执行
+String a = &quot;yinkai&quot;;
+while (true)&#123;
+
                         
                     </div>
                     <div class="publish-info">
@@ -637,8 +641,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA-GC/" class="post-category" target="_blank">
-                                    JAVA-GC
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -648,8 +652,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA-GC/" target="_blank">
-                        <span class="chip bg-color">JAVA-GC</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>

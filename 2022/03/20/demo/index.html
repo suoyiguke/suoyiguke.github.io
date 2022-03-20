@@ -642,27 +642,23 @@ Dialog.Notify(&quot;写入数据完成&quot;, &quot;UiBot&quot;, &quot;0&quot;)
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/docker-compose-chang-yong-pei-zhi/">
+                <a href="/2022/03/20/dbutils-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="docker-compose-常用配置.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="dbutils-使用.md">
                         
-                        <span class="card-title">docker-compose-常用配置.md</span>
+                        <span class="card-title">dbutils-使用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用1、docker-compose中容器设置上海时区
- environment:
-      TZ: &quot;Asia/Shanghai&quot;
+                            ###依赖
 
-2、总是重启容器
-restart: always
-
-3、端口映射
-    port
+    &lt;dependency&gt;
+      &lt;groupId&gt;commons-dbutils&lt;/groupId&gt;
+      &lt;artifactId&gt;commons-dbuti
                         
                     </div>
                     <div class="publish-info">
@@ -673,8 +669,8 @@ restart: always
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/docker/" class="post-category" target="_blank">
-                                    docker
+                            <a href="/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" class="post-category" target="_blank">
+                                    java持久化框架
                                 </a>
                             
                             
@@ -684,8 +680,8 @@ restart: always
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/docker/" target="_blank">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" target="_blank">
+                        <span class="chip bg-color">java持久化框架</span>
                     </a>
                     
                 </div>
@@ -699,26 +695,27 @@ restart: always
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/docker-compose-bu-shu-springboot/">
+                <a href="/2022/03/20/docker-compose-an-zhuang-redis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="docker-compose-部署springboot.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="docker-compose-安装redis.md">
                         
-                        <span class="card-title">docker-compose-部署springboot.md</span>
+                        <span class="card-title">docker-compose-安装redis.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            version: &quot;3&quot;
+                            1、目录结构
+2、docker-compose.yml
+version: &quot;2&quot;
 services:
-  box:
-    image: java:8
-    volumes:
-      - ./work:/work
+  redis:
+    image: redis
     ports:
-      - &quot;808
+      - 6379:6379
+    
                         
                     </div>
                     <div class="publish-info">
@@ -729,8 +726,8 @@ services:
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/springboot/" class="post-category" target="_blank">
-                                    springboot
+                            <a href="/categories/redis/" class="post-category" target="_blank">
+                                    redis
                                 </a>
                             
                             
@@ -740,8 +737,8 @@ services:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/springboot/" target="_blank">
-                        <span class="chip bg-color">springboot</span>
+                    <a href="/tags/redis/" target="_blank">
+                        <span class="chip bg-color">redis</span>
                     </a>
                     
                 </div>

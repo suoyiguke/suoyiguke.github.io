@@ -659,24 +659,21 @@ Created_tmp_disk_tables=32M
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-lru-scan-depth/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-15-zhi-innodb-page-size-she-zhi-ye-da-xiao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql--参数调优（16）之innodb_lru_scan_depth.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--参数调优（15）之-innodb_page_size设置页大小.md">
                         
-                        <span class="card-title">mysql--参数调优（16）之innodb_lru_scan_depth.md</span>
+                        <span class="card-title">mysql--参数调优（15）之-innodb_page_size设置页大小.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            27)innodb_lru_scan_depth
-推荐设置：2000
+                            推荐设置：8192
 作用：
-innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配置2000以上。
-可使用默认配置。即不设。如果不配的后果：
-默认
+这个值可要小心，一般它在设置后就不能轻易改了，一般来说我们都认为，值越大越好，不是的， 这个值它的原理是这样的：size越小，内存划分粒度越大，使用率越高，但是会有其他问题，就是限制了索引字段还有整行的大小。in
                         
                     </div>
                     <div class="publish-info">
@@ -713,20 +710,19 @@ innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-18-innodb-flush-neighbors-shua-xin-lin-jie-ye-flush-neighbor-page/">
+                <a href="/2022/03/20/mysql-zabbix-jian-kong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--zabbix监控.md">
                         
-                        <span class="card-title">mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md</span>
+                        <span class="card-title">mysql--zabbix监控.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。
-取值范围：0，1，2 ； 
+                            
                         
                     </div>
                     <div class="publish-info">

@@ -665,25 +665,24 @@ if __name__ == &#39;__main__&#39;:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-pa-chong-kuang-jia-zhi-beautifulsoup/">
+                <a href="/2022/03/20/python-xian-cheng-an-quan-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="python-爬虫框架之BeautifulSoup.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="python-线程安全问题.md">
                         
-                        <span class="card-title">python-爬虫框架之BeautifulSoup.md</span>
+                        <span class="card-title">python-线程安全问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html解析器 BeautifulSoup
-1、安装pip install beautifulsoup4 
-pip3 install lxml
-2、使用
-CSS选择器 优先使用了
-from bs4 import BeautifulSoup
-
+                            ###两个线程并发累加一个全局变量
+理论上，最终得到的数据应该是2000000，而运行结果是少于这个值的
+import threading
+import time
+from threading import Thread
+global_nu
                         
                     </div>
                     <div class="publish-info">
@@ -720,23 +719,19 @@ from bs4 import BeautifulSoup
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-huan-jing-an-zhuang/">
+                <a href="/2022/03/20/python-dai-ma-ti-shi-cha-jian-kite/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="python-环境安装.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="python代码提示插件-kite.md">
                         
-                        <span class="card-title">python-环境安装.md</span>
+                        <span class="card-title">python代码提示插件-kite.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            三种安装方式
-
-  Download Windows x86-64 embeddable zip file
-  Download Windows x86-64 executable installer
-  Download Windows 
+                            
                         
                     </div>
                     <div class="publish-info">

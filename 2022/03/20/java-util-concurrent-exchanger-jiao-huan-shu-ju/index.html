@@ -605,21 +605,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-util-optional-que-xian/">
+                <a href="/2022/03/20/java-util-optional-ifpresent/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-util-Optional-缺陷.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-util-Optional#ifPresent.md">
                         
-                        <span class="card-title">java-util-Optional-缺陷.md</span>
+                        <span class="card-title">java-util-Optional#ifPresent.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在这种时候使用新写法就有些鸡肋了。不要为了使用而使用。反而原来的写法可读性更好
-        Set&lt;String&gt; keySet = map.keySet();
-        for (String s : keySet)
+                            ifPresent 用于对过滤出的数据如果存在。如果经过过滤条件后，有数据的话就可以进行修改。
+
+ Optional&lt;A&gt; firstA= AList.stream() 
+                          .f
                         
                     </div>
                     <div class="publish-info">
@@ -656,20 +657,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-util-stream-collectors-minby-fan-hui-de-optional-ben-shen-ke-neng-hui-kong-zhi-zhen/">
+                <a href="/2022/03/20/java-util-optional-que-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-util-Optional-缺陷.md">
                         
-                        <span class="card-title">java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md</span>
+                        <span class="card-title">java-util-Optional-缺陷.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            所以拿出这个 Optional对象也记得要判空！
-   public static  Collector&lt;T, ?, Optional&gt;    minBy(Comparator&lt;? super T&gt; comparat
+                            在这种时候使用新写法就有些鸡肋了。不要为了使用而使用。反而原来的写法可读性更好
+        Set&lt;String&gt; keySet = map.keySet();
+        for (String s : keySet)
                         
                     </div>
                     <div class="publish-info">

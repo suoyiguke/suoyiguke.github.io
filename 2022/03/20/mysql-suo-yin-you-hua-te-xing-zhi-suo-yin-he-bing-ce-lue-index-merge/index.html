@@ -619,24 +619,19 @@ possible_keys: idx_code,idx_goods_no,idx_yn,idx_route_yn
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-yuan-li/">
+                <a href="/2022/03/20/mysql-suo-yin-tian-chong-yin-zi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-索引原理.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-索引填充因子.md">
                         
-                        <span class="card-title">mysql-索引原理.md</span>
+                        <span class="card-title">mysql-索引填充因子.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
-B+ 树： 
-
-通过多叉来减少树的深度，提高查询效率
-
-多叉平衡树1、非叶子节点不存储data，只存储索引字段（冗
+                            InnoDB indexes are B-tree data structures. Index records are stored in the leaf pages of their B-tree data structure. Th
                         
                     </div>
                     <div class="publish-info">
@@ -673,25 +668,21 @@ B+ 树：
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-xia-tui/">
+                <a href="/2022/03/20/mysql-suo-yin-yuan-li-zhi-b-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-索引优化特性之索引下推.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-索引原理之B+树.md">
                         
-                        <span class="card-title">mysql-索引优化特性之索引下推.md</span>
+                        <span class="card-title">mysql-索引原理之B+树.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-索引下推优化默认开启，索引下推 和联合索引有密切的关系，它让组合索引里的范围条件变得有意义
-
-查询开启状态
-SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
-
-我们可以通过修改系统变量opt
+                            ###B+树
+balance tree，平衡的树。不会出现那种一边特别多层的情况。让数据都放在树的同一层。
+B+树是为磁盘或其他 直接存取辅助设备设计的一种多叉平衡查找树。在B+树中,所有记录节点都是按键值的大 小顺序存放在同一层的叶子节点
                         
                     </div>
                     <div class="publish-info">
@@ -702,8 +693,8 @@ SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -713,8 +704,8 @@ SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

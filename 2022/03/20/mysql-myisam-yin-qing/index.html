@@ -565,25 +565,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-null-wen-ti/">
+                <a href="/2022/03/20/mysql-lock-dai-lai-de-zu-sai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-null-问题.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-lock带来的阻塞.md">
                         
-                        <span class="card-title">mysql-null-问题.md</span>
+                        <span class="card-title">mysql-lock带来的阻塞.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、列中有Null值是可以用到索引的
-mysql&gt; EXPLAIN SELECT
-    * 
-FROM
-    `test` FORCE INDEX ( idx_name ) 
-WHERE
-    isNull( `name` ) 
+                            因为不同锁之间的兼容性关系,在有些时刻一个事务中的锁需要等待另一个事务中的锁释放它所占用的资源,这就是阻塞。
+阻塞并不是一件坏事,其是为了确保事务可以 并发且正常地运行。在 InnoDB存储引擎中,参数 innodb_lock_wait_t
                         
                     </div>
                     <div class="publish-info">
@@ -594,8 +589,8 @@ WHERE
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -605,8 +600,8 @@ WHERE
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

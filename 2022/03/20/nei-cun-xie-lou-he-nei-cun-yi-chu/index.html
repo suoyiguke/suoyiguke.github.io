@@ -561,21 +561,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/nei-cun-xie-lou-fen-xi-shi-yong-ming-ling-fen-xi/">
+                <a href="/2022/03/20/nei-cun-xie-lou-fen-xi-shi-yong-kuai-zhao-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="内存泄漏分析,使用命令分析.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="内存泄漏分析,使用快照文件.md">
                         
-                        <span class="card-title">内存泄漏分析,使用命令分析.md</span>
+                        <span class="card-title">内存泄漏分析,使用快照文件.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            「上面只是其中一种处理方法」
-在线上的应用，内存往往会设置得很大，这样发生OOM再把内存快照dump出来的文件就会很大，可能大到在本地的电脑中已经无法分析了（因为内存不足够打开这个dump文件）。这里介绍另一种处理办法：
-（1）用jps定位
+                            我们都知道，java和c++的最大区别是前者会自动收回不再使用的内存，后者需要程序员手动释放。在c++中，如果我们忘记释放内存就会发生内存泄漏。但是，不要以为jvm帮我们回收了内存就不会出现内存泄漏。
+程序发生内存泄漏后，进程的可用内存会慢
                         
                     </div>
                     <div class="publish-info">
@@ -612,20 +611,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/nei-cun-xie-lou-fen-xi-shi-yong-kuai-zhao-wen-jian/">
+                <a href="/2022/03/20/zai-tan-comparator-bi-jiao-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="内存泄漏分析,使用快照文件.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="再谈-Comparator比较器.md">
                         
-                        <span class="card-title">内存泄漏分析,使用快照文件.md</span>
+                        <span class="card-title">再谈-Comparator比较器.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们都知道，java和c++的最大区别是前者会自动收回不再使用的内存，后者需要程序员手动释放。在c++中，如果我们忘记释放内存就会发生内存泄漏。但是，不要以为jvm帮我们回收了内存就不会出现内存泄漏。
-程序发生内存泄漏后，进程的可用内存会慢
+                            ###结合lambda使用Arrays.sort(people, Comparator.comparing(Person::getName));
+###设置次级排序
+Collections.sort(list,Comparator.comp
                         
                     </div>
                     <div class="publish-info">
@@ -636,8 +636,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -647,8 +647,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>

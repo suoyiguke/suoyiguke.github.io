@@ -442,19 +442,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mybatis-plus-zhong-de-keng/">
+                        <a href="/2022/03/20/mybatis-plus-update-wen-ti/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mybatis_plus-中的坑.md">
+                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mybatis_plus--update问题.md">
                                 
-                                <span class="card-title">mybatis_plus-中的坑.md</span>
+                                <span class="card-title">mybatis_plus--update问题.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                1、必须加.last(“limit 1”) 否则可能 selectOne()报错 源码：JgOrderTemplate template = templateService.query().eq(“template_no”, templat
+                                mybatis_plus 如何做到批量更新 set 和in 同时都是批量的？现在只能是in 是批量
+updateBatchById 直接更新list可以做到。但是会去更新所有值而不是我只想更新的值
+1、批量更新不同的属性值时还是得写循环单条
                                 
                             </div>
                             <div class="publish-info">
@@ -625,20 +627,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mybatis-plus-cha-xun-dan-lie-dan-xing-dan-shu-ju/">
+                        <a href="/2022/03/20/mybatis-he-plus-ying-she-json-lei-xing-dao-lei-shu-xing/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mybatis_plus-查询单列单行（单数据）.md">
+                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mybatis和plus-映射JSON类型到类属性.md">
                                 
-                                <span class="card-title">mybatis_plus-查询单列单行（单数据）.md</span>
+                                <span class="card-title">mybatis和plus-映射JSON类型到类属性.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                一般用作单行查询
-        Object obj = jgRulaEmbargoService.getObj(Wrappers.&lt;JgRulaEmbargo&gt;query().select(&quot;1&quot;).eq
+                                ###mybatis写个handel
+@NoArgsConstructor
+public class ImagesTypeHandler extends MpJsonTypeHandler&#123;
+
+    public ImagesT
                                 
                             </div>
                             <div class="publish-info">
@@ -747,23 +752,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mybatis-he-plus-ying-she-json-lei-xing-dao-lei-shu-xing/">
+                        <a href="/2022/03/20/mybatis-plus-cha-xun-dan-lie-dan-xing-dan-shu-ju/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mybatis和plus-映射JSON类型到类属性.md">
+                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mybatis_plus-查询单列单行（单数据）.md">
                                 
-                                <span class="card-title">mybatis和plus-映射JSON类型到类属性.md</span>
+                                <span class="card-title">mybatis_plus-查询单列单行（单数据）.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###mybatis写个handel
-@NoArgsConstructor
-public class ImagesTypeHandler extends MpJsonTypeHandler&#123;
-
-    public ImagesT
+                                一般用作单行查询
+        Object obj = jgRulaEmbargoService.getObj(Wrappers.&lt;JgRulaEmbargo&gt;query().select(&quot;1&quot;).eq
                                 
                             </div>
                             <div class="publish-info">
@@ -852,128 +854,6 @@ SEL
                         <div class="card-action article-tags">
                             
                             <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"><span class="chip bg-color">java持久化框架</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mybatis-yuan-ma/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mybatis源码.md">
-                                
-                                <span class="card-title">mybatis源码.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                org.apache.ibatis.datasource.pooled.PoolState 维护活跃连接和闲置连接
-org.apache.ibatis.datasource.pooled.PooledDataSource 使用了PoolSt
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" class="post-category" target="_blank">
-                                        java持久化框架
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"><span class="chip bg-color">java持久化框架</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-next-key-lock-lin-jian-suo/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql---Next-Key-Lock-临键锁.md">
-                                
-                                <span class="card-title">mysql---Next-Key-Lock-临键锁.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                ###InnoDB的三种行锁算法介绍 InnoDB存储引擎有3种行锁的算法,其分别是: 
-1、Record Lock单个行记录上的锁Record Lock  InnoDB总是会去锁住索引记录,如果存储引擎表在建立的时候没有设置任何一个索引,
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                        mysql底层
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
                             
                         </div>
                         
@@ -1097,6 +977,128 @@ varchr 比 char 需要多使用1个字节存储长度;允许NULL
                         <div class="card-action article-tags">
                             
                             <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mysql-next-key-lock-lin-jian-suo/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql---Next-Key-Lock-临键锁.md">
+                                
+                                <span class="card-title">mysql---Next-Key-Lock-临键锁.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                ###InnoDB的三种行锁算法介绍 InnoDB存储引擎有3种行锁的算法,其分别是: 
+1、Record Lock单个行记录上的锁Record Lock  InnoDB总是会去锁住索引记录,如果存储引擎表在建立的时候没有设置任何一个索引,
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                        mysql底层
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E5%BA%95%E5%B1%82/"><span class="chip bg-color">mysql底层</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/mybatis-yuan-ma/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mybatis源码.md">
+                                
+                                <span class="card-title">mybatis源码.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                org.apache.ibatis.datasource.pooled.PoolState 维护活跃连接和闲置连接
+org.apache.ibatis.datasource.pooled.PooledDataSource 使用了PoolSt
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" class="post-category" target="_blank">
+                                        java持久化框架
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"><span class="chip bg-color">java持久化框架</span></a>
                             
                         </div>
                         

@@ -627,24 +627,22 @@ for file in fileList:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-zhi-xing-cmd-ming-ling/">
+                <a href="/2022/03/20/python-xiao-gong-neng-jiao-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="python-执行cmd命令.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-小功能脚本.md">
                         
-                        <span class="card-title">python-执行cmd命令.md</span>
+                        <span class="card-title">python-小功能脚本.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            import os
-
-s = os.popen(&quot;ipconfig&quot;)
-print(s.read())
-
-
+                            ######发起http请求，解析json
+import json
+import requests
+response = requests.get(&#39;https://is-hl.snssdk.com/api/news/feed/v8
                         
                     </div>
                     <div class="publish-info">
@@ -681,22 +679,24 @@ print(s.read())
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-xiao-gong-neng-jiao-ben/">
+                <a href="/2022/03/20/python-zhi-xing-cmd-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-小功能脚本.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="python-执行cmd命令.md">
                         
-                        <span class="card-title">python-小功能脚本.md</span>
+                        <span class="card-title">python-执行cmd命令.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######发起http请求，解析json
-import json
-import requests
-response = requests.get(&#39;https://is-hl.snssdk.com/api/news/feed/v8
+                            import os
+
+s = os.popen(&quot;ipconfig&quot;)
+print(s.read())
+
+
                         
                     </div>
                     <div class="publish-info">

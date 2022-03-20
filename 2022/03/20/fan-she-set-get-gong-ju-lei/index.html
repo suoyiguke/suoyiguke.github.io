@@ -678,23 +678,19 @@ public class ReflectObjectUtil &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/zai-miao-sha-chang-jing-zhong-spring-sheng-ming-shi-shi-wu-yu-lock-fan-wei-de-keng/">
+                <a href="/2022/03/20/ya-ce-gong-ju-zhi-mysqlslap/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="在秒杀场景中spring-声明式事务与lock范围的坑.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="压测工具之-mysqlslap.md">
                         
-                        <span class="card-title">在秒杀场景中spring-声明式事务与lock范围的坑.md</span>
+                        <span class="card-title">压测工具之-mysqlslap.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在减库存，生成订单的秒场景中。lock写在@Transactional声明的方法之内还是会出现线程安全问题引起超卖。
-先解锁后提交事务
-
-    @GetMapping(value = &quot;/saveDb1&quot;)
-    p
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -705,8 +701,8 @@ public class ReflectObjectUtil &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/spring/" class="post-category" target="_blank">
-                                    spring
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -716,8 +712,8 @@ public class ReflectObjectUtil &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/spring/" target="_blank">
-                        <span class="chip bg-color">spring</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>
@@ -731,19 +727,20 @@ public class ReflectObjectUtil &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/keng-lan-yong-file-deleteonexit-nei-cun-xie-lu/">
+                <a href="/2022/03/20/fa-ban-zhu-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="坑-滥用-File-deleteOnExit()内存泄露.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="发版注意.md">
                         
-                        <span class="card-title">坑-滥用-File-deleteOnExit()内存泄露.md</span>
+                        <span class="card-title">发版注意.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            对不经常使用的黑盒api一定不能直接使用。最好去看下文档说明和使用注意。甚至是源码。如果在使用delete的场景下用错了File.deleteOnExit()可以导致内存溢出宕机的生产事故！这个方法如果只看字面意思很容易将它理解为：删除仅仅
+                            1、大表添加字段sql一定要在发版先天晚上执行。因为执行速度会非常慢
+2、数据库中删除记录如果作用在commont节点库（公共库），一定要是在发榜测试完成后再delete。之前就是有人在一个servcie节点发版后就删除了commont库的
                         
                     </div>
                     <div class="publish-info">
@@ -754,8 +751,8 @@ public class ReflectObjectUtil &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
+                                    软件工程和项目管理
                                 </a>
                             
                             
@@ -765,8 +762,8 @@ public class ReflectObjectUtil &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" target="_blank">
+                        <span class="chip bg-color">软件工程和项目管理</span>
                     </a>
                     
                 </div>

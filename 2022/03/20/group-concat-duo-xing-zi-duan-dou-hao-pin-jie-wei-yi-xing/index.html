@@ -568,22 +568,23 @@ GROUP_CONCAT(a">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/guavacache-ce-shi/">
+                <a href="/2022/03/20/fork-join-xian-cheng-chi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="GuavaCache-测试.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Fork-Join线程池.md">
                         
-                        <span class="card-title">GuavaCache-测试.md</span>
+                        <span class="card-title">Fork-Join线程池.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、GuavaCache 的失效时间是 Cache对象的属性
+                            ###多线程累加
+package com.company;
 
-如下构造Cache 
-    protected Cache createGuavaCache(String name, CacheBuilder builder, long 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
                         
                     </div>
                     <div class="publish-info">
@@ -594,8 +595,8 @@ GROUP_CONCAT(a">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java-GuavaCache/" class="post-category" target="_blank">
-                                    java-GuavaCache
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -605,8 +606,8 @@ GROUP_CONCAT(a">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java-GuavaCache/" target="_blank">
-                        <span class="chip bg-color">java-GuavaCache</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -620,21 +621,19 @@ GROUP_CONCAT(a">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/ik-fen-ci-qi-ik-smart-he-ik-max-word-qu-bie/">
+                <a href="/2022/03/20/gc-wen-ti-pai-cha-si-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="IK分词器ik_smart和ik_max_word区别.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="GC问题排查思路.md">
                         
-                        <span class="card-title">IK分词器ik_smart和ik_max_word区别.md</span>
+                        <span class="card-title">GC问题排查思路.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###ik_smart和ik_max_word区别
-1、ik_max_word
-会将文本做最细粒度的拆分，比如会将“中华人民共和国人民大会堂”拆分为“中华人民共和国、中华人民、中华、华人、人民共和国、人民、共和国、大会堂、大会、会堂等词语。
+                            ###可视化实时内存监控，现在各个区域是怎么样了涉及到类似的错误，最开始三板斧肯定是查看 JVM 的情况。很多中小型公司没有建立可视化的监控平台，比如Zabbix、Ganglia、Open-Falcon、Prometheus等等，没办法直接
                         
                     </div>
                     <div class="publish-info">
@@ -645,8 +644,8 @@ GROUP_CONCAT(a">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2/" class="post-category" target="_blank">
-                                    全文搜索
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -656,8 +655,8 @@ GROUP_CONCAT(a">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2/" target="_blank">
-                        <span class="chip bg-color">全文搜索</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>

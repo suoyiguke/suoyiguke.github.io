@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jianshu.com/u/807abe8ee897/"/>
-  <updated>2022-03-20T12:59:04.939Z</updated>
+  <updated>2022-03-20T13:05:29.140Z</updated>
   <id>https://www.jianshu.com/u/807abe8ee897/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>80%使用mysql踩到的坑-自增键不要做业务.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:05:29.140Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、用户数量信息泄露&lt;br&gt;2、如果mysql主键因为人为因素导致又从1开始，那么对整个应用都是毁灭性打击的！&lt;br&gt;3、双主同步写的时候会导致更新丢失&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>+-拼接生成的字符串是在字符串常量池在是在堆中？.md</title>
@@ -46,11 +73,11 @@
   </entry>
   
   <entry>
-    <title>80%使用mysql踩到的坑-自增键不要做业务.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/80-shi-yong-mysql-cai-dao-de-keng-zi-zeng-jian-bu-yao-zuo-ye-wu/</id>
+    <title>1-4-Collection-子接口之-Queue.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T13:05:29.140Z</updated>
+    <updated>2022-03-20T11:54:58.073Z</updated>
     
     <summary type="html">
     
@@ -58,8 +85,35 @@
       
         
         
-          &lt;p&gt;1、用户数量信息泄露&lt;br&gt;2、如果mysql主键因为人为因素导致又从1开始，那么对整个应用都是毁灭性打击的！&lt;br&gt;3、双主同步写的时候会导致更新丢失&lt;/p&gt;
-
+          &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;1.4 Collection 子接口之 Queue&lt;/p&gt;
+&lt;h3 id=&quot;1-4-1-Queue-与-Deque-的区别&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-0新特性之函数索引.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;二 - 顺序&lt;/p&gt;
+&lt;p&gt;操作的顺序是每个初学者都会学习的东西，因为了解计算机如何评估操作很重要。MySQL
         
       
     
@@ -100,86 +154,6 @@
   </entry>
   
   <entry>
-    <title>8-0新特性总结.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T12:59:05.124Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;###mysql clone plugin&lt;br&gt;远程备份方案&lt;br&gt;###Hash
-        
-      
-    
-    </summary>
-    
-      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
-    
-    
-      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>8-0新特性之函数索引.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zhi-han-shu-suo-yin/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T12:59:05.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;二 - 顺序&lt;/p&gt;
-&lt;p&gt;操作的顺序是每个初学者都会学习的东西，因为了解计算机如何评估操作很重要。MySQL
-        
-      
-    
-    </summary>
-    
-      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
-    
-    
-      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1-4-Collection-子接口之-Queue.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;1.4 Collection 子接口之 Queue&lt;/p&gt;
-&lt;h3 id=&quot;1-4-1-Queue-与-Deque-的区别&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>8-种基本类型的包装类和常量池.md</title>
     <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/"/>
     <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/</id>
@@ -202,6 +176,32 @@
     
     
       <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-0新特性总结.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-0-xin-te-xing-zong-jie/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.124Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###mysql clone plugin&lt;br&gt;远程备份方案&lt;br&gt;###Hash
+        
+      
+    
+    </summary>
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E5%9F%BA%E6%9C%AC/"/>
+    
+    
+      <category term="mysql基本" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E5%9F%BA%E6%9C%AC/"/>
     
   </entry>
   
@@ -230,24 +230,6 @@
     
     
       <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KafkaListener.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T13:12:07.762Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mq-kafka/"/>
-    
-    
-      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mq-kafka/"/>
     
   </entry>
   
@@ -294,6 +276,42 @@
 &lt;p&gt;1、在实现类上加上 @Lazy&lt;br&gt;2、在
         
       
+    
+    </summary>
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
+    
+    
+      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KafkaListener.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/kafkalistener/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:12:07.762Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mq-kafka/"/>
+    
+    
+      <category term="mq-kafka" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mq-kafka/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PostConstruct执行在-@NacosValue声明的set方法之后.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T13:08:59.344Z</updated>
+    
+    <summary type="html">
     
     </summary>
     
@@ -443,24 +461,6 @@
     
     
       <category term="java持久化框架" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PostConstruct执行在-@NacosValue声明的set方法之后.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/postconstruct-zhi-xing-zai-nacosvalue-sheng-ming-de-set-fang-fa-zhi-hou/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T13:08:59.344Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/categories/spring/"/>
-    
-    
-      <category term="spring" scheme="https://www.jianshu.com/u/807abe8ee897/tags/spring/"/>
     
   </entry>
   

@@ -644,22 +644,25 @@ QPS（TPS）：每秒钟request数/事务 数量并发数： 系统同时处理�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/suo-yin/">
+                <a href="/2022/03/20/suo-yin-zi-bu-fen-dui-rows-sao-miao-xing-shu-cai-ce/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="索引.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="索引子部分对rows扫描行数猜测.md">
                         
-                        <span class="card-title">索引.md</span>
+                        <span class="card-title">索引子部分对rows扫描行数猜测.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            | orders | CREATE TABLE `orders` (
-  `o_orderkey` int(11) NOT NULL,
-  `o_custkey` int(11) DEFAULT NULL,
-  `o_orderstatus
+                            索引子部分设置对rows列有影响。需要设置一个合理的值
+
+索引子部分设置太小，rows变多。需要扫描更多行才能找到数据，减低查找效率。
+索引子部分设置太大又浪费索引空间！
+
+a表的spu字段索引全部建立，扫描1行
+mysql&gt; EXP
                         
                     </div>
                     <div class="publish-info">

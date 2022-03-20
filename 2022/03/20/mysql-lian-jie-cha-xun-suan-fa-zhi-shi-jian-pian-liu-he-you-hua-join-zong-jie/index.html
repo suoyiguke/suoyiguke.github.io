@@ -660,22 +660,22 @@ EXPLAIN SELECT *  FROM `user` a LEFT JOIN book  b force index(index_user_id)  ON
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-simple-nested-loop-join-snlj-yi/">
+                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-index-nested-loop-join-inlj-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-联接查询算法之Simple-Nested-Loop-Join（SNLJ）-一.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md">
                         
-                        <span class="card-title">mysql-联接查询算法之Simple-Nested-Loop-Join（SNLJ）-一.md</span>
+                        <span class="card-title">mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Simple Nested-Loop Join：SNLJ，简单嵌套循环连接
+Index Nested-Loop Join：INLJ，索引嵌套循环连接
 
-Simple Nested-Loops Join算法相当简单、直接。即外表（驱动表）中的每一条记录与内表（被驱动表）中的记录进行比较判断（就是个笛卡尔积）。对于
+在Join的优化时候，通常都会建议在内表建立索引，以此降低 Simple  Nested-Loop Join算法的开销，减少内表扫描次数，MySQL数据库中使用较
                         
                     </div>
                     <div class="publish-info">
@@ -712,19 +712,21 @@ Simple Nested-Loops Join算法相当简单、直接。即外表（驱动表）�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zi-dong-an-zhuang-jiao-ben/">
+                <a href="/2022/03/20/mysql-ruo-gong-xiang-biao-kong-jian-wen-jian-ibdata1-diu-shi-ying-gai-ru-he-cong-ibd-wen-jian-hui-fu-shu-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-自动安装脚本.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-若共享表空间文件ibdata1丢失，应该如何从-ibd文件恢复数据？.md">
                         
-                        <span class="card-title">mysql-自动安装脚本.md</span>
+                        <span class="card-title">mysql-若共享表空间文件ibdata1丢失，应该如何从-ibd文件恢复数据？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            mysql把共享表空间文件删除后重建，导致数据表直接没了。navicat中查不到，其实frm和ibd文件都是存在的，只是此时无法识别数据表而已。我们可以利用它们来恢复数据。
+
+思路就是创建一张表结构和目标表相同的数据表，然后指定该表的表空间
                         
                     </div>
                     <div class="publish-info">

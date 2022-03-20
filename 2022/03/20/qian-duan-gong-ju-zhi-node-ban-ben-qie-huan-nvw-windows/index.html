@@ -597,24 +597,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/lie-biao-ye-mian-de-count/">
+                <a href="/2022/03/20/dao-di-she-ji-zhuang-tai-zi-duan-shi-ying-bu-ying-gai-shi-yong-mei-ju-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="列表页面的count.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="到底设计状态字段时应不应该使用枚举类型？.md">
                         
-                        <span class="card-title">列表页面的count.md</span>
+                        <span class="card-title">到底设计状态字段时应不应该使用枚举类型？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            许天云:列表页面的count大家一般是怎么处理的，都用redis做缓存，定时更新嘛
-但行好事  莫问前程:@苏州-新点-许天云 是的
-许天云:公司没这套缓存方案，我也是醉了
-Ken:表多大？
-许天云:几万到几十万不等的，看项目上的
-Ken:
+                            男女、开关这样固定的使用枚举没问题，但是业务状态就不行了。因为后期随时可能新增一种状态。导致需要进行ddl操作修改枚举结构，这是一种开销非常大的操作  。
+
+男女、开关可以使用枚举+SQL_mode约束（8.0前）、char(1)+CHEC
                         
                     </div>
                     <div class="publish-info">

@@ -631,19 +631,24 @@ public class TestLock implements Runnable &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-exchanger-xian-cheng-jian-jiao-huan-shu-ju/">
+                <a href="/2022/03/20/juc-lock-jie-kou-de-ji-ben-gai-nian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="juc---Exchanger-线程间交换数据.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock接口的基本概念（一）.md">
                         
-                        <span class="card-title">juc---Exchanger-线程间交换数据.md</span>
+                        <span class="card-title">juc---Lock接口的基本概念（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+今人不见古时月，今月曾经照古人
+
+我们可以使用 java.util.concurrent.locks.Lock 来代替synchronized同步块。它的功能更加强大；######Lock相对于synchronized有以下优点
+
+Loc
                         
                     </div>
                     <div class="publish-info">
@@ -680,21 +685,24 @@ public class TestLock implements Runnable &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-de-gong-ping-suo-he-fei-gong-ping-suo/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-trylock-chang-shi-jia-suo-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock的公平锁和非公平锁.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="juc---Lock接口之tryLock尝试加锁（三）.md">
                         
-                        <span class="card-title">juc---Lock的公平锁和非公平锁.md</span>
+                        <span class="card-title">juc---Lock接口之tryLock尝试加锁（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁
-非公平锁有可能刚释放锁的线程下次继续获取该锁，则有可能导致其他线程永远无法获取到锁，造成“饥饿”现象。
-公平锁为了保证时间上的绝
+                            
+我辈岂是蓬蒿人 
+
+tryLock()会去尝试获取锁，如果锁是被占有的状态，那么它会马上返回false。不会像 lock.lock()方法那样一直阻塞下去。这就是它的特点与优势。而且tryLock()有两个重载方法如下
+
+boolean 
                         
                     </div>
                     <div class="publish-info">

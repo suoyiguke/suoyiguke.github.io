@@ -442,22 +442,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-can-shu-diao-you-12-zhi-innodb-thread-concurrency-innodb-concurrency-tickets-he-li/">
+                        <a href="/2022/03/20/mysql-ge-chong-shu-ju-lei-xing-yu-shu-ju-chang-du-guan-xi/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md">
+                                <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-各种数据类型与数据长度关系.md">
                                 
-                                <span class="card-title">mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md</span>
+                                <span class="card-title">mysql-各种数据类型与数据长度关系.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                
-设置这个参数在mysql低负载时没有效果，建议在mysql非常繁忙时可以关注并配置
-
-你可能会经常听到应该设置 innodb_thread_concurrency=0 （表示不进行并发线程数量控制）然后就不要管它了。不过这个只在低负载服务
+                                1、decimal
+decimal(8,2) 表示总位数是8，整数位6，小数位2；隐式包含四舍五入的功能，当插入数据为999999.975时，实际数据为999999.98
+DROP TABLE IF EXISTS `ip`;
+CREATE 
                                 
                             </div>
                             <div class="publish-info">
@@ -469,8 +469,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                        mysql运维操作
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
                                     </a>
                                     
                                     
@@ -481,7 +481,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"><span class="chip bg-color">mysql运维操作</span></a>
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
                             
                         </div>
                         
@@ -505,21 +505,24 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-ke-xiu-gai-can-shu-he-zhi-du-can-shu/">
+                        <a href="/2022/03/20/mysql-fa-sheng-suo-deng-dai-chao-shi-san-chong-qing-kuang-zong-jie/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-可修改参数和只读参数.md">
+                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-发生锁等待超时三种情况总结.md">
                                 
-                                <span class="card-title">mysql-可修改参数和只读参数.md</span>
+                                <span class="card-title">mysql-发生锁等待超时三种情况总结.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###可修改参数和只读参数
-例如datadir就是一个read only 参数，它是不能进行在线修改的。需要停机，重启。
+                                1、有事务长时间未提交查询正在活跃的事务
+SELECT * FROM information_schema.INNODB_TRX
 
+杀死指定 trx_tread_id 即可
+2、线上dml，修改表结构
+Waiting for table m
                                 
                             </div>
                             <div class="publish-info">
@@ -688,6 +691,66 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
+                        <a href="/2022/03/20/mysql-zai-xian-ddl-zhi-pt-osc-he-gh-ost/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-在线DDL之pt-osc和gh-ost.md">
+                                
+                                <span class="card-title">mysql-在线DDL之pt-osc和gh-ost.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                gh-ost 是 GitHub 开源的在线更改 MySQL 表结构的工具github  https://github.com/github/gh-ost/从国内仓库下载速度会快点 https://gitee.com/mirrors/gh-o
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                        mysql运维操作
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"><span class="chip bg-color">mysql运维操作</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
                         <a href="/2022/03/20/mysql-zai-xian-ddl-cao-zuo-zhi-shou-dong-chu-li/">
                             <div class="card-image">
                                 
@@ -753,19 +816,19 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-zai-xian-ddl-zhi-pt-osc-he-gh-ost/">
+                        <a href="/2022/03/20/mysql-ji-yu-docker-compose-pei-zhi-zhu-cong-fu-zhi-yi-zhu-yi-cong/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-在线DDL之pt-osc和gh-ost.md">
+                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker-compose配置主从复制（一主一从）.md">
                                 
-                                <span class="card-title">mysql-在线DDL之pt-osc和gh-ost.md</span>
+                                <span class="card-title">mysql-基于docker-compose配置主从复制（一主一从）.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                gh-ost 是 GitHub 开源的在线更改 MySQL 表结构的工具github  https://github.com/github/gh-ost/从国内仓库下载速度会快点 https://gitee.com/mirrors/gh-o
+                                ###MySQL主从复制有那些好处1、做数据的热备，作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。2、架构的扩展。业务量越来越大，I/O访问频率过高，单机无法满足，此时做多库的存储，降低磁盘I/O访问的频率，
                                 
                             </div>
                             <div class="publish-info">
@@ -874,80 +937,24 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-ji-yu-docker-compose-pei-zhi-zhu-cong-fu-zhi-yi-zhu-yi-cong/">
+                        <a href="/2022/03/20/mysql-ji-yu-docker-de-an-zhuang-he-pei-zhi/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker-compose配置主从复制（一主一从）.md">
+                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker的安装和配置.md">
                                 
-                                <span class="card-title">mysql-基于docker-compose配置主从复制（一主一从）.md</span>
+                                <span class="card-title">mysql-基于docker的安装和配置.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ###MySQL主从复制有那些好处1、做数据的热备，作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。2、架构的扩展。业务量越来越大，I/O访问频率过高，单机无法满足，此时做多库的存储，降低磁盘I/O访问的频率，
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                        mysql运维操作
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"><span class="chip bg-color">mysql运维操作</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/mysql-bei-fen-shu-ju-biao-qie-ti-huan-wei-xin-de-kong-biao/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-备份数据表，且替换为新的空表.md">
-                                
-                                <span class="card-title">mysql-备份数据表，且替换为新的空表.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                CREATE TABLE  biz_cloudsign_sign_copy  like biz_cloudsign_sign;
-RENAME TABLE biz_cloudsign_sign    TO biz_cloudsign_sign
+                                ######docker-compose安装mysql
+version: &quot;2&quot;
+services:
+  mysql:
+   image: &quot;docker.io/mysql:5.7&quot;
+   envir
                                 
                             </div>
                             <div class="publish-info">
@@ -1056,24 +1063,20 @@ RENAME TABLE biz_cloudsign_sign    TO biz_cloudsign_sign
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/mysql-ji-yu-docker-de-an-zhuang-he-pei-zhi/">
+                        <a href="/2022/03/20/mysql-bei-fen-shu-ju-biao-qie-ti-huan-wei-xin-de-kong-biao/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-基于docker的安装和配置.md">
+                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql-备份数据表，且替换为新的空表.md">
                                 
-                                <span class="card-title">mysql-基于docker的安装和配置.md</span>
+                                <span class="card-title">mysql-备份数据表，且替换为新的空表.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ######docker-compose安装mysql
-version: &quot;2&quot;
-services:
-  mysql:
-   image: &quot;docker.io/mysql:5.7&quot;
-   envir
+                                CREATE TABLE  biz_cloudsign_sign_copy  like biz_cloudsign_sign;
+RENAME TABLE biz_cloudsign_sign    TO biz_cloudsign_sign
                                 
                             </div>
                             <div class="publish-info">

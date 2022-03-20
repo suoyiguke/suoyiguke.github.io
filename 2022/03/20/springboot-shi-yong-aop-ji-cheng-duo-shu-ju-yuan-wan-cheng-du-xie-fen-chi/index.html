@@ -926,20 +926,20 @@ public class UserServiceImpl extends ServiceImpl&lt;UserMapper, User&gt; impleme
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/springboot-shi-yong-fastjson-dai-ti-mo-ren-de-jackson/">
+                <a href="/2022/03/20/springboot-redis-shi-yong-zhi-shi-xian-spring-cache/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="springboot-使用fastjson代替默认的jackson.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="springboot-redis使用之实现Spring-Cache.md">
                         
-                        <span class="card-title">springboot-使用fastjson代替默认的jackson.md</span>
+                        <span class="card-title">springboot-redis使用之实现Spring-Cache.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            fastjson是国产的json解析工具，毫无疑问应该支持文档地址  https://www.w3cschool.cn/fastjson/github https://github.com/alibaba/fastjson
-###sprin
+                            spring给我们提供了缓存的封装，类似于事务管理一样。可以基于注解直接开箱即用。不需要复杂的配置。而且spring cache底层实现实现可以如下方式
+redis只是其中一种，如果工程内只配置了redis则以redis为cache的实现。
                         
                     </div>
                     <div class="publish-info">
@@ -976,19 +976,25 @@ public class UserServiceImpl extends ServiceImpl&lt;UserMapper, User&gt; impleme
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/springboot-shi-yong-guo-lu-qi/">
+                <a href="/2022/03/20/springboot-shi-yong-lan-jie-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="springboot-使用过滤器.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="springboot-使用拦截器.md">
                         
-                        <span class="card-title">springboot-使用过滤器.md</span>
+                        <span class="card-title">springboot-使用拦截器.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+天生我材必有用，千金散尽还复来
+
+创建拦截器类Interceptor1 、Interceptor2 、Interceptor3 ，它们仅仅是类名不同而已。并实现HandlerInterceptor 接口
+
+
+实现接口中的preHandle
                         
                     </div>
                     <div class="publish-info">

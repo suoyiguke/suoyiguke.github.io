@@ -640,24 +640,22 @@ mysql&gt; select trx_id,trx_state,trx_query,trx_operation_state,trx_concurrency_
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-fa-sheng-suo-deng-dai-chao-shi-san-chong-qing-kuang-zong-jie/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-11-zhi-innodb-buffer-pool-instances-she-zhi-duo-ge-huan-chong-chi-shi-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-发生锁等待超时三种情况总结.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md">
                         
-                        <span class="card-title">mysql-发生锁等待超时三种情况总结.md</span>
+                        <span class="card-title">mysql-参数调优（11）之innodb_buffer_pool_instances设置多个缓冲池实例.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、有事务长时间未提交查询正在活跃的事务
-SELECT * FROM information_schema.INNODB_TRX
+                            
+INNODB_BUFFER_POOL_INSTANCES 参数也是在高并发高负载下设置后会对性能有提升
 
-杀死指定 trx_tread_id 即可
-2、线上dml，修改表结构
-Waiting for table m
+MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量的手段。在5.5版本这个对提升吞吐量帮助很小，然后在MySQ
                         
                     </div>
                     <div class="publish-info">
@@ -694,21 +692,19 @@ Waiting for table m
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ke-xiu-gai-can-shu-he-zhi-du-can-shu/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-13-zhi-qi-ta-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql-可修改参数和只读参数.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-参数调优（13）之-其他参数.md">
                         
-                        <span class="card-title">mysql-可修改参数和只读参数.md</span>
+                        <span class="card-title">mysql-参数调优（13）之-其他参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###可修改参数和只读参数
-例如datadir就是一个read only 参数，它是不能进行在线修改的。需要停机，重启。
-
+                            SKIP_NAME_RESOLVE这一项不得不提及，因为仍然有很多人没有添加这一项。你应该添加skip_name_resolve来避免连接时DNS解析。大多数情况下你更改这个会没有什么感觉，因为大多数情况下DNS服务器解析会非常快。不过当D
                         
                     </div>
                     <div class="publish-info">

@@ -565,19 +565,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-shi-xiao-de-12-chong-chang-jing-zong-jie/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-mandatory-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="spring事务失效的12种场景-总结.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="spring事务管理之事务传播行为之实践MANDATORY-（三）.md">
                         
-                        <span class="card-title">spring事务失效的12种场景-总结.md</span>
+                        <span class="card-title">spring事务管理之事务传播行为之实践MANDATORY-（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            事务不生效1.方法访问权限问题，只支持public2.方法用final修饰，动态代理不能代理final方法3.方法内部调用，同一对象内调用没有使用代理，未被aop事务管理器控制4.未被spring管理5.多线程调用，事务管理内部使用thre
+                            
+纸上得来终觉浅，绝知此事要躬行
+
+这次的主角是    @Transactional(propagation= Propagation.MANDATORY )；调用者方法必须存在事务，不然报出IllegalTransactionStateE
                         
                     </div>
                     <div class="publish-info">
@@ -614,22 +617,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-mandatory-san/">
+                <a href="/2022/03/20/spring-guan-wang-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="spring事务管理之事务传播行为之实践MANDATORY-（三）.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="spring官网学习.md">
                         
-                        <span class="card-title">spring事务管理之事务传播行为之实践MANDATORY-（三）.md</span>
+                        <span class="card-title">spring官网学习.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-纸上得来终觉浅，绝知此事要躬行
+                            https://spring.io/guides
 
-这次的主角是    @Transactional(propagation= Propagation.MANDATORY )；调用者方法必须存在事务，不然报出IllegalTransactionStateE
                         
                     </div>
                     <div class="publish-info">

@@ -689,30 +689,26 @@ END
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-han-shu-zhi-liu-cheng-han-shu/">
+                <a href="/2022/03/20/mysql-han-shu-zhi-shu-zhi-chu-li-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-函数之流程函数.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-函数之数值处理函数.md">
                         
-                        <span class="card-title">mysql-函数之流程函数.md</span>
+                        <span class="card-title">mysql-函数之数值处理函数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-皇路当清夷，含和吐明庭
+在齐太史简，在晋董狐笔###最值######行最值
 
+SELECT GREATEST(3, 12, 34, 8, 25); 
+SELECT LEAST(3, 12, 34, 8, 25); 
 
-IF() 函数
-可使用“真”、“假” 两中情况替换第一个布尔值/表达式 参数
-
--- 真
-SELECT IF(TRUE,&#39;真&#39;,&#39;假&#39;)
-
--- 假
-SELECT IF(FALS
+######列最值
+SELECT MAX(a
                         
                     </div>
                     <div class="publish-info">
@@ -749,22 +745,20 @@ SELECT IF(FALS
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-fen-qu-partitions-zhi-fen-qu-fang-fa/">
+                <a href="/2022/03/20/mysql-fen-qu-shi-jian-zhi-an-yue-fen-fen-qu-ding-shi-zeng-jia-fen-qu-he-shan-chu-fen-qu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-分区PARTITIONS之分区方法.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-分区实践之按月份分区，定时增加分区和删除分区.md">
                         
-                        <span class="card-title">mysql-分区PARTITIONS之分区方法.md</span>
+                        <span class="card-title">mysql-分区实践之按月份分区，定时增加分区和删除分区.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-分区依据的字段必须是主键/唯一索引的组成部分，分区是为了快速定位数据，因此该字段的搜索频次较高应作为强检索字段，否则依照该字段分区毫无意义。
-
-联合分区键作为分区键只能保证在分区内唯一，不能实现全局唯一；dbt3.orders。如何实现全
+                            按月份分区，这样再使用分区字段时间来查询数据将会很快，因为这样只需要扫描指定的分区。
+1、创建表，并使用RANGE COLUMNS分区。按创建时间create_time字段分区;分区名使用p0、p1、p2、p3 .. 的形式；create_
                         
                     </div>
                     <div class="publish-info">

@@ -611,24 +611,20 @@ def is_number(s):
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-xian-cheng-bian-cheng/">
+                <a href="/2022/03/20/python-ce-shi-kuang-jia-selenium-zhi-ji-ben-huan-jing-da-jian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="python-线程编程.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="python测试框架selenium之基本环境搭建-一.md">
                         
-                        <span class="card-title">python-线程编程.md</span>
+                        <span class="card-title">python测试框架selenium之基本环境搭建-一.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###创建一个线程试试
-import threading
-from threading import Thread
-def sendx(str):
-    print(str)
-    t = threading.currentThread
+                            1、环境https://registry.npmmirror.com/binary.html?path=chromedriver/
+1、下载chromedriver.exe将chromedriver.exe放到py文件同目录下。安装谷歌浏览
                         
                     </div>
                     <div class="publish-info">
@@ -665,20 +661,25 @@ def sendx(str):
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-ce-shi-kuang-jia-selenium-zhi-ji-ben-huan-jing-da-jian-yi/">
+                <a href="/2022/03/20/python-ji-cheng-ri-zhi-mo-kuai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="python测试框架selenium之基本环境搭建-一.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python集成日志模块.md">
                         
-                        <span class="card-title">python测试框架selenium之基本环境搭建-一.md</span>
+                        <span class="card-title">python集成日志模块.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、环境https://registry.npmmirror.com/binary.html?path=chromedriver/
-1、下载chromedriver.exe将chromedriver.exe放到py文件同目录下。安装谷歌浏览
+                            ###python 代码
+import logging
+import os
+import re
+import sys
+#用于自动切换日志写入文件，保证单个日志文件不会太大
+from logging.handlers import Rotat
                         
                     </div>
                     <div class="publish-info">

@@ -570,22 +570,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-cheng-xu-liu-cheng-kong-zhi-bi-ji/">
+                <a href="/2022/03/20/python-shi-jian-cao-zuo-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python-程序流程控制笔记.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="python-时间操作笔记.md">
                         
-                        <span class="card-title">python-程序流程控制笔记.md</span>
+                        <span class="card-title">python-时间操作笔记.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######python 的if else的写法
-if category_id.find(&#39;英雄联盟&#39;) != -1:
-    category_id = 1
-elif category_id.find(&#39;王者荣耀&
+                            ######当前时间1、获得当前时间戳
+print(int(time.time()))
+
+2、格式化输出当前时间
+import time
+t = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, time
                         
                     </div>
                     <div class="publish-info">
@@ -622,24 +624,25 @@ elif category_id.find(&#39;王者荣耀&
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-xian-cheng-an-quan-wen-ti/">
+                <a href="/2022/03/20/python-pa-chong-kuang-jia-zhi-beautifulsoup/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="python-线程安全问题.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="python-爬虫框架之BeautifulSoup.md">
                         
-                        <span class="card-title">python-线程安全问题.md</span>
+                        <span class="card-title">python-爬虫框架之BeautifulSoup.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###两个线程并发累加一个全局变量
-理论上，最终得到的数据应该是2000000，而运行结果是少于这个值的
-import threading
-import time
-from threading import Thread
-global_nu
+                            html解析器 BeautifulSoup
+1、安装pip install beautifulsoup4 
+pip3 install lxml
+2、使用
+CSS选择器 优先使用了
+from bs4 import BeautifulSoup
+
                         
                     </div>
                     <div class="publish-info">

@@ -649,23 +649,24 @@ services:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/redis-chi-jiu-hua-shi-yong-aof-fang-shi-hui-fu-shu-ju/">
+                <a href="/2022/03/20/redis-shi-xian-dian-zan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="redis持久化-使用AOF方式恢复数据.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="redis实现点赞.md">
                         
-                        <span class="card-title">redis持久化-使用AOF方式恢复数据.md</span>
+                        <span class="card-title">redis实现点赞.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###如果将一个key remove掉，请问可以恢复吗？怎么恢复？可以恢复。如果开启了AOF方式的持久化，就将aof文件末尾的del命令日志删除，然后重启redis即可恢复。比如：
+                            用 Redis 存储两种数据
 
-删除一个key
+一种是记录点赞人、被点赞人、点赞状态的数据，另一种是每个-
+用户被点赞了多少次，做个简单的计数。
 
-编辑 appendonly.aof 文
+由于需要记录点赞人和被点赞人，还有点赞状态（点赞、取消点赞），还要固定时间间隔取出 Redis 中所有点赞数
                         
                     </div>
                     <div class="publish-info">

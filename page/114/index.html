@@ -341,23 +341,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/xian-cheng/" target="_blank">
+                    <a href="/2022/03/20/suo-yin-fu-gai-cai-ce/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="线程.md">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="索引覆盖-猜测.md">
                             
-                            <span class="card-title">线程.md</span>
+                            <span class="card-title">索引覆盖-猜测.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            package com.ruoyi.common.utils;
-
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.Executio
+                            出现Using index condition、null 则表示当前建立的索引无法满足select查询字段的需要，需要回表查了。此时效率比较低；
+###索引覆盖出现的判断依据 
+查* ，出现 Using index condition
+查i
                             
                         </div>
                         <div class="publish-info">
@@ -368,8 +368,8 @@ import java.util.concurrent.Executio
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="post-category" target="_blank">
-                                    工具类
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                                 
                                 
@@ -380,8 +380,8 @@ import java.util.concurrent.Executio
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/" target="_blank">
-                            <span class="chip bg-color">工具类</span>
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
                         </a>
                         
                     </div>
@@ -490,6 +490,58 @@ import java.util.concurrent.Executio
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/xian-cheng-chi-yuan-ma-fen-xi/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="线程池源码分析.md">
+                            
+                            <span class="card-title">线程池源码分析.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            1、 Executors.newFixedThreadPool
+
+minCore和maxCore 数量相同
+使用LinkedBlockingQueue 无界队列。
+
+活跃线程数nThreads，可以无限往池里加任务。但当前最多只有nThre
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/juc/" target="_blank">
+                            <span class="chip bg-color">juc</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/xian-cheng-chi/" target="_blank">
                         <div class="card-image">
                             
@@ -535,58 +587,6 @@ def sayhello(str):
                         
                         <a href="/tags/python/" target="_blank">
                             <span class="chip bg-color">python</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/xian-cheng-chi-yuan-ma-fen-xi/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="线程池源码分析.md">
-                            
-                            <span class="card-title">线程池源码分析.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            1、 Executors.newFixedThreadPool
-
-minCore和maxCore 数量相同
-使用LinkedBlockingQueue 无界队列。
-
-活跃线程数nThreads，可以无限往池里加任务。但当前最多只有nThre
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
                         </a>
                         
                     </div>
@@ -746,53 +746,6 @@ minCore和maxCore 数量相同
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/lao-sheng-chang-tan-chong-fang-gong-ji-de-gai-nian-bi-kan-pian/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="老生常谈重放攻击的概念(必看篇).md">
-                            
-                            <span class="card-title">老生常谈重放攻击的概念(必看篇).md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###重放攻击的概念根据百科的解释：重放攻击（Replay Attacks）又称重播攻击、回放攻击或新鲜性攻击（Freshness Attacks），是指攻击者发送一个目的主机已接收过的包，来达到欺骗系统的目的，主要用于身份认证过程，破坏认
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category" target="_blank">
-                                    网络安全
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" target="_blank">
-                            <span class="chip bg-color">网络安全</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/zi-dong-zhuang-xiang-yu-chai-xiang/" target="_blank">
                         <div class="card-image">
                             
@@ -835,6 +788,53 @@ Integer i = 10;  //装箱int n = i;   //拆箱上面这两行代码对应的字�
                         
                         <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
                             <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/lao-sheng-chang-tan-chong-fang-gong-ji-de-gai-nian-bi-kan-pian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="老生常谈重放攻击的概念(必看篇).md">
+                            
+                            <span class="card-title">老生常谈重放攻击的概念(必看篇).md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ###重放攻击的概念根据百科的解释：重放攻击（Replay Attacks）又称重播攻击、回放攻击或新鲜性攻击（Freshness Attacks），是指攻击者发送一个目的主机已接收过的包，来达到欺骗系统的目的，主要用于身份认证过程，破坏认
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category" target="_blank">
+                                    网络安全
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" target="_blank">
+                            <span class="chip bg-color">网络安全</span>
                         </a>
                         
                     </div>

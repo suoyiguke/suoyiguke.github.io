@@ -672,24 +672,26 @@ class MyThread implements Runnable &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/xian-cheng-chi-yuan-ma-fen-xi/">
+                <a href="/2022/03/20/xian-cheng-chi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="线程池源码分析.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="线程池.md">
                         
-                        <span class="card-title">线程池源码分析.md</span>
+                        <span class="card-title">线程池.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 Executors.newFixedThreadPool
+                            10个线程的线程池去执行一个任务
+import threading
+import time
+import threadpool
 
-minCore和maxCore 数量相同
-使用LinkedBlockingQueue 无界队列。
 
-活跃线程数nThreads，可以无限往池里加任务。但当前最多只有nThre
+def sayhello(str):
+    print(threading.currentThread()
                         
                     </div>
                     <div class="publish-info">
@@ -700,8 +702,8 @@ minCore和maxCore 数量相同
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -711,8 +713,8 @@ minCore和maxCore 数量相同
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

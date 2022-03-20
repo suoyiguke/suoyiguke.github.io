@@ -572,26 +572,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-yun-wei-cao-zuo-zhi-sql-tong-ji/">
+                <a href="/2022/03/20/mysql-yun-wei-ming-ling-zhi-tong-guo-show-status-liao-jie-ge-chong-sql-de-zhi-xing-xiao-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-运维操作之sql统计.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md">
                         
-                        <span class="card-title">mysql-运维操作之sql统计.md</span>
+                        <span class="card-title">mysql-运维命令之通过SHOW-STATUS了解各种sql的执行效率.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###统计信息(SQL维度)1、执行次数最多的SQL
-SELECT
- DIGEST_TEXT,
- COUNT_STAR,
- FIRST_SEEN,
- LAST_SEEN 
-FROM
- `performance_schema`.events_
+                            ######SHOW STATUS LIKE ‘%Com_%’Com_admin_commands    0Com_assign_to_keycache    0Com_alter_db    1Com_alter_db_upgrade  
                         
                     </div>
                     <div class="publish-info">
@@ -628,25 +621,21 @@ FROM
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-guan-li-sql/">
+                <a href="/2022/03/20/mysql-lian-jie-shu-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-连接管理sql.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-连接属性.md">
                         
-                        <span class="card-title">mysql-连接管理sql.md</span>
+                        <span class="card-title">mysql-连接属性.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、显示当前正在执行的MySQL连接。
-show processlist;
+                            SHOW PROCESSLIST;
 
-###2、查看每个ip的当前连接数
-合并ip
-SELECT
-    SUBSTRING_INDEX( HOST, &#39;:&#39;, 1 ) AS i
+
                         
                     </div>
                     <div class="publish-info">

@@ -621,19 +621,22 @@ MySQL 5.5引入了缓冲实例作为减小内部锁争用来提高MySQL吞吐量
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-13-zhi-qi-ta-can-shu/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-12-zhi-innodb-thread-concurrency-innodb-concurrency-tickets-he-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-参数调优（13）之-其他参数.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md">
                         
-                        <span class="card-title">mysql-参数调优（13）之-其他参数.md</span>
+                        <span class="card-title">mysql-参数调优（12）之innodb_thread_concurrency、innodb_concurrency_tickets-合理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SKIP_NAME_RESOLVE这一项不得不提及，因为仍然有很多人没有添加这一项。你应该添加skip_name_resolve来避免连接时DNS解析。大多数情况下你更改这个会没有什么感觉，因为大多数情况下DNS服务器解析会非常快。不过当D
+                            
+设置这个参数在mysql低负载时没有效果，建议在mysql非常繁忙时可以关注并配置
+
+你可能会经常听到应该设置 innodb_thread_concurrency=0 （表示不进行并发线程数量控制）然后就不要管它了。不过这个只在低负载服务
                         
                     </div>
                     <div class="publish-info">

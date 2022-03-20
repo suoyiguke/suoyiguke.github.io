@@ -861,23 +861,23 @@ https://www.jianshu.com/p/c6fa925540c2
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lock-jia-suo-fang-shi-er/">
+                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-ji-ben-gai-nian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="juc---Lock接口之lock()加锁方式（二）.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="juc---Atomic原子类基本概念（一）.md">
                         
-                        <span class="card-title">juc---Lock接口之lock()加锁方式（二）.md</span>
+                        <span class="card-title">juc---Atomic原子类基本概念（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-理解万岁
+天道酬勤
 
-######如何正确的使用lock.lock()方法在使用阻塞等待获取锁的方式中，必须在try代码块之外，并且在加锁方法与try代码块之间没有任何可能抛出异常的方法调用，避免加锁成功后，在finally中无法解锁。
-1、如果在
+我们知道，多线程并发地执行i++，因为i++操作不具备原子性，可能导致更新丢失。如A线程和B线程同时执行i++，两个线程读到的i的值都为1，均在1的基础上加1。那么经过两个线程操作之后可能i不等于3，而是等于2。
+因为A和B线
                         
                     </div>
                     <div class="publish-info">
@@ -914,19 +914,24 @@ https://www.jianshu.com/p/c6fa925540c2
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-exchanger-xian-cheng-jian-jiao-huan-shu-ju/">
+                <a href="/2022/03/20/juc-list-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="juc---Exchanger-线程间交换数据.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---List的线程不安全性和解决方案.md">
                         
-                        <span class="card-title">juc---Exchanger-线程间交换数据.md</span>
+                        <span class="card-title">juc---List的线程不安全性和解决方案.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ######1、启动20个线程对ArrayList做add剿操作
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+class TestLo
                         
                     </div>
                     <div class="publish-info">

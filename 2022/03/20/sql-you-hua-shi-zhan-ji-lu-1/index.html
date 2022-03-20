@@ -569,22 +569,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/sql-ji-yi-ci-sql-xie-fang-fa-you-hua-cha-xun-mei-ge-fen-zu-zui-xin-de-ji-lu-2020-11-3/">
+                <a href="/2022/03/20/sqlalchemy-bi-ji-yi-jin-xing-yuan-sheng-sql-de-zeng-shan-gai-cha/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="sql-记一次sql写方法优化：-查询每个分组最新的记录--2020-11-3.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="sqlalchemy笔记一：进行原生sql的增删改查.md">
                         
-                        <span class="card-title">sql-记一次sql写方法优化：-查询每个分组最新的记录--2020-11-3.md</span>
+                        <span class="card-title">sqlalchemy笔记一：进行原生sql的增删改查.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            biz_cloudsign_login是登录记录， 表数据28万。需求是：查询每个人最新登录记录。 
-表结构
-CREATE TABLE `biz_cloudsign_login` (
-`id`  bigint(20) NOT NULL AU
+                            pip安装sqlalchemy和pymysqlpip install sqlalchemypip install pymysql
+
+这个pymysql好像没用到，但是不安装它程序就报错
+
+###创建表
+CREATE TABLE `sqlal
                         
                     </div>
                     <div class="publish-info">
@@ -595,8 +597,8 @@ CREATE TABLE `biz_cloudsign_login` (
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -606,8 +608,8 @@ CREATE TABLE `biz_cloudsign_login` (
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -621,22 +623,21 @@ CREATE TABLE `biz_cloudsign_login` (
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/sql-xue-xi-ji-lu/">
+                <a href="/2022/03/20/sqlalchemy-bi-ji-er-jin-xing-orm-de-zeng-shan-gai-cha/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="sql学习记录.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="sqlalchemy笔记二：进行ORM的增删改查.md">
                         
-                        <span class="card-title">sql学习记录.md</span>
+                        <span class="card-title">sqlalchemy笔记二：进行ORM的增删改查.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SQL89
-SQL921、出现out join
-不去重select * from x join y on x.id=y.id 
-IN子查询会去重select * from x where   id in (select id from y)
+                            
+from sqlalchemy import create_engine, Column, Integer, MetaData, String
+from sqlalchemy.ext.declarative import declarat
                         
                     </div>
                     <div class="publish-info">
@@ -647,8 +648,8 @@ IN子查询会去重select * from x where   id in (select id from y)
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -658,8 +659,8 @@ IN子查询会去重select * from x where   id in (select id from y)
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

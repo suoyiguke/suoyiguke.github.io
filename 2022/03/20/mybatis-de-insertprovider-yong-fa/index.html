@@ -645,21 +645,19 @@ public class BizCoordinationSignSqlProvider &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mybatis-zhu-jie-xing-shi-chuan-duo-ge-list/">
+                <a href="/2022/03/20/mybatis-yuan-ma-zhi-sqlsession-xian-cheng-bu-an-quan-jie-jue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mybatis-注解形式传多个list.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mybatis-源码之-SqlSession线程不安全解决.md">
                         
-                        <span class="card-title">mybatis-注解形式传多个list.md</span>
+                        <span class="card-title">mybatis-源码之-SqlSession线程不安全解决.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                                @Select(&quot;&lt;script&gt;&quot;+
-            &quot;SELECT\n&quot; +
-            &quot;      concat(b.k3_code,&#39
+                            ###默认使用的session工厂类:DefaultSqlSessionFactoryorg.apache.ibatis.session.defaults.DefaultSqlSessionFactory#openSessionFromDa
                         
                     </div>
                     <div class="publish-info">
@@ -696,19 +694,19 @@ public class BizCoordinationSignSqlProvider &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mybatis-yuan-ma-zhi-sqlsession-xian-cheng-bu-an-quan-jie-jue/">
+                <a href="/2022/03/20/mybatis-plus-zhong-de-keng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mybatis-源码之-SqlSession线程不安全解决.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mybatis_plus-中的坑.md">
                         
-                        <span class="card-title">mybatis-源码之-SqlSession线程不安全解决.md</span>
+                        <span class="card-title">mybatis_plus-中的坑.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###默认使用的session工厂类:DefaultSqlSessionFactoryorg.apache.ibatis.session.defaults.DefaultSqlSessionFactory#openSessionFromDa
+                            1、必须加.last(“limit 1”) 否则可能 selectOne()报错 源码：JgOrderTemplate template = templateService.query().eq(“template_no”, templat
                         
                     </div>
                     <div class="publish-info">

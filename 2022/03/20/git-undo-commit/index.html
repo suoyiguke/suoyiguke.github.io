@@ -561,21 +561,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/git-ssh/">
+                <a href="/2022/03/20/git-fock-zhu-ku-dao-ben-yong-hu-xia-jin-xing-ti-pull-request/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="git-ssh.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="git-fock-主库到本用户下。进行提pull-request.md">
                         
-                        <span class="card-title">git-ssh.md</span>
+                        <span class="card-title">git-fock-主库到本用户下。进行提pull-request.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             ssh-keygen -t rsa -C &quot;yinkai@foonsu.com&quot;
+                            本用户下的库需要和主仓库进行同步代码，将仓库check到本地。就要 添加一个remote
 
-
+git remote add repo https://gitee.com/sglkj/identity-authentication-servic
                         
                     </div>
                     <div class="publish-info">
@@ -612,22 +612,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/git-sheng-cheng-bu-ding-he-da-bu-ding/">
+                <a href="/2022/03/20/git-push-shi-cun-zai-hen-duo-ge-commit-jie-jue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="git-生成补丁和打补丁.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="git-push时存在很多个commit解决.md">
                         
-                        <span class="card-title">git-生成补丁和打补丁.md</span>
+                        <span class="card-title">git-push时存在很多个commit解决.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            生成补丁
-打补丁git apply sql_log_redis-config_config_config.patch
+                            ###在idea中直接 fetch一下就行了
 
-使用打补丁功能可以方便的应用一些不需要提交的代码和配置。比如热部署配置，Redis配置改为localhost等一些文件修
+###命令中新开分支，直接复制指定的commit代码1、先创建分支并切换之
+git checkout -b test3  remotes/origin/develop
+git branch 
+
                         
                     </div>
                     <div class="publish-info">

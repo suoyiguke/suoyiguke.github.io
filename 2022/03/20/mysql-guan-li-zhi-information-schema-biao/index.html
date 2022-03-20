@@ -643,80 +643,31 @@ INNODB_SYS_TABLESTATS
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-jian-kong-yu-ju-guan-li-ping-tai-percona-pmm/">
+                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-xia-tui/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-监控语句管理平台Percona-pmm.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mysql-索引优化特性之索引下推.md">
                         
-                        <span class="card-title">mysql-监控语句管理平台Percona-pmm.md</span>
+                        <span class="card-title">mysql-索引优化特性之索引下推.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-zabbix、Lepus、PMM 都是比较出名的数据库监控软件
+索引下推优化默认开启，索引下推 和联合索引有密切的关系，它让组合索引里的范围条件变得有意义
 
-Percona监控和管理（PMM）是一个用于管理和监控MySQL和MongoDB性能的开源平台。 它由Percona与托管数据库服务，支持和咨询领域的专家合作开发。 PMM
+查询开启状态
+SHOW VARIABLES LIKE &#39;%optimizer_switch%&#39;
+
+我们可以通过修改系统变量opt
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-mrr/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-索引优化特性之MRR.md">
-                        
-                        <span class="card-title">mysql-索引优化特性之MRR.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            https://dev.mysql.com/doc/refman/8.0/en/mrr-optimization.html
-
-MRR针对于辅助索引上的范围查询进行优化,收集辅助索引对应主键rowid。进行排序后回表查询，随机IO转顺序IO
-
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -734,6 +685,60 @@ MRR针对于辅助索引上的范围查询进行优化,收集辅助索引对应�
                     
                     <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
                         <span class="chip bg-color">mysql基本</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-suo-yin-yuan-li/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-索引原理.md">
+                        
+                        <span class="card-title">mysql-索引原理.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+B+ 树： 
+
+通过多叉来减少树的深度，提高查询效率
+
+多叉平衡树1、非叶子节点不存储data，只存储索引字段（冗
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

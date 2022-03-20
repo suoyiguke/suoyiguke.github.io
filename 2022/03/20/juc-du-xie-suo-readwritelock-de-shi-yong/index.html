@@ -770,20 +770,22 @@ public class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-ji-ben-gai-nian/">
+                <a href="/2022/03/20/juc-zu-sai-dui-lie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="juc---线程池之基本概念.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---阻塞队列.md">
                         
-                        <span class="card-title">juc---线程池之基本概念.md</span>
+                        <span class="card-title">juc---阻塞队列.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###为什么使用线程池？线程池的优势：线程池做的工作只要是控制运行的线程数量，处理过程中将任务放入队列，然后在线程创建后启动这些任务，如果线程数量超过了最大数量，超出数量的线程排队等候，等其他线程执行完毕，再从队列中取出任务来执行。
-它的主
+                            ###什么是阻塞队列
+
+当队列是空的，从队列中获取元素的操作将会被阻塞。直到其他线程往空的队列里插入新的元素的时候解除阻塞，继续获取
+当队列是满的，从队列中添加元素的操作将会被阻塞。直到其他线程从队列里移除一个或多个元素或者完全清空的时候解
                         
                     </div>
                     <div class="publish-info">

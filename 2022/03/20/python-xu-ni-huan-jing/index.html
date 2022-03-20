@@ -563,23 +563,25 @@ pip install virtualenvpip install virtualenvwrapper-win
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-jian-ce-m3u8-shi-pin-wen-jian-shi-fou-ke-bo/">
+                <a href="/2022/03/20/python-ji-cheng-ri-zhi-mo-kuai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="python检测m3u8视频文件是否可播.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python集成日志模块.md">
                         
-                        <span class="card-title">python检测m3u8视频文件是否可播.md</span>
+                        <span class="card-title">python集成日志模块.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一般m3u8格式只是一个索引文件，没办法直接根据这个文件来判断。因为视频不能播但是也能下载到这个文件
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-MEDIA-SEQUENCE:0
-#EXT-X-ALLOW-CACHE:Y
+                            ###python 代码
+import logging
+import os
+import re
+import sys
+#用于自动切换日志写入文件，保证单个日志文件不会太大
+from logging.handlers import Rotat
                         
                     </div>
                     <div class="publish-info">
@@ -616,25 +618,20 @@ pip install virtualenvpip install virtualenvwrapper-win
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-ji-cheng-ri-zhi-mo-kuai/">
+                <a href="/2022/03/20/py-yi-lai-an-zhuang-bu-liao-zhi-usr-bin-patch-zhao-bu-dao-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python集成日志模块.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="py依赖安装不了之--usr-bin-patch找不到问题.md">
                         
-                        <span class="card-title">python集成日志模块.md</span>
+                        <span class="card-title">py依赖安装不了之--usr-bin-patch找不到问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###python 代码
-import logging
-import os
-import re
-import sys
-#用于自动切换日志写入文件，保证单个日志文件不会太大
-from logging.handlers import Rotat
+                            解决
+yum install wget gcc gcc-c++ flex bison make bind bind-libs bind-utils openssl openssl-devel perl quota libaio libcom
                         
                     </div>
                     <div class="publish-info">

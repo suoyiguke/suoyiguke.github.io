@@ -561,83 +561,29 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-fu-wu-qi-can-shu-diao-you-hui-zong/">
+                <a href="/2022/03/20/mysql-cha-xun-yu-ju-ru-he-rang-lian-he-suo-yin-ji-yong-zai-order-by-you-yong-zai-group-by/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-服务器参数调优汇总.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md">
                         
-                        <span class="card-title">mysql-服务器参数调优汇总.md</span>
+                        <span class="card-title">mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、innodb_buffer_pool_size，Innodb存储引擎缓存池大小innodb_buffer_pool_siz是对于Innodb来说最重要的一个配置，如果所有的表用的都是Innodb，那么甚至建议将该值设置到物理
+                            思考：如何将idx_user_id_updated_at索引同时使用在order by 和 group by
+EXPLAIN SELECT
+    T0.user_id,
+    T0.user_name,
+    T0.employee_
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mysql-cha-xun-suo-yin-shi-yong-qing-kuang-fen-xi-bu-chong/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-查询索引使用情况分析补充.md">
-                        
-                        <span class="card-title">mysql-查询索引使用情况分析补充.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ###我的mysql版本
-SELECT VERSION()
-
-
-###准备数据
-/*
- Navicat Premium Data Transfer
-
- Source Server         : mysql
- Source Server
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -655,6 +601,59 @@ SELECT VERSION()
                     
                     <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
                         <span class="chip bg-color">mysql基本</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-si-suo-pai-cha/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-死锁排查.md">
+                        
+                        <span class="card-title">mysql-死锁排查.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ###1、当出现事务执行阻塞时，首先想到查询当前MySQL进程状态：
+SHOW FULL PROCESSLIST;
+
+###2、查看当前的死锁线程id和导致的sql
+SELECT * FROM PERFORMANCE_SCHEMA.even
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

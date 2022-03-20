@@ -576,22 +576,20 @@ while (true)&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jvm-guan-yu-string-zi-fu-chuan-de-wen-ti-da-zong-jie/">
+                <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ben-di-fang-fa-zhan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="jvm-关于String字符串的问题大总结.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md">
                         
-                        <span class="card-title">jvm-关于String字符串的问题大总结.md</span>
+                        <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、String str = new String(“abc”);  创建了几个字符串对象？
-1个或者2个。
-
-若字符串常量池中未找到”abc”这个对象，那么分别在堆和字符串常量池中创建一个对象，则共创建2个对象;若字符串常量池中已经存在了
+                            本地方法栈（Native Method Stacks） 与虚拟机栈所发挥的作用是非常相似的， 其区别只是虚拟机栈为虚拟机执行Java方法（也就是字节码） 服务， 而本地方法栈则是为虚拟机使用到的本（Native）方法服务。
+《Java虚拟机
                         
                     </div>
                     <div class="publish-info">
@@ -628,22 +626,22 @@ while (true)&#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-ming-ling/">
+                <a href="/2022/03/20/jvm-guan-yu-string-zi-fu-chuan-de-wen-ti-da-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="jvm-命令.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="jvm-关于String字符串的问题大总结.md">
                         
-                        <span class="card-title">jvm-命令.md</span>
+                        <span class="card-title">jvm-关于String字符串的问题大总结.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            jps -l查看所有java进程对应的pid
-jstack 11104（pid）
-查看某个java进程的各个时间段线程堆栈快照
+                            1、String str = new String(“abc”);  创建了几个字符串对象？
+1个或者2个。
 
+若字符串常量池中未找到”abc”这个对象，那么分别在堆和字符串常量池中创建一个对象，则共创建2个对象;若字符串常量池中已经存在了
                         
                     </div>
                     <div class="publish-info">

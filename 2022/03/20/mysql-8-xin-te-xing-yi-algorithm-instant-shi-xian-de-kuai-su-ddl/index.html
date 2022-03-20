@@ -650,21 +650,19 @@ ADD COLUMN `ggg` varchar(255) NULL,algorithm=instant;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-45-jiang-bi-ji-di-yi-ke/">
+                <a href="/2022/03/20/mysql-45-jiang-bi-ji-di-san-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-45讲笔记-第一课.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-45讲笔记-第三课.md">
                         
-                        <span class="card-title">mysql-45讲笔记-第一课.md</span>
+                        <span class="card-title">mysql-45讲笔记-第三课.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-###MySQL的框架有几个组件, 各是什么作用?连接器–&gt;查询缓存—&gt;分析器–&gt;优化器–&gt;执行器—&gt;存储引擎
-连接器： 登录权限验证查询缓存： 命中则直接返回结果分析器：词法分析、语法分析优化器：生成执行计
+                            1、务的特性：原子性、一致性、隔离性、持久性2、多事务同时执行的时候，可能会出现的问题：脏读、不可重复读、幻读3、事务隔离级别：读未提交、读提交、可重复读、串行化4、不同事务隔离级别的区别：读未提交：一个事务还未提交，它所做的变更就可以被别
                         
                     </div>
                     <div class="publish-info">
@@ -701,19 +699,20 @@ ADD COLUMN `ggg` varchar(255) NULL,algorithm=instant;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-5-7-xin-te-xing-zhi-xu-ni-lie-generated-columns/">
+                <a href="/2022/03/20/mysql-8-xin-te-xing-er-ddl-cao-zuo-de-yuan-zi-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-5-7-新特性之-虚拟列-Generated-columns.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql-8-新特性二DDL操作的原子化.md">
                         
-                        <span class="card-title">mysql-5-7-新特性之-虚拟列-Generated-columns.md</span>
+                        <span class="card-title">mysql-8-新特性二DDL操作的原子化.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            有时候需要对字段上加函数然后进行GROUP BY。使用执行分析，发现出现  Using temporary， 分组条件并没有走索引。因为mysql 5.7 的函数会导致索引失效。我们可以通过添加一个冗余字段来保存函数的计算结果，然后添加索引
+                            https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html
+MySQL 8.0支持原子数据定义语言(DDL)语句。这个特性被称为原子DDL。原子DDL语句将数据字典更新、存储引擎操作和与D
                         
                     </div>
                     <div class="publish-info">

@@ -910,27 +910,24 @@ GROUP BY
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-you-hua-zhi-limit-fen-ye-you-hua/">
+                <a href="/2022/03/20/mysql-sql-you-hua-zhi-count-cha-xun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-sql优化之-limit-分页优化.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-sql优化之-COUNT()-查询.md">
                         
-                        <span class="card-title">mysql-sql优化之-limit-分页优化.md</span>
+                        <span class="card-title">mysql-sql优化之-COUNT()-查询.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-在秦张良椎，在汉苏武节
+为张睢阳齿，为颜常山舌。
 
-LIMIT 分页性能问题
-问题sql： 普通limit
-EXPLAIN SELECT *  FROM emp ORDER BY id LIMIT 5000000,10 
-
-
-问题sql执行时间 8.231秒，存在
+###关于COUNT()函数的几个谬误的纠正
+1、COUNT(*) 其实不存在性能问题!
+当我们使用COUNT(*)来统计返回结果集的行数的时候，这种情况下通配符 * 并不会像我们猜想的那样扩展所有的列，实际上
                         
                     </div>
                     <div class="publish-info">
@@ -967,20 +964,21 @@ EXPLAIN SELECT *  FROM emp ORDER BY id LIMIT 5000000,10
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-sql-xing-neng-tong-ji-he-zhi-xing-shi-jian-pou-xi/">
+                <a href="/2022/03/20/mysql-sql-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-sql性能统计和执行时间剖析.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-sql编程.md">
                         
-                        <span class="card-title">mysql-sql性能统计和执行时间剖析.md</span>
+                        <span class="card-title">mysql-sql编程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###查看最近执行的的sql耗时
-使用 SHOW PROFILES可以得到最近执行的sql的执行时间。比如，要比较两种sql的执行时间。可以这样做，注意中间需要使用RESET QUERY CACHE; 清除QUERY CACHE缓存避免影响
+                            mysql的sql编程一般使用在 存储过程/触发器/事件 等sql程序中。
+###DECLARE 变量申明 
+1、使用DECLARE 语句申明变量，而不是使用@x 形式的用户变量。因为用户变量的作用域为当前连接，范围比较大。而DECLARE
                         
                     </div>
                     <div class="publish-info">

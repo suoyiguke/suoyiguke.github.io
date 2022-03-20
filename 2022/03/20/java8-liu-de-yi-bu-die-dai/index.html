@@ -691,19 +691,22 @@ map.put(&quot;isSelect&quot;, Objects.equals(map.get(&quot;supplierNo&quot;), mb
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java8-xin-te-xing-zhi-han-shu-shi-jie-kou-function-consumer-supplier-predicate/">
+                <a href="/2022/03/20/java8-map-he-flatmap-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java8-新特性之函数式接口Function、Consumer、Supplier、Predicate.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java8-map和flatMap区别.md">
                         
-                        <span class="card-title">java8-新特性之函数式接口Function、Consumer、Supplier、Predicate.md</span>
+                        <span class="card-title">java8-map和flatMap区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java8引入了四大函数式接口：Function、Consumer、Supplier、Predicate；这几个接口在Optional类中有大量应用，之前我们刚好学习了Optional的用法 https://www.jianshu.com/
+                            我们先来了解什么是流的扁平化
+对比下面两个例子，观察他们的输出结果eg1
+   public static void main(String[] args) &#123;
+        List&lt;String&gt; list = 
                         
                     </div>
                     <div class="publish-info">
@@ -740,26 +743,23 @@ map.put(&quot;isSelect&quot;, Objects.equals(map.get(&quot;supplierNo&quot;), mb
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java8-xin-te-xing-zhi-localdate/">
+                <a href="/2022/03/20/java8-jian-tou-han-shu-he-fang-fa-yin-yong-lambda-biao-da-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java8-新特性之LocalDate.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java8-箭头函数和方法引用、Lambda表达式.md">
                         
-                        <span class="card-title">java8-新特性之LocalDate.md</span>
+                        <span class="card-title">java8-箭头函数和方法引用、Lambda表达式.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是对java.util.Date强有力的补充，解决了 Date 类的大部分痛点：
+                            filter(p -&gt; p.getAge()&gt;18)
 
-非线程安全
-时区处理麻烦
-各种格式化、和时间计算繁琐
-设计有缺陷，Date 类同时包含日期和时间；还有一个 java.sql.Date，容易混淆。
-
-ja
+p方法参数 -&gt; p.getAge()&gt;18 方法内容
+这里是将整个箭头函数作为参数传递给map方法。map方法源码如下：
+   public&lt;U&gt;
                         
                     </div>
                     <div class="publish-info">

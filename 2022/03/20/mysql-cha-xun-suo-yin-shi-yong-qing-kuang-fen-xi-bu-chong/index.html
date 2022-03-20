@@ -689,19 +689,20 @@ EXPLAIN SELECT * FROM test where d=&#39;a1&#39; and c = &#39;b1&#39; and b = &#3
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-cha-xun-dao-chu-wen-jian/">
+                <a href="/2022/03/20/mysql-fu-wu-qi-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-查询导出文件.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-服务器参数.md">
                         
-                        <span class="card-title">mysql-查询导出文件.md</span>
+                        <span class="card-title">mysql-服务器参数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             mysql -Ne “select argument from mysql.general_log where thread_id =7”&gt;/tmp/rs.txt
+                            次命令每时每刻都在变 show STATUS
+1、Queries 发生了多少次查询   ===&gt; 每秒请求数2、Threads_connected 有几个线程过来连接3、Threads_running 有几个线程在工作
 
                         
                     </div>
@@ -739,23 +740,26 @@ EXPLAIN SELECT * FROM test where d=&#39;a1&#39; and c = &#39;b1&#39; and b = &#3
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-cha-xun-yu-ju-ru-he-rang-lian-he-suo-yin-ji-yong-zai-order-by-you-yong-zai-group-by/">
+                <a href="/2022/03/20/mysql-cha-xun-huan-cun-query-cache/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="mysql-查询缓存-query_cache.md">
                         
-                        <span class="card-title">mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md</span>
+                        <span class="card-title">mysql-查询缓存-query_cache.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            思考：如何将idx_user_id_updated_at索引同时使用在order by 和 group by
-EXPLAIN SELECT
-    T0.user_id,
-    T0.user_name,
-    T0.employee_
+                            ###mysql开启查询缓存
+在[mysqld]段中配置query_cache_type：
+[mysqld]
+query_cache_type = 2
+
+
+  0：不开启
+  1：开启，默认缓存所有，需要在SQL语句中增加select sq
                         
                     </div>
                     <div class="publish-info">

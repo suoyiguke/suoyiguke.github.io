@@ -606,22 +606,27 @@ class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-ruo-yin-yong-si/">
+                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-cha-kan-gc-ri-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="JAVA-垃圾回收之-弱引用（四）.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JAVA-垃圾回收之-查看GC日志.md">
                         
-                        <span class="card-title">JAVA-垃圾回收之-弱引用（四）.md</span>
+                        <span class="card-title">JAVA-垃圾回收之-查看GC日志.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-学不可以已
+慢慢尝试着放缓说话的速度，留给自己思考时间的同时也能让对方听的f清楚###复杂日志在idea中配置
 
-弱引用也是用来描述那些非必须对象， 但是它的强度比软引用更弱一些，软引用需要等到jvm堆内存实在不够了才会被回收。 而被弱引用关联的对象只能生存到下一次垃圾收集发生为止。 当垃圾收集器开始工作， 无论当前内存是否足够， 都会
+-Xms1024m -Xmx1024m -XX:+PrintGCDetails
+
+
+###从打印的堆内存结构可以看出一些信息
+
+PSYo
                         
                     </div>
                     <div class="publish-info">

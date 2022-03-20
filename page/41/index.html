@@ -539,54 +539,6 @@ static 一般只在第一次new时执行，而new这个动作时可以控制的
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ben-di-fang-fa-zhan/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md">
-                            
-                            <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            本地方法栈（Native Method Stacks） 与虚拟机栈所发挥的作用是非常相似的， 其区别只是虚拟机栈为虚拟机执行Java方法（也就是字节码） 服务， 而本地方法栈则是为虚拟机使用到的本（Native）方法服务。
-《Java虚拟机
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/jvm/" target="_blank">
-                            <span class="chip bg-color">jvm</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/jvm-shen-ru-li-jie-jvm-g1-gc-xue-xi-bi-ji-zhi-finalize-fang-fa-he-finalization-ji-zhi/" target="_blank">
                         <div class="card-image">
                             
@@ -729,20 +681,74 @@ static 一般只在第一次new时执行，而new这个动作时可以控制的
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-cheng-xu-ji-shu-qi/" target="_blank">
+                    <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-ben-di-fang-fa-zhan/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之程序计数器.md">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md">
                             
-                            <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之程序计数器.md</span>
+                            <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之本地方法栈.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            程序计数器（Program Counter Register） 是一块较小的内存空间， 它可以看作是当前线程所执行的字节码的行号指示器。 在Java虚拟机的概念模型里[1]， 字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行
+                            本地方法栈（Native Method Stacks） 与虚拟机栈所发挥的作用是非常相似的， 其区别只是虚拟机栈为虚拟机执行Java方法（也就是字节码） 服务， 而本地方法栈则是为虚拟机使用到的本（Native）方法服务。
+《Java虚拟机
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/jvm/" target="_blank">
+                            <span class="chip bg-color">jvm</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/jvm-zhi-zao-oom-yi-chang/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="jvm-制造OOM异常.md">
+                            
+                            <span class="card-title">jvm-制造OOM异常.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ###能够导致OutOfMemoryError的代码先设置
+-Xms10m -Xmx10m -XX:+PrintGCDetails
+
+执行
+String a = &quot;yinkai&quot;;
+while (true)&#123;
+
                             
                         </div>
                         <div class="publish-info">
@@ -826,26 +832,20 @@ static 一般只在第一次new时执行，而new这个动作时可以控制的
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jvm-zhi-zao-oom-yi-chang/" target="_blank">
+                    <a href="/2022/03/20/jvm-shen-ru-li-jie-java-xu-ni-ji-xue-xi-bi-ji-zhi-cheng-xu-ji-shu-qi/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="jvm-制造OOM异常.md">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="jvm-《深入理解Java虚拟机》学习笔记之程序计数器.md">
                             
-                            <span class="card-title">jvm-制造OOM异常.md</span>
+                            <span class="card-title">jvm-《深入理解Java虚拟机》学习笔记之程序计数器.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###能够导致OutOfMemoryError的代码先设置
--Xms10m -Xmx10m -XX:+PrintGCDetails
-
-执行
-String a = &quot;yinkai&quot;;
-while (true)&#123;
-
+                            程序计数器（Program Counter Register） 是一块较小的内存空间， 它可以看作是当前线程所执行的字节码的行号指示器。 在Java虚拟机的概念模型里[1]， 字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行
                             
                         </div>
                         <div class="publish-info">

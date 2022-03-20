@@ -561,25 +561,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/oracle-biao-kong-jian/">
+                <a href="/2022/03/20/oralce-zhi-xing-sql-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="oracle-表空间.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="oralce-执行sql文件.md">
                         
-                        <span class="card-title">oracle-表空间.md</span>
+                        <span class="card-title">oralce-执行sql文件.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###创建表空间
-CREATE  
-TABLESPACE KMS
-DATAFILE &#39;D:\app\Administrator\oradata\orcl\KMS.DBF&#39; 
-SIZE 1024M 
-REUSE 
-AUTOEX
+                            如果sql文件在当前目录下，可以直接执行：
+
+@demo.sql
+
+如果sql文件不在当前目录下，可以使用绝对路径：
+
+@D:/demo.sql
+
+
                         
                     </div>
                     <div class="publish-info">
@@ -616,20 +618,24 @@ AUTOEX
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/oralce-han-shu/">
+                <a href="/2022/03/20/oralce-lian-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="oralce-函数.md">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="oralce-连接.md">
                         
-                        <span class="card-title">oralce-函数.md</span>
+                        <span class="card-title">oralce-连接.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            HEXTORAW(c1)HEXTORAW(c1)【功能】将一个十六进制构成的字符串转换为二进制
-【参数】c1,十六进制的字符串
+                            ###命令行的方式
+sqlplus ygyyhg/ygyyhg@ORCL
+
+###navicat
+先需要指定和oracle版本一致的 dll
+
 
                         
                     </div>

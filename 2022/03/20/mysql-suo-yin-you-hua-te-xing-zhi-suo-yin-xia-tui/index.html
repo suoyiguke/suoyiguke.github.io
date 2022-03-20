@@ -584,21 +584,22 @@ SET optimizer_switch = &#39;index_condition_pushdown=on&#39;;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-suo-yin-he-bing-ce-lue-index-merge/">
+                <a href="/2022/03/20/mysql-suo-yin-you-hua-te-xing-zhi-mrr/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-索引优化特性之索引合并策略-Index-Merge.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-索引优化特性之MRR.md">
                         
-                        <span class="card-title">mysql-索引优化特性之索引合并策略-Index-Merge.md</span>
+                        <span class="card-title">mysql-索引优化特性之MRR.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             https://dev.mysql.com/doc/refman/8.0/en/index-merge-optimization.html
-####什么是Index Merge？Index Merge的限制有哪些？
-如果查询中使用到了不同
+                            https://dev.mysql.com/doc/refman/8.0/en/mrr-optimization.html
+
+MRR针对于辅助索引上的范围查询进行优化,收集辅助索引对应主键rowid。进行排序后回表查询，随机IO转顺序IO
+
                         
                     </div>
                     <div class="publish-info">
@@ -635,21 +636,22 @@ SET optimizer_switch = &#39;index_condition_pushdown=on&#39;;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-suo-yin-yuan-li-zhi-b-shu/">
+                <a href="/2022/03/20/mysql-guan-li-zhi-information-schema-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-索引原理之B+树.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-管理之-information_schema表.md">
                         
-                        <span class="card-title">mysql-索引原理之B+树.md</span>
+                        <span class="card-title">mysql-管理之-information_schema表.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###B+树
-balance tree，平衡的树。不会出现那种一边特别多层的情况。让数据都放在树的同一层。
-B+树是为磁盘或其他 直接存取辅助设备设计的一种多叉平衡查找树。在B+树中,所有记录节点都是按键值的大 小顺序存放在同一层的叶子节点
+                            ######查看information_schema表中所有的子表SHOW TABLES FROM information_schema
+CHARACTER_SETS
+COLLATIONS
+COLLATION_CHARACTER_SET_A
                         
                     </div>
                     <div class="publish-info">
@@ -660,8 +662,8 @@ B+树是为磁盘或其他 直接存取辅助设备设计的一种多叉平衡�
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
-                                    mysql底层
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -671,8 +673,8 @@ B+树是为磁盘或其他 直接存取辅助设备设计的一种多叉平衡�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
-                        <span class="chip bg-color">mysql底层</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

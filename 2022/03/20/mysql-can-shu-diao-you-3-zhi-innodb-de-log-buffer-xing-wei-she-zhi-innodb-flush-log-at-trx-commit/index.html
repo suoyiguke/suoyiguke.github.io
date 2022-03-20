@@ -600,22 +600,22 @@ END;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-2-zhi-she-zhi-chong-zuo-ri-zhi-wen-jian-de-da-xiao-innodb-log-file-size/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-7-binlog-de-xie-ru-you-hua-sync-binlog/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-参数调优(2)之设置重做日志文件的大小-innodb_log_file_size.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-参数调优(7)-binlog的写入优化-sync_binlog.md">
                         
-                        <span class="card-title">mysql-参数调优(2)之设置重做日志文件的大小-innodb_log_file_size.md</span>
+                        <span class="card-title">mysql-参数调优(7)-binlog的写入优化-sync_binlog.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-innodb_log_file_size 是仅次于innodb_buffer_pool_size的第二重要的参数。调整它能带来写入性能优化。
+sync_binlog 决定什么时候写入binlog，影响到了mysql吞吐量和主从同步延迟
 
-我们知道redo log包括 buffer和log file的部分，这里的innodb_log
+sync_binlog ：这个参数是对于MySQL系统来说是至关重要的，他不仅影响到Binlog对MySQL所带来的性能损耗，而且还影响到My
                         
                     </div>
                     <div class="publish-info">
@@ -652,21 +652,23 @@ innodb_log_file_size 是仅次于innodb_buffer_pool_size的第二重要的参数
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-6-zhi-ci-pan-io-xing-neng-xiang-guan-de-innodb-io-capacity-max-he-innodb-io-capacity/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-5-zhi-auto-increment-zhu-jian-zi-zeng-you-hua-can-shu-zhi-innodb-autoinc-lock-mode/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-参数调优(6)之磁盘IO性能相关的innodb_io_capacity_max-和innodb_io_capacity.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md">
                         
-                        <span class="card-title">mysql-参数调优(6)之磁盘IO性能相关的innodb_io_capacity_max-和innodb_io_capacity.md</span>
+                        <span class="card-title">mysql-参数调优(5)之AUTO_INCREMENT主键自增优化参数之innodb_autoinc_lock_mode.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            作用于磁盘IO，可以提高db吞吐量,提高写入性能
-###innodb_io_capacity
- 在Innodb 1.0.x版本之前，这个参数不存在，InnoDB存储引擎最大只会每秒只会刷新100个脏页到磁盘、合并20个插入缓冲。这种硬编码实
+                            ###AUTO_INCREMENT初始值和步长相关操作查看mysql的递增初始值和步长
+SHOW VARIABLES LIKE &#39;auto_inc%&#39;; 
+
+查看表的当前递增值和步长
+ SELECT auto_increme
                         
                     </div>
                     <div class="publish-info">

@@ -612,24 +612,19 @@ Copy: 69632/69632 100.0%; Applied: 0; Backlog: 0/1000; Time: 9s(total), 1s(copy)
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zai-xian-ddl-cao-zuo-zhi-shou-dong-chu-li/">
+                <a href="/2022/03/20/mysql-hui-gun-ri-zhi-undo-log/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-在线DDL操作之手动处理.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="mysql-回滚日志undo-log.md">
                         
-                        <span class="card-title">mysql-在线DDL操作之手动处理.md</span>
+                        <span class="card-title">mysql-回滚日志undo-log.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###手动将表存为旧表，新创建一个新表来接收数据原子性修改，不阻塞业务
-
-一种不会出现业务抖动的方式
-
- DROP TABLE IF EXISTS my_summary_new, my_summary_old;
- CREATE TABLE 
+                            浅析如何将undo log从tablespace分离从MySQL5.6.3之后，MySQL支持将undo日志从tablespace（ibdataN 共享表空间）中独立开来放到单独的磁盘上。MySQL官方建议将undo放到ssd（固态硬盘）上
                         
                     </div>
                     <div class="publish-info">
@@ -666,20 +661,24 @@ Copy: 69632/69632 100.0%; Applied: 0; Backlog: 0/1000; Time: 9s(total), 1s(copy)
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-zhun-ce-shi-sysbench-an-zhuang-yi/">
+                <a href="/2022/03/20/mysql-zai-xian-ddl-cao-zuo-zhi-shou-dong-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-基准测试sysbench-安装（一）.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-在线DDL操作之手动处理.md">
                         
-                        <span class="card-title">mysql-基准测试sysbench-安装（一）.md</span>
+                        <span class="card-title">mysql-在线DDL操作之手动处理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SysBench是一个模块化的、跨平台、多线程基准测试工具，主要用于评估测试各种不同系统参数下的数据库负载情况。https://github.com/akopytov/sysbench###sysbench的测试可运用：
-1、CPU性能2、
+                            ###手动将表存为旧表，新创建一个新表来接收数据原子性修改，不阻塞业务
+
+一种不会出现业务抖动的方式
+
+ DROP TABLE IF EXISTS my_summary_new, my_summary_old;
+ CREATE TABLE 
                         
                     </div>
                     <div class="publish-info">

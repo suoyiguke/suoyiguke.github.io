@@ -625,24 +625,20 @@ public class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-threadpoolexecutor-lei-yong-fa/">
+                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-ji-ben-gai-nian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc---线程池之ThreadPoolExecutor类用法.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="juc---线程池之基本概念.md">
                         
-                        <span class="card-title">juc---线程池之ThreadPoolExecutor类用法.md</span>
+                        <span class="card-title">juc---线程池之基本概念.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-闻道有先后，术业有专攻
-
-java.util.concurrent.ThreadPoolExecutor 类是线程池的核心类，我们常常使用它来构建线程池，比如
-
-ExecutorService executorService = new 
+                            ###为什么使用线程池？线程池的优势：线程池做的工作只要是控制运行的线程数量，处理过程中将任务放入队列，然后在线程创建后启动这些任务，如果线程数量超过了最大数量，超出数量的线程排队等候，等其他线程执行完毕，再从队列中取出任务来执行。
+它的主
                         
                     </div>
                     <div class="publish-info">
@@ -679,21 +675,22 @@ ExecutorService executorService = new
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-qi-da-can-shu-jie-shao-he-zheng-que-de-gou-zao-xian-cheng-chi/">
+                <a href="/2022/03/20/juc-xian-cheng-chi-zhi-gong-zuo-yuan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="juc---线程池之七大参数介绍和正确的构造线程池.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="juc---线程池之工作原理.md">
                         
-                        <span class="card-title">juc---线程池之七大参数介绍和正确的构造线程池.md</span>
+                        <span class="card-title">juc---线程池之工作原理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###线程池之七大参数我们知道，线程池的核心类是 ThreadPoolExecutor，构造一个ThreadPoolExecutor需要7个参数！
-######int corePoolSize线程池中的常驻核心线程数
-######int m
+                            ######线程池原理示意这张图已经完全概括了线程池的工作流程，其中1,2,3,4 就是执行步骤
+######线程池内部对新提交的任务处理流程图
+###原理描述step1、在创建了线程池后，开始等待请求。
+step2、当调用execute(
                         
                     </div>
                     <div class="publish-info">

@@ -572,23 +572,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-guo-yi-de-da-biao-shi-zen-me-jie-jue-de/">
+                <a href="/2022/03/20/mysql-ju-cu-suo-yin-he-fei-ju-cu-suo-yin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="MySQL过亿的大表是怎么解决的？.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="MySQL-聚簇索引和非聚簇索引.md">
                         
-                        <span class="card-title">MySQL过亿的大表是怎么解决的？.md</span>
+                        <span class="card-title">MySQL-聚簇索引和非聚簇索引.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            但行好事  莫问前程:MySQL过亿的大表是怎么解决的？
-但行好事  莫问前程:如何保证其性能？
-但行好事  莫问前程:我这边是做了冷热数据隔离。
-但行好事  莫问前程:系统运行一段时间后，比较久的数据就通过时间字段，归档起来。
-但行好事 
+                            ###没有建立聚醋索引，mysql会自动建立一个1、若没有主键，则会使用唯一索引 Unique key做主键2、若没有 Unique key，则系统会生成一个内存的rowid做主键
+###聚簇索引的特点
+
+聚簇索引又称为主键索引
+非叶子节点
                         
                     </div>
                     <div class="publish-info">
@@ -599,8 +599,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -610,8 +610,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -625,20 +625,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-de-group-concat-han-shu-mo-ren-zhi-neng-cun-1024-zi-jie/">
+                <a href="/2022/03/20/mysql-mo-ren-ge-chi-ji-bie-repeatable-read-bing-mei-you-wan-quan-jie-jue-huan-du-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Mysql的group_concat函数默认只能存1024字节！.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MySQL默认隔离级别REPEATABLE-READ并没有完全解决幻读问题.md">
                         
-                        <span class="card-title">Mysql的group_concat函数默认只能存1024字节！.md</span>
+                        <span class="card-title">MySQL默认隔离级别REPEATABLE-READ并没有完全解决幻读问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Mysql的group_concat函数默认只能存1024字节！
-今天在一个场景中使用到了mysql的group_concat函数，按以往的实践经历数据量很小的时候很难发现问题所在，然后今天在group_concat大数据量的时候发现了问题
+                            RR只是部分解决幻读
+MVCC的版本号升级现象，所以RR只解决了脏读，不可重复和幻读都只是部分解决～https://blog.51cto.com/hcymysql/2541023
+
                         
                     </div>
                     <div class="publish-info">

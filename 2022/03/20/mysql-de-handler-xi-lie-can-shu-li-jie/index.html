@@ -588,21 +588,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-de-innodb-rollback-on-timeout-yan-jiu/">
+                <a href="/2022/03/20/mysql-de-my-cnf-pei-zhi-can-shu-de-yi-xie-leng-zhi-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql的-innodb_rollback_on_timeout-研究.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql的my-cnf配置参数的一些冷知识.md">
                         
-                        <span class="card-title">mysql的-innodb_rollback_on_timeout-研究.md</span>
+                        <span class="card-title">mysql的my-cnf配置参数的一些冷知识.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SHOW VARIABLES LIKE &#39;%innodb_rollback_on_timeout%&#39;
-
-
+                            ###读取my.cnf顺序mysql会依次读取这以下四个文件
+[root@localhost bin]# ./mysqld --help --verbose | grep my.cnf
+/etc/my.cnf /etc/mysql/my.c
                         
                     </div>
                     <div class="publish-info">

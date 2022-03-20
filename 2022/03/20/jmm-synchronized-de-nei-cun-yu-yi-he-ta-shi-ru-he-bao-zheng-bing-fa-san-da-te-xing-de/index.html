@@ -578,25 +578,19 @@ jmm中的happens-before规则中有一条监视器规则：对同一个监视器
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-java-nei-cun-mo-xing/">
+                <a href="/2022/03/20/jmm-happen-before-gui-ze/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-java内存模型.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-happen-before规则.md">
                         
-                        <span class="card-title">jmm-java内存模型.md</span>
+                        <span class="card-title">jmm-happen-before规则.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是JMM
-
-JMM定义了Java 虚拟机(JVM)在计算机内存(RAM)中的工作方式。
-
-JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
-
-从抽象的角度来看，JMM定义了线程和主内存之间的抽象关系：线程之间的共享变量存储
+                            从 JDK5 开始，java 使用新的 JSR -133 内存模型。 JSR-133 使用 happens-before 的概念来阐述操作之间的内存可见性。 在 JMM 中，如果一个操作执行的结果需要对另一个操作可见，那么这两个操作之间必须
                         
                     </div>
                     <div class="publish-info">
@@ -633,23 +627,25 @@ JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-volatile-guan-jian-zi-de-shi-yong-zhu-yi/">
+                <a href="/2022/03/20/jmm-java-nei-cun-mo-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="jmm-volatile-关键字的使用注意.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-java内存模型.md">
                         
-                        <span class="card-title">jmm-volatile-关键字的使用注意.md</span>
+                        <span class="card-title">jmm-java内存模型.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-忍耐有多久，器量就有多大
+                            ###什么是JMM
 
+JMM定义了Java 虚拟机(JVM)在计算机内存(RAM)中的工作方式。
 
-【参考】 volatile 解决多线程内存不可见问题。对于一写多读，是可以解决变量同步问题，但是如果多写，同样无法解决线程安全问题。说明：如果是 count++操作，使用如下类实现：AtomicInteger
+JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
+
+从抽象的角度来看，JMM定义了线程和主内存之间的抽象关系：线程之间的共享变量存储
                         
                     </div>
                     <div class="publish-info">

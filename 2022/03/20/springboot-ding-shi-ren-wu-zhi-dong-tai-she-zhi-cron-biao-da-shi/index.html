@@ -601,21 +601,21 @@ public class ScheduledForDynamicCron implements SchedulingConfigurer &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/springboot-ge-ge-mo-kuai-gong-neng-ji-qi-shi-yong/">
+                <a href="/2022/03/20/springboot-ding-shi-diao-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="springboot-各个模块功能及其使用.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="springboot-定时调度.md">
                         
-                        <span class="card-title">springboot-各个模块功能及其使用.md</span>
+                        <span class="card-title">springboot-定时调度.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            首先开发一个springboot项目需要继承spring-boot-starter-parent的依赖，然后具体的依赖按需加载
-    &lt;parent&gt;
-        &lt;groupId&gt;org.springfram
+                            当初使用ssm框架的时候集成定时调度需要配置很多xml。而SpringBoot为我们内置了Scheduled定时任务，使用非常方便。
+找到springboot的启动类，添加@EnableScheduling注解如下
+创建一个类，加上@Com
                         
                     </div>
                     <div class="publish-info">
@@ -652,25 +652,22 @@ public class ScheduledForDynamicCron implements SchedulingConfigurer &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/springboot-shi-yong-lan-jie-qi/">
+                <a href="/2022/03/20/springboot-kai-fa-shi-re-geng-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="springboot-使用拦截器.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="springboot-开发时热更新.md">
                         
-                        <span class="card-title">springboot-使用拦截器.md</span>
+                        <span class="card-title">springboot-开发时热更新.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-天生我材必有用，千金散尽还复来
-
-创建拦截器类Interceptor1 、Interceptor2 、Interceptor3 ，它们仅仅是类名不同而已。并实现HandlerInterceptor 接口
-
-
-实现接口中的preHandle
+                            springboot提供了spring-boot-devtools的依赖，可以做到修改java代码和springboot配置文件后工程立即自动重启，这样就避免了手动重启。非常方便
+maven引入依赖
+&lt;dependency&gt;
+ 
                         
                     </div>
                     <div class="publish-info">

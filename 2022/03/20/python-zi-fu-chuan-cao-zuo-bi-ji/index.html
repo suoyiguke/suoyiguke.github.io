@@ -727,23 +727,24 @@ print (str.rstrip(&#39;*&#39;))
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/python-duo-xian-cheng-bian-xie-zhi-threadlocal/">
+                <a href="/2022/03/20/python-rong-qi-lie-biao-list-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="python-多线程编写之ThreadLocal.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python-容器-列表-list笔记.md">
                         
-                        <span class="card-title">python-多线程编写之ThreadLocal.md</span>
+                        <span class="card-title">python-容器-列表-list笔记.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            python 线程库实现了 ThreadLocal 变量 (Java 语言有类似的实现)。ThreadLocal 真正做到了线程之间的数据隔离，并且使用时不需要手动获取自己的线程 ID。
-###使用案例
+                            ######获得list长度
+list = [1,2,3,4,3,4,5,6,7,8,89,555,6,7,99,45,6,656,88]
+print(len(list))
 
-import threading
-
+######快速生成一个list
+a=list(range(0,
                         
                     </div>
                     <div class="publish-info">
@@ -780,24 +781,19 @@ import threading
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/python-ji-chu-bi-ji-1/">
+                <a href="/2022/03/20/python-ding-shi-diao-du-kuang-jia-apscheduler/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python-基础笔记1.md">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="python-定时调度框架APScheduler.md">
                         
-                        <span class="card-title">python-基础笔记1.md</span>
+                        <span class="card-title">python-定时调度框架APScheduler.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######打印对象的所有属性,类似于java的tostring使用对象的__dict__属性
-或者使用这个
-list = []
-print(dir(list))
-
-######判断对象是否有对应属性，非常重要！开发工具和编译器不会告诉我们
+                            APScheduler基于Quartz的一个Python定时任务框架，实现了Quartz的所有功能，使用起来十分方便。提供了基于日期、固定时间间隔以及crontab类型的任务，并且可以持久化任务。基于这些功能，我们可以很方便的实现一个pyt
                         
                     </div>
                     <div class="publish-info">

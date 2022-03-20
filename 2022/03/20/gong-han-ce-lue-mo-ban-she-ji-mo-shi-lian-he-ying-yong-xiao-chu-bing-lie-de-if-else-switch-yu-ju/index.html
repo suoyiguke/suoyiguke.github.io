@@ -674,20 +674,22 @@ public class YkHandler extends AbstractHandler &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jiang-da-list-fen-wei-bao-han-100-yuan-su-de-xiao-list/">
+                <a href="/2022/03/20/xiao-biao-qu-dong-da-biao-si-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="将大list分为包含100元素的小list.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="小表驱动大表思想.md">
                         
-                        <span class="card-title">将大list分为包含100元素的小list.md</span>
+                        <span class="card-title">小表驱动大表思想.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                                @CacheEvict(value = &quot;HomeDeliveryExtension&quot;,key = &quot;#customIds&quot;, allEntries = false)
-    @Overrid
+                            ###小表驱动大表在 in和exists中的体现可以使用for循环来理解
+按照“小表驱动大表”的优化经验，可以得出in和exists的使用经验1、小表作为子查询使用 in，in的内容越小越好2、小表在外边使用exists
+
+###小表驱动大
                         
                     </div>
                     <div class="publish-info">
@@ -698,8 +700,8 @@ public class YkHandler extends AbstractHandler &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -709,8 +711,8 @@ public class YkHandler extends AbstractHandler &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -724,24 +726,21 @@ public class YkHandler extends AbstractHandler &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/chang-yong-dai-ma/">
+                <a href="/2022/03/20/chang-jian-xian-cheng-an-quan-wen-ti-he-zhu-yi-shi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="常用代码.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="常见线程安全问题和注意事项.md">
                         
-                        <span class="card-title">常用代码.md</span>
+                        <span class="card-title">常见线程安全问题和注意事项.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###遍历数组弹出框输出元素
+                            ###多线程环境下的类使用注意####选择线程安全的集合并行流里由于使用多线程。则会造成线程不安全。若有外部集合的add、remove、update操作，请使用线程安全的集合完成！
 
-For Each value In arrayData
-  Dialog.MsgBox(value,&quot;UiBot&quot;,&quot;0&quot;,&quot;1&quot;,0)
-Next
-
+        List&lt;Integer&gt; 
                         
                     </div>
                     <div class="publish-info">
@@ -752,8 +751,8 @@ Next
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/uibot/" class="post-category" target="_blank">
-                                    uibot
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -763,8 +762,8 @@ Next
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/uibot/" target="_blank">
-                        <span class="chip bg-color">uibot</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>

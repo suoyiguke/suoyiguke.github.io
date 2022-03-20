@@ -442,22 +442,25 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/hao-yong-de-toolutils/">
+                        <a href="/2022/03/20/fu-za-join-xie-fa-he-in-xie-fa-de-xing-neng-chai-yi-cai-ce/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="好用的ToolUtils.md">
+                                <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="复杂join写法和in写法的性能差异-猜测.md">
                                 
-                                <span class="card-title">好用的ToolUtils.md</span>
+                                <span class="card-title">复杂join写法和in写法的性能差异-猜测.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                ToolUtils.isEmpty 各种类型的判断空
-能够使用在大多种情况，有种情况要注意下，下面会报空指针
-     String zz = null;
-        final boolean oneEmpty = isOneEmpt
+                                ###join写法
+mysql&gt; EXPLAIN SELECT
+    a.spu,
+    &#39;&#39; customer_goods_name,
+    a.product_name,
+    b.sku,
+    b.k
                                 
                             </div>
                             <div class="publish-info">
@@ -469,8 +472,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="post-category" target="_blank">
-                                        工具类
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
                                     </a>
                                     
                                     
@@ -481,7 +484,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/"><span class="chip bg-color">工具类</span></a>
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
                             
                         </div>
                         
@@ -505,20 +508,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/ru-he-shi-yong-value-jiang-pei-zhi-zhu-ru-dao-lei-de-jing-tai-shu-xing/">
+                        <a href="/2022/03/20/duo-ge-guan-lian-xia-la-kuang-zhi-jian-de-ceng-ji-guan-xi/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="如何使用@value-将配置注入到类的静态属性？.md">
+                                <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="多个关联下拉框之间的层级关系.md">
                                 
-                                <span class="card-title">如何使用@value-将配置注入到类的静态属性？.md</span>
+                                <span class="card-title">多个关联下拉框之间的层级关系.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                希望直接将配置文件中的属性注入给某个类的静态属性，这样其他类在使用的时候就不用去获得该类的对象了。我们可以这样做：使用set注入的方式，将 @Value声明到对应类静态属性的非静态实例set方法上；
-注意在目标类上声明@Component注
+                                从尾巴后面从头比较。生成一条当前路径生成一条正确路径。
+比较这两个路径就行了
+逻辑写在循环内部不想挪到外面那只能收集所有路径，最后一次遍历时去判断了
+
                                 
                             </div>
                             <div class="publish-info">
@@ -530,8 +535,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/spring/" class="post-category" target="_blank">
-                                        spring
+                                    <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" class="post-category" target="_blank">
+                                        数据结构和算法
                                     </a>
                                     
                                     
@@ -542,7 +547,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/spring/"><span class="chip bg-color">spring</span></a>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"><span class="chip bg-color">数据结构和算法</span></a>
                             
                         </div>
                         
@@ -689,86 +694,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/ru-he-huo-de-dll-zhong-de-progid/">
+                        <a href="/2022/03/20/ru-he-jie-jue-fen-qu-biao-id-quan-ju-wei-yi-xing-wen-ti/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何获得dll中的progID.md">
+                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何解决分区表id全局唯一性问题？.md">
                                 
-                                <span class="card-title">如何获得dll中的progID.md</span>
+                                <span class="card-title">如何解决分区表id全局唯一性问题？.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                com组件可以存在exe，或者dll中，而且对vb，vc，delphi等语言提供了统一的调用，而dll只能存在于dll文件中，而且不同语言调用方式不一样，com组件开发难度相对于dll较大，多用于大型项目中。
-java主要使用jacob来调
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i
-                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/windows/" class="post-category" target="_blank">
-                                        windows
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
+                                方法1：使用UUID等varchar类型主键
+方法2：使用bigint类型。创建一张自增id表
 
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/windows/"><span class="chip bg-color">windows</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>20</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2022/03/20/zi-fu-chuan-lei-xing-de-cun-chu-xu-qiu/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="字符串类型的存储需求.md">
-                                
-                                <span class="card-title">字符串类型的存储需求.md</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                ###字符串类型的存储需求
-
-M、L 表示存储字符串包含字符个数，也就是字符串长度
-
-列类型                             存储需求
-
-CHAR(M)            M个字节，0 &lt;= M &lt;=
                                 
                             </div>
                             <div class="publish-info">
@@ -876,21 +816,20 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/ru-he-jie-jue-fen-qu-biao-id-quan-ju-wei-yi-xing-wen-ti/">
+                        <a href="/2022/03/20/ru-he-huo-de-dll-zhong-de-progid/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何解决分区表id全局唯一性问题？.md">
+                                <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何获得dll中的progID.md">
                                 
-                                <span class="card-title">如何解决分区表id全局唯一性问题？.md</span>
+                                <span class="card-title">如何获得dll中的progID.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                方法1：使用UUID等varchar类型主键
-方法2：使用bigint类型。创建一张自增id表
-
+                                com组件可以存在exe，或者dll中，而且对vb，vc，delphi等语言提供了统一的调用，而dll只能存在于dll文件中，而且不同语言调用方式不一样，com组件开发难度相对于dll较大，多用于大型项目中。
+java主要使用jacob来调
                                 
                             </div>
                             <div class="publish-info">
@@ -902,8 +841,8 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                        mysql基本
+                                    <a href="/categories/windows/" class="post-category" target="_blank">
+                                        windows
                                     </a>
                                     
                                     
@@ -914,7 +853,7 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
+                            <a href="/tags/windows/"><span class="chip bg-color">windows</span></a>
                             
                         </div>
                         
@@ -999,20 +938,21 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/xue-xi-wang-zhan/">
+                        <a href="/2022/03/20/an-quan-you-ya-de-shi-yong-simpledateformat-lei-chu-li-shi-jian/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="学习网站.md">
+                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="安全优雅的使用SimpleDateFormat类处理时间.md">
                                 
-                                <span class="card-title">学习网站.md</span>
+                                <span class="card-title">安全优雅的使用SimpleDateFormat类处理时间.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                http://www.u396.com/collection/data-structure-visualizations
-
+                                SimpleDateFormat是线程不安全的！所以不能因为想要公用一个实例而选择使用单例。
+我们可以配合使用ThreadLocal来达到这个效果。
+package org.szwj.ca.identityauthsrv.util.comm
                                 
                             </div>
                             <div class="publish-info">
@@ -1024,8 +964,8 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" class="post-category" target="_blank">
-                                        数据结构和算法
+                                    <a href="/categories/java/" class="post-category" target="_blank">
+                                        java
                                     </a>
                                     
                                     
@@ -1036,7 +976,73 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"><span class="chip bg-color">数据结构和算法</span></a>
+                            <a href="/tags/java%E5%9F%BA%E7%A1%80/"><span class="chip bg-color">java基础</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>20</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2022/03/20/zi-fu-chuan-lei-xing-de-cun-chu-xu-qiu/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="字符串类型的存储需求.md">
+                                
+                                <span class="card-title">字符串类型的存储需求.md</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                ###字符串类型的存储需求
+
+M、L 表示存储字符串包含字符个数，也就是字符串长度
+
+列类型                             存储需求
+
+CHAR(M)            M个字节，0 &lt;= M &lt;=
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i
+                                        class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                        mysql基本
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/"><span class="chip bg-color">mysql基本</span></a>
                             
                         </div>
                         
@@ -1123,21 +1129,20 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2022/03/20/an-quan-gui-yue/">
+                        <a href="/2022/03/20/xue-xi-wang-zhan/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="安全规约.md">
+                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="学习网站.md">
                                 
-                                <span class="card-title">安全规约.md</span>
+                                <span class="card-title">学习网站.md</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                
-【强制】隶属于用户个人的页面或者功能必须进行权限控制校验。 说明：防止没有做水平权限校验就可随意访问、修改、删除别人的数据，比如查看他人的私信内容、修改他人的订单。
-【强制】用户敏感数据禁止直接展示，必须对展示数据进行脱敏。 说明：中国大
+                                http://www.u396.com/collection/data-structure-visualizations
+
                                 
                             </div>
                             <div class="publish-info">
@@ -1149,8 +1154,8 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                                     
                                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="post-category" target="_blank">
-                                        软件工程和项目管理
+                                    <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" class="post-category" target="_blank">
+                                        数据结构和算法
                                     </a>
                                     
                                     
@@ -1161,7 +1166,7 @@ CHAR(M)            M个字节，0 &lt;= M &lt;=
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><span class="chip bg-color">软件工程和项目管理</span></a>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"><span class="chip bg-color">数据结构和算法</span></a>
                             
                         </div>
                         

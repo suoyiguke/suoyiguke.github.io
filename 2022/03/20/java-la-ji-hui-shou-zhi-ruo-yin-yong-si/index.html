@@ -654,19 +654,19 @@ class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-gc-you-hua-zhi-yi/">
+                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-si-chong-la-ji-shou-ji-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA-垃圾回收之-GC优化之（一）.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="JAVA-垃圾回收之-四种垃圾收集算法.md">
                         
-                        <span class="card-title">JAVA-垃圾回收之-GC优化之（一）.md</span>
+                        <span class="card-title">JAVA-垃圾回收之-四种垃圾收集算法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ###引用计数法####用在哪里？JVM实现一般不采用此方式，但是在微软的com语言、ActionScript、Python中使用到####原理？每个对象有一个引用计数器，当对象被引用一次则计数器加1，当对象引用失效一次则计数器减1，对于计
                         
                     </div>
                     <div class="publish-info">
@@ -703,24 +703,27 @@ class Test &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-qiang-yin-yong-er/">
+                <a href="/2022/03/20/java-la-ji-hui-shou-zhi-cha-kan-gc-ri-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA-垃圾回收之-强引用（二）.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JAVA-垃圾回收之-查看GC日志.md">
                         
-                        <span class="card-title">JAVA-垃圾回收之-强引用（二）.md</span>
+                        <span class="card-title">JAVA-垃圾回收之-查看GC日志.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-锲而舍之，朽木不折
+慢慢尝试着放缓说话的速度，留给自己思考时间的同时也能让对方听的f清楚###复杂日志在idea中配置
 
-强引用是最传统的引用的定义， 是指在程序代码之中普遍存在的引用赋值，我们写的代码，99.9999%都是强引用。 即类似Object obj=new Object() 这种引用关系。 
+-Xms1024m -Xmx1024m -XX:+PrintGCDetails
 
-无论任何情况下， 只要强引用关
+
+###从打印的堆内存结构可以看出一些信息
+
+PSYo
                         
                     </div>
                     <div class="publish-info">

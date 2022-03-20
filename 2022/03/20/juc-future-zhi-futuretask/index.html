@@ -559,22 +559,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-future-zhi-completablefuture/">
+                <a href="/2022/03/20/juc-jia-she-xian-zai-you-10-ge-ren-wu-yao-qiu-tong-shi-chu-li-bing-qie-bi-xu-suo-you-ren-wu-quan-bu-wan-cheng-cai-fan-hui-jie-guo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="JUC-Future-之-CompletableFuture.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="JUC-假设现在有10个任务，要求同时处理，并且必须所有任务全部完成才返回结果.md">
                         
-                        <span class="card-title">JUC-Future-之-CompletableFuture.md</span>
+                        <span class="card-title">JUC-假设现在有10个任务，要求同时处理，并且必须所有任务全部完成才返回结果.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://segmentfault.com/a/1190000014479792
-想用好这个类不简单啊！
-
-CompletableFuture是1.8新特性，它充分利用了函数式编程静态CompletableFuture.supplyA
+                            方法1、executorService.submit+Callable+FutureTask实现FutureTask.get()实现主线程阻塞
+import java.util.ArrayList;
+import java.util.con
                         
                     </div>
                     <div class="publish-info">
@@ -611,22 +610,26 @@ CompletableFuture是1.8新特性，它充分利用了函数式编程静态Comple
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-concurrenthashmap1-7-he-1-8-de-bian-geng/">
+                <a href="/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="JUC-ConcurrentHashMap1-7和1-8的变更.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java-hashCode和equals方法与对象比较和去重(一).md">
                         
-                        <span class="card-title">JUC-ConcurrentHashMap1-7和1-8的变更.md</span>
+                        <span class="card-title">Java-hashCode和equals方法与对象比较和去重(一).md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            HashMap 是线程不安全的，效率高；HashTable 是线程安全的，效率低。
-ConcurrentHashMap 可以做到既是线程安全的，同时也可以有很高的效率，得益于使用了分段锁。
-###实现原理###JDK 1.7：
-1、Conc
+                            
+事实胜于雄辩
+
+###什么时候需要重写hashCode 和 equals 方法呢？
+
+如果想使用equals比较对象，那么请将equals方法和hashCode方法重写
+
+######情景模式一在使用Set进行集合元素去重的时候，请将ha
                         
                     </div>
                     <div class="publish-info">
@@ -637,8 +640,8 @@ ConcurrentHashMap 可以做到既是线程安全的，同时也可以有很高�
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
+                            <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                             
                             
@@ -648,8 +651,8 @@ ConcurrentHashMap 可以做到既是线程安全的，同时也可以有很高�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/juc/" target="_blank">
-                        <span class="chip bg-color">juc</span>
+                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                        <span class="chip bg-color">java基础</span>
                     </a>
                     
                 </div>

@@ -621,24 +621,23 @@ Loc">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-list-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lock-jia-suo-fang-shi-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---List的线程不安全性和解决方案.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="juc---Lock接口之lock()加锁方式（二）.md">
                         
-                        <span class="card-title">juc---List的线程不安全性和解决方案.md</span>
+                        <span class="card-title">juc---Lock接口之lock()加锁方式（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、启动20个线程对ArrayList做add剿操作
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+                            
+理解万岁
 
-class TestLo
+######如何正确的使用lock.lock()方法在使用阻塞等待获取锁的方式中，必须在try代码块之外，并且在加锁方法与try代码块之间没有任何可能抛出异常的方法调用，避免加锁成功后，在finally中无法解锁。
+1、如果在
                         
                     </div>
                     <div class="publish-info">
@@ -675,24 +674,24 @@ class TestLo
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-map-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lockinterruptibly-ke-zhong-duan-zu-sai-de-jia-suo-fang-fa-si/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="juc---Map的线程不安全性和解决方案.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md">
                         
-                        <span class="card-title">juc---Map的线程不安全性和解决方案.md</span>
+                        <span class="card-title">juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、多线程对HashMap进行put操作
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+                            
+人生如逆旅，我亦是行人
 
-class TestLock &#123;
+Lock接口还提供了一个lockInterruptibly()方法，从名字来看他就和线程中断有着紧密的联系。。Lock接口的lockInterruptibly方法 源码如下
+
+void lockInterrupt
                         
                     </div>
                     <div class="publish-info">

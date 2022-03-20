@@ -765,20 +765,23 @@ private final Runnable barrierCommand;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashmap/">
+                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="java-源码研究之HashMap.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-源码研究之HashSet.md">
                         
-                        <span class="card-title">java-源码研究之HashMap.md</span>
+                        <span class="card-title">java-源码研究之HashSet.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、jdk1.8对HashMap主要做了哪些优化呢？为什么？
-jdk1.8 的HashMap主要有五点优化：1、数据结构：数组 + 链表改成了数组 + 链表或红黑树。原因：发生 hash 冲突，元素会存入链表，链表过长转为红黑树，将时
+                            1、HashSet的底层实现是HashMap
+2、为什么HashSet中add进去的元素是一个，而HashMap确需要key、value两个数据
+
+HashSet中add进去的数据充当HashMap的key
+HashMap的value是一个
                         
                     </div>
                     <div class="publish-info">

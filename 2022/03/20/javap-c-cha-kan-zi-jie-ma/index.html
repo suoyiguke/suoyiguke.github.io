@@ -622,26 +622,23 @@ public class Test &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java8-xin-te-xing-zhi-localdate/">
+                <a href="/2022/03/20/java8-jian-tou-han-shu-he-fang-fa-yin-yong-lambda-biao-da-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java8-新特性之LocalDate.md">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java8-箭头函数和方法引用、Lambda表达式.md">
                         
-                        <span class="card-title">java8-新特性之LocalDate.md</span>
+                        <span class="card-title">java8-箭头函数和方法引用、Lambda表达式.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是对java.util.Date强有力的补充，解决了 Date 类的大部分痛点：
+                            filter(p -&gt; p.getAge()&gt;18)
 
-非线程安全
-时区处理麻烦
-各种格式化、和时间计算繁琐
-设计有缺陷，Date 类同时包含日期和时间；还有一个 java.sql.Date，容易混淆。
-
-ja
+p方法参数 -&gt; p.getAge()&gt;18 方法内容
+这里是将整个箭头函数作为参数传递给map方法。map方法源码如下：
+   public&lt;U&gt;
                         
                     </div>
                     <div class="publish-info">
@@ -678,23 +675,23 @@ ja
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java8-jian-tou-han-shu-he-fang-fa-yin-yong-lambda-biao-da-shi/">
+                <a href="/2022/03/20/javaweb-zhi-shi-hui-gu-zhi-servlet-de-xian-cheng-bu-an-quan-xing-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="java8-箭头函数和方法引用、Lambda表达式.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="javaweb知识回顾之servlet的线程不安全性（二）.md">
                         
-                        <span class="card-title">java8-箭头函数和方法引用、Lambda表达式.md</span>
+                        <span class="card-title">javaweb知识回顾之servlet的线程不安全性（二）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            filter(p -&gt; p.getAge()&gt;18)
+                            
+居安思危
 
-p方法参数 -&gt; p.getAge()&gt;18 方法内容
-这里是将整个箭头函数作为参数传递给map方法。map方法源码如下：
-   public&lt;U&gt;
+在上篇文章使用idea创建了一个servlet工程实例https://www.jianshu.com/p/bcda275e80a0 这次来点高级内容######问题1：servlet是单实例还是多实例的？
+是不是单例的做一下测
                         
                     </div>
                     <div class="publish-info">
@@ -705,8 +702,8 @@ p方法参数 -&gt; p.getAge()&gt;18 方法内容
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/javaweb/" class="post-category" target="_blank">
+                                    javaweb
                                 </a>
                             
                             
@@ -716,8 +713,8 @@ p方法参数 -&gt; p.getAge()&gt;18 方法内容
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/javaweb/" target="_blank">
+                        <span class="chip bg-color">javaweb</span>
                     </a>
                     
                 </div>

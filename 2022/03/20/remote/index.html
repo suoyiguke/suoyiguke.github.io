@@ -572,20 +572,20 @@ git commit -m ‘xxx’
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/redis-chi-jiu-hua-shou-dong-shi-yong-rdb-fang-shi-hui-fu-shu-ju/">
+                <a href="/2022/03/20/requests-mo-kuai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="redis持久化-手动使用RDB方式恢复数据.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="requests模块.md">
                         
-                        <span class="card-title">redis持久化-手动使用RDB方式恢复数据.md</span>
+                        <span class="card-title">requests模块.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在aof和rdb同时开启时，仅仅使用rdb方式恢复时不起作用的，因为redis会优先使用aof恢复，但由于aof不存在则会创建一个新的aof文件，导致恢复的是空的aof指令，同样加载到redis内存中的数据也是空的。
-###先手动备份red
+                            1、指定headers 
+headers = {    ‘Connection’: ‘keep-alive’,    ‘Cache-Control’: ‘no-cache’,    ‘sec-ch-ua’: ‘“Google Chrome”
                         
                     </div>
                     <div class="publish-info">
@@ -596,8 +596,8 @@ git commit -m ‘xxx’
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/redis/" class="post-category" target="_blank">
-                                    redis
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -607,8 +607,8 @@ git commit -m ‘xxx’
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/redis/" target="_blank">
-                        <span class="chip bg-color">redis</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -622,26 +622,21 @@ git commit -m ‘xxx’
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/redis-chi-jiu-hua-de-aof-wen-jian-chong-xie/">
+                <a href="/2022/03/20/ruoyi-day1-chu-tan-dai-ma-sheng-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="redis持久化-的AOF文件重写.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="ruoyi--day1---初探代码生成.md">
                         
-                        <span class="card-title">redis持久化-的AOF文件重写.md</span>
+                        <span class="card-title">ruoyi--day1---初探代码生成.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###AOF重写
-文件重写之所以能够压缩AOF文件，原因在于：
-
-  过期的数据不再写入文件
-  无效的命令不再写入文件：如有些数据被重复设值、有些数据被删除了等等
-  多条命令可以合并为一个
-
-通过上述内容可以看出，由于重写后AOF执行的
+                            来看看如何使用代码生成器对某张表进行快速的CRUD开发###1、准备数据表
+CREATE TABLE `ry-vue`.`mydemo`  (
+  `user_id` varchar(36) CHARACTER SET utf8mb4 CO
                         
                     </div>
                     <div class="publish-info">
@@ -652,8 +647,8 @@ git commit -m ‘xxx’
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/redis/" class="post-category" target="_blank">
-                                    redis
+                            <a href="/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" class="post-category" target="_blank">
+                                    开源项目
                                 </a>
                             
                             
@@ -663,8 +658,8 @@ git commit -m ‘xxx’
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/redis/" target="_blank">
-                        <span class="chip bg-color">redis</span>
+                    <a href="/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" target="_blank">
+                        <span class="chip bg-color">开源项目</span>
                     </a>
                     
                 </div>

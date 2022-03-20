@@ -737,19 +737,23 @@ class SynchTest2 &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/jmm-happen-before-gui-ze/">
+                <a href="/2022/03/20/jmm-cas-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-happen-before规则.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-CAS算法.md">
                         
-                        <span class="card-title">jmm-happen-before规则.md</span>
+                        <span class="card-title">jmm-CAS算法.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            从 JDK5 开始，java 使用新的 JSR -133 内存模型。 JSR-133 使用 happens-before 的概念来阐述操作之间的内存可见性。 在 JMM 中，如果一个操作执行的结果需要对另一个操作可见，那么这两个操作之间必须
+                            
+君子不器
+
+###什么是CAS?CAS 是 Compare and Swap 比较与交换 的英文开头字母缩写 
+CAS操作（又称为无锁操作）是一种乐观锁策略。之前在mysql中使用数据版本号来解决更新丢失的事务并发问题就是使用这中乐观锁机
                         
                     </div>
                     <div class="publish-info">
@@ -786,25 +790,19 @@ class SynchTest2 &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jmm-java-nei-cun-mo-xing/">
+                <a href="/2022/03/20/jmm-happen-before-gui-ze/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-java内存模型.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jmm-happen-before规则.md">
                         
-                        <span class="card-title">jmm-java内存模型.md</span>
+                        <span class="card-title">jmm-happen-before规则.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是JMM
-
-JMM定义了Java 虚拟机(JVM)在计算机内存(RAM)中的工作方式。
-
-JVM是整个计算机虚拟模型，所以JMM是隶属于JVM的。
-
-从抽象的角度来看，JMM定义了线程和主内存之间的抽象关系：线程之间的共享变量存储
+                            从 JDK5 开始，java 使用新的 JSR -133 内存模型。 JSR-133 使用 happens-before 的概念来阐述操作之间的内存可见性。 在 JMM 中，如果一个操作执行的结果需要对另一个操作可见，那么这两个操作之间必须
                         
                     </div>
                     <div class="publish-info">

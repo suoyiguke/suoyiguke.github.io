@@ -559,19 +559,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-cyclicbarrier-shi-yong-fang-fa/">
+                <a href="/2022/03/20/juc-countdownlatch-de-shi-yong-he-zhu-yi-shi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="juc---CyclicBarrier-使用方法.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="juc---CountDownLatch的使用和注意事项.md">
                         
-                        <span class="card-title">juc---CyclicBarrier-使用方法.md</span>
+                        <span class="card-title">juc---CountDownLatch的使用和注意事项.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CyclicBarrier拥有CountDownLatch的功能，任何一个线程在没有完成时，所有线程都在等待。当最后一个线程进入wait，到达屏障点。构造器中的Runnable接口的run方法会得到执行。 CyclicBarrie 可以翻译
+                            java.util.concurrent.CountDownLatch 是Doug Lea大师编写的juc包中的一个线程通信工具。
+######使用场景一：实现多个线程在某个时间点同时执行多个线程同时开始执行即是所谓的并行执行；这个功能我们
                         
                     </div>
                     <div class="publish-info">
@@ -608,24 +609,23 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lockinterruptibly-ke-zhong-duan-zu-sai-de-jia-suo-fang-fa-si/">
+                <a href="/2022/03/20/juc-atomic-yuan-zi-lei-ji-ben-gai-nian-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="juc---Atomic原子类基本概念（一）.md">
                         
-                        <span class="card-title">juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md</span>
+                        <span class="card-title">juc---Atomic原子类基本概念（一）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-人生如逆旅，我亦是行人
+天道酬勤
 
-Lock接口还提供了一个lockInterruptibly()方法，从名字来看他就和线程中断有着紧密的联系。。Lock接口的lockInterruptibly方法 源码如下
-
-void lockInterrupt
+我们知道，多线程并发地执行i++，因为i++操作不具备原子性，可能导致更新丢失。如A线程和B线程同时执行i++，两个线程读到的i的值都为1，均在1的基础上加1。那么经过两个线程操作之后可能i不等于3，而是等于2。
+因为A和B线
                         
                     </div>
                     <div class="publish-info">

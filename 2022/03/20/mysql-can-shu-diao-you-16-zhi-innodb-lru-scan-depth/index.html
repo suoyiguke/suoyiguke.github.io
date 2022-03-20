@@ -572,19 +572,23 @@ innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zabbix-jian-kong/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-16-zhi-innodb-buffer-pool-load-at-startup-innodb-buffer-pool/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mysql--zabbix监控.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md">
                         
-                        <span class="card-title">mysql--zabbix监控.md</span>
+                        <span class="card-title">mysql--参数调优（16）之-innodb_buffer_pool_load_at_startup、innodb_buffer_pool.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            25)innodb_buffer_pool_load_at_startup
+推荐设置：
+0
+作用：
+这两个参数几乎没人用一般dba也不曾听说过，它是什么意思呢？Mysql在第一次（重启）时，它的buffer_pool_size中是空的，随着
                         
                     </div>
                     <div class="publish-info">
@@ -621,20 +625,20 @@ innodb_io_capactiy 在sas 15000转的下配置800就可以了，在ssd下面配�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-10-zhi-tmp-table-size-you-hua-lin-shi-biao/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-18-innodb-flush-neighbors-shua-xin-lin-jie-ye-flush-neighbor-page/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="mysql--参数调优（10）之-tmp_table_size-优化临时表.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md">
                         
-                        <span class="card-title">mysql--参数调优（10）之-tmp_table_size-优化临时表.md</span>
+                        <span class="card-title">mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html
-###实践tmp_table_size默认16M。tmp_table_size如果过小，存不下了就
+                            innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。
+取值范围：0，1，2 ； 
                         
                     </div>
                     <div class="publish-info">

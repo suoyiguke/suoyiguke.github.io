@@ -582,19 +582,22 @@ Loading mirror speeds from cached hostfile
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/linux-an-zhuang-jdk/">
+                <a href="/2022/03/20/linux-kai-qi-qi-dong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="linux-安装jdk.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="linux-开启启动.md">
                         
-                        <span class="card-title">linux-安装jdk.md</span>
+                        <span class="card-title">linux-开启启动.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、先卸载自带的openJDK，这个jdk和我们工程使用的jdk不同，有些代码的jar包可能找不到。比如 java.lang.ClassNotFoundException: com.sun.image.codec.jpeg.JPEGCode
+                            ###1、/etc/rc.d/rc.local
+这个脚本里不能访问到环境变量 java_home ，只能写上java_home的路径了
+
+[root@localhost ~]# vi /etc/rc.d/rc.local vi /etc/r
                         
                     </div>
                     <div class="publish-info">
@@ -631,22 +634,20 @@ Loading mirror speeds from cached hostfile
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-kai-qi-qi-dong/">
+                <a href="/2022/03/20/linux-ri-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="linux-开启启动.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="linux-日志.md">
                         
-                        <span class="card-title">linux-开启启动.md</span>
+                        <span class="card-title">linux-日志.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、/etc/rc.d/rc.local
-这个脚本里不能访问到环境变量 java_home ，只能写上java_home的路径了
+                            1、开启启动日志，开启启动的服务有问题可以查看这个日志 cat /var/log/messages
 
-[root@localhost ~]# vi /etc/rc.d/rc.local vi /etc/r
                         
                     </div>
                     <div class="publish-info">

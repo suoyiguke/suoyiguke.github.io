@@ -563,22 +563,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-zu-sai-dui-lie/">
+                <a href="/2022/03/20/juc-scheduledfuturetask-he-scheduledexecutorservice-scheduledthreadpoolex/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="juc---阻塞队列.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md">
                         
-                        <span class="card-title">juc---阻塞队列.md</span>
+                        <span class="card-title">juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###什么是阻塞队列
-
-当队列是空的，从队列中获取元素的操作将会被阻塞。直到其他线程往空的队列里插入新的元素的时候解除阻塞，继续获取
-当队列是满的，从队列中添加元素的操作将会被阻塞。直到其他线程从队列里移除一个或多个元素或者完全清空的时候解
+                            ScheduledFutureTaskScheduledExecutorService 接口
+ScheduledThreadPoolExecutor 实现类
+    public static void main(String[] args
                         
                     </div>
                     <div class="publish-info">
@@ -615,21 +614,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-scheduledfuturetask-he-scheduledexecutorservice-scheduledthreadpoolex/">
+                <a href="/2022/03/20/juc-yin-fa-si-suo-de-chang-jing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="juc-引发死锁的场景.md">
                         
-                        <span class="card-title">juc-ScheduledFutureTask和ScheduledExecutorService-ScheduledThreadPoolEx.md</span>
+                        <span class="card-title">juc-引发死锁的场景.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ScheduledFutureTaskScheduledExecutorService 接口
-ScheduledThreadPoolExecutor 实现类
-    public static void main(String[] args
+                            
+学而不思则罔，思而不学则殆
+
+死锁：多个线程之间互相持有对方需要的锁导致的持续阻塞问题
+######synchronized 嵌套使用不当导致死锁
+如下面的程序，线程1 加锁顺序是 a,b ； 线程2 加锁顺序是b,a；使用CountDo
                         
                     </div>
                     <div class="publish-info">

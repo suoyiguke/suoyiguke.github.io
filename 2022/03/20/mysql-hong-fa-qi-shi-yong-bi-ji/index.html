@@ -657,25 +657,24 @@ SHOW CREATE TRIGGER tgr_box_insert;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-biao-suo/">
+                <a href="/2022/03/20/mysql-ji-shu-qi-shi-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-计数器实现.md">
                         
-                        <span class="card-title">mysql-表锁.md</span>
+                        <span class="card-title">mysql-计数器实现.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
-###使用
+                            
+或为辽东帽，清操厉冰雪。
 
-锁表命令：lock table tablename read,tablename2 write;  
+如果应用在表中保存计数器，则在更新计数器时可能，碰到并发问题。计数器表在web应用中很常见。可以用这种表缓存一个用户的朋友数、文件下载次数等。
 
-
-解锁命令：unlo
+问题在于，若只有一条记录保存计数器数量，那么在并发修改事务下因为
                         
                     </div>
                     <div class="publish-info">
@@ -712,23 +711,25 @@ SHOW CREATE TRIGGER tgr_box_insert;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
+                <a href="/2022/03/20/mysql-biao-suo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
                         
-                        <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
+                        <span class="card-title">mysql-表锁.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 随机读a表的一行数据，循环插入到b表
-CREATE DEFINER=&quot;root&quot;@&quot;%&quot; PROCEDURE &quot;updateDate&quot;()
-BEGIN
+                            表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
+###使用
 
-declare co
+锁表命令：lock table tablename read,tablename2 write;  
+
+
+解锁命令：unlo
                         
                     </div>
                     <div class="publish-info">

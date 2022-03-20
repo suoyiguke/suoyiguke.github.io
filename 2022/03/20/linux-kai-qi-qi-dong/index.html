@@ -610,20 +610,19 @@ touch /var/lock/subsys/local
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/linux-an-zhuang-yi-lai-yu-dao-de-wen-ti/">
+                <a href="/2022/03/20/linux-an-zhuang-jdk/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="linux-安装依赖遇到的问题.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="linux-安装jdk.md">
                         
-                        <span class="card-title">linux-安装依赖遇到的问题.md</span>
+                        <span class="card-title">linux-安装jdk.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、报错 ImportError: libSM.so.6: cannot open shared object file: No such file or director
-我们可以通过  libSM.so.6这个文件去寻找相关的依赖，使用
+                            1、先卸载自带的openJDK，这个jdk和我们工程使用的jdk不同，有些代码的jar包可能找不到。比如 java.lang.ClassNotFoundException: com.sun.image.codec.jpeg.JPEGCode
                         
                     </div>
                     <div class="publish-info">
@@ -660,20 +659,20 @@ touch /var/lock/subsys/local
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/linux-wen-jian-cha-zhao/">
+                <a href="/2022/03/20/linux-an-zhuang-yi-lai-yu-dao-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="linux-文件查找.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="linux-安装依赖遇到的问题.md">
                         
-                        <span class="card-title">linux-文件查找.md</span>
+                        <span class="card-title">linux-安装依赖遇到的问题.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######按文件名查找指定内容，返回文件路径
- find ./ -name &quot;index.html&quot; | xargs grep  &quot;#content dl dd&#123; padding-bottom:10
+                            1、报错 ImportError: libSM.so.6: cannot open shared object file: No such file or director
+我们可以通过  libSM.so.6这个文件去寻找相关的依赖，使用
                         
                     </div>
                     <div class="publish-info">

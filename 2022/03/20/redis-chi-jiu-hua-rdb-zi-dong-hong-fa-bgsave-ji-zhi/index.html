@@ -656,20 +656,26 @@ vers
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/redis-chi-jiu-hua-shou-dong-shi-yong-rdb-fang-shi-hui-fu-shu-ju/">
+                <a href="/2022/03/20/redis-chi-jiu-hua-de-aof-wen-jian-chong-xie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="redis持久化-手动使用RDB方式恢复数据.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="redis持久化-的AOF文件重写.md">
                         
-                        <span class="card-title">redis持久化-手动使用RDB方式恢复数据.md</span>
+                        <span class="card-title">redis持久化-的AOF文件重写.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在aof和rdb同时开启时，仅仅使用rdb方式恢复时不起作用的，因为redis会优先使用aof恢复，但由于aof不存在则会创建一个新的aof文件，导致恢复的是空的aof指令，同样加载到redis内存中的数据也是空的。
-###先手动备份red
+                            ###AOF重写
+文件重写之所以能够压缩AOF文件，原因在于：
+
+  过期的数据不再写入文件
+  无效的命令不再写入文件：如有些数据被重复设值、有些数据被删除了等等
+  多条命令可以合并为一个
+
+通过上述内容可以看出，由于重写后AOF执行的
                         
                     </div>
                     <div class="publish-info">

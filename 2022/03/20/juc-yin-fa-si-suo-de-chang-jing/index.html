@@ -653,24 +653,19 @@ class Account &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/junit5-duan-yan/">
+                <a href="/2022/03/20/juc-atomic-zhi-lazyset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="junit5-断言.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="juc-Atomic-之-lazySet.md">
                         
-                        <span class="card-title">junit5-断言.md</span>
+                        <span class="card-title">juc-Atomic-之-lazySet.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package com.gbm.cloud;
-
-
-import com.taobao.api.ApiException;
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+                            lazySet是使用Unsafe.putOrderedObject方法，这个方法在对低延迟代码是很有用的，它能够实现非堵塞的写入，这些写入不会被Java的JIT重新排序指令(instruction reordering)，这样它使用快速的存
                         
                     </div>
                     <div class="publish-info">
@@ -681,8 +676,8 @@ import org.junit.jupiter.api.Test;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" class="post-category" target="_blank">
-                                    java-三方库学习
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -692,8 +687,8 @@ import org.junit.jupiter.api.Test;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/" target="_blank">
-                        <span class="chip bg-color">java-三方库学习</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -707,19 +702,20 @@ import org.junit.jupiter.api.Test;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/jvm-java-dui-xiang-tou/">
+                <a href="/2022/03/20/juc-bing-fa-bian-cheng-zhu-yi-shi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="jvm-Java-对象头.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="juc-并发编程注意事项.md">
                         
-                        <span class="card-title">jvm-Java-对象头.md</span>
+                        <span class="card-title">juc-并发编程注意事项.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            【强制】 高并发时，同步调用应该去考量锁的性能损耗。能用无锁数据结构，就不要用锁；能锁区块，就不要锁整个方法体；能用对象锁，就不要用类锁。说明：尽可能使加锁的代码块工作量尽可能的小，避免在锁代码块中调用 RPC 方法
+
                         
                     </div>
                     <div class="publish-info">
@@ -730,8 +726,8 @@ import org.junit.jupiter.api.Test;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -741,8 +737,8 @@ import org.junit.jupiter.api.Test;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jvm/" target="_blank">
-                        <span class="chip bg-color">jvm</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>

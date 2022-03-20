@@ -662,21 +662,20 @@ public class Merge2 &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-util-stream-stream-reduce/">
+                <a href="/2022/03/20/java-util-stream-collectors-minby-fan-hui-de-optional-ben-shen-ke-neng-hui-kong-zhi-zhen/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="java-util-stream-Stream#reduce.md">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md">
                         
-                        <span class="card-title">java-util-stream-Stream#reduce.md</span>
+                        <span class="card-title">java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            实现用一个12345的list生成一个以”element-“ 为开头元素的List
-    public static void main(String[] args) &#123;
-        List&lt;Integer&gt; 
+                            所以拿出这个 Optional对象也记得要判空！
+   public static  Collector&lt;T, ?, Optional&gt;    minBy(Comparator&lt;? super T&gt; comparat
                         
                     </div>
                     <div class="publish-info">
@@ -713,20 +712,20 @@ public class Merge2 &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-dai-ma-ji-lei/">
+                <a href="/2022/03/20/java-zhong-de-wei-yun-suan-wei-yun-suan-fu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-代码积累.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-中的位运算-位运算符(&，--，^).md">
                         
-                        <span class="card-title">java-代码积累.md</span>
+                        <span class="card-title">java-中的位运算-位运算符(&，--，^).md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、集合逗号拼接String join = org.apache.commons.lang3.StringUtils.StringUtils.join(doctorEmployeeNum,”,”);
-
+                            关于位运算符无非也就 与(&amp;)、或(|)、异或(^)、取反(~)、左移(&lt;&lt;)、右移(&gt;&gt;)、无符号右移(&gt;&gt;&gt;)
+位运算其实就是二进制的运算，加减乘除适用于十进制，而位运算就是二进制的运算
                         
                     </div>
                     <div class="publish-info">

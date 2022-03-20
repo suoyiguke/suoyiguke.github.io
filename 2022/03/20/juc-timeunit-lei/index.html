@@ -567,26 +567,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-set-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
+                <a href="/2022/03/20/juc-stampedlock/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Set的线程不安全性和解决方案.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="juc---StampedLock.md">
                         
-                        <span class="card-title">juc---Set的线程不安全性和解决方案.md</span>
+                        <span class="card-title">juc---StampedLock.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、对HashSet进行并发add
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+                            StampedLock 读音 [stæmptlɑːk]
 
-class TestLock &#123;
 
- 
+StampedLock 是从 JDK1.8 开始提供，它的性能比 ReadWriteLock 好
+
+StampedLock 支持：乐观读锁、悲观读锁、写锁
+
+StampedLock
                         
                     </div>
                     <div class="publish-info">
@@ -623,19 +623,23 @@ class TestLock &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-syncronize-suo-sheng-ji/">
+                <a href="/2022/03/20/juc-xin-hao-liang-semaphore-de-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---syncronize锁升级.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="juc---信号量Semaphore的使用.md">
                         
-                        <span class="card-title">juc---syncronize锁升级.md</span>
+                        <span class="card-title">juc---信号量Semaphore的使用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Semaphore 读音 [ˈseməfɔːr]Semaphore有两个目的，第一个目的是多个共享资源互斥使用，第二目的是并发线程数的控制######实现互斥锁
+
+ class TestSemaphore &#123;
+
+    priva
                         
                     </div>
                     <div class="publish-info">

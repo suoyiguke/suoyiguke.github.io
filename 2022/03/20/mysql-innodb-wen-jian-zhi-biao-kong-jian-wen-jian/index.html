@@ -609,23 +609,19 @@ mysql&gt;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-hint-you-hua-qi-ti-shi-zhi-shi-yong-force-index-qiang-zhi-shi-yong-suo-yin-he-zhi-ding-jin-yong-suo-yin/">
+                <a href="/2022/03/20/mysql-innodb-buffer-pool-huan-cun-chi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql-innodb-buffer-pool-缓存池.md">
                         
-                        <span class="card-title">mysql-hint优化器提示之使用force-index-强制使用索引和指定禁用索引.md</span>
+                        <span class="card-title">mysql-innodb-buffer-pool-缓存池.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###mysql强制使用索引1、mysql强制使用主键索引
-select * from table force index(PRI) limit 2;(强制使用主键)
-
-2、强制指定一个特定索引
-select * from table fo
+                             InnoDB存储引擎是基于磁盘存储的,并将其中的记录按照页的方式进行管理。因此可将其视为基于磁盘的数据库系统。（Disk-base Database）。在数据库系统中，由于CPU速度与磁盘速度之间的鸿沟，基于磁盘的数据库系统通常使用缓冲池
                         
                     </div>
                     <div class="publish-info">
@@ -636,8 +632,8 @@ select * from table fo
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -647,8 +643,8 @@ select * from table fo
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>
@@ -662,20 +658,21 @@ select * from table fo
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-insert-into-a-select-b-qian-yi-shu-ju-shi-zai-read-committed-ge-chi-ji-bie-shi-biao-a-he-biao-b-de-jia-suo-fang-shi-shi-me/">
+                <a href="/2022/03/20/mysql-innodb-yin-qing-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mysql-innodb引擎文件.md">
                         
-                        <span class="card-title">mysql-insert-into-A-select-B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？.md</span>
+                        <span class="card-title">mysql-innodb引擎文件.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            insert into A select B迁移数据时,在READ-COMMITTED隔离级别时，表A和表B的加锁方式什么？
-@郑州-税友-常伟俊 8.0.19 是 如果rc+statement 那就是插入数据失败，如果rc+row，a表加
+                            ###文件我在test_innodb库类创建了一张test1表，那么打开库对应的文件夹下可以发发现 
+
+######xxx.frm 文件1、frm文件是一种表结构定义文件。无论采用何种存储引擎，mysql都有一个以frm为后缀名的文件，这个
                         
                     </div>
                     <div class="publish-info">

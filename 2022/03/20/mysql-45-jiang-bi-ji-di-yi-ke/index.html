@@ -586,22 +586,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-can-shu-diao-you-17-zhi-undo-log-pei-zhi/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-18-innodb-flush-neighbors-shua-xin-lin-jie-ye-flush-neighbor-page/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--参数调优（17）之undo-log-配置.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md">
                         
-                        <span class="card-title">mysql--参数调优（17）之undo-log-配置.md</span>
+                        <span class="card-title">mysql--参数调优（18）-innodb_flush_neighbors-刷新邻接页-Flush-neighbor-page.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            innodb_undo_directory = /undolog/
-这个就不用解释了，太傻瓜了。这种路径的都可由运维决定，记得挂在大磁盘下。
-innodb_undo_logs = 128
-推荐设置：128作用：指定回滚段的个数（早期版本该参
+                            innodb_flush_neighbors 参数是InnoDB用来控制buffer pool刷脏页时是否把脏页邻近的其他脏页一起刷到磁盘，在传统的机械硬盘时代，打开这个参数能够减少磁盘寻道的开销，显著提升性能。
+取值范围：0，1，2 ； 
                         
                     </div>
                     <div class="publish-info">
@@ -638,19 +636,22 @@ innodb_undo_logs = 128
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-8-xin-te-xing-yi-algorithm-instant-shi-xian-de-kuai-su-ddl/">
+                <a href="/2022/03/20/mysql-can-shu-diao-you-17-zhi-undo-log-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql--参数调优（17）之undo-log-配置.md">
                         
-                        <span class="card-title">mysql-8-新特性一-ALGORITHM=INSTANT-实现的快速DDL.md</span>
+                        <span class="card-title">mysql--参数调优（17）之undo-log-配置.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            参考 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-12.html在线DDL之 快速增加列（秒级别的），并不会造成业务抖动。该功能自 MySQL 8.0.12 版本引入，是
+                            innodb_undo_directory = /undolog/
+这个就不用解释了，太傻瓜了。这种路径的都可由运维决定，记得挂在大磁盘下。
+innodb_undo_logs = 128
+推荐设置：128作用：指定回滚段的个数（早期版本该参
                         
                     </div>
                     <div class="publish-info">
@@ -661,8 +662,8 @@ innodb_undo_logs = 128
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -672,8 +673,8 @@ innodb_undo_logs = 128
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

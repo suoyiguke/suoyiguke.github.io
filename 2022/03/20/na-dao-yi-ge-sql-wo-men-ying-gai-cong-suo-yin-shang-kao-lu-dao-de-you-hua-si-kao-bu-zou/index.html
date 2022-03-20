@@ -562,21 +562,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/pi-liang-geng-xin-uuid/">
+                <a href="/2022/03/20/zhao-hui-yin-wei-qie-huan-fen-zhi-diu-shi-de-wei-push-de-commit/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="批量更新uuid.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="找回因为切换分支丢失的未push的commit.md">
                         
-                        <span class="card-title">批量更新uuid.md</span>
+                        <span class="card-title">找回因为切换分支丢失的未push的commit.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、批量更新uuidUPDATE mgb_dict_data SET uuid=UUID();
-UPDATE mgb_dict_data SET uuid=REPLACE(uuid, ‘-‘, ‘’);
-注意不能使用UPDATE hongh
+                            为了避免这种丢失coomit的问题，最后每次开发新需求先克隆一个新分支！
+###git命令
+先执行
+git reflog
+
+找到自己因为切换分支而丢失的未push的commit的id e2358dc 
+$ git reflog
+4f2955
                         
                     </div>
                     <div class="publish-info">
@@ -587,8 +592,8 @@ UPDATE mgb_dict_data SET uuid=REPLACE(uuid, ‘-‘, ‘’);
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/git/" class="post-category" target="_blank">
+                                    git
                                 </a>
                             
                             
@@ -598,8 +603,8 @@ UPDATE mgb_dict_data SET uuid=REPLACE(uuid, ‘-‘, ‘’);
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -613,24 +618,20 @@ UPDATE mgb_dict_data SET uuid=REPLACE(uuid, ‘-‘, ‘’);
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/chou-xiang-lei-ke-yi-shi-xian-jie-kou-chou-xiang-lei-ke-yi-ji-cheng-shi-ti-lei/">
+                <a href="/2022/03/20/zhi-ding-de-xu-ni-ci-pan-xu-yao-jin-xing-xiu-fu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="抽象类可以实现接口，抽象类可以继承实体类.md">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="指定的虚拟磁盘需要进行修复。.md">
                         
-                        <span class="card-title">抽象类可以实现接口，抽象类可以继承实体类.md</span>
+                        <span class="card-title">指定的虚拟磁盘需要进行修复。.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            抽象类可以实现接口：抽象类实现接口，可以不实现接口的方法。
-interface  Inter &#123;
-    void print();
-&#125;
-
-abstract class GG implements  Inter&#123
+                            指定的虚拟磁盘需要进行修复。
+C:\Program Files (x86)\VMware\VMware Workstation&gt;vmware-vdiskmanager -R “D:\vm\Windows 7\Windows 7.vmd
                         
                     </div>
                     <div class="publish-info">
@@ -641,8 +642,8 @@ abstract class GG implements  Inter&#123
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/VMware/" class="post-category" target="_blank">
+                                    VMware
                                 </a>
                             
                             
@@ -652,8 +653,8 @@ abstract class GG implements  Inter&#123
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/VMware/" target="_blank">
+                        <span class="chip bg-color">VMware</span>
                     </a>
                     
                 </div>

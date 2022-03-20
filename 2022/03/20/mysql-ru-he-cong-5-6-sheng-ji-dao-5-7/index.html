@@ -583,20 +583,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-chu-xian-the-table-is-full-de-wen-ti/">
+                <a href="/2022/03/20/mysql-zhu-cong-fu-zhi-zhi-yuan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql出现_the-table-is-full_的问题.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql主从复制之原理.md">
                         
-                        <span class="card-title">mysql出现_the-table-is-full_的问题.md</span>
+                        <span class="card-title">mysql主从复制之原理.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SHOW VARIABLES LIKE ‘%ibuf_pool_size_per%’
-SHOW VARIABLES LIKE ‘%tmp_table_size%’ SHOW VARIABLES LIKE ‘%max_heap_table_s
+                            三个线程各司其职
+MySQL通过3个线程来完成主从库间的数据复制:其中 Binlog Dump线程 跑在主库上，I/O线程和SQL线程跑在从库上;每个从机连上主机都会维护一个Binlog Dump，有多少个从机就有多少个Binlog Dum
                         
                     </div>
                     <div class="publish-info">

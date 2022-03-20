@@ -579,20 +579,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-fen-qu-shi-jian-zhi-an-yue-fen-fen-qu-ding-shi-zeng-jia-fen-qu-he-shan-chu-fen-qu/">
+                <a href="/2022/03/20/mysql-fen-qu-partitions-zhi-ji-ben-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-分区实践之按月份分区，定时增加分区和删除分区.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="mysql-分区PARTITIONS之基本使用.md">
                         
-                        <span class="card-title">mysql-分区实践之按月份分区，定时增加分区和删除分区.md</span>
+                        <span class="card-title">mysql-分区PARTITIONS之基本使用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            按月份分区，这样再使用分区字段时间来查询数据将会很快，因为这样只需要扫描指定的分区。
-1、创建表，并使用RANGE COLUMNS分区。按创建时间create_time字段分区;分区名使用p0、p1、p2、p3 .. 的形式；create_
+                            ###分区的使用当数据表中的数据量很大时，分区带来的效率提升才会显现出来。只有检索字段为分区字段时，分区带来的效率提升才会比较明显。因此，  分区字段的选择很重要，并且业务逻辑要尽可能地根据分区字段做相应调整（尽量使用分区字段作为查询条件）
                         
                     </div>
                     <div class="publish-info">

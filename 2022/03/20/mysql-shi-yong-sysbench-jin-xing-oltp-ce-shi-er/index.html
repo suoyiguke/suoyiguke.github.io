@@ -578,21 +578,23 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.1
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-gui-fan/">
+                <a href="/2022/03/20/mysql-shi-yong-show-profiles-xing-neng-fen-xi-he-ji-lu-zui-jin-sql/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-使用规范.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="mysql-使用show-profiles性能分析和记录最近sql.md">
                         
-                        <span class="card-title">mysql-使用规范.md</span>
+                        <span class="card-title">mysql-使用show-profiles性能分析和记录最近sql.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###命名方面
- 命名约定 对于命名，并没有很严苛的规定，但在同一个应用中，建议风格统一。 以下是一些通用的法则，可能有互相冲突的地方，请读者自行衡量取舍。
-1、命名应有意义，以使用方便记忆、描述性强的可读性名称为第一准则，应尽量避免使用缩
+                            介绍：是mysql提供可以用来分析当前会话中语句执行的资源消耗情况。可以用于SQL的调优测量
+我们知道：sql值慢主要是cpu和IO 慢1、查看是否开启
+
+profiling = ON 开启 ； profiling = OFF 关闭
+pro
                         
                     </div>
                     <div class="publish-info">
@@ -629,20 +631,19 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua –mysql-host=192.168.1.1
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-shi-yong-sysbench-jin-xing-qi-ta-ce-shi-san/">
+                <a href="/2022/03/20/mysql-shi-yong-show-profiles-bao-xi-sql-zai-xi-tong-zi-yuan-shang-de-xiao-hao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-使用sysbench进行-其它测试（三）.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="mysql-使用show-PROFILES-刨析sql在系统资源上的消耗.md">
                         
-                        <span class="card-title">mysql-使用sysbench进行-其它测试（三）.md</span>
+                        <span class="card-title">mysql-使用show-PROFILES-刨析sql在系统资源上的消耗.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 只查询的qps测试  /usr/local/share/sysbench/oltp_read_write.lua
-sysbench /usr/local/share/sysbench/oltp_point_select.lua --m
+                            
                         
                     </div>
                     <div class="publish-info">

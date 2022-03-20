@@ -586,22 +586,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-orm-ying-she/">
+                <a href="/2022/03/20/mysql-ku-he-biao-de-xin-xi-cha-xun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-开发规范之ORM映射.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-库和表的信息查询.md">
                         
-                        <span class="card-title">mysql-开发规范之ORM映射.md</span>
+                        <span class="card-title">mysql-库和表的信息查询.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-【强制】在表查询中，一律不要使用 * 作为查询的字段列表，需要哪些字段必须明确写明。 说明：1）增加查询分析器解析成本。2）增减字段容易与resultMap配置不一致。3）无用字段增加网络消耗，尤其是text类型的字段。
-
-【强制】POJ
+                            ###查看所有数据库各容量大小
+select
+table_schema as &#39;数据库&#39;,
+sum(table_rows) as &#39;记录数&#39;,
+sum(truncate(data_length/1024/10
                         
                     </div>
                     <div class="publish-info">

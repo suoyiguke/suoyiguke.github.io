@@ -572,74 +572,28 @@ void await() throws InterruptedException;boolean await(">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/datetime-vs-timestamp-vs-int-zen-me-xuan/">
+                <a href="/2022/03/20/completablefuture-shi-jian-pao-cha-ren-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="DATETIME-vs-TIMESTAMP-vs-INT，怎么选？.md">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="CompletableFuture-实践---泡茶任务.md">
                         
-                        <span class="card-title">DATETIME-vs-TIMESTAMP-vs-INT，怎么选？.md</span>
+                        <span class="card-title">CompletableFuture-实践---泡茶任务.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###日期类型MySQL 数据库中常见的日期类型有 YEAR、DATE、TIME、DATETIME、TIMESTAMEP。因为业务绝大部分场景都需要将日期精确到秒，所以在表结构设计中，常见使用的日期类型为DATETIME 和 TIMESTA
+                            ###1、泡茶任务step1、烧水2、洗杯子-&gt;拿茶叶3、泡茶
+package com.company;
+import java.util.concurrent.CompletableFuture;
+import java.util.
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/delayqueue-yan-shi-dui-lie/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="DelayQueue-延时队列.md">
-                        
-                        <span class="card-title">DelayQueue-延时队列.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ###一、DelayQueue是什么　　DelayQueue是一个无界的BlockingQueue，用于放置实现了Delayed接口的对象，其中的对象只能在其到期时才能从队列中取走。这种队列是有序的，即队头对象的延迟到期时间最长。注意：不能
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -657,6 +611,59 @@ void await() throws InterruptedException;boolean await(">
                     
                     <a href="/tags/juc/" target="_blank">
                         <span class="chip bg-color">juc</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/concurrentskiplistmap/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="ConcurrentSkipListMap.md">
+                        
+                        <span class="card-title">ConcurrentSkipListMap.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+ConcurrentSkipListMap 可以看做是是线程安全的treeMap
+
+ConcurrentHashMapJDK为我们提供了很多Map接口的实现，使得我们可以方便地处理Key-Value的数据结构。
+当我们希望快速存取&lt;
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
+                                    java源码分析
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" target="_blank">
+                        <span class="chip bg-color">java源码分析</span>
                     </a>
                     
                 </div>

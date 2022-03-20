@@ -341,61 +341,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/explain-zhi-id-lie-de-dao-biao-de-du-qu-shun-xu/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="explain之id列----得到表的读取顺序.md">
-                            
-                            <span class="card-title">explain之id列----得到表的读取顺序.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            id列该列的值是select查询中的序号，比如：1、2、3、4等，它决定了表的执行顺序。
-某条sql的执行计划中一般会出现三种情况：
-
- id相同
- id不同
- id相同和不同都有
-
-那么这三种情况表的执行顺序是怎么样的呢？
-1.id相同执
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                            <span class="chip bg-color">mysql基本</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/explain-zhi-table-partitions-ref-rows-filtered-lie/" target="_blank">
                         <div class="card-image">
                             
@@ -540,6 +485,58 @@ Object json = JSONObject.toJSON(/需要序列化的对象/);//String json = JSON
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2022/03/20/explain-zhi-type-lie/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="explain之type列.md">
+                            
+                            <span class="card-title">explain之type列.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+该列的值表示连接类型，是查看索引执行情况的一个重要指标。包含如下类型：
+
+执行结果从最好到最坏的的顺序是从上到下。
+我们需要重点掌握的是下面几种类型：
+system &gt; const &gt; eq_ref &gt; ref &gt;
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                            <span class="chip bg-color">mysql基本</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2022/03/20/fastjson/" target="_blank">
                         <div class="card-image">
                             
@@ -589,20 +586,20 @@ Object json = JSONObject.toJSON(/需要序列化的对象/);//String json = JSON
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/final-guan-jian-zi/" target="_blank">
+                    <a href="/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="final关键字.md">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="forEachRemaining继续输出其余的元素.md">
                             
-                            <span class="card-title">final关键字.md</span>
+                            <span class="card-title">forEachRemaining继续输出其余的元素.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            答案是：a，b未必一定等于1，2。和DCL的例子类似，也就是构造函数溢出问题。obj=new Example（）这行代码，分解成三个操作：① 分配一块内存；② 在内存上初始化i=1，j=2；③ 把obj指向这块内存。操作②和操作③可能重排序
+                            
                             
                         </div>
                         <div class="publish-info">
@@ -613,8 +610,8 @@ Object json = JSONObject.toJSON(/需要序列化的对象/);//String json = JSON
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/jmm/" class="post-category" target="_blank">
-                                    jmm
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
                                 </a>
                                 
                                 
@@ -625,8 +622,8 @@ Object json = JSONObject.toJSON(/需要序列化的对象/);//String json = JSON
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/jmm/" target="_blank">
-                            <span class="chip bg-color">jmm</span>
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
                         </a>
                         
                     </div>
@@ -690,103 +687,6 @@ Doctor summary (to see all details, run flutter doctor -v):
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/for-bi-while-true-hao/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="for(;;)-比-while(true)-好.md">
-                            
-                            <span class="card-title">for(;;)-比-while(true)-好.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            为啥:如下（底层完全不同）
-“死循环”有两种写法：for(;;)和while(true)，两者有啥区别，为啥源码中多数是for( ; ; )这种形式的，
-  编译前              编译后 
-while (1)；         
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/juc/" class="post-category" target="_blank">
-                                    juc
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/juc/" target="_blank">
-                            <span class="chip bg-color">juc</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="forEachRemaining继续输出其余的元素.md">
-                            
-                            <span class="card-title">forEachRemaining继续输出其余的元素.md</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                            <span class="chip bg-color">java基础</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2022/03/20/first/" target="_blank">
                         <div class="card-image">
                             
@@ -837,22 +737,20 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/full-gc-pin-fan-chu-xian/" target="_blank">
+                    <a href="/2022/03/20/final-guan-jian-zi/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="full-GC-频繁出现.md">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="final关键字.md">
                             
-                            <span class="card-title">full-GC-频繁出现.md</span>
+                            <span class="card-title">final关键字.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                             
-响应时间已经是50秒了
-
+                            答案是：a，b未必一定等于1，2。和DCL的例子类似，也就是构造函数溢出问题。obj=new Example（）这行代码，分解成三个操作：① 分配一块内存；② 在内存上初始化i=1，j=2；③ 把obj指向这块内存。操作②和操作③可能重排序
                             
                         </div>
                         <div class="publish-info">
@@ -863,8 +761,8 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/jvm/" class="post-category" target="_blank">
-                                    jvm
+                                <a href="/categories/jmm/" class="post-category" target="_blank">
+                                    jmm
                                 </a>
                                 
                                 
@@ -875,8 +773,58 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/jvm/" target="_blank">
-                            <span class="chip bg-color">jvm</span>
+                        <a href="/tags/jmm/" target="_blank">
+                            <span class="chip bg-color">jmm</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/for-bi-while-true-hao/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="for(;;)-比-while(true)-好.md">
+                            
+                            <span class="card-title">for(;;)-比-while(true)-好.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            为啥:如下（底层完全不同）
+“死循环”有两种写法：for(;;)和while(true)，两者有啥区别，为啥源码中多数是for( ; ; )这种形式的，
+  编译前              编译后 
+while (1)；         
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/juc/" target="_blank">
+                            <span class="chip bg-color">juc</span>
                         </a>
                         
                     </div>
@@ -925,6 +873,55 @@ title: firsttop: falsecover: falsetoc: truemathjax: truedate: 2021-05-02 18:45:2
                         
                         <a href="/tags/git/" target="_blank">
                             <span class="chip bg-color">git</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/full-gc-pin-fan-chu-xian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="full-GC-频繁出现.md">
+                            
+                            <span class="card-title">full-GC-频繁出现.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                             
+响应时间已经是50秒了
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/jvm/" target="_blank">
+                            <span class="chip bg-color">jvm</span>
                         </a>
                         
                     </div>

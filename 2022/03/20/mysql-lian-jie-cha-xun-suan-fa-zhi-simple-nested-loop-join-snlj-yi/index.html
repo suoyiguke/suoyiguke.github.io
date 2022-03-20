@@ -580,22 +580,21 @@ Simple Nested-Loops Join算法相当简单、直接。即外表（驱动表）�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-index-nested-loop-join-inlj-san/">
+                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-batched-key-access-bka-si/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-联接查询算法之Batched-key-access-(BKA)-四.md">
                         
-                        <span class="card-title">mysql-联接查询算法之Index-Nested-Loop-Join（INLJ）三.md</span>
+                        <span class="card-title">mysql-联接查询算法之Batched-key-access-(BKA)-四.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-Index Nested-Loop Join：INLJ，索引嵌套循环连接
+                            Batched key access (BKA)
 
-在Join的优化时候，通常都会建议在内表建立索引，以此降低 Simple  Nested-Loop Join算法的开销，减少内表扫描次数，MySQL数据库中使用较
+BKA算法集结了 INLJ、BNLJ、MRR 算法的特性。它用到了INLJ的内部表索引减少关联匹配的次数；又使用到了BNLJ的join buffer，用以暂存外表连接数据减少访问内部表；还
                         
                     </div>
                     <div class="publish-info">
@@ -632,19 +631,19 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-lian-jie-cha-xun-suan-fa-zhi-shi-jian-pian-liu-he-you-hua-join-zong-jie/">
+                <a href="/2022/03/20/mysql-zi-dong-an-zhuang-jiao-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-联接查询算法之实践篇（六）和优化join总结.md">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-自动安装脚本.md">
                         
-                        <span class="card-title">mysql-联接查询算法之实践篇（六）和优化join总结.md</span>
+                        <span class="card-title">mysql-自动安装脚本.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql选择使用连接算法的优先级在选择Join算法时，会有优先级，理论上会优先判断能否使用INLJ、BNLJ：内部表关联字段上有索引 Index Nested-LoopJoin &gt; 5.7 Block Nested-Loop Joi
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -655,8 +654,8 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
+                                    mysql运维操作
                                 </a>
                             
                             
@@ -666,8 +665,8 @@ Index Nested-Loop Join：INLJ，索引嵌套循环连接
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
+                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

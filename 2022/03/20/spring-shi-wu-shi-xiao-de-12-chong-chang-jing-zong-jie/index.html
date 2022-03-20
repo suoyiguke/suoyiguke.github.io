@@ -560,24 +560,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/springmvc-qian-duan-zhi-jie-chuan-mei-ju-yong-fa/">
+                <a href="/2022/03/20/spring-shi-wu-chuan-bo-xing-wei-zhi-ying-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="springmvc-前端直接传枚举用法.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="spring事务传播行为之应用.md">
                         
-                        <span class="card-title">springmvc-前端直接传枚举用法.md</span>
+                        <span class="card-title">spring事务传播行为之应用.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package com.sfpay.axg.enums;
-
-import org.apache.commons.lang3.StringUtils;
-
-public enum OrderPage &#123;
-    WAITPRINT(&
+                            业务操作中记录日志。如果业务异常失败，将回滚，但日志继续记录异常(不回滚)
+1、使用事务的传播行为来实现业务上加 requetd ， 日志上加 no_suupurs业务上加 requetd , 日志上加reuerds_new
+但是这种方法有
                         
                     </div>
                     <div class="publish-info">
@@ -614,22 +611,22 @@ public enum OrderPage &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/spring-ge-chong-zhu-ru/">
+                <a href="/2022/03/20/spring-shi-wu-guan-li-zhi-shi-wu-chuan-bo-xing-wei-zhi-shi-jian-mandatory-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="spring各种注入.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="spring事务管理之事务传播行为之实践MANDATORY-（三）.md">
                         
-                        <span class="card-title">spring各种注入.md</span>
+                        <span class="card-title">spring事务管理之事务传播行为之实践MANDATORY-（三）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、属性注入
-2、set注入
-3、构造器注入
+                            
+纸上得来终觉浅，绝知此事要躬行
 
+这次的主角是    @Transactional(propagation= Propagation.MANDATORY )；调用者方法必须存在事务，不然报出IllegalTransactionStateE
                         
                     </div>
                     <div class="publish-info">

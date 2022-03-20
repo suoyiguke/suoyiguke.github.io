@@ -591,21 +591,22 @@ class zzz&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-fang-fa-join-wait-sleep/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-zhong-duan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程方法join、wait、sleep.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java-线程基础之线程中断.md">
                         
-                        <span class="card-title">java-线程基础之线程方法join、wait、sleep.md</span>
+                        <span class="card-title">java-线程基础之线程中断.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###join()
-1、在A线程中调用了B线程的join()方法时，表示只有当B线程执行完毕时，A线程才能继续执行
-2、带时间参数的join：如果A线程中调用B线程的join(10)，则表示A线程会等待B线程执行10毫秒，10毫秒过后，A、
+                            线程终止有两种情况：1、线程的任务执行完成2、线程在执行任务过程中发生异常这两者属于线程自行终止，如何让线程 A 把线程 B 终止呢？即线程A对线程B发出一个信号，让线程B终止执行
+所以java给我们提供了一些方法
+
+线程中断类方法stop
                         
                     </div>
                     <div class="publish-info">

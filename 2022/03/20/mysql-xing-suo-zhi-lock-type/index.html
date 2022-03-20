@@ -618,25 +618,24 @@ INSERT_INTENTION
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-biao-suo/">
+                <a href="/2022/03/20/mysql-ji-shu-qi-shi-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-表锁.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-计数器实现.md">
                         
-                        <span class="card-title">mysql-表锁.md</span>
+                        <span class="card-title">mysql-计数器实现.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            表锁：偏向于MyISAM存储引擎，开销小，加锁快；无死锁，锁定粒度大，发生冲突概率高。并发度小。  
-###使用
+                            
+或为辽东帽，清操厉冰雪。
 
-锁表命令：lock table tablename read,tablename2 write;  
+如果应用在表中保存计数器，则在更新计数器时可能，碰到并发问题。计数器表在web应用中很常见。可以用这种表缓存一个用户的朋友数、文件下载次数等。
 
-
-解锁命令：unlo
+问题在于，若只有一条记录保存计数器数量，那么在并发修改事务下因为
                         
                     </div>
                     <div class="publish-info">

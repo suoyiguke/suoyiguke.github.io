@@ -634,29 +634,76 @@ DELETE FROM hit_counter WHERE slot!= 0 AND cnt = 0;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ji-lu-xia-gong-zuo-zhong-zi-ji-xie-de-cun-chu-guo-cheng/">
+                <a href="/2022/03/20/mysql-xing-suo-zhi-lock-type/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql-记录下工作中自己写的存储过程.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="mysql-行锁之lock_type.md">
                         
-                        <span class="card-title">mysql-记录下工作中自己写的存储过程.md</span>
+                        <span class="card-title">mysql-行锁之lock_type.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、 随机读a表的一行数据，循环插入到b表
-CREATE DEFINER=&quot;root&quot;@&quot;%&quot; PROCEDURE &quot;updateDate&quot;()
-BEGIN
+                            TABLE
+RECORD
 
-declare co
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mysql-hong-fa-qi-shi-yong-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mysql-触发器使用笔记.md">
+                        
+                        <span class="card-title">mysql-触发器使用笔记.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            触发器可以用来监视某种情况，并触发某种操作，它是提供给程序员和数据分析员来保证数据完整性的一种方法，它是与表事件相关的特殊的存储过程，它的执行不是由程序调用，也不是手工启动，而是由事件来触发，例如当对一个表进行操作（ insert，dele
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -674,55 +721,6 @@ declare co
                     
                     <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
                         <span class="chip bg-color">mysql基本</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/mysql-ji-lu-yi-ci-xian-shang-chu-xian-de-biao-suo-wen-ti/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="mysql-记录一次线上出现的表锁问题.md">
-                        
-                        <span class="card-title">mysql-记录一次线上出现的表锁问题.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            今天突然线上业务接口出现了一直请求超时，远程到服务器查看日志，报了我们熟悉的 lock time out　错误。查询　SELECT * from information_schema.INNODB_TRX，观察到有事务在00:00:00 凌
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
                     </a>
                     
                 </div>

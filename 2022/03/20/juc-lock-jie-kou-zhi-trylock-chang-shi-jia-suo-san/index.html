@@ -820,21 +820,24 @@ public class TestLock implements Runnable &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/juc-lock-de-gong-ping-suo-he-fei-gong-ping-suo/">
+                <a href="/2022/03/20/juc-lock-jie-kou-zhi-lockinterruptibly-ke-zhong-duan-zu-sai-de-jia-suo-fang-fa-si/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock的公平锁和非公平锁.md">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md">
                         
-                        <span class="card-title">juc---Lock的公平锁和非公平锁.md</span>
+                        <span class="card-title">juc---Lock接口之lockInterruptibly可中断阻塞的加锁方法（四）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁
-非公平锁有可能刚释放锁的线程下次继续获取该锁，则有可能导致其他线程永远无法获取到锁，造成“饥饿”现象。
-公平锁为了保证时间上的绝
+                            
+人生如逆旅，我亦是行人
+
+Lock接口还提供了一个lockInterruptibly()方法，从名字来看他就和线程中断有着紧密的联系。。Lock接口的lockInterruptibly方法 源码如下
+
+void lockInterrupt
                         
                     </div>
                     <div class="publish-info">
@@ -871,24 +874,21 @@ public class TestLock implements Runnable &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/juc-list-de-xian-cheng-bu-an-quan-xing-he-jie-jue-fang-an/">
+                <a href="/2022/03/20/juc-lock-de-gong-ping-suo-he-fei-gong-ping-suo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="juc---List的线程不安全性和解决方案.md">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="juc---Lock的公平锁和非公平锁.md">
                         
-                        <span class="card-title">juc---List的线程不安全性和解决方案.md</span>
+                        <span class="card-title">juc---Lock的公平锁和非公平锁.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、启动20个线程对ArrayList做add剿操作
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
-class TestLo
+                            公平锁每次获取到锁为同步队列中的第一个节点，保证请求资源时间上的绝对顺序，即等待锁阻塞时长最久的线程优先获取锁
+非公平锁有可能刚释放锁的线程下次继续获取该锁，则有可能导致其他线程永远无法获取到锁，造成“饥饿”现象。
+公平锁为了保证时间上的绝
                         
                     </div>
                     <div class="publish-info">

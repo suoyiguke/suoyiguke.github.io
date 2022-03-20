@@ -570,21 +570,23 @@ show status like &amp;#39;%Handler%&amp;#39;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zi-fu-ji-he-zi-fu-xiao-dui-gui-ze-2/">
+                <a href="/2022/03/20/mysql-zi-duan-shu-ju-lei-xing-xuan-ze-yuan-ze/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字符集和字符校对规则-（2）.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字段数据类型选择原则.md">
                         
-                        <span class="card-title">mysql-字符集和字符校对规则-（2）.md</span>
+                        <span class="card-title">mysql-字段数据类型选择原则.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mysql中所有支持的字符集
-mysql&gt; SHOW CHARACTER SET;
-+----------+---------------------------------+---------------------+-------
+                            ###尽量选择范围小的数值类型
+###尽量使用整型表示字符串
+请使用mysql内建类型来存储时间等，而不是使用字符串！我待过的小公司全部使用字符串来存储所有的数据类型。这对我造成了很大的影响，之前我一直以为使用字符串存储比较好。
+
+整型比字
                         
                     </div>
                     <div class="publish-info">
@@ -621,21 +623,21 @@ mysql&gt; SHOW CHARACTER SET;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-zi-fu-ji-dui-xing-neng-de-ying-xiang/">
+                <a href="/2022/03/20/mysql-zi-fu-ji-he-zi-fu-xiao-dui-gui-ze-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="mysql-字符集对性能的影响.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-字符集和字符校对规则-（2）.md">
                         
-                        <span class="card-title">mysql-字符集对性能的影响.md</span>
+                        <span class="card-title">mysql-字符集和字符校对规则-（2）.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ** 解决方法：**
-上面说了一大通，可能有点云里雾里，抱歉哈，我能力有限，不能把它解释得更通俗一些。
-简而言之，就是证明了确实是字符集不一致，导致MySQL在语法解析的时候，对每一个用户输入的字符（MySQL关键字除外），都要进行若干次字
+                            mysql中所有支持的字符集
+mysql&gt; SHOW CHARACTER SET;
++----------+---------------------------------+---------------------+-------
                         
                     </div>
                     <div class="publish-info">

@@ -608,19 +608,19 @@ copying build/scripts-2.7/mysqldbcopy -&gt; /usr/bin
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-set-var-you-hua-qi-ti-shi/">
+                <a href="/2022/03/20/mysql-innodb-cannot-allocate-memory-for-the-buffer-pool/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-SET_VAR-优化器提示.md">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="mysql-InnoDB--Cannot-allocate-memory-for-the-buffer-pool.md">
                         
-                        <span class="card-title">mysql-SET_VAR-优化器提示.md</span>
+                        <span class="card-title">mysql-InnoDB--Cannot-allocate-memory-for-the-buffer-pool.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            服务器内存过小，mysql默认分配给 buffer pool的innodb_buffer_pool_size大小是 128M 134217728 字节。若机器当前状态的空闲内存少于这个值，那么会报错  Cannot allocate mem
                         
                     </div>
                     <div class="publish-info">
@@ -631,8 +631,8 @@ copying build/scripts-2.7/mysqldbcopy -&gt; /usr/bin
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" class="post-category" target="_blank">
-                                    mysql运维操作
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -642,8 +642,8 @@ copying build/scripts-2.7/mysqldbcopy -&gt; /usr/bin
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/" target="_blank">
-                        <span class="chip bg-color">mysql运维操作</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>
@@ -657,22 +657,19 @@ copying build/scripts-2.7/mysqldbcopy -&gt; /usr/bin
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-utilities-guan-fang-gong-ju-ji-zhi-mysqlfrm-tuo-ji-jie-xi-frm-biao-jie-gou-wen-jian/">
+                <a href="/2022/03/20/mysql-set-var-you-hua-qi-ti-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="mysql-Utilities官方工具集之mysqlfrm脱机解析frm表结构文件.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql-SET_VAR-优化器提示.md">
                         
-                        <span class="card-title">mysql-Utilities官方工具集之mysqlfrm脱机解析frm表结构文件.md</span>
+                        <span class="card-title">mysql-SET_VAR-优化器提示.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             ./mysqlfrm –diagnostic user.frm
-[root@localhost mysql]# ./mysqlfrm --diagnostic user.frm
--bash: ./mysqlfrm: 没有那个文件或目录
-[
+                            
                         
                     </div>
                     <div class="publish-info">

@@ -589,19 +589,23 @@ git log
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/git-de-fetch-shua-xin-fen-zhi/">
+                <a href="/2022/03/20/git-push-shi-cun-zai-hen-duo-ge-commit-jie-jue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="git-的fetch-刷新分支.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="git-push时存在很多个commit解决.md">
                         
-                        <span class="card-title">git-的fetch-刷新分支.md</span>
+                        <span class="card-title">git-push时存在很多个commit解决.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            git服务器上的分支可能新增科或删除了，本地需要刷新下才能识别到
+                            ###在idea中直接 fetch一下就行了
+
+###命令中新开分支，直接复制指定的commit代码1、先创建分支并切换之
+git checkout -b test3  remotes/origin/develop
+git branch 
 
                         
                     </div>
@@ -639,30 +643,21 @@ git log
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/git-shi-yong-bi-ji/">
+                <a href="/2022/03/20/git-hu-lue-ben-di-xiu-gai-bu-jiang-xiu-gai-ti-jiao-dao-yuan-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git使用笔记.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git-忽略本地修改，不将修改提交到远程.md">
                         
-                        <span class="card-title">git使用笔记.md</span>
+                        <span class="card-title">git-忽略本地修改，不将修改提交到远程.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###基本用法1、安装git
-
-linux安装gityum -y install git
-
-
-windows安装
-
-https://git-scm.com一直使用缺省选项安装！一直下一步就行了安装完了验证下
-git --version
-
-
-
+                            本地项目的配置文件自己修改了不想提交到仓库，每次都要rollback非常不方便。可以试下这个方法：
+忽略：
+git update-index --assume-unchanged ./sd-schedule/src/main/resourc
                         
                     </div>
                     <div class="publish-info">

@@ -650,21 +650,20 @@ insert into a
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-json-lei-xing-shi-jian/">
+                <a href="/2022/03/20/mysql-lock-he-latch-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="mysql-json类型实践.md">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mysql-lock和latch区别.md">
                         
-                        <span class="card-title">mysql-json类型实践.md</span>
+                        <span class="card-title">mysql-lock和latch区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###createcreate table t2 (id int primary key, r1 json);
-###insert
-INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
+                            这里还要区分锁中容易令人混淆的概念lock与 latch.在数据库中,lock与 latch都 可以被称为“锁”。但是两者有着截然不同的含义,本章主要关注的是lock。
+latch 一般称为闩锁(轻量级的锁),因为其要求锁定的时间必须非常短
                         
                     </div>
                     <div class="publish-info">
@@ -675,8 +674,8 @@ INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
-                                    mysql基本
+                            <a href="/categories/mysql%E5%BA%95%E5%B1%82/" class="post-category" target="_blank">
+                                    mysql底层
                                 </a>
                             
                             
@@ -686,8 +685,8 @@ INSERT INTO `test`.`t2`(`id`, `r1`) VALUES (1, &#39;&#
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
-                        <span class="chip bg-color">mysql基本</span>
+                    <a href="/tags/mysql%E5%BA%95%E5%B1%82/" target="_blank">
+                        <span class="chip bg-color">mysql底层</span>
                     </a>
                     
                 </div>

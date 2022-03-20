@@ -635,23 +635,28 @@ FLUSH TABLES;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-cha-xun-yu-ju-ru-he-rang-lian-he-suo-yin-ji-yong-zai-order-by-you-yong-zai-group-by/">
+                <a href="/2022/03/20/mysql-cha-xun-suo-yin-shi-yong-qing-kuang-fen-xi-bu-chong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="mysql-查询索引使用情况分析补充.md">
                         
-                        <span class="card-title">mysql-查询语句如何让联合索引既用在order-by-又用在-group-by？.md</span>
+                        <span class="card-title">mysql-查询索引使用情况分析补充.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            思考：如何将idx_user_id_updated_at索引同时使用在order by 和 group by
-EXPLAIN SELECT
-    T0.user_id,
-    T0.user_name,
-    T0.employee_
+                            ###我的mysql版本
+SELECT VERSION()
+
+
+###准备数据
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : mysql
+ Source Server
                         
                     </div>
                     <div class="publish-info">
@@ -688,23 +693,19 @@ EXPLAIN SELECT
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-si-suo-pai-cha/">
+                <a href="/2022/03/20/mysql-fu-wu-qi-can-shu-diao-you-hui-zong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="mysql-死锁排查.md">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="mysql-服务器参数调优汇总.md">
                         
-                        <span class="card-title">mysql-死锁排查.md</span>
+                        <span class="card-title">mysql-服务器参数调优汇总.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###1、当出现事务执行阻塞时，首先想到查询当前MySQL进程状态：
-SHOW FULL PROCESSLIST;
-
-###2、查看当前的死锁线程id和导致的sql
-SELECT * FROM PERFORMANCE_SCHEMA.even
+                            ######1、innodb_buffer_pool_size，Innodb存储引擎缓存池大小innodb_buffer_pool_siz是对于Innodb来说最重要的一个配置，如果所有的表用的都是Innodb，那么甚至建议将该值设置到物理
                         
                     </div>
                     <div class="publish-info">

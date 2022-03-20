@@ -591,23 +591,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/mysql-ku-he-biao-de-xin-xi-cha-xun/">
+                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-jian-biao-gui-fan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-库和表的信息查询.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="mysql-开发规范之建表规范.md">
                         
-                        <span class="card-title">mysql-库和表的信息查询.md</span>
+                        <span class="card-title">mysql-开发规范之建表规范.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###查看所有数据库各容量大小
-select
-table_schema as &#39;数据库&#39;,
-sum(table_rows) as &#39;记录数&#39;,
-sum(truncate(data_length/1024/10
+                            ###建表规范
+1、【强制】表达是与否概念的字段，必须使用is_xxx的方式命名，数据类型是unsigned tinyint（1表示是，0表示否）。 说明：任何字段如果为非负数，必须是unsigned。 注意：POJO类中的任何布尔类型的变
                         
                     </div>
                     <div class="publish-info">
@@ -644,20 +641,19 @@ sum(truncate(data_length/1024/10
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-sql-yu-ju/">
+                <a href="/2022/03/20/mysql-kai-fa-gui-fan-zhi-suo-yin-gui-yue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mysql-开发规范之SQL语句.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql-开发规范之索引规约.md">
                         
-                        <span class="card-title">mysql-开发规范之SQL语句.md</span>
+                        <span class="card-title">mysql-开发规范之索引规约.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-【强制】不要使用count(列名)或count(常量)来替代count()，count()是SQL92定义的标准统计行数的语法，跟数据库无关，跟NULL和非NULL无关。 说明：count(*)会统计值为NULL的行，而count(列名)
+                            1、【强制】业务上具有唯一特性的字段，即使是多个字段的组合，也必须建成唯一索引。 说明：不要以为唯一索引影响了insert速度，这个速度损耗可以忽略，但提高查找速度是明显的；另外，即使在应用层做了非常完善的校验控制，只要没有唯一索引，根据墨
                         
                     </div>
                     <div class="publish-info">
