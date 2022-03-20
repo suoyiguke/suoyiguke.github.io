@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jianshu.com/u/807abe8ee897/"/>
-  <updated>2022-03-20T10:55:01.517Z</updated>
+  <updated>2022-03-20T11:54:58.073Z</updated>
   <id>https://www.jianshu.com/u/807abe8ee897/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zi-dong-zhuang-xiang-yu-chai-xiang/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zi-dong-zhuang-xiang-yu-chai-xiang/</id>
-    <published>2022-03-20T10:57:41.678Z</published>
-    <updated>2022-03-20T10:55:01.517Z</updated>
+    <title>1-4-Collection-子接口之-Queue.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/1-4-collection-zi-jie-kou-zhi-queue/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.073Z</updated>
     
     <summary type="html">
     
@@ -29,22 +29,134 @@
       
         
         
-          &lt;p&gt;自动装箱与拆箱&lt;br&gt;装箱：将基本类型用它们对应的引用类型包装起来；&lt;br&gt;拆箱：将包装类型转换为基本数据类型；&lt;br&gt;举例：&lt;/p&gt;
-&lt;p&gt;Integer i = 10;  //装箱&lt;br&gt;int n = i;  
+          &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;1.4 Collection 子接口之 Queue&lt;/p&gt;
+&lt;h3 id=&quot;1-4-1-Queue-与-Deque-的区别&quot;&gt;&lt;a
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/chong-zai-he-chong-xie-de-qu-bie/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/chong-zai-he-chong-xie-de-qu-bie/</id>
-    <published>2022-03-20T10:57:41.676Z</published>
-    <updated>2022-03-20T10:55:01.556Z</updated>
+    <title>7种遍历hashMap的方式那种最好？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;HashMap 遍历从大的方向来说，可分为以下 4 类：&lt;/p&gt;
+&lt;p&gt;迭代器（Iterator）方式遍历；&lt;br&gt;For Each 方式遍历；&lt;br&gt;Lambda 表达式遍历（JDK 1.8+）;&lt;br&gt;Streams API 遍历（JDK
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8-种基本类型的包装类和常量池.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.074Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Java 基本类型的包装类的大部分都实现了常量池技术。&lt;code&gt;Byte&lt;/code&gt;,&lt;code&gt;Short&lt;/code&gt;,&lt;code&gt;Integer&lt;/code&gt;,&lt;code&gt;Long&lt;/code&gt; 这 4
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Array、Set、List互相转.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/array-set-list-hu-xiang-zhuan/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/array-set-list-hu-xiang-zhuan/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.075Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;数组转化为List：&lt;pre&gt;&lt;code&gt;String[] strArray= new String[]&amp;#123;&amp;quot;Tom&amp;quot;, &amp;quot;Bob&amp;quot;, &amp;quot;Jane&amp;quot;&amp;#125;;
+List strList=
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BigDecimal.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/bigdecimal/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/bigdecimal/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.075Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###compareTo比较&lt;br&gt;compareTo也说得很详细，数值相同但是精度不同的两个数（例如2.0和2.00）被认为是相等的两个数，返回0。另外对于a.compareTo(b)方法&lt;/p&gt;
+&lt;p&gt;a&amp;lt;b,
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java-hashCode和equals方法与对象比较和去重(一).md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.078Z</updated>
     
     <summary type="html">
     
@@ -53,24 +165,27 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;重载就是同样的一个方法能够根据输入数据的不同，做出不同的处理&lt;/p&gt;
-&lt;p&gt;重写就是当子类继承自父类的相同方法，输入数据一样，但要做出有别于父类的响应时，你就要覆盖父类方法&lt;/p&gt;
+&lt;p&gt;事实胜于雄辩&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&quot;重载&quot;&gt;&lt;a
+&lt;p&gt;###什么时候需要重写hashCode 和 equals
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zheng-que-shi-yong-equals-fang-fa/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zheng-que-shi-yong-equals-fang-fa/</id>
-    <published>2022-03-20T10:57:41.674Z</published>
-    <updated>2022-03-20T10:55:01.810Z</updated>
+    <title>Java-泛型了解么？什么是类型擦除？介绍一下常用的通配符？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.092Z</updated>
     
     <summary type="html">
     
@@ -78,22 +193,26 @@
       
         
         
-          &lt;p&gt;正确使用 equals 方法 Object的equals方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。  举个例子：&lt;/p&gt;
-&lt;p&gt;  // 不能使用一个值为null的引用类型变量来调用非静态方法，否则会抛出异常&lt;br&gt;String str =
+          &lt;p&gt;Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了编译时类型安全检测机制，该机制允许程序员在编译时检测到非法的类型。泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。&lt;/p&gt;
+&lt;p&gt;Java 的泛型是伪泛型，这是因为
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/</id>
-    <published>2022-03-20T10:57:41.673Z</published>
-    <updated>2022-03-20T10:55:01.526Z</updated>
+    <title>LongAdder与AtomicLong有什么区别？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.103Z</updated>
     
     <summary type="html">
     
@@ -101,21 +220,29 @@
       
         
         
-          &lt;p&gt;这个需要结合 JVM
+          &lt;p&gt;LongAdder与AtomicLong有什么区别？&lt;br&gt;参考答案&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AtomicLong 是基于 CAS 方式自旋更新的；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;LongAdder 是把 value 分成若干cell，并发量低的时候，直接 CAS
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/</id>
-    <published>2022-03-20T10:57:41.671Z</published>
-    <updated>2022-03-20T10:55:02.158Z</updated>
+    <title>Objects-equals-比较Long和Integer-一定记得加L.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.103Z</updated>
     
     <summary type="html">
     
@@ -123,22 +250,25 @@
       
         
         
-          &lt;p&gt;ExecutionException和InterruptedException是两个非常不同的事情。&lt;/p&gt;
-&lt;p&gt;ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，那么它会被包装在一个
+          &lt;p&gt; if (Objects.equals(1L, groupListSize)) {&lt;br&gt;&lt;img
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-tan-comparator-bi-jiao-qi/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-tan-comparator-bi-jiao-qi/</id>
-    <published>2022-03-20T10:57:41.669Z</published>
-    <updated>2022-03-20T10:55:02.108Z</updated>
+    <title>Map-批量remove.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/map-pi-liang-remove/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/map-pi-liang-remove/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.103Z</updated>
     
     <summary type="html">
     
@@ -146,237 +276,62 @@
       
         
         
-          &lt;p&gt;###结合lambda使用&lt;br&gt;Arrays.sort(people,
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yu-fa-tang/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yu-fa-tang/</id>
-    <published>2022-03-20T10:57:41.666Z</published>
-    <updated>2022-03-20T11:04:12.001Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1、JSONObject 的fluentPut 链式put&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;JSONObject res = new JSONObject()
-            .fluentPut(&amp;quot;mode&amp;quot;,
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ge-lei-de-gou-zao-fang-fa-de-zuo-yong-shi-shi-me-ruo-yi-ge-lei-mei-you-sheng-ming-gou-zao-fang-fa-gai-cheng-xu-neng-zheng-que-zhi-xing-ma-wei-shi-me/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ge-lei-de-gou-zao-fang-fa-de-zuo-yong-shi-shi-me-ruo-yi-ge-lei-mei-you-sheng-ming-gou-zao-fang-fa-gai-cheng-xu-neng-zheng-que-zhi-xing-ma-wei-shi-me/</id>
-    <published>2022-03-20T10:57:41.665Z</published>
-    <updated>2022-03-20T10:55:01.572Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;构造方法主要作用是完成对类对象的初始化工作。&lt;/p&gt;
-&lt;p&gt;如果一个类没有声明构造方法，也可以执行！因为一个类即使没有声明构造方法也会有默认的不带参数的构造方法。如果我们自己添加了类的构造方法（无论是否有参），Java
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ding-bu-neng-hu-lue-bian-yi-qi-gei-wo-men-de-jing-gao/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ding-bu-neng-hu-lue-bian-yi-qi-gei-wo-men-de-jing-gao/</id>
-    <published>2022-03-20T10:57:41.663Z</published>
-    <updated>2022-03-20T10:55:02.187Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;这些警告内包含一些起到影响程序结果的关键意义内容；如&lt;br&gt;Objects.equals 比较Long和Integer&lt;br&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/xu-lie-hua/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/xu-lie-hua/</id>
-    <published>2022-03-20T10:57:41.661Z</published>
-    <updated>2022-03-20T10:55:01.661Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/9dragon/p/10901448.html#h15&quot;&gt;https://www.cnblogs.com/9dragon/p/10901448.html#h15&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果我们需要持久化
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/</id>
-    <published>2022-03-20T10:57:41.660Z</published>
-    <updated>2022-03-20T10:55:02.153Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;把下面的代码转成stream形式&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;        Set&amp;lt;String&amp;gt; keySet = map.keySet();
-        for (String s : keySet) &amp;#123;
-           
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/wei-shi-me-java-zhong-zhi-you-zhi-chuan-di/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/wei-shi-me-java-zhong-zhi-you-zhi-chuan-di/</id>
-    <published>2022-03-20T10:57:41.658Z</published>
-    <updated>2022-03-20T10:55:01.552Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;首先，我们回顾一下在程序设计语言中有关将参数传递给方法（或函数）的一些专业术语。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;按值调用(call by value)&lt;/strong&gt; 表示方法接收的是调用者提供的值，&lt;strong&gt;按引用调用（call by
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/</id>
-    <published>2022-03-20T10:57:41.656Z</published>
-    <updated>2022-03-20T10:55:01.738Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;以ArrayList为例，对比下指定初始容量和不指定两种情况对List.add性能的影响&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;        /**
-         * 指定初始容量后：耗时 1030
-         */
-       
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shu-ru-shu-chu-liu-shi-yong/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shu-ru-shu-chu-liu-shi-yong/</id>
-    <published>2022-03-20T10:57:41.655Z</published>
-    <updated>2022-03-20T10:55:01.284Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;使用输出流 FileOutputStream 写入文件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;      File file = new
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/</id>
-    <published>2022-03-20T10:57:41.653Z</published>
-    <updated>2022-03-20T10:55:02.240Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;###受查视图&lt;/p&gt;
-&lt;p&gt;这样的泛型约束是失效的   &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();
- List stList = list;
- //添加成功
+          &lt;p&gt;saveMap.keySet().removeAll(errMap.keySet());&lt;/p&gt;
 
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-yong-try-with-resources-dai-ti-try-catch-finally-diao-yong-close-guan-bi-zi-yuan/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-yong-try-with-resources-dai-ti-try-catch-finally-diao-yong-close-guan-bi-zi-yuan/</id>
-    <published>2022-03-20T10:57:41.650Z</published>
-    <updated>2022-03-20T10:55:01.620Z</updated>
+    <title>assertTrue、assertEquals.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.075Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eques.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>first.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
     
     <summary type="html">
     
@@ -384,22 +339,26 @@
       
         
         
-          &lt;p&gt;类似于InputStream、OutputStream 、Scanner 、PrintWriter等的资源都需要我们调用close()方法来手动关闭，一般情况下我们都是通过try-catch-finally语句：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;       
+          &lt;hr&gt;
+&lt;p&gt;title: first&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2021-05-02
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-me-shi-hou-shi-yong-java-util-optional/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-me-shi-hou-shi-yong-java-util-optional/</id>
-    <published>2022-03-20T10:57:41.649Z</published>
-    <updated>2022-03-20T10:55:02.046Z</updated>
+    <title>article-title.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/article-title/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/article-title/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.075Z</updated>
     
     <summary type="html">
     
@@ -407,27 +366,44 @@
       
         
         
-          &lt;ul&gt;
-&lt;li&gt;map.get()&lt;/li&gt;
-&lt;li&gt;list.get()&lt;/li&gt;
-&lt;li&gt;xxx.get()&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;非常厉害的用法：&lt;br&gt;把Map的元素value转Boolean，转File&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    public
+          &lt;hr&gt;
+&lt;p&gt;title: article title&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-03-20
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/</id>
-    <published>2022-03-20T10:57:41.647Z</published>
-    <updated>2022-03-20T10:55:02.139Z</updated>
+    <title>forEachRemaining继续输出其余的元素.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java--jar-运行，带引号解决参数中包含等号的问题.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-jar-yun-xing-dai-yin-hao-jie-jue-can-shu-zhong-bao-han-deng-hao-de-wen-ti/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-jar-yun-xing-dai-yin-hao-jie-jue-can-shu-zhong-bao-han-deng-hao-de-wen-ti/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.076Z</updated>
     
     <summary type="html">
     
@@ -435,23 +411,25 @@
       
         
         
-          &lt;p&gt;1、HashMap比起简单的实体类占用空间非常大&lt;/p&gt;
-&lt;p&gt;场景：100W行的大数据量查询，使用List&lt;HashMap&gt; 结构导致OOM&lt;/p&gt;
-&lt;p&gt;但这种方式只能解决燃眉之急，归根结底还是要看看到底是什么数据一次性占了 1.6 个 G！&lt;br&gt;仔细一看，List
+          &lt;p&gt;java -jar identityauthsrv-1.0.5-base-linux-release.jar
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/nei-bu-lei/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/nei-bu-lei/</id>
-    <published>2022-03-20T10:57:41.645Z</published>
-    <updated>2022-03-20T10:55:02.235Z</updated>
+    <title>java-8中使用Optional-避免空指针.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-8-zhong-shi-yong-optional-bi-mian-kong-zhi-zhen/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-8-zhong-shi-yong-optional-bi-mian-kong-zhi-zhen/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.077Z</updated>
     
     <summary type="html">
     
@@ -459,21 +437,26 @@
       
         
         
-          &lt;p&gt;###局部内部类&lt;br&gt;如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在&lt;br&gt;start 方法中创建这个类型的对象时使用了一次。&lt;br&gt;当遇到这类情况时，
+          &lt;blockquote&gt;
+&lt;p&gt;Optional 类的引入要求程序员强制处理和避免空指针。Optional 需要使用在可能为null的变量上。很多时候，程序员都是不判空的，这些BUG就像定时炸弹一样，使用Optional
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/mian-xiang-dui-xiang-san-da-te-zheng/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/mian-xiang-dui-xiang-san-da-te-zheng/</id>
-    <published>2022-03-20T10:57:41.643Z</published>
-    <updated>2022-03-20T10:55:01.597Z</updated>
+    <title>java-9、11、17.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-9-11-17/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-9-11-17/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.077Z</updated>
     
     <summary type="html">
     
@@ -481,12 +464,76 @@
       
         
         
-          &lt;h4 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;1、9的dropWhile方法与filter的区别&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        System.out.println(&amp;quot;dropWhile方法&amp;quot;);
+        //abcde
+       
         
       
     
     </summary>
     
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-error捕获.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;package org.szwj.ca.identityauthsrv;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-DTO-DO-VO.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T11:54:58.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;《阿里巴巴开发手册》以及网上各种博客或多或少都有提到诸如DTO、DO、BO、PO、VO等等，也提倡对实体类进行分层。至于为什么要分层，它们的理由是“避免暴露内部设计细节，只展示必要的字段”，但我个人最大的感受其实是“解耦”。我曾遇到一件无奈的事，接口已经开发完毕，前后端也联
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+    
+    
+      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   

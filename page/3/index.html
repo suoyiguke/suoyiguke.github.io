@@ -341,21 +341,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jin-zhi-zai-finally-zhong-shi-yong-return/" target="_blank">
+                    <a href="/2022/03/20/java-util-optional-ifpresent/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-util-Optional#ifPresent.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-util-Optional#ifPresent.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###禁止在 finally 中使用return当 try 语句和 finally 语句中都有 return 语句时，在方法返回之前，finally 语句的内容将被执行，并且 finally 语句的返回值将会覆盖原始的返回值。如下：
-pub
+                            ifPresent 用于对过滤出的数据如果存在。如果经过过滤条件后，有数据的话就可以进行修改。
+
+ Optional&lt;A&gt; firstA= AList.stream() 
+                          .f
                             
                         </div>
                         <div class="publish-info">
@@ -363,65 +365,47 @@ pub
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/jiang-da-list-fen-wei-bao-han-100-yuan-su-de-xiao-list/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                @CacheEvict(value = &quot;HomeDeliveryExtension&quot;,key = &quot;#customIds&quot;, allEntries = false)
-    @Overrid
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
                     </div>
-
                     
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/jian-rong-windows-he-linux-de-ci-pan-lu-jing-xie-fa/" target="_blank">
+                    <a href="/2022/03/20/java-util-stream-collectors-minby-fan-hui-de-optional-ben-shen-ke-neng-hui-kong-zhi-zhen/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-util-stream-Collectors#minBy-返回的Optional本身可能会空指针.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            这样写  String path = File.separator + “home” + File.separator + “file” + File.separator;
-
+                            所以拿出这个 Optional对象也记得要判空！
+   public static  Collector&lt;T, ?, Optional&gt;    minBy(Comparator&lt;? super T&gt; comparat
                             
                         </div>
                         <div class="publish-info">
@@ -429,71 +413,48 @@ pub
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/ji-ben-shu-ju-lei-xing-yu-bao-zhuang-shu-ju-lei-xing-de-shi-yong-biao-zhun/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            Reference:《阿里巴巴Java开发手册》
-
-【强制】所有的 POJO 类属性必须使用包装数据类型。【强制】RPC 方法的返回值和参数必须使用包装数据类型。【推荐】所有的局部变量使用基本数据类型。
-
-比如我们如果自定义了一个Stude
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
                     </div>
-
                     
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/han-shu-shi-jie-kou-ying-yong-jin-yi-bu-bo-chi-chong-fu-dai-ma/" target="_blank">
+                    <a href="/2022/03/20/java-util-stream-stream-reduce/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="java-util-stream-Stream#reduce.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-util-stream-Stream#reduce.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###Runnable 抽取应用在try -catch 中，补货到多个异常。且存在相同的代码模块
-原：
-   /**
-     * @Des 反射调用set; 返回true设置成功，返回false设置失败
-     * @Author yi
+                            实现用一个12345的list生成一个以”element-“ 为开头元素的List
+    public static void main(String[] args) &#123;
+        List&lt;Integer&gt; 
                             
                         </div>
                         <div class="publish-info">
@@ -501,65 +462,47 @@ pub
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/gou-zao-fang-fa-you-na-xie-te-dian-shi-fou-ke-bei-override/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            特点：
-名字与类名相同。没有返回值，但不能用 void 声明构造函数。生成类的对象时自动执行，无需调用。构造方法不能被 override（重写）,但是可以 overload（重载）,所以你可以看到一个类中有多个构造函数的情况。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
                     </div>
-
                     
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/fu-dian-shu-zhi-jian-de-deng-zhi-pan-duan-ji-ben-shu-ju-lei-xing-bu-neng-yong-lai-bi-jiao-bao-zhuang-shu-ju-lei-xing-bu-neng-yong-equals-lai-pan-duan/" target="_blank">
+                    <a href="/2022/03/20/java-zhong-de-wei-yun-suan-wei-yun-suan-fu/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-中的位运算-位运算符(&，--，^).md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-中的位运算-位运算符(&，--，^).md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            BigDecimalBigDecimal 的用处《阿里巴巴Java开发手册》中提到：浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用 equals 来判断。 具体原理和浮点数的编码方式有关，这里就不多提了，我们下面直接
+                            关于位运算符无非也就 与(&amp;)、或(|)、异或(^)、取反(~)、左移(&lt;&lt;)、右移(&gt;&gt;)、无符号右移(&gt;&gt;&gt;)
+位运算其实就是二进制的运算，加减乘除适用于十进制，而位运算就是二进制的运算
                             
                         </div>
                         <div class="publish-info">
@@ -567,64 +510,47 @@ pub
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/fang-fa-yan-chi-zhi-xing/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
                     </div>
-
                     
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/fan-xing-bian-jie/" target="_blank">
+                    <a href="/2022/03/20/java-dai-ma-ji-lei/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-代码积累.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-代码积累.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            ###List list = new ArrayList(); 能添加各种类型的数据吗？
-可以的，JDK1.5后随着泛型的加入，默认这也是一种泛型，叫raw type，由于它不限制存入的类型，所以能存任何类型的元素。大家其实可以把它当做JD
+                            1、集合逗号拼接String join = org.apache.commons.lang3.StringUtils.StringUtils.join(doctorEmployeeNum,”,”);
+
                             
                         </div>
                         <div class="publish-info">
@@ -632,65 +558,51 @@ pub
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/03/20/dai-ma-you-ya/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            ###注释篇好的注释一定是宁缺毋滥的
-1、对于注释的要求：第一、能够准确反映设计思想和代码逻辑；第二、能够描述业务含义，使别的程序员能够迅速了解到代码背后的信息。完全没有注释的大段代码对于阅读者形同天书，注释是给自己看的，即使隔很长时间，也
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
                     </div>
-
                     
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/dai-ma-xing-neng/" target="_blank">
+                    <a href="/2022/03/20/java-shi-yong-scheduledexecutorservice-lai-dai-ti-timer/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-使用ScheduledExecutorService来代替Timer.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-使用ScheduledExecutorService来代替Timer.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            1、使用空集合来返回避免性能消耗空集合能用来做返回值也只能用来做返回值！还要确保下层调用不是使用这个list进行操作Collections.emptyList()、emptyMap()以下代码来自apache2.0
-public stati
+                            
+志存高远
+
+《阿里巴巴Java开发手册》中有关于Timer和ScheduledExecutorService的用法说明如下
+
+【强制】 多线程并行处理定时任务时，Timer 运行多个 TimeTask 时，只要其中之一没有捕获抛出的异常，
                             
                         </div>
                         <div class="publish-info">
@@ -698,36 +610,50 @@ public stati
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
                             </span>
                             <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/03/20/chou-xiang-lei-ke-yi-shi-xian-jie-kou-chou-xiang-lei-ke-yi-ji-cheng-shi-ti-lei/" target="_blank">
+                    <a href="/2022/03/20/java-nei-cun-zhong-join-suan-fa/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="java-内存中join-算法.md">
                             
-                            <span class="card-title"></span>
+                            <span class="card-title">java-内存中join-算法.md</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            抽象类可以实现接口：抽象类实现接口，可以不实现接口的方法。
-interface  Inter &#123;
-    void print();
-&#125;
-
-abstract class GG implements  Inter&#123
+                            这个有点像mysql join 算法
+###double netsted for
+import java.util.ArrayList;
+import java.util.List;
+import lombok.AllArgsConstru
                             
                         </div>
                         <div class="publish-info">
@@ -736,10 +662,271 @@ abstract class GG implements  Inter&#123
                             </span>
                             <span class="publish-author">
                                 
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
                             </span>
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-nei-bu-lei-ying-yong-zhi-bo-chi-pei-zhi-dao-jing-tai-nei-bu-lei-rang-pei-zhi-xin-xi-chu-shi-hua-bu-yi-lai-yu-lei-de-ben-shen-chu-shi-hua/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md">
+                            
+                            <span class="card-title">java-内部类应用之剥离配置到静态内部类让配置信息初始化不依赖于类的本身初始化.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            现在有这么一种情况
+A 类和B类都实现了接口C，接口C中有两个方法，方法1和方法2。A类实现了方法1和方法2，而B类只实现了方法1，B类的方法2没有实现，只能去调用A类的方法2，但是这样调用会报空指针，因为A类使用了@Conditional
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-shua-ti/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="java-刷题.md">
+                            
+                            <span class="card-title">java-刷题.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            1、byte b = (byte)129;  -127
+其实可以把每个数据类型范围画成一个圈，byte是从-128-127，可以这样想，从-128开始，向上加就是一步一步画圈，知道加到127，这个圆圈刚好补满了，所以127再加一就又到了-1
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-ni-ming-nei-bu-lei-xiang-guan-gai-nian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="java-匿名内部类相关概念.md">
+                            
+                            <span class="card-title">java-匿名内部类相关概念.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ###匿名内部类
+public class MyThread &#123;
+    private MyRunnable target;
+    public MyThread(MyRunnable target) &#123;
+     
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-fa-qi-post-qing-qiu-zi-ding-yi-header-he-body/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="java-发起post请求,自定义header和body.md">
+                            
+                            <span class="card-title">java-发起post请求,自定义header和body.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            package io.renren.modules.websocket.test;
+import org.apache.http.HttpEntity;
+import org.apache.http.NameValuePair;
+impor
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/03/20/java-fan-she/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="java-反射.md">
+                            
+                            <span class="card-title">java-反射.md</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            1、调用所有包含get的方法名，参数数目为0的
+      Class&lt;?&gt; herosClass = Certificate.class;
+        Method[] methods = herosClass.getMe
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/java/" class="post-category" target="_blank">
+                                    java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
+                            <span class="chip bg-color">java基础</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -782,7 +969,7 @@ abstract class GG implements  Inter&#123
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90k</span>
+            <span class="white-color">90.1k</span>
             
 
             <br>
