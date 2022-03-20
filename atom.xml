@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>尹凯的博客</title>
   
-  <subtitle>因为我是一个人，要做一个人应该做的</subtitle>
+  <subtitle>十年磨一剑</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.jianshu.com/"/>
-  <updated>2022-03-20T10:20:43.934Z</updated>
-  <id>https://www.jianshu.com/</id>
+  <link href="https://www.jianshu.com/u/807abe8ee897/"/>
+  <updated>2022-03-20T10:55:01.517Z</updated>
+  <id>https://www.jianshu.com/u/807abe8ee897/</id>
   
   <author>
     <name>尹凯</name>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javax-validation和hibernate-validator参数校验.md</title>
-    <link href="https://www.jianshu.com/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/"/>
-    <id>https://www.jianshu.com/2022/03/20/javax-validation-he-hibernate-validator-can-shu-xiao-yan-md/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T10:20:43.934Z</updated>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zi-dong-zhuang-xiang-yu-chai-xiang/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zi-dong-zhuang-xiang-yu-chai-xiang/</id>
+    <published>2022-03-20T10:57:41.678Z</published>
+    <updated>2022-03-20T10:55:01.517Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h1 id=&quot;javax-validation和hibernate-validator参数校验&quot;&gt;&lt;a href=&quot;#javax-validation和hibernate-validator参数校验&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;自动装箱与拆箱&lt;br&gt;装箱：将基本类型用它们对应的引用类型包装起来；&lt;br&gt;拆箱：将包装类型转换为基本数据类型；&lt;br&gt;举例：&lt;/p&gt;
+&lt;p&gt;Integer i = 10;  //装箱&lt;br&gt;int n = i;  
         
       
     
@@ -39,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>mysql 使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）</title>
-    <link href="https://www.jianshu.com/2021/05/02/two/"/>
-    <id>https://www.jianshu.com/2021/05/02/two/</id>
-    <published>2021-05-02T11:08:12.000Z</published>
-    <updated>2022-03-20T10:10:48.967Z</updated>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/chong-zai-he-chong-xie-de-qu-bie/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/chong-zai-he-chong-xie-de-qu-bie/</id>
+    <published>2022-03-20T10:57:41.676Z</published>
+    <updated>2022-03-20T10:55:01.556Z</updated>
     
     <summary type="html">
     
@@ -51,7 +52,11 @@
       
         
         
-          &lt;p&gt;&lt;a
+          &lt;blockquote&gt;
+&lt;p&gt;重载就是同样的一个方法能够根据输入数据的不同，做出不同的处理&lt;/p&gt;
+&lt;p&gt;重写就是当子类继承自父类的相同方法，输入数据一样，但要做出有别于父类的响应时，你就要覆盖父类方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;重载&quot;&gt;&lt;a
         
       
     
@@ -61,11 +66,11 @@
   </entry>
   
   <entry>
-    <title>first</title>
-    <link href="https://www.jianshu.com/2021/05/02/first/"/>
-    <id>https://www.jianshu.com/2021/05/02/first/</id>
-    <published>2021-05-02T10:45:23.000Z</published>
-    <updated>2022-03-20T10:10:48.966Z</updated>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zheng-que-shi-yong-equals-fang-fa/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zheng-que-shi-yong-equals-fang-fa/</id>
+    <published>2022-03-20T10:57:41.674Z</published>
+    <updated>2022-03-20T10:55:01.810Z</updated>
     
     <summary type="html">
     
@@ -73,8 +78,410 @@
       
         
         
-          &lt;p&gt;###first&lt;/p&gt;
-&lt;p&gt;&lt;img
+          &lt;p&gt;正确使用 equals 方法 Object的equals方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。  举个例子：&lt;/p&gt;
+&lt;p&gt;  // 不能使用一个值为null的引用类型变量来调用非静态方法，否则会抛出异常&lt;br&gt;String str =
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-yi-ge-jing-tai-fang-fa-nei-diao-yong-yi-ge-fei-jing-tai-cheng-yuan-wei-shi-me-shi-fei-fa-de/</id>
+    <published>2022-03-20T10:57:41.673Z</published>
+    <updated>2022-03-20T10:55:01.526Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这个需要结合 JVM
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/</id>
+    <published>2022-03-20T10:57:41.671Z</published>
+    <updated>2022-03-20T10:55:02.158Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ExecutionException和InterruptedException是两个非常不同的事情。&lt;/p&gt;
+&lt;p&gt;ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，那么它会被包装在一个
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-tan-comparator-bi-jiao-qi/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/zai-tan-comparator-bi-jiao-qi/</id>
+    <published>2022-03-20T10:57:41.669Z</published>
+    <updated>2022-03-20T10:55:02.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###结合lambda使用&lt;br&gt;Arrays.sort(people,
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yu-fa-tang/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yu-fa-tang/</id>
+    <published>2022-03-20T10:57:41.666Z</published>
+    <updated>2022-03-20T11:04:12.001Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、JSONObject 的fluentPut 链式put&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;JSONObject res = new JSONObject()
+            .fluentPut(&amp;quot;mode&amp;quot;,
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ge-lei-de-gou-zao-fang-fa-de-zuo-yong-shi-shi-me-ruo-yi-ge-lei-mei-you-sheng-ming-gou-zao-fang-fa-gai-cheng-xu-neng-zheng-que-zhi-xing-ma-wei-shi-me/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ge-lei-de-gou-zao-fang-fa-de-zuo-yong-shi-shi-me-ruo-yi-ge-lei-mei-you-sheng-ming-gou-zao-fang-fa-gai-cheng-xu-neng-zheng-que-zhi-xing-ma-wei-shi-me/</id>
+    <published>2022-03-20T10:57:41.665Z</published>
+    <updated>2022-03-20T10:55:01.572Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;构造方法主要作用是完成对类对象的初始化工作。&lt;/p&gt;
+&lt;p&gt;如果一个类没有声明构造方法，也可以执行！因为一个类即使没有声明构造方法也会有默认的不带参数的构造方法。如果我们自己添加了类的构造方法（无论是否有参），Java
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ding-bu-neng-hu-lue-bian-yi-qi-gei-wo-men-de-jing-gao/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/yi-ding-bu-neng-hu-lue-bian-yi-qi-gei-wo-men-de-jing-gao/</id>
+    <published>2022-03-20T10:57:41.663Z</published>
+    <updated>2022-03-20T10:55:02.187Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这些警告内包含一些起到影响程序结果的关键意义内容；如&lt;br&gt;Objects.equals 比较Long和Integer&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/xu-lie-hua/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/xu-lie-hua/</id>
+    <published>2022-03-20T10:57:41.661Z</published>
+    <updated>2022-03-20T10:55:01.661Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/9dragon/p/10901448.html#h15&quot;&gt;https://www.cnblogs.com/9dragon/p/10901448.html#h15&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果我们需要持久化
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/wen-ti-liu-yi-tiao-lu-zou-dao-hei-zen-me-qu-na-kai-shi-de-shu-ju/</id>
+    <published>2022-03-20T10:57:41.660Z</published>
+    <updated>2022-03-20T10:55:02.153Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;把下面的代码转成stream形式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        Set&amp;lt;String&amp;gt; keySet = map.keySet();
+        for (String s : keySet) &amp;#123;
+           
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/wei-shi-me-java-zhong-zhi-you-zhi-chuan-di/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/wei-shi-me-java-zhong-zhi-you-zhi-chuan-di/</id>
+    <published>2022-03-20T10:57:41.658Z</published>
+    <updated>2022-03-20T10:55:01.552Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;首先，我们回顾一下在程序设计语言中有关将参数传递给方法（或函数）的一些专业术语。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;按值调用(call by value)&lt;/strong&gt; 表示方法接收的是调用者提供的值，&lt;strong&gt;按引用调用（call by
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/tan-jiu-xia-ji-he-lei-zhi-ding-chu-shi-rong-liang-de-bi-yao-xing/</id>
+    <published>2022-03-20T10:57:41.656Z</published>
+    <updated>2022-03-20T10:55:01.738Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;以ArrayList为例，对比下指定初始容量和不指定两种情况对List.add性能的影响&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        /**
+         * 指定初始容量后：耗时 1030
+         */
+       
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shu-ru-shu-chu-liu-shi-yong/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shu-ru-shu-chu-liu-shi-yong/</id>
+    <published>2022-03-20T10:57:41.655Z</published>
+    <updated>2022-03-20T10:55:01.284Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用输出流 FileOutputStream 写入文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      File file = new
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/</id>
+    <published>2022-03-20T10:57:41.653Z</published>
+    <updated>2022-03-20T10:55:02.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###受查视图&lt;/p&gt;
+&lt;p&gt;这样的泛型约束是失效的   &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();
+ List stList = list;
+ //添加成功
+
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-yong-try-with-resources-dai-ti-try-catch-finally-diao-yong-close-guan-bi-zi-yuan/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-yong-try-with-resources-dai-ti-try-catch-finally-diao-yong-close-guan-bi-zi-yuan/</id>
+    <published>2022-03-20T10:57:41.650Z</published>
+    <updated>2022-03-20T10:55:01.620Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;类似于InputStream、OutputStream 、Scanner 、PrintWriter等的资源都需要我们调用close()方法来手动关闭，一般情况下我们都是通过try-catch-finally语句：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;       
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-me-shi-hou-shi-yong-java-util-optional/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/shi-me-shi-hou-shi-yong-java-util-optional/</id>
+    <published>2022-03-20T10:57:41.649Z</published>
+    <updated>2022-03-20T10:55:02.046Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;map.get()&lt;/li&gt;
+&lt;li&gt;list.get()&lt;/li&gt;
+&lt;li&gt;xxx.get()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;非常厉害的用法：&lt;br&gt;把Map的元素value转Boolean，转File&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    public
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/neng-yong-shi-ti-lei-jiu-bu-yao-tu-fang-bian-yong-hashmap/</id>
+    <published>2022-03-20T10:57:41.647Z</published>
+    <updated>2022-03-20T10:55:02.139Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、HashMap比起简单的实体类占用空间非常大&lt;/p&gt;
+&lt;p&gt;场景：100W行的大数据量查询，使用List&lt;HashMap&gt; 结构导致OOM&lt;/p&gt;
+&lt;p&gt;但这种方式只能解决燃眉之急，归根结底还是要看看到底是什么数据一次性占了 1.6 个 G！&lt;br&gt;仔细一看，List
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/nei-bu-lei/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/nei-bu-lei/</id>
+    <published>2022-03-20T10:57:41.645Z</published>
+    <updated>2022-03-20T10:55:02.235Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###局部内部类&lt;br&gt;如果仔细地阅读一下 TalkingClock 示例的代码就会发现， TimePrinter 这个类名字只在&lt;br&gt;start 方法中创建这个类型的对象时使用了一次。&lt;br&gt;当遇到这类情况时，
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/mian-xiang-dui-xiang-san-da-te-zheng/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/mian-xiang-dui-xiang-san-da-te-zheng/</id>
+    <published>2022-03-20T10:57:41.643Z</published>
+    <updated>2022-03-20T10:55:01.597Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot;
         
       
     
