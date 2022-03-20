@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.jianshu.com/2022/03/20/wang-luo-shu-xing/</loc>
+    
+    <lastmod>2022-03-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.jianshu.com/2022/03/20/sentinelresource/</loc>
     
     <lastmod>2022-03-20</lastmod>
@@ -9530,6 +9537,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://www.jianshu.com/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2022-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -9982,6 +9996,13 @@
   
   <url>
     <loc>https://www.jianshu.com/categories/strut2/</loc>
+    <lastmod>2022-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jianshu.com/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
