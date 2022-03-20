@@ -695,21 +695,20 @@ double max = list.stream().mapToDouble(User::getHeight).sum();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/stream-ji-he-cao-zuo-ti-sheng/">
+                <a href="/2022/03/20/stream-peek-de-yong-fa-he-yu-stream-map-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="stream-集合操作提升.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="stream()-peek的用法和-与-stream()-map区别.md">
                         
-                        <span class="card-title">stream-集合操作提升.md</span>
+                        <span class="card-title">stream()-peek的用法和-与-stream()-map区别.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###对比二者 list转map1、两个都是list转map
-第一个Collectors.toMap有去重含义
- Map&lt;Integer, JgOrderStateMate&gt; mateMap = mateList.stream(
+                            peek对应Consumer   没返回值，map对应Function  有返回值
+Stream.of(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;,&quot;four&quot;
                         
                     </div>
                     <div class="publish-info">
@@ -746,20 +745,21 @@ double max = list.stream().mapToDouble(User::getHeight).sum();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/two/">
+                <a href="/2022/03/20/stream-cao-zuo-dui-yuan-ji-he-de-ying-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="two.md">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="stream操作对原集合的影响？.md">
                         
-                        <span class="card-title">two.md</span>
+                        <span class="card-title">stream操作对原集合的影响？.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: mysql 使用mysqld_multi在一台机器上安装多个mysql实例（多实例安装）top: truecover: falsetoc: truemathjax: truedate: 2021-05-02 19:08:12
+                            1、arrayList内部复合类型修改符合类型对象数据会影响原来的。毕竟是一个对象
+        ArrayList&lt;JgWarehouseOrder&gt; arrayList = new ArrayList();
+       
                         
                     </div>
                     <div class="publish-info">
@@ -968,7 +968,7 @@ title: mysql 使用mysqld_multi在一台机器上安装多个mysql实例（多�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

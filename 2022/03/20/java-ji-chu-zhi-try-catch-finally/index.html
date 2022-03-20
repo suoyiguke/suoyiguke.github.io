@@ -894,21 +894,26 @@ class TestFinally&amp;#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-switch-yu-ju-xi-jie/">
+                <a href="/2022/03/20/java-ji-chu-zhi-random-sui-ji-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="java-基础之switch语句细节.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-基础之Random-随机数.md">
                         
-                        <span class="card-title">java-基础之switch语句细节.md</span>
+                        <span class="card-title">java-基础之Random-随机数.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###switch所允许的数据类型
-基本数据类型：byte, short, char, int包装数据类型：Byte, Short, Character, Integer枚举类型：Enum字符串类型：String（jdk 7 开始支持）
-不
+                            
+吾生也有涯，而知也无涯
+
+######使用Random 生成指定大小范围内的随机数
+
+公式:  random.nextInt(n -m + 1) +m;
+
+如下生成[22,433]范围内的随机数，注意两边都是闭区间。22和443都会取得到
                         
                     </div>
                     <div class="publish-info">
@@ -945,21 +950,22 @@ class TestFinally&amp;#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-he-li-shi-yong-if-else/">
+                <a href="/2022/03/20/java-ji-chu-zhi-finally-shi-fou-yi-ding-hui-zhi-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="java-基础之合理使用if-else.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-基础之finally是否一定会执行-.md">
                         
-                        <span class="card-title">java-基础之合理使用if-else.md</span>
+                        <span class="card-title">java-基础之finally是否一定会执行-.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://juejin.im/post/5e5fa79de51d45271849e7bd
-@Around(&quot;dataSourcePointCut()&quot;)
-    public Object around(Proce
+                            事实上finally区域代码在很多情况下都不会执行######没有进入try区域 1、程序在进入try区域之前抛出异常，那么整个try-catch -finally都不会执行
+class TestThreadLocal &#123;
+
+  
                         
                     </div>
                     <div class="publish-info">
@@ -1168,7 +1174,7 @@ class TestFinally&amp;#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

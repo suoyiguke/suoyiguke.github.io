@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jianshu.com/u/807abe8ee897/"/>
-  <updated>2022-03-20T11:54:58.073Z</updated>
+  <updated>2022-03-20T12:59:04.939Z</updated>
   <id>https://www.jianshu.com/u/807abe8ee897/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>+-拼接生成的字符串是在字符串常量池在是在堆中？.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/pin-jie-sheng-cheng-de-zi-fu-chuan-shi-zai-zi-fu-chuan-chang-liang-chi-zai-shi-zai-dui-zhong/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/pin-jie-sheng-cheng-de-zi-fu-chuan-shi-zai-zi-fu-chuan-chang-liang-chi-zai-shi-zai-dui-zhong/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:04.939Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;勤奋好学&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“+” 拼接生成的字符串是在字符串常量池在是在堆中？
+        
+      
+    
+    </summary>
+    
+      <category term="jvm" scheme="https://www.jianshu.com/u/807abe8ee897/categories/jvm/"/>
+    
+    
+      <category term="jvm" scheme="https://www.jianshu.com/u/807abe8ee897/tags/jvm/"/>
+    
+  </entry>
   
   <entry>
     <title>1-4-Collection-子接口之-Queue.md</title>
@@ -44,11 +73,11 @@
   </entry>
   
   <entry>
-    <title>8-种基本类型的包装类和常量池.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/8-chong-ji-ben-lei-xing-de-bao-zhuang-lei-he-chang-liang-chi/</id>
+    <title>2019-11-01.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2019-11-01/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2019-11-01/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.074Z</updated>
+    <updated>2022-03-20T12:59:06.955Z</updated>
     
     <summary type="html">
     
@@ -56,25 +85,26 @@
       
         
         
-          &lt;p&gt;Java 基本类型的包装类的大部分都实现了常量池技术。&lt;code&gt;Byte&lt;/code&gt;,&lt;code&gt;Short&lt;/code&gt;,&lt;code&gt;Integer&lt;/code&gt;,&lt;code&gt;Long&lt;/code&gt; 这 4
+          &lt;p&gt;1、数值取大&lt;br&gt;Math.max(DEFAULT_CAPACITY, minCapacity);&lt;/p&gt;
+&lt;p&gt;2、位移&lt;br&gt;        new = old * 1.5&lt;br&gt;        int newCapacity = oldCapacity +
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="观源码心得" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E8%A7%82%E6%BA%90%E7%A0%81%E5%BF%83%E5%BE%97/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="观源码心得" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E8%A7%82%E6%BA%90%E7%A0%81%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
   <entry>
-    <title>Array、Set、List互相转.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/array-set-list-hu-xiang-zhuan/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/array-set-list-hu-xiang-zhuan/</id>
+    <title>2019-11-15.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2019-11-15/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2019-11-15/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.075Z</updated>
+    <updated>2022-03-20T12:59:06.758Z</updated>
     
     <summary type="html">
     
@@ -82,27 +112,44 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;数组转化为List：&lt;pre&gt;&lt;code&gt;String[] strArray= new String[]&amp;#123;&amp;quot;Tom&amp;quot;, &amp;quot;Bob&amp;quot;, &amp;quot;Jane&amp;quot;&amp;#125;;
-List strList=
+          &lt;p&gt;&lt;strong&gt;时间&lt;/strong&gt;&lt;br&gt;Joda-Time&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; new DateTime(2000, 11, 27, 0, 0,
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="工具类" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="工具类" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
     
   </entry>
   
   <entry>
-    <title>7种遍历hashMap的方式那种最好？.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/7-chong-bian-li-hashmap-de-fang-shi-na-chong-zui-hao/</id>
+    <title>2020-01-30.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-01-30/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-01-30/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.073Z</updated>
+    <updated>2022-03-20T12:59:06.015Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="redis" scheme="https://www.jianshu.com/u/807abe8ee897/categories/redis/"/>
+    
+    
+      <category term="redis" scheme="https://www.jianshu.com/u/807abe8ee897/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-03-24.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-03-24/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-03-24/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.057Z</updated>
     
     <summary type="html">
     
@@ -110,26 +157,29 @@ List strList=
       
         
         
-          &lt;p&gt;HashMap 遍历从大的方向来说，可分为以下 4 类：&lt;/p&gt;
-&lt;p&gt;迭代器（Iterator）方式遍历；&lt;br&gt;For Each 方式遍历；&lt;br&gt;Lambda 表达式遍历（JDK 1.8+）;&lt;br&gt;Streams API 遍历（JDK
+          &lt;pre&gt;&lt;code&gt; &amp;lt;mirrors&amp;gt;
+      
+        &amp;lt;mirror&amp;gt;
+            &amp;lt;!--This sends everything else to /public --&amp;gt;
+           
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="maven" scheme="https://www.jianshu.com/u/807abe8ee897/categories/maven/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="maven" scheme="https://www.jianshu.com/u/807abe8ee897/tags/maven/"/>
     
   </entry>
   
   <entry>
-    <title>BigDecimal.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/bigdecimal/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/bigdecimal/</id>
+    <title>2020-03-17.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-03-17/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-03-17/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.075Z</updated>
+    <updated>2022-03-20T12:59:04.844Z</updated>
     
     <summary type="html">
     
@@ -137,139 +187,44 @@ List strList=
       
         
         
-          &lt;p&gt;###compareTo比较&lt;br&gt;compareTo也说得很详细，数值相同但是精度不同的两个数（例如2.0和2.00）被认为是相等的两个数，返回0。另外对于a.compareTo(b)方法&lt;/p&gt;
-&lt;p&gt;a&amp;lt;b,
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java-hashCode和equals方法与对象比较和去重(一).md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-hashcode-he-equals-fang-fa-yu-dui-xiang-bi-jiao-he-qu-chong-yi/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.078Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;事实胜于雄辩&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;###什么时候需要重写hashCode 和 equals
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java-泛型了解么？什么是类型擦除？介绍一下常用的通配符？.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-fan-xing-liao-jie-me-shi-me-shi-lei-xing-ca-chu-jie-shao-yi-xia-chang-yong-de-tong-pei-fu/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.092Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了编译时类型安全检测机制，该机制允许程序员在编译时检测到非法的类型。泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。&lt;/p&gt;
-&lt;p&gt;Java 的泛型是伪泛型，这是因为
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LongAdder与AtomicLong有什么区别？.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/longadder-yu-atomiclong-you-shi-me-qu-bie/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.103Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;LongAdder与AtomicLong有什么区别？&lt;br&gt;参考答案&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;AtomicLong 是基于 CAS 方式自旋更新的；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;LongAdder 是把 value 分成若干cell，并发量低的时候，直接 CAS
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Map-批量remove.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/map-pi-liang-remove/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/map-pi-liang-remove/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.103Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;saveMap.keySet().removeAll(errMap.keySet());&lt;/p&gt;
+          &lt;p&gt;Java并发编程实战&lt;br&gt;java并发编程的艺术&lt;/p&gt;
 
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="juc" scheme="https://www.jianshu.com/u/807abe8ee897/categories/juc/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="juc" scheme="https://www.jianshu.com/u/807abe8ee897/tags/juc/"/>
     
   </entry>
   
   <entry>
-    <title>Objects-equals-比较Long和Integer-一定记得加L.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/objects-equals-bi-jiao-long-he-integer-yi-ding-ji-de-jia-l/</id>
+    <title>2020-05-26.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-05-26/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-05-26/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.103Z</updated>
+    <updated>2022-03-20T12:59:04.687Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java-三方库学习" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="java-三方库学习" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java-%E4%B8%89%E6%96%B9%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-04-05.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-04-05/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-04-05/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.704Z</updated>
     
     <summary type="html">
     
@@ -277,43 +232,162 @@ List strList=
       
         
         
-          &lt;p&gt; if (Objects.equals(1L, groupListSize)) {&lt;br&gt;&lt;img
+          &lt;p&gt;首先是我的问题。知道逃避不了为什么不大胆承认呢？&lt;/p&gt;
+&lt;p&gt;首页报表数据&lt;br&gt;管理员不能看到投放点&lt;br&gt;箱子数据有两个情况。企业用户要看到箱子放到哪个投放点。管理员要看到箱子出库在哪个企业用户下&lt;br&gt;Session大于30分钟&lt;br&gt;开发菜单不能给管理员和企业用户
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="postgresql" scheme="https://www.jianshu.com/u/807abe8ee897/categories/postgresql/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="postgresql" scheme="https://www.jianshu.com/u/807abe8ee897/tags/postgresql/"/>
     
   </entry>
   
   <entry>
-    <title>assertTrue、assertEquals.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/asserttrue-assertequals/</id>
+    <title>2020-06-17.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-17/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-17/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.075Z</updated>
+    <updated>2022-03-20T12:59:06.495Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;p&gt;【深圳人社局】您成功找回深圳人社局社会统一用户基础平台用户名，您的用户名为：N443_007，请妥善保管，切勿泄漏。&lt;br&gt;19970627Yk&lt;/p&gt;
+
+        
+      
+    
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="uibot" scheme="https://www.jianshu.com/u/807abe8ee897/categories/uibot/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="uibot" scheme="https://www.jianshu.com/u/807abe8ee897/tags/uibot/"/>
     
   </entry>
   
   <entry>
-    <title>article-title.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/article-title/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/article-title/</id>
+    <title>2020-06-26.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-26/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-26/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.075Z</updated>
+    <updated>2022-03-20T12:59:06.754Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;毛孔粗大。&lt;br&gt;戒糖&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="分布式锁" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
+    
+    
+      <category term="分布式锁" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-04-06.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-04-06/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-04-06/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:06.546Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;菜单栏按钮&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;     &amp;lt;a-menu-item&amp;gt;
+                &amp;lt;a-popconfirm  title=&amp;quot;确定删除吗?&amp;quot; @confirm=&amp;quot;() =&amp;gt;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="https://www.jianshu.com/u/807abe8ee897/categories/web/"/>
+    
+    
+      <category term="web" scheme="https://www.jianshu.com/u/807abe8ee897/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-06-19.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-19/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-06-19/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:05.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;19970627yinkaiyinkai
+        
+      
+    
+    </summary>
+    
+      <category term="pass" scheme="https://www.jianshu.com/u/807abe8ee897/categories/pass/"/>
+    
+    
+      <category term="pass" scheme="https://www.jianshu.com/u/807abe8ee897/tags/pass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-07-02.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-07-02/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-07-02/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:06.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在springboot定时任务中执行http请求，每隔很短时间发送。&lt;/p&gt;
+&lt;p&gt;会发生oom？&lt;/p&gt;
+&lt;p&gt;###在spring的@Scheduled中发送http请求，会发生空指针？
+        
+      
+    
+    </summary>
+    
+      <category term="测试" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-08-19.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-08-19/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-08-19/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:04.607Z</updated>
     
     <summary type="html">
     
@@ -322,25 +396,43 @@ List strList=
         
         
           &lt;hr&gt;
-&lt;p&gt;title: article title&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-03-20
+&lt;p&gt;title: 2020-08-19.md&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-03-20
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="andriod" scheme="https://www.jianshu.com/u/807abe8ee897/categories/andriod/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="andriod" scheme="https://www.jianshu.com/u/807abe8ee897/tags/andriod/"/>
     
   </entry>
   
   <entry>
-    <title>first.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/first/</id>
+    <title>2020-08-28.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-08-28/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-08-28/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
+    <updated>2022-03-20T12:59:05.680Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://www.jianshu.com/u/807abe8ee897/categories/oracle/"/>
+    
+    
+      <category term="oracle" scheme="https://www.jianshu.com/u/807abe8ee897/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-09-30.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-09-30/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-09-30/</id>
+    <published>2022-03-20T10:16:49.000Z</published>
+    <updated>2022-03-20T12:59:06.876Z</updated>
     
     <summary type="html">
     
@@ -348,44 +440,25 @@ List strList=
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;title: first&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2021-05-02
+          &lt;p&gt;appid=wx18577a221b62ed6b&lt;br&gt;
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="微信公众号开发" scheme="https://www.jianshu.com/u/807abe8ee897/categories/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>eques.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/eques/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="微信公众号开发" scheme="https://www.jianshu.com/u/807abe8ee897/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
-    <title>java--jar-运行，带引号解决参数中包含等号的问题.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-jar-yun-xing-dai-yin-hao-jie-jue-can-shu-zhong-bao-han-deng-hao-de-wen-ti/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-jar-yun-xing-dai-yin-hao-jie-jue-can-shu-zhong-bao-han-deng-hao-de-wen-ti/</id>
+    <title>2020-11-21.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-11-21/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-11-21/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
+    <updated>2022-03-20T12:59:05.696Z</updated>
     
     <summary type="html">
     
@@ -393,43 +466,28 @@ List strList=
       
         
         
-          &lt;p&gt;java -jar identityauthsrv-1.0.5-base-linux-release.jar
+          &lt;p&gt;1、apache 不解析php直接将代码输出到浏览器解决：安装php依赖&lt;/p&gt;
+&lt;p&gt;yum install mod_php -y&lt;/p&gt;
+&lt;p&gt;然后重启apache&lt;br&gt;service httpd restart&lt;/p&gt;
+&lt;p&gt;2、查看 版本 rpm -qa
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="php" scheme="https://www.jianshu.com/u/807abe8ee897/categories/php/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>forEachRemaining继续输出其余的元素.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/foreachremaining-ji-xu-shu-chu-qi-yu-de-yuan-su/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.076Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="php" scheme="https://www.jianshu.com/u/807abe8ee897/tags/php/"/>
     
   </entry>
   
   <entry>
-    <title>java-8中使用Optional-避免空指针.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-8-zhong-shi-yong-optional-bi-mian-kong-zhi-zhen/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-8-zhong-shi-yong-optional-bi-mian-kong-zhi-zhen/</id>
+    <title>2020-12-18.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-12-18/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2020-12-18/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.077Z</updated>
+    <updated>2022-03-20T12:59:05.678Z</updated>
     
     <summary type="html">
     
@@ -437,26 +495,27 @@ List strList=
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;Optional 类的引入要求程序员强制处理和避免空指针。Optional 需要使用在可能为null的变量上。很多时候，程序员都是不判空的，这些BUG就像定时炸弹一样，使用Optional
+          &lt;ul&gt;
+&lt;li&gt;  基于PaddleHub Serving的部署：代码路径为”&lt;code&gt;./deploy/hubserving&lt;/code&gt;“，按照本教程使用；&lt;/li&gt;
+&lt;li&gt;  (coming
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="ocr" scheme="https://www.jianshu.com/u/807abe8ee897/categories/ocr/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="ocr" scheme="https://www.jianshu.com/u/807abe8ee897/tags/ocr/"/>
     
   </entry>
   
   <entry>
-    <title>java-DTO-DO-VO.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-dto-do-vo/</id>
+    <title>2021-02-19.md</title>
+    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/2021-02-19/"/>
+    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/2021-02-19/</id>
     <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.077Z</updated>
+    <updated>2022-03-20T12:59:05.423Z</updated>
     
     <summary type="html">
     
@@ -464,75 +523,17 @@ List strList=
       
         
         
-          &lt;p&gt;《阿里巴巴开发手册》以及网上各种博客或多或少都有提到诸如DTO、DO、BO、PO、VO等等，也提倡对实体类进行分层。至于为什么要分层，它们的理由是“避免暴露内部设计细节，只展示必要的字段”，但我个人最大的感受其实是“解耦”。我曾遇到一件无奈的事，接口已经开发完毕，前后端也联
+          &lt;p&gt;&lt;strong&gt;当前各个连接正在执行的语句&lt;/strong&gt;&lt;br&gt;一定是正在执行的。若连接没有执行sql或sql已执行完成。那么将处于sleep的状态，且查询语句的sql为nul&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SHOW
         
       
     
     </summary>
     
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
+      <category term="mysql运维操作" scheme="https://www.jianshu.com/u/807abe8ee897/categories/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"/>
     
     
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java-Map接口和抽象类分析总结.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-map-jie-kou-he-chou-xiang-lei-fen-xi-zong-jie/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-map-jie-kou-he-chou-xiang-lei-fen-xi-zong-jie/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.079Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;java.util.SortedMap&lt;/p&gt;
-&lt;p&gt;java.util.NavigableMap&lt;/p&gt;
-&lt;p&gt;抽象类&lt;br&gt; 
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java-error捕获.md</title>
-    <link href="https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/"/>
-    <id>https://www.jianshu.com/u/807abe8ee897/2022/03/20/java-error-bu-huo/</id>
-    <published>2022-03-20T10:16:49.000Z</published>
-    <updated>2022-03-20T11:54:58.077Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;package org.szwj.ca.identityauthsrv;
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import
-        
-      
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.jianshu.com/u/807abe8ee897/categories/java/"/>
-    
-    
-      <category term="java基础" scheme="https://www.jianshu.com/u/807abe8ee897/tags/java%E5%9F%BA%E7%A1%80/"/>
+      <category term="mysql运维操作" scheme="https://www.jianshu.com/u/807abe8ee897/tags/mysql%E8%BF%90%E7%BB%B4%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   

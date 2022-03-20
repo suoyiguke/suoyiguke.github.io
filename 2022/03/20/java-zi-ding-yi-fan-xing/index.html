@@ -586,20 +586,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-zhi-arraylist-he-linkedlist-de-qu-bie-he-shi-yong-jian-yi/">
+                <a href="/2022/03/20/java-xian-cheng-ji-chu-zhi-xian-cheng-ben-di-bian-liang-threadlocal/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="java-集合之ArrayList和LinkedList的区别和使用建议.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="java-线程基础之线程本地变量ThreadLocal.md">
                         
-                        <span class="card-title">java-集合之ArrayList和LinkedList的区别和使用建议.md</span>
+                        <span class="card-title">java-线程基础之线程本地变量ThreadLocal.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于双向链表实现的非线程安全的集合。
-2、扩容问题：ArrayList 使用数组实现，无参构造函数默认初始化长度为 10，数组扩容是会将原数组中的元素重新拷贝
+                            
+自助者天助之
+
+想在多个方法中使用某个变量，这个变量是当前线程的状态，其它线程不依赖这个变量。可以使用两种方法达到这种目的：
+
+可以把变量定义在方法内部，然后再方法之间传递参数来使用，这个方法能解决问题，但是有个烦人的地方就是，每个方法都
                         
                     </div>
                     <div class="publish-info">
@@ -610,8 +614,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -621,8 +625,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -636,21 +640,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-he-zhi-collections-gong-ju-lei/">
+                <a href="/2022/03/20/java-neng-yong-yi-chang-kong-zhi-liu-cheng-de-di-fang-yi-ding-ke-yi-shi-yong-return/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-集合之Collections-工具类.md">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java-能用异常控制流程的地方一定可以使用return！.md">
                         
-                        <span class="card-title">java-集合之Collections-工具类.md</span>
+                        <span class="card-title">java-能用异常控制流程的地方一定可以使用return！.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Collections 工具类常用方法:
-排序查找,替换操作同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)###1.5.1. 排序操作
-void reverse(List list)//反转void shuf
+                            1、在构造函数里也可以使用return的方式
+将返回包装类GbmResult声明到类的成员变量中：然后
+2、构造函数{        if (StringUtils.isEmpty(stringStringMap)) {          
                         
                     </div>
                     <div class="publish-info">
@@ -859,7 +863,7 @@ void reverse(List list)//反转void shuf
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

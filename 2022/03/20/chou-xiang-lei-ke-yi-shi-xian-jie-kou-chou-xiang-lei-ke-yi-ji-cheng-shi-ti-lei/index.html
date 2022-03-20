@@ -598,21 +598,26 @@ abstract class KK extends  JJ&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/xu-lie-hua/">
+                <a href="/2022/03/20/zhao-hui-yin-wei-qie-huan-fen-zhi-diu-shi-de-wei-push-de-commit/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="序列化.md">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="找回因为切换分支丢失的未push的commit.md">
                         
-                        <span class="card-title">序列化.md</span>
+                        <span class="card-title">找回因为切换分支丢失的未push的commit.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://www.cnblogs.com/9dragon/p/10901448.html#h15
-如果我们需要持久化 Java 对象比如将 Java 对象保存在文件中，或者在网络传输 Java 对象，这些场景都需要用到序列化。
-简单来
+                            为了避免这种丢失coomit的问题，最后每次开发新需求先克隆一个新分支！
+###git命令
+先执行
+git reflog
+
+找到自己因为切换分支而丢失的未push的commit的id e2358dc 
+$ git reflog
+4f2955
                         
                     </div>
                     <div class="publish-info">
@@ -623,8 +628,8 @@ abstract class KK extends  JJ&#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/git/" class="post-category" target="_blank">
+                                    git
                                 </a>
                             
                             
@@ -634,8 +639,8 @@ abstract class KK extends  JJ&#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -649,19 +654,19 @@ abstract class KK extends  JJ&#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/cheng-yuan-bian-liang-yu-ju-bu-bian-liang-de-qu-bie-you-na-xie/">
+                <a href="/2022/03/20/na-dao-yi-ge-sql-wo-men-ying-gai-cong-suo-yin-shang-kao-lu-dao-de-you-hua-si-kao-bu-zou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="成员变量与局部变量的区别有哪些？.md">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="拿到一个sql我们应该从索引上考虑到的优化思考步骤.md">
                         
-                        <span class="card-title">成员变量与局部变量的区别有哪些？.md</span>
+                        <span class="card-title">拿到一个sql我们应该从索引上考虑到的优化思考步骤.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、从语法形式上看，成员变量是属于类的，而局部变量是在代码块或方法中定义的变量或是方法的参数；成员变量可以被 public,private,static 等修饰符所修饰，而局部变量不能被访问控制修饰符及 static 所修饰；但是，成员变量
+                            步骤step1、 先看join字段，小表驱动大表。大表关联字段上要加索引。若一张表中有2个关联字段那么就要按加载表的顺序设置子索引的顺序。比如 a join b join c ，若先加载c表，那么就要把c.join_colum放在索引的最前
                         
                     </div>
                     <div class="publish-info">
@@ -672,8 +677,8 @@ abstract class KK extends  JJ&#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -683,8 +688,8 @@ abstract class KK extends  JJ&#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -870,7 +875,7 @@ abstract class KK extends  JJ&#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

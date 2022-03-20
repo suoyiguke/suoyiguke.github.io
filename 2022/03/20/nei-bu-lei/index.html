@@ -576,24 +576,26 @@ Timer t = new Timer(interva1, listener); t.start(); &#125;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/shou-cha-shi-tu-bu-ke-xiu-gai-shi-tu-zi-fan-wei/">
+                <a href="/2022/03/20/nei-cun-xie-lou-chang-jian-ji-chong-qing-kuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="受查视图、不可修改视图、子范围.md">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="内存泄漏常见几种情况.md">
                         
-                        <span class="card-title">受查视图、不可修改视图、子范围.md</span>
+                        <span class="card-title">内存泄漏常见几种情况.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ###受查视图
-这样的泛型约束是失效的   
- List&lt;String&gt; list = new ArrayList&lt;&gt;();
- List stList = list;
- //添加成功
- stList.add(new 
+                            内存泄漏简介内存泄漏: 不需要使用对象,但是GC无法回收它
+
+宽泛意义上的内存泄漏
+
+不良的操作导致对象生命周期变长
+
+Y的声明周期结束后, 由于X引用Y导致GC无法回收Y (如果A,B,C生命周期少于X也是同理)
+当大量内存泄漏,没有内存
                         
                     </div>
                     <div class="publish-info">
@@ -604,8 +606,8 @@ Timer t = new Timer(interva1, listener); t.start(); &#125;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -615,8 +617,8 @@ Timer t = new Timer(interva1, listener); t.start(); &#125;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>
@@ -630,20 +632,21 @@ Timer t = new Timer(interva1, listener); t.start(); &#125;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/zai-he-chong-qing-kuang-xia-future-get-pao-chu-executionexception-huo-interruptedexception/">
+                <a href="/2022/03/20/leng-re-shu-ju-ge-chi-shi-bian-xie-tou-lan-de-union/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="冷热数据隔离时编写偷懒的UNION.md">
                         
-                        <span class="card-title">在何种情况下，Future-get()抛出ExecutionException或InterruptedException？.md</span>
+                        <span class="card-title">冷热数据隔离时编写偷懒的UNION.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ExecutionException和InterruptedException是两个非常不同的事情。
-ExecutionException封装了正在执行的线程抛出的任何异常，所以如果你的线程是做某种IO导致抛出IOException异常的，
+                            先到热数据表里查，没有再查冷数据的
+    SELECT logistics_username from (
+    select greatest(@found:=-1,1) as x,logistics_username from cl
                         
                     </div>
                     <div class="publish-info">
@@ -654,8 +657,8 @@ ExecutionException封装了正在执行的线程抛出的任何异常，所以�
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -665,8 +668,8 @@ ExecutionException封装了正在执行的线程抛出的任何异常，所以�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -852,7 +855,7 @@ ExecutionException封装了正在执行的线程抛出的任何异常，所以�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

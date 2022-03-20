@@ -575,20 +575,21 @@ Collections.sort(list,Comparator.comp">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/ba-gu-wen/">
+                <a href="/2022/03/20/leng-re-shu-ju-ge-chi-shi-bian-xie-tou-lan-de-union/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="八股文.md">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="冷热数据隔离时编写偷懒的UNION.md">
                         
-                        <span class="card-title">八股文.md</span>
+                        <span class="card-title">冷热数据隔离时编写偷懒的UNION.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://gitee.com/SnailClimb/JavaGuide
-
+                            先到热数据表里查，没有再查冷数据的
+    SELECT logistics_username from (
+    select greatest(@found:=-1,1) as x,logistics_username from cl
                         
                     </div>
                     <div class="publish-info">
@@ -599,8 +600,8 @@ Collections.sort(list,Comparator.comp">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/mysql%E5%9F%BA%E6%9C%AC/" class="post-category" target="_blank">
+                                    mysql基本
                                 </a>
                             
                             
@@ -610,8 +611,8 @@ Collections.sort(list,Comparator.comp">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/mysql%E5%9F%BA%E6%9C%AC/" target="_blank">
+                        <span class="chip bg-color">mysql基本</span>
                     </a>
                     
                 </div>
@@ -850,7 +851,7 @@ Collections.sort(list,Comparator.comp">
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

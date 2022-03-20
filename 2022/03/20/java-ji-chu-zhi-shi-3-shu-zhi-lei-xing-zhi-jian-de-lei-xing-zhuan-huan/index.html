@@ -656,23 +656,20 @@ double  64bit/8byte
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-shi-1-chuan-zhi-he-chuan-yin-yong/">
+                <a href="/2022/03/20/java-ji-chu-zhi-shi-2-bi-jiao-he-equals/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="java-基础知识1-传值和传引用.md">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="java-基础知识2-比较-==-和-equals().md">
                         
-                        <span class="card-title">java-基础知识1-传值和传引用.md</span>
+                        <span class="card-title">java-基础知识2-比较-==-和-equals().md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ######1、基本类型传复印件
-public static void cr(int a)&#123;
-    a++;
-    System.out.println(&quot;进入方法打印&quot;);
-    System.out.
+                            == 的用法不推荐== 使用在数值类型之间1、 == 使用在包装类型之间，比较的是引用地址
+java中对于Integer var=?在-128至127之间的赋值，Integer对象是在IntegerCache.cache产生，会复用已有对象
                         
                     </div>
                     <div class="publish-info">
@@ -709,25 +706,28 @@ public static void cr(int a)&#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-shi-5-xin-jian-shi-li-shi-ge-bu-fen-zhi-xing-shun-xu/">
+                <a href="/2022/03/20/java-ji-chu-zhi-shi-4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="java-基础知识5-新建实例时各部分执行顺序.md">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-基础知识4.md">
                         
-                        <span class="card-title">java-基础知识5-新建实例时各部分执行顺序.md</span>
+                        <span class="card-title">java-基础知识4.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们先来看一个例子
-package test;
+                            1、++i 和 i++的区别
+
+i++先赋值后增加
+
+++i 先增加后赋值
 
 
-class HelloA &#123;
-    public HelloA() &#123;
-        System.out.println(&quot;父类构造器执行&quot;)
+public static void main(String[] args) &#123;
+    int i = 0;
+    System.out.prin
                         
                     </div>
                     <div class="publish-info">
@@ -936,7 +936,7 @@ class HelloA &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

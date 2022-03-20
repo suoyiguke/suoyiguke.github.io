@@ -567,22 +567,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-util-optional-ifpresent/">
+                <a href="/2022/03/20/java-util-concurrent-phaser/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java-util-Optional#ifPresent.md">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="java-util-concurrent-Phaser.md">
                         
-                        <span class="card-title">java-util-Optional#ifPresent.md</span>
+                        <span class="card-title">java-util-concurrent-Phaser.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ifPresent 用于对过滤出的数据如果存在。如果经过过滤条件后，有数据的话就可以进行修改。
-
- Optional&lt;A&gt; firstA= AList.stream() 
-                          .f
+                            Phaser 比较适合这样一种场景，一种任务可以分为多个阶段，希望多个线程去处理该批任务，对于每个阶段，多个线程可以并发进行，但是希望保证只有前面一个阶段的任务完成之后才能开始后面的任务。
+这种场景可以使用多个CyclicBarrier来实
                         
                     </div>
                     <div class="publish-info">
@@ -593,8 +591,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/juc/" class="post-category" target="_blank">
+                                    juc
                                 </a>
                             
                             
@@ -604,8 +602,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/juc/" target="_blank">
+                        <span class="chip bg-color">juc</span>
                     </a>
                     
                 </div>
@@ -842,7 +840,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

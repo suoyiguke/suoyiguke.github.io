@@ -561,20 +561,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/map-pi-liang-remove/">
+                <a href="/2022/03/20/oracle-zhi-xing-ji-hua-he-you-hua-shi-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Map-批量remove.md">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Oracle-执行计划和优化示例.md">
                         
-                        <span class="card-title">Map-批量remove.md</span>
+                        <span class="card-title">Oracle-执行计划和优化示例.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            saveMap.keySet().removeAll(errMap.keySet());
-
+                            EXPLAIN PLAN FOR
+SELECT
+    COUNT( DISTINCT F.CFID ) jg 
+FROM
+    t_mz_brjbxx T
+    INNER  JOIN T_MZ_CFMX F  ON T.MZLSH 
                         
                     </div>
                     <div class="publish-info">
@@ -585,8 +589,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/oracle/" class="post-category" target="_blank">
+                                    oracle
                                 </a>
                             
                             
@@ -596,8 +600,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/oracle/" target="_blank">
+                        <span class="chip bg-color">oracle</span>
                     </a>
                     
                 </div>
@@ -611,19 +615,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/asserttrue-assertequals/">
+                <a href="/2022/03/20/outofmemoryerror-de-ji-chong-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="assertTrue、assertEquals.md">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="OutOfMemoryError-的几种类型.md">
                         
-                        <span class="card-title">assertTrue、assertEquals.md</span>
+                        <span class="card-title">OutOfMemoryError-的几种类型.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Become OOM Killer我们都知道JVM的内存管理是自动化的，Java语言的程序指针也不需要开发人员手工释放，JVM的GC会自动的进行回收，但是，如果编程不当，JVM仍然会发生内存泄露，导致Java程序产生了OutOfMemory
                         
                     </div>
                     <div class="publish-info">
@@ -634,8 +638,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/jvm/" class="post-category" target="_blank">
+                                    jvm
                                 </a>
                             
                             
@@ -645,8 +649,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/jvm/" target="_blank">
+                        <span class="chip bg-color">jvm</span>
                     </a>
                     
                 </div>
@@ -832,7 +836,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

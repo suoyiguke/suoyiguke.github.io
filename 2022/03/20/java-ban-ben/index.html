@@ -565,20 +565,23 @@ java8、java11、java17
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-shen-kao-bei-he-qian-kao-bei/">
+                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="java-深拷贝和浅拷贝.md">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="java-源码研究之HashSet.md">
                         
-                        <span class="card-title">java-深拷贝和浅拷贝.md</span>
+                        <span class="card-title">java-源码研究之HashSet.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            浅拷贝： 不额外创建子对象，只是把子对象的引用拷贝过去深拷贝： 创建新的子对象并拷贝属性
-如果把java bean划分为 DTO、DO、VO 的话就避免不了对象的copy了。一般选择的spring的工具类都是浅拷贝。当对象内部还有对象 时只
+                            1、HashSet的底层实现是HashMap
+2、为什么HashSet中add进去的元素是一个，而HashMap确需要key、value两个数据
+
+HashSet中add进去的数据充当HashMap的key
+HashMap的value是一个
                         
                     </div>
                     <div class="publish-info">
@@ -589,8 +592,8 @@ java8、java11、java17
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
+                                    java源码分析
                                 </a>
                             
                             
@@ -600,8 +603,8 @@ java8、java11、java17
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" target="_blank">
+                        <span class="chip bg-color">java源码分析</span>
                     </a>
                     
                 </div>
@@ -615,25 +618,20 @@ java8、java11、java17
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-suan-fa-ji-lu-1-ji-suan-1-100-sui-ji-shu-chu-xian-1000-ci-zhong-ge-ge-shu-zi-chu-xian-de-ge-shu/">
+                <a href="/2022/03/20/java-yuan-ma-yan-jiu-zhi-hashmap/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java-算法记录1，计算1-100随机数出现1000次中各个数字出现的个数.md">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="java-源码研究之HashMap.md">
                         
-                        <span class="card-title">java-算法记录1，计算1-100随机数出现1000次中各个数字出现的个数.md</span>
+                        <span class="card-title">java-源码研究之HashMap.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            package GGG.COM.class1;
-
-public class GGGA &#123;
-
-    public static void main(String[] args) &#123;
-
-        int[] arr 
+                            ###1、jdk1.8对HashMap主要做了哪些优化呢？为什么？
+jdk1.8 的HashMap主要有五点优化：1、数据结构：数组 + 链表改成了数组 + 链表或红黑树。原因：发生 hash 冲突，元素会存入链表，链表过长转为红黑树，将时
                         
                     </div>
                     <div class="publish-info">
@@ -644,8 +642,8 @@ public class GGGA &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-category" target="_blank">
+                                    java源码分析
                                 </a>
                             
                             
@@ -655,8 +653,8 @@ public class GGGA &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/java%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" target="_blank">
+                        <span class="chip bg-color">java源码分析</span>
                     </a>
                     
                 </div>
@@ -842,7 +840,7 @@ public class GGGA &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>

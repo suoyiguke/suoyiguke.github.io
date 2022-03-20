@@ -645,20 +645,22 @@ public enum MgbGoodsStateEnum &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/20/java-ji-chu-zhi-ji-ben-lei-xing-zhi-yu-bao-zhuang-lei-dui-xiang-null-de-bi-jiao-hui-dao-zhi-kong-zhi-zhen/">
+                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-zhi-shi-yong-preparedstatement-dai-ti-statement/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java基础之-基本类型值与包装类对象null的比较会导致空指针.md">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="java持久化-jdbc之使用PreparedStatement代替Statement.md">
                         
-                        <span class="card-title">java基础之-基本类型值与包装类对象null的比较会导致空指针.md</span>
+                        <span class="card-title">java持久化-jdbc之使用PreparedStatement代替Statement.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            int  a=1；if(a==null){}
+                            ######相对于Statement，PreparedStatement的优点是什么？
 
+PreparedStatement有助于防止SQL注入，因为它会自动对特殊字符转义。
+PreparedStatement预编译sql。尤其当你重用它或
                         
                     </div>
                     <div class="publish-info">
@@ -669,8 +671,8 @@ public enum MgbGoodsStateEnum &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" class="post-category" target="_blank">
+                                    java持久化框架
                                 </a>
                             
                             
@@ -680,8 +682,8 @@ public enum MgbGoodsStateEnum &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" target="_blank">
+                        <span class="chip bg-color">java持久化框架</span>
                     </a>
                     
                 </div>
@@ -695,20 +697,27 @@ public enum MgbGoodsStateEnum &#123;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-neng-cun-duo-da-de-zheng-shu/">
+                <a href="/2022/03/20/java-chi-jiu-hua-jdbc-kai-shi-shi-wu-ti-jiao-shi-wu-hui-gun-shi-wu-she-zhi-savepoint/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="java能存多大的整数？.md">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md">
                         
-                        <span class="card-title">java能存多大的整数？.md</span>
+                        <span class="card-title">java持久化-jdbc开始事务、提交事务、回滚事务、设置savepoint.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            无限，内存有多大，他就能存多大的数。使用BigInteger 
-    BigInteger bigInteger = new BigInteger(&quot;999999999999999999999999999999999999999
+                            
+学海无涯
+
+这次我们来学习基于jdbc的原生事务操作，不要小看jdbc喔~ mybatis、jpa等持久化框架都是在它上面的封装。
+准备数据
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+
                         
                     </div>
                     <div class="publish-info">
@@ -719,8 +728,8 @@ public enum MgbGoodsStateEnum &#123;
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                    java
+                            <a href="/categories/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" class="post-category" target="_blank">
+                                    java持久化框架
                                 </a>
                             
                             
@@ -730,8 +739,8 @@ public enum MgbGoodsStateEnum &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E5%9F%BA%E7%A1%80/" target="_blank">
-                        <span class="chip bg-color">java基础</span>
+                    <a href="/tags/java%E6%8C%81%E4%B9%85%E5%8C%96%E6%A1%86%E6%9E%B6/" target="_blank">
+                        <span class="chip bg-color">java持久化框架</span>
                     </a>
                     
                 </div>
@@ -917,7 +926,7 @@ public enum MgbGoodsStateEnum &#123;
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">90.1k</span>
+            <span class="white-color">816.2k</span>
             
 
             <br>
